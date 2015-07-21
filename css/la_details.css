@@ -271,13 +271,94 @@
 	margin-left: -10px;
 }
 
+
+
+.trip-content .expectations .expectations-spider
+{
+	padding: 25px 15px 60px;
+	position: relative;
+	height: 150px;
+}
+
+.trip-content .expectations .expectations-spider.yes::after
+{
+	font-family: FontAwesome;
+	content: '\f00c';
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 35px;
+	color: orange;
+}
+
+.trip-content .expectations .expectations-spider.no::after
+{
+	font-family: FontAwesome;
+	content: '\f00d';
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 35px;
+	color: #eee;
+}
+
+.trip-content .expectations .expectations-spider .fa
+{
+	top: initial;
+	display: block;
+	font-size: 2em;
+	margin: 0 auto 10px;
+	height: auto;
+	width: auto;
+}
+
+.trip-content .expectations .expectations-spider.yes .fa
+{
+	color: #666;
+}
+
+.trip-content .expectations .expectations-spider.no .fa
+{
+	color: #eee;
+}
+
+.trip-content .expectations .expectations-spider span
+{
+	font-size: 11px;
+	letter-spacing: -0.25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1.12;
+	display: inline-block;
+}
+
+.trip-content .expectations .expectations-spider.yes span
+{
+	color: #999;
+}
+
+.trip-content .expectations .expectations-spider.no span
+{
+	color: #eee;
+}
+
 .trip-content .expectations ul
 {
+	margin-left: auto;
+}
 
+.trip-content .expectations ul li
+{
+	list-style: none;
+	display: inline-block;
+	border: 1px solid black;
+	width: 25%;
+	margin-left: auto;
 }
 
 .trip-content .expectations ul li.yes
 {
+
 }
 
 .trip-content .expectations ul li.no
@@ -289,6 +370,7 @@
 {
 	font-size: 0.9em;
 	float: right;
+	display: none;
 }
 
 .trip-content .expectations ul li span.local-says::before
