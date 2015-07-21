@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/la_global.css">
+  <link rel="stylesheet" href="css/la_results.css">
+  <link rel="stylesheet" href="css/la_cards.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="notif_bg_overlay">
+  </div>
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+    <div class="container-fluid" id="global-header">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Create Account</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+   
+  <div class="container-fluid la_results-hero">
+    <div class="row la_home-hero-wrapper center-block">
+      <h1 class="text-center h1">We have found more than <span class="results_count">20</span>
+      <br> things to do and places to stay near
+      <br><span class="town">Chiang Mai</span> <span class="country">Thailand</span></h1> 
+    </div>
+  </div>
+
+  <div class="container-fluid padding-top-20">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        <div class="filters-wrapper notif_trigger">
+          <div class="crystal-location">
+            <!-- geo re-search dropdown -->
+            <h4>Modify location</h4>
+            <div class="geo-dropdown-group center-block text-left">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle la_geo-dropdown" type="button" id="menu1" data-toggle="dropdown">Select a country
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu geo-country" role="menu" aria-labelledby="menu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Thailand</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vietnam</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cambodia</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Laos</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Indonesia</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle la_geo-dropdown" type="button" id="menu2" data-toggle="dropdown">Select nearest city
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu geo-town" role="menu" aria-labelledby="menu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bangkok</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chiang Mai</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Trat</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Current Location</a></li>
+                </ul>
+              </div>
+              <button class="btn btn-default btn-primary">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="filters-wrapper notif_trigger">
+          <div class="crystal">
+            <h4>Filter current results</h4>
+            <div class="crystal-price text-center">
+              <!-- slider: https://github.com/seiyria/bootstrap-slider -->
+              <h5 class="text-left">Price</h5>
+              <span>Free</span>
+              <input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+              <span>2,000</span>
+            </div>
+            <div class="crystal-duration">
+              <h5>Duration</h5>
+              <!-- checkboxes -->
+              <div class="checkbox-item">
+                <input type="checkbox">Half Day Tour
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">One Day Tour
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Overnight Tour
+              </div>
+              
+            </div>
+            <div class="crystal-theme">
+              <h5>Theme</h5>
+              <!-- checkboxes -->
+              <div class="checkbox-item">
+                <input type="checkbox">Active
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Cultural
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Foodie
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Educational
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Hands-on
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Volunteer
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Arts and craft
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox">Children friendly
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-default btn-primary text-center">
+            Filter results
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+        
+        <!-- Narrow down your reseults notification -->
+
+        <!-- <div class="row narrow-results-notif-wrapper">
+          <div class="col-xs-12 narrow-results-notif">
+            <i class="fa fa-binoculars"></i>
+            <p class="lead">Did you know you can narrow down your results by adjusting the filters?</p>
+            <p>Hover over this bar to see!</p>
+            <i class="fa fa-times"></i>
+          </div>
+        </div> -->
+
+        <!-- End -->
+
+        <div class="row results_header center-block">
+          <h2>Search results</h2>
+          <div class="la_breadcrumbs">
+              <ul class="breadcrumb">
+                  <li><a href="#">Thailand</a></li>
+                  <li class="active">Chiang Mai</li>
+              </ul>
+          </div>
+          <div class="geo-dropdown-group center-block text-left">
+              <span>Sort by</span>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle la_results-order" type="button" id="menu3" data-toggle="dropdown">Relevance
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu results-order" role="menu" aria-labelledby="menu3">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Price (high to low)</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Price (low to high)</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <!-- No results jumbotron -->
+
+        <div class="row reset-filters-wrapper">
+          <div class="col-xs-12 reset-filters">
+            <p class="lead text-center">Sorry, there are no results for your current filters.</p>
+            <button class="btn btn-default center-block" type="button" id="reset-filters">Reset all filters</button>
+          </div>
+        </div>
+
+        <!-- End -->
+
+
+        <div class="row results_grid">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <a href="details.html">
+              <div class="card">
+                <div class="slideshow">
+                  <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huatung/1.jpg');">
+                  </div>
+                  <div class="slideshow-overlay">
+                  </div>
+                  <span class="price">
+                    &#3647; 1200
+                  </span>
+                </div>
+                <div class="content">
+                  <h2 class="item_name" max-char="45">Voluntourism at the Hill Side Village</h2>
+                  <span class="item_operator">Mae Kamkam Village</span>
+                  <span class="item_ratings no_ratings">
+                    No ratings yet
+                    <!-- <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i> -->
+                    </span>
+                  <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+                </div>
+                <div class="footer" id="half-day-tour">
+                  <span class="item_duration">Half Day Tour</span>
+                  <span class="item_duration-detail">3.5 hours</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/4.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 3100
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">A Day as an Artisan in Chiang Mai</h2>
+                <span class="item_operator">Local Alike</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="one-day-tour">
+                <span class="item_duration">One Day Tour</span>
+                <span class="item_duration-detail">8 hours</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/3.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 450
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">Morning Fresh Market Tour</h2>
+                <span class="item_operator">Expique Travels</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="half-day-tour">
+                <span class="item_duration">Half Day Tour</span>
+                <span class="item_duration-detail">3 hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/2.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 5200
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">Three Nights Camp Under the Stars at a Tea Plantation</h2>
+                <span class="item_operator">Bangkok Vanguards</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="overnight-tour">
+                <span class="item_duration">Overnight Tour</span>
+                <span class="item_duration-detail">4 Days 3 Nights</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/1.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 19000
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">4D2N Arts and Craft Tour in the Hills</h2>
+                <span class="item_operator">Local Alike</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="one-day-tour">
+                <span class="item_duration">Overnight</span>
+                <span class="item_duration-detail">4 Days 2 Nights</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huatung/6.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 12000
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">Five Star Resort and Volunteering at Local Community</h2>
+                <span class="item_operator">Sheraton x AirAsia</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="one-day-tour">
+                <span class="item_duration">Overnight</span>
+                <span class="item_duration-detail">2 Days 1 Night</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huatung/5.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 400
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">Shopping at Chiang Mai's Favorite Wet Market</h2>
+                <span class="item_operator">Auntie Suratchana</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="half-day-tour">
+                <span class="item_duration">Half Day Tour</span>
+                <span class="item_duration-detail">3 hours</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huatung/4.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 5000
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">2 Nights Hiking for Social Good</h2>
+                <span class="item_operator">Local Alike</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="overnight-tour">
+                <span class="item_duration">Overnight Tour</span>
+                <span class="item_duration-detail">2 Days 1 Night</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huatung/3.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 35000
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">Guided Hike and Resort Stay in Chiang Mai</h2>
+                <span class="item_operator">Bangkok Vanguards</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="overnight-tour">
+                <span class="item_duration">Overnight Tour</span>
+                <span class="item_duration-detail">3 Days 2 Nights</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <div class="slideshow">
+                <div class="slideshow-bg" style="background-image:url('http://localalike.com/share/src/image/showcase/tat_la/huatung/2.jpg');">
+                </div>
+                <div class="slideshow-overlay">
+                </div>
+                <span class="price">
+                  &#3647; 6700
+                </span>
+              </div>
+              <div class="content">
+                <h2 class="item_name" max-char="45">Mae Kampong's Relaxation and Soul Healing Tour</h2>
+                <span class="item_operator">Local Alike</span>
+                <span class="item_ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  </span>
+                <p class="item_desc">Meatloaf biltong tail, pork chop tongue beef ribs landjaeger pork loin turkey boudin andouille. Doner t-bone pork, shankle boudin jerky swine meatball andouille turducken ham hock alcatra.</p>
+              </div>
+              <div class="footer" id="one-day-tour">
+                <span class="item_duration">One Day Tour</span>
+                <span class="item_duration-detail">8 hours</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container-fluid global-footer-wrap">
+    <div class="row global-footer center-block text-center">
+      <div class="col-sm-12">
+        <img class="la-footer-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+        <span class="copyright">Local Alike Dot Com &#0169; 2015</span>
+        <ul class="list-inline text-center">
+          <li>About</li>
+          <li>How this works</li>
+          <li>Privacy Policy</li>
+          <li>View all tours in Thailand</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-slider.js"></script>
+
+  <!-- script for price slider -->
+  <script>
+    $(document).ready(function()
+    {
+      $("#ex2").slider({});
+    });
+  </script>
+  <!-- end -->
+
+  <!-- script for notif hover -->
+  <script>
+    $(document).ready(function(){
+        $('.narrow-results-notif-wrapper').hover(function(){
+            $(this).toggleClass("hover");
+            $('.notif_bg_overlay').toggleClass("show");
+            $('.notif_trigger').toggleClass("hover");
+        });
+    });
+
+    var previousScroll = 10,
+      headerOrgOffset = $('#global-header').height();
+
+      $('#global-header-wrap').height($('#global-header').height());
+
+      $(window).scroll(function () {
+          var currentScroll = $(this).scrollTop();
+          if (currentScroll > headerOrgOffset) {
+              if (currentScroll > previousScroll) {
+                  $('#global-header-wrap').css('top','-51px');
+              } else {
+                  $('#global-header-wrap').css('top','0px');
+              }
+          } 
+          previousScroll = currentScroll;
+      });
+  </script>
+  <!-- end -->
+
+
+</body>
+</html>

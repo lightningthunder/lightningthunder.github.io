@@ -1,0 +1,95 @@
+
+
+.book-now
+{
+	background: #222;
+	padding: 0 30px;
+}
+
+.book-now h3
+{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.book-now span.item_price
+{
+	font-size: 4em;
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+
+.book-now span.item_price::after
+{
+	content: 'per traveler';
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+/* book now module */
+
+.book-box label
+{
+	color: #fff;
+	font-weight: normal;
+}
+
+.book-box .form-group
+{
+	margin-bottom: 0px;
+}
+
+.book-box .input-group
+{
+	width: 100%;
+	text-align: center;
+}
+
+.book-box input.form-control
+{
+	border: 0;
+}
+
+.book-box .form-horizontal .control-label
+{
+	padding: 0;
+	text-align: left;
+	height: auto;
+}
+
+.book-box .select-date,
+.book-box .select-travelers
+{
+	cursor: pointer;
+	background: salmon;
+	color: #fff;
+	border: 0;
+	width: 80px;
+}
+
+.book-box .btn-book-now
+{
+	margin: 30px 0;
+	padding: 8px 20px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) { 
+	.book-box .input-group
+	{
+		width: 90%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) { 
+	.book-box .input-group
+	{
+		width: 100%;
+	}
+}

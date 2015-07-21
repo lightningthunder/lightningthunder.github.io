@@ -1,0 +1,214 @@
+body
+{
+	background: #fafafa;
+}
+
+h2
+{
+	font-size: 1.15em;
+	padding: 2px 5px;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	background: salmon;
+	color: #fafafa;
+	display: inline-block;
+}
+
+li
+{
+	position: relative;
+}
+
+.booking-teddy-bear
+{
+	padding: 80px 0;
+}
+
+.booking-teddy-bear h1
+{
+	font-size: 1.75em;
+}
+
+.booking-teddy-bear ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.booking-teddy-bear ul li 
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.booking-teddy-bear span.glyphicon
+{
+	margin-right: 0.5em;
+	margin-left: 2em;
+	color: #999;
+}
+
+.booking-teddy-bear span.glyphicon.glyphicon-flash
+{
+	color: orange;
+}
+
+.booking-teddy-bear span.glyphicon.glyphicon-lock
+{
+	color: lightgreen;
+}
+
+.booking-teddy-bear span.glyphicon.glyphicon-eye-open
+{
+	color: black;
+}
+
+
+.booking-teddy-bear span.glyphicon:first-of-type
+{
+	margin-left: 0;
+}
+
+.booking-teddy-bear span
+{
+	color: #777;
+}
+
+.add-ons ol
+{
+	font-weight: bold;
+}
+
+.add-ons ol .add-ons-cost
+{
+	display: block;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+.add-ons ol li
+{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 8px;
+	margin-bottom: 15px;
+}
+
+.add-ons ol li:last-child
+{
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.add-ons p.add-ons-desc
+{
+	font-size: 0.85em;
+	color: #777;
+	max-width: 60%;
+	font-weight: normal;
+}
+
+.add-ons button.btn-add-ons
+{
+	float: right;
+	background: lightgreen;
+	color: #fff;
+	font-weight: bold;
+}
+
+.form-row
+{
+	display: block;
+}
+
+#sidebar.affix-top 
+{
+	position: static;
+	width:100%;
+	left: auto;
+}
+
+
+
+@media (min-width: 992px) {
+	#sidebar.affix 
+	{
+	}
+}
+
+@media (min-width: 1170px) {
+	#sidebar.affix 
+	{
+
+	}
+
+	#sidebar.affix .polar-bear
+	{
+/*		display: none;
+*/	}
+
+	.read-list
+	{
+		display: none;
+	}
+
+	#sidebar.affix .read-list
+	{
+		display: block;
+	}
+}
+
+@media (max-height: 700px) {
+	.polar-bear
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+
+	.booking-teddy-bear span.glyphicon
+	{
+/*		display: none;
+*/	}
+
+	.booking-teddy-bear h1
+	{
+		padding: 0 2em;
+	}
+
+	.booking-teddy-bear ul li
+	{
+		display: inline-block;
+		text-align: center;
+		font-size: 10px;
+		margin: 0 5px;
+	}
+
+	.add-ons button.btn-add-ons
+	{
+	  float: initial;
+	  position: absolute;
+	  bottom: 10px;
+	  right: 10px;
+	  padding: 5px;
+	}
+
+	#fixed-card
+	{
+		position: relative;
+		right: initial;
+		width: 100%;
+	}
+
+	.polar-bear
+	{
+		display: none;
+	}
+
+	#grizzly-bear
+	{
+		text-align: center;
+	}
+
+}

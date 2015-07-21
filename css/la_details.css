@@ -1,0 +1,513 @@
+.la_details-hero-wrapper
+{
+	width: 100%;
+	height: 450px;
+	background: url('../img/la_blog-3.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.la_details-hero-wrapper h1,
+.la_details-hero-wrapper h2
+{
+	padding: 0px;
+}
+
+.la_details-hero-wrapper h1
+{
+	width: 100%;
+	font-size: 2em;
+	padding-bottom: 0px;
+	padding-top: 15px;
+	margin-top: 0px;
+}
+
+.la_details-hero-wrapper h2
+{
+	font-size: 1.15em;
+	font-weight: normal;
+	color: #999;
+	padding-top: 10px;
+	margin-top: 0px;
+}
+
+.la_details-hero-wrapper .package-details
+{
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*max-width: 1140px;*/
+	padding: 0px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.8);
+}
+.la_details-hero-wrapper .package-details .block-left
+{
+	padding: 10px 30px 20px;
+}
+
+.la_details-hero-wrapper .package-details p.item_geo,
+.la_details-hero-wrapper .package-details p.item_geo_2
+{
+	font-size: 1.25em;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	display: inline;
+	color: #999;
+}
+
+.la_details-hero-wrapper .package-details p.item_geo_2
+{
+	margin-right: 10px;
+}
+
+.la_details-hero-wrapper .package-details p.item_geo::after
+{
+	content: ', ';
+}
+
+.la_details-hero-wrapper .package-details a.item_geo_map
+{
+	position: relative;
+	top: -2px;
+	background-color: #555;
+	border: 0;
+	line-height: 20px;
+	padding: 1px 8px;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+.la_details-hero-wrapper .package-details a.item_geo_map span
+{
+	margin-left: 3px;
+}
+
+
+.la_details-hero-wrapper .package-details .mini-details
+{
+	min-height: 115px;
+	height: 100%;
+	padding: 22px 15px 15px;
+}
+
+.la_details-hero-wrapper .package-details p.item_duration,
+.la_details-hero-wrapper .package-details p.item_operator,
+.la_details-hero-wrapper .package-details p.item_fitness,
+.la_details-hero-wrapper .package-details p.item_climate
+{
+	color: #fff;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 5px 0;
+}
+
+.la_details-hero-wrapper .package-details p.item_duration::before,
+.la_details-hero-wrapper .package-details p.item_operator::before,
+.la_details-hero-wrapper .package-details p.item_fitness::before,
+.la_details-hero-wrapper .package-details p.item_climate::before
+{
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #999;
+	margin-bottom: 5px;
+	line-height: 1;
+}
+
+.la_details-hero-wrapper .package-details p.item_duration::before
+{
+	content: 'Tour duration';
+}
+
+.la_details-hero-wrapper .package-details p.item_operator::before
+{
+	content: 'Tour operator';
+}
+
+.la_details-hero-wrapper .package-details p.item_fitness::before
+{
+	content: 'Physical demand';
+}
+
+.la_details-hero-wrapper .package-details p.item_climate::before
+{
+	content: 'Local climate';
+}
+
+/* side bar */
+
+.misc-bar,
+.trip-content,
+.book-now
+{
+}
+
+.misc-bar
+{
+	padding: 0 20px;
+	background: #fafafa;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
+
+.misc-bar h3,
+.trip-content h3,
+.book-now h3
+{
+	padding-bottom: 15px;
+	color: #999;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.misc-bar h3
+{
+}
+
+.btn-read-more-reviews,
+.btn-itinerary-launcher
+{
+	background: #eee;
+	border: 0;
+	color: #999;
+	width: auto;
+	display: inline-block;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+.btn-read-more-reviews:hover,
+.btn-read-more-reviews:focus,
+.btn-itinerary-launcher:hover,
+.btn-itinerary-launcher:focus
+
+{
+	background: #d6d6d6;
+	color: #777;
+}
+
+.btn-read-more-reviews span,
+.btn-itinerary-launcher span
+{
+	margin-left: 3px;
+	font-size: 0.75em;
+}
+
+.rewards-box
+{
+
+}
+
+.trip-content
+{
+	padding: 40px 15px;
+	background: #fff;
+	box-shadow: 4px 0px 10px -10px rgba(0, 0, 0, 0.2);
+	z-index: 99;
+}
+
+.trip-content h4
+{
+	font-size: 20px;
+	color: salmon;
+}
+
+.trip-content p
+{
+	color: #777;
+}
+
+.trip-content p.lead
+{
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.trip-content .fa
+{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+	line-height: 24px;
+	text-align: center;
+	position: relative;
+	top: -3px;
+}
+
+.trip-content #la_photo-gallery .fa
+{
+	background: orange;
+}
+
+.trip-content #la_package-details .fa
+{
+	background: #0066ff;
+}
+
+.trip-content #la_itinerary .fa
+{
+	background: red;
+}
+
+.trip-content #la_tips-notes .fa
+{
+	background: lightgreen;
+}
+
+.trip-content ul li,
+.trip-content .inclusions ul,
+.trip-content .exclusions ul,
+.trip-content .expectations ul
+{
+	margin-left: -10px;
+}
+
+.trip-content .expectations ul
+{
+
+}
+
+.trip-content .expectations ul li.yes
+{
+}
+
+.trip-content .expectations ul li.no
+{
+	color: #999;
+}
+
+.trip-content .expectations ul li span.local-says
+{
+	font-size: 0.9em;
+	float: right;
+}
+
+.trip-content .expectations ul li span.local-says::before
+{
+	content: '"';
+}
+
+.trip-content .expectations ul li span.local-says::after
+{
+	content: '"';
+}
+
+.trip-content .add-ons ol
+{
+	margin-left: -15px;
+}
+
+.trip-content .add-ons ol .add-ons-cost
+{
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+.trip-content .add-ons ol span.add-ons-cost-price::before
+{
+	content: '+ ';
+}
+
+.trip-content .add-ons ol span.add-ons-cost-price,
+.trip-content .add-ons ol span.add-ons-cost-unit
+{
+	color: #999;
+	font-weight: 600;
+}
+
+.trip-content .add-ons ol span.add-ons-cost-price
+{
+	color: #444;
+}
+
+.trip-content .additional-list ul li
+{
+	margin-bottom: 10px;
+}
+
+.trip-content .itinerary
+{
+
+}
+
+.trip-content .itinerary .itin-chunk
+{
+	/*border-bottom: 1px dotted #fafafa;
+	#fafafa;*/
+	box-shadow: 0px 10px 8px -14px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.trip-content .itinerary .itin-chunk:last-of-type
+{
+	border-bottom: none;
+	box-shadow: none;
+}
+
+.trip-content .itinerary .itin-time h5
+{
+	text-transform: uppercase;
+	color: #888;
+	font-size: 0.8em;
+}
+
+.trip-content .itinerary .itin-details h5
+{
+	margin-bottom: 5px;
+}
+
+.trip-content .itinerary .itin-details p
+{
+
+}
+
+.why-wrapper
+{
+	background: #fafafa;
+	padding: 5px 15px;
+	margin: 20px auto;
+}
+
+#imagelightbox
+{
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.btn-book-now-penguin
+{
+	
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 25px;
+	right: 25px;
+	font-size: 24px;
+	padding: 0px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-weight: normal;
+	color: #fff;
+	opacity: 0;
+}
+
+@media (max-width: 1169px) { 
+	h1.h1
+	{
+		font-size: 1.75em;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) { 
+
+	h1.h1
+	{
+		font-size: 1.5em;
+	}
+
+	.la_details-hero-wrapper
+	{
+		height: calc(100vh + 50px);
+	}
+
+	.la_details-hero-wrapper .package-details
+	{
+		padding: 0px;
+		text-align: center;
+	}
+
+	.la_details-hero-wrapper .package-details h1.h1
+	{
+		margin-bottom: 10px;
+	}
+
+
+	.la_details-hero-wrapper .package-details p.item_geo,
+	.la_details-hero-wrapper .package-details p.item_geo_2
+	{
+		display: block;
+		line-height: 1;
+		font-size: 1em;
+	}
+
+	.la_details-hero-wrapper .package-details .item_geo_map
+	{
+		margin-top: 8px;
+	}
+
+	.la_details-hero-wrapper .package-details .mini-details
+	{
+		background: #eee;
+		padding: 15px 5px 15px;
+		border-bottom: 1px solid #eee;
+		text-align: center;
+		font-size: 0.9em;
+		min-height: 0;
+		padding: 8px 0;
+	}
+
+	.la_details-hero-wrapper .package-details .mini-details p
+	{
+		color: #333;
+		line-height: 1.2;
+	}
+
+	.la_details-hero-wrapper h1
+	{
+		margin-bottom: 2px;
+		line-height: 1.2;
+	}
+
+	.trip-content
+	{
+		box-shadow: none;
+		padding: 20px 0;
+	}
+
+	.trip-content .expectations ul li.no
+	{
+		text-decoration: line-through;
+	}
+
+
+	.trip-content .expectations ul li span.local-says
+	{
+		display: none;
+	}
+
+	.trip-content .add-ons ol .add-ons-cost
+	{
+		display: block;
+		font-size: 0.8em;
+		margin-bottom: 15px;
+	}
+
+	.btn-book-now-penguin
+	{
+		background: rgba(255, 160, 122, 0.75);
+		opacity: 1;
+		z-index: 999;
+		border: 0;
+	}
+
+	.btn-book-now-penguin:hover,
+	.btn-book-now-penguin:active,
+	.btn-book-now-penguin:focus
+	{
+		background: rgba(255, 160, 122, 0.75);
+	}
+
+}

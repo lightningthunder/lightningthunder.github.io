@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="css/la_global.css">
+  <link rel="stylesheet" href="css/la_cards.css">
+  <link rel="stylesheet" href="css/la_payment.css">
+  <link rel="stylesheet" href="css/la_input.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/la_book-box.css">
+
+</head>
+<body>
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+    <div class="container-fluid" id="global-header">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Create Account</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      
+      <!-- This is teddy bear header -->
+      <div class="text-center booking-teddy-bear">
+        <h1 class="text-center">
+          Congrats! Your booking request is available.
+        </h1>
+        <ul>
+          <li><span class="glyphicon glyphicon-flash"></span>
+          <span>Instant Booking</span></li>
+          <li><span class="glyphicon glyphicon-lock"></span>
+          <span>Secure Payment</span></li>
+          <li><span class="glyphicon glyphicon-eye-open"></span>
+          <span>No Hidden Fees</span></li>
+        </ul>
+      </div>
+
+      <!-- booking summary -->
+      <div class="col-xs-12 col-md-4 col-md-push-8">
+        <div class="card booking-summary" id="sidebar">
+          <h3 class="text-center">Your Booking Summary</h3>
+          <h2 class="item_name text-center" max-char="45">Immersive Local Living in the Valley of Chiang Mai</h2>
+
+          <div class="col-xs-12 col-lg-12">
+            <ul class="summary-list list-unstyled clearfix">
+              <li>
+                <span class="item">Base price (7200 x 2 travelers)</span>
+                <span class="value-price">14400</span>
+              </li>
+              <li>
+                <span class="item additional">Private van x 1</span>
+                <span class="value-price">2400</span>
+              </li>
+              <li>
+                <span class="item additional">Advanced cooking class x 2</span>
+                <span class="value-price">400</span>
+              </li>
+              <li>
+                <span class="item additional">Lanna cultural dance x 1</span>
+                <span class="value-price">1500</span>
+              </li>
+
+              <li class="subtotal">
+                <span class="item total"></span>
+                <span class="value-price">18700</span>
+              </li>
+
+              <li class="discount">
+                <span class="item discount">AIS Traveller SIM discount (10%)</span>
+                <span class="value-price">-1870</span>
+              </li>
+
+              <li>
+                <span class="item additional">Value added tax (7%)</span>
+                <span class="value-price">1178</span>
+              </li>
+
+              <li class="grandtotal">
+                <span class="item grandtotal">(After taxes)</span>
+                <span class="value-price">18008</span>
+              </li>
+
+            </ul>
+            <div class="polar-bear clearfix">
+              <div class="col-xs-12 col-lg-12">
+                <p class="item_geo">Mae Kampong Village</p>
+                <p class="item_geo_2">Chiang Mai, Thailand</p>
+              </div>
+              <div class="col-xs-12 col-lg-6">
+                <p class="item_duration">3 Days 2 Nights</p>
+              </div>
+              <div class="col-xs-12 col-lg-6">
+                <p class="item_operator">Bangkok Vanguards</p>
+              </div>
+              <div class="col-xs-12 col-lg-6">
+                <p class="item_starts">2 June 1990</p>
+              </div>
+              <div class="col-xs-12 col-lg-6">
+                <p class="item_ends">4 June 1990</p>
+              </div>
+            </div>
+            <ul class="read-list list-unstyled text-center">
+              <li><a>Read our cancellation policy</a></li>
+              <li><a>Read about our terms and condition</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- payment content -->
+      <div class="col-xs-12 col-md-8 col-md-pull-4" id="la_payment-content">
+        
+        <!-- these are add-ons -->
+        <div class="card booking-add-ons add-ons">
+          <h2>Upgrades</h2>
+          <ol class="clearfix">
+            <li>Private van pick-up/drop-off from Chiang Mai
+              <button class="btn btn-sm btn-add-ons" href="#">Add to package</button>  
+              <div class="add-ons-cost">
+                <span class="add-ons-cost-price">2400 THB</span>
+                <span class="add-ons-cost-unit">for one van that fits up to 8</span>
+              </div>
+              <p class="add-ons-desc">
+                Air-conditioned Toyota private van pick-up and drop-off to any major Chiang Mai destinations. Price includes gas, van driver, and insurance.
+              </p>
+              
+            </li>
+            <li>Advanced cooking class
+              <button class="btn btn-sm btn-add-ons" href="#">Add to package</button>
+              <div class="add-ons-cost">
+                <span class="add-ons-cost-price">200 THB</span>
+                <span class="add-ons-cost-unit">per person</span>
+              </div>
+              <p class="add-ons-desc">
+                Three hour special cooking class led by Aunt Ya. Get accustomed to local herbs and how they make use of their surroundings in cooking amazing, savory, Thai dishes.
+              </p>
+            </li>
+            <li>Lanna cultural performance 
+              <button class="btn btn-sm btn-add-ons" href="#">Add to package</button>
+              <div class="add-ons-cost">
+                <span class="add-ons-cost-price">1500 THB</span>
+                <span class="add-ons-cost-unit">per show</span>
+              </div>
+              <p class="add-ons-desc">
+                Watch the amazing performance by local youths. Upgrade to purchase ticket to the show. One ticket covers up to 10 travelers.
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- these are add-ons -->
+        <div class="card booking-add-ons add-ons">
+          <hr>
+          <h2>Promotion Code</h2>
+          <ul class="clearfix list-unstyled">
+            <li>
+              <div class="col-xs-12 col-lg-10">
+                <p>We love deals! <a href="#">Subscribe to our newsletter</a> for the latest promotion codes or use your AIS Traveller SIM phone number to redeem a privilege.</p>
+                <p><small>Terms and conditions apply. Only one promo code is applicable to a transaction.</small></p>
+              </div>
+            </li>
+            <li>
+              <div class="col-xs-12 col-lg-8 form-group required">
+                <input class="form-control" size="4" type="text" placeholder="Enter your promo code here for instant discounts.">
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <button class="btn btn-sm btn-primary" style="border:none" href="#">Redeem Promo Code</button>    
+              </div>
+            </li>
+          </ul>
+                
+        </div>
+
+        <!-- these are add-ons -->
+        <div class="card booking-payment payment">
+          <hr>
+          <h2>Payment</h2>
+          <div class="form-row clearfix">
+            <div class="col-xs-12 col-lg-6 form-group required">
+              <label class="control-label">Country</label>
+              <!-- country list (iso) -->
+              <select name="Country" id="country-selector" autofocus="autofocus" autocorrect="off" autocomplete="off">
+                <option value="" selected="selected">Select Country</option>
+                <option value="Afghanistan" data-alternative-spellings="AF افغانستان">Afghanistan</option>
+                <option value="Åland Islands" data-alternative-spellings="AX Aaland Aland" data-relevancy-booster="0.5">Åland Islands</option>
+                <option value="Albania" data-alternative-spellings="AL">Albania</option>
+                <option value="Algeria" data-alternative-spellings="DZ الجزائر">Algeria</option>
+                <option value="American Samoa" data-alternative-spellings="AS" data-relevancy-booster="0.5">American Samoa</option>
+                <option value="Andorra" data-alternative-spellings="AD" data-relevancy-booster="0.5">Andorra</option>
+                <option value="Angola" data-alternative-spellings="AO">Angola</option>
+                <option value="Anguilla" data-alternative-spellings="AI" data-relevancy-booster="0.5">Anguilla</option>
+                <option value="Antarctica" data-alternative-spellings="AQ" data-relevancy-booster="0.5">Antarctica</option>
+                <option value="Antigua And Barbuda" data-alternative-spellings="AG" data-relevancy-booster="0.5">Antigua And Barbuda</option>
+                <option value="Argentina" data-alternative-spellings="AR">Argentina</option>
+                <option value="Armenia" data-alternative-spellings="AM Հայաստան">Armenia</option>
+                <option value="Aruba" data-alternative-spellings="AW" data-relevancy-booster="0.5">Aruba</option>
+                <option value="Australia" data-alternative-spellings="AU" data-relevancy-booster="1.5">Australia</option>
+                <option value="Austria" data-alternative-spellings="AT Österreich Osterreich Oesterreich ">Austria</option>
+                <option value="Azerbaijan" data-alternative-spellings="AZ">Azerbaijan</option>
+                <option value="Bahamas" data-alternative-spellings="BS">Bahamas</option>
+                <option value="Bahrain" data-alternative-spellings="BH البحرين">Bahrain</option>
+                <option value="Bangladesh" data-alternative-spellings="BD বাংলাদেশ" data-relevancy-booster="2">Bangladesh</option>
+                <option value="Barbados" data-alternative-spellings="BB">Barbados</option>
+                <option value="Belarus" data-alternative-spellings="BY Беларусь">Belarus</option>
+                <option value="Belgium" data-alternative-spellings="BE België Belgie Belgien Belgique" data-relevancy-booster="1.5">Belgium</option>
+                <option value="Belize" data-alternative-spellings="BZ">Belize</option>
+                <option value="Benin" data-alternative-spellings="BJ">Benin</option>
+                <option value="Bermuda" data-alternative-spellings="BM" data-relevancy-booster="0.5">Bermuda</option>
+                <option value="Bhutan" data-alternative-spellings="BT भूटान">Bhutan</option>
+                <option value="Bolivia" data-alternative-spellings="BO">Bolivia</option>
+                <option value="Bonaire, Sint Eustatius and Saba" data-alternative-spellings="BQ">Bonaire, Sint Eustatius and Saba</option>
+                <option value="Bosnia and Herzegovina" data-alternative-spellings="BA BiH Bosna i Hercegovina Босна и Херцеговина">Bosnia and Herzegovina</option>
+                <option value="Botswana" data-alternative-spellings="BW">Botswana</option>
+                <option value="Bouvet Island" data-alternative-spellings="BV">Bouvet Island</option>
+                <option value="Brazil" data-alternative-spellings="BR Brasil" data-relevancy-booster="2">Brazil</option>
+                <option value="British Indian Ocean Territory" data-alternative-spellings="IO">British Indian Ocean Territory</option>
+                <option value="Brunei Darussalam" data-alternative-spellings="BN">Brunei Darussalam</option>
+                <option value="Bulgaria" data-alternative-spellings="BG България">Bulgaria</option>
+                <option value="Burkina Faso" data-alternative-spellings="BF">Burkina Faso</option>
+                <option value="Burundi" data-alternative-spellings="BI">Burundi</option>
+                <option value="Cambodia" data-alternative-spellings="KH កម្ពុជា">Cambodia</option>
+                <option value="Cameroon" data-alternative-spellings="CM">Cameroon</option>
+                <option value="Canada" data-alternative-spellings="CA" data-relevancy-booster="2">Canada</option>
+                <option value="Cape Verde" data-alternative-spellings="CV Cabo">Cape Verde</option>
+                <option value="Cayman Islands" data-alternative-spellings="KY" data-relevancy-booster="0.5">Cayman Islands</option>
+                <option value="Central African Republic" data-alternative-spellings="CF">Central African Republic</option>
+                <option value="Chad" data-alternative-spellings="TD تشاد‎ Tchad">Chad</option>
+                <option value="Chile" data-alternative-spellings="CL">Chile</option>
+                <option value="China" data-relevancy-booster="3.5" data-alternative-spellings="CN Zhongguo Zhonghua Peoples Republic 中国/中华">China</option>
+                <option value="Christmas Island" data-alternative-spellings="CX" data-relevancy-booster="0.5">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands" data-alternative-spellings="CC" data-relevancy-booster="0.5">Cocos (Keeling) Islands</option>
+                <option value="Colombia" data-alternative-spellings="CO">Colombia</option>
+                <option value="Comoros" data-alternative-spellings="KM جزر القمر">Comoros</option>
+                <option value="Congo" data-alternative-spellings="CG">Congo</option>
+                <option value="Congo, the Democratic Republic of the" data-alternative-spellings="CD Congo-Brazzaville Repubilika ya Kongo">Congo, the Democratic Republic of the</option>
+                <option value="Cook Islands" data-alternative-spellings="CK" data-relevancy-booster="0.5">Cook Islands</option>
+                <option value="Costa Rica" data-alternative-spellings="CR">Costa Rica</option>
+                <option value="Côte d'Ivoire" data-alternative-spellings="CI Cote dIvoire">Côte d'Ivoire</option>
+                <option value="Croatia" data-alternative-spellings="HR Hrvatska">Croatia</option>
+                <option value="Cuba" data-alternative-spellings="CU">Cuba</option>
+                <option value="Curaçao" data-alternative-spellings="CW Curacao">Curaçao</option>
+                <option value="Cyprus" data-alternative-spellings="CY Κύπρος Kýpros Kıbrıs">Cyprus</option>
+                <option value="Czech Republic" data-alternative-spellings="CZ Česká Ceska">Czech Republic</option>
+                <option value="Denmark" data-alternative-spellings="DK Danmark" data-relevancy-booster="1.5">Denmark</option>
+                <option value="Djibouti" data-alternative-spellings="DJ جيبوتي‎ Jabuuti Gabuuti">Djibouti</option>
+                <option value="Dominica" data-alternative-spellings="DM Dominique" data-relevancy-booster="0.5">Dominica</option>
+                <option value="Dominican Republic" data-alternative-spellings="DO">Dominican Republic</option>
+                <option value="Ecuador" data-alternative-spellings="EC">Ecuador</option>
+                <option value="Egypt" data-alternative-spellings="EG" data-relevancy-booster="1.5">Egypt</option>
+                <option value="El Salvador" data-alternative-spellings="SV">El Salvador</option>
+                <option value="Equatorial Guinea" data-alternative-spellings="GQ">Equatorial Guinea</option>
+                <option value="Eritrea" data-alternative-spellings="ER إرتريا ኤርትራ">Eritrea</option>
+                <option value="Estonia" data-alternative-spellings="EE Eesti">Estonia</option>
+                <option value="Ethiopia" data-alternative-spellings="ET ኢትዮጵያ">Ethiopia</option>
+                <option value="Falkland Islands (Malvinas)" data-alternative-spellings="FK" data-relevancy-booster="0.5">Falkland Islands (Malvinas)</option>
+                <option value="Faroe Islands" data-alternative-spellings="FO Føroyar Færøerne" data-relevancy-booster="0.5">Faroe Islands</option>
+                <option value="Fiji" data-alternative-spellings="FJ Viti फ़िजी">Fiji</option>
+                <option value="Finland" data-alternative-spellings="FI Suomi">Finland</option>
+                <option value="France" data-alternative-spellings="FR République française" data-relevancy-booster="2.5">France</option>
+                <option value="French Guiana" data-alternative-spellings="GF">French Guiana</option>
+                <option value="French Polynesia" data-alternative-spellings="PF Polynésie française">French Polynesia</option>
+                <option value="French Southern Territories" data-alternative-spellings="TF">French Southern Territories</option>
+                <option value="Gabon" data-alternative-spellings="GA République Gabonaise">Gabon</option>
+                <option value="Gambia" data-alternative-spellings="GM">Gambia</option>
+                <option value="Georgia" data-alternative-spellings="GE საქართველო">Georgia</option>
+                <option value="Germany" data-alternative-spellings="DE Bundesrepublik Deutschland" data-relevancy-booster="3">Germany</option>
+                <option value="Ghana" data-alternative-spellings="GH">Ghana</option>
+                <option value="Gibraltar" data-alternative-spellings="GI" data-relevancy-booster="0.5">Gibraltar</option>
+                <option value="Greece" data-alternative-spellings="GR Ελλάδα" data-relevancy-booster="1.5">Greece</option>
+                <option value="Greenland" data-alternative-spellings="GL grønland" data-relevancy-booster="0.5">Greenland</option>
+                <option value="Grenada" data-alternative-spellings="GD">Grenada</option>
+                <option value="Guadeloupe" data-alternative-spellings="GP">Guadeloupe</option>
+                <option value="Guam" data-alternative-spellings="GU">Guam</option>
+                <option value="Guatemala" data-alternative-spellings="GT">Guatemala</option>
+                <option value="Guernsey" data-alternative-spellings="GG" data-relevancy-booster="0.5">Guernsey</option>
+                <option value="Guinea" data-alternative-spellings="GN">Guinea</option>
+                <option value="Guinea-Bissau" data-alternative-spellings="GW">Guinea-Bissau</option>
+                <option value="Guyana" data-alternative-spellings="GY">Guyana</option>
+                <option value="Haiti" data-alternative-spellings="HT">Haiti</option>
+                <option value="Heard Island and McDonald Islands" data-alternative-spellings="HM">Heard Island and McDonald Islands</option>
+                <option value="Holy See (Vatican City State)" data-alternative-spellings="VA" data-relevancy-booster="0.5">Holy See (Vatican City State)</option>
+                <option value="Honduras" data-alternative-spellings="HN">Honduras</option>
+                <option value="Hong Kong" data-alternative-spellings="HK 香港">Hong Kong</option>
+                <option value="Hungary" data-alternative-spellings="HU Magyarország">Hungary</option>
+                <option value="Iceland" data-alternative-spellings="IS Island">Iceland</option>
+                <option value="India" data-alternative-spellings="IN भारत गणराज्य Hindustan" data-relevancy-booster="3">India</option>
+                <option value="Indonesia" data-alternative-spellings="ID" data-relevancy-booster="2">Indonesia</option>
+                <option value="Iran, Islamic Republic of" data-alternative-spellings="IR ایران">Iran, Islamic Republic of</option>
+                <option value="Iraq" data-alternative-spellings="IQ العراق‎">Iraq</option>
+                <option value="Ireland" data-alternative-spellings="IE Éire" data-relevancy-booster="1.2">Ireland</option>
+                <option value="Isle of Man" data-alternative-spellings="IM" data-relevancy-booster="0.5">Isle of Man</option>
+                <option value="Israel" data-alternative-spellings="IL إسرائيل ישראל">Israel</option>
+                <option value="Italy" data-alternative-spellings="IT Italia" data-relevancy-booster="2">Italy</option>
+                <option value="Jamaica" data-alternative-spellings="JM">Jamaica</option>
+                <option value="Japan" data-alternative-spellings="JP Nippon Nihon 日本" data-relevancy-booster="2.5">Japan</option>
+                <option value="Jersey" data-alternative-spellings="JE" data-relevancy-booster="0.5">Jersey</option>
+                <option value="Jordan" data-alternative-spellings="JO الأردن">Jordan</option>
+                <option value="Kazakhstan" data-alternative-spellings="KZ Қазақстан Казахстан">Kazakhstan</option>
+                <option value="Kenya" data-alternative-spellings="KE">Kenya</option>
+                <option value="Kiribati" data-alternative-spellings="KI">Kiribati</option>
+                <option value="Korea, Democratic People's Republic of" data-alternative-spellings="KP North Korea">Korea, Democratic People's Republic of</option>
+                <option value="Korea, Republic of" data-alternative-spellings="KR South Korea" data-relevancy-booster="1.5">Korea, Republic of</option>
+                <option value="Kuwait" data-alternative-spellings="KW الكويت">Kuwait</option>
+                <option value="Kyrgyzstan" data-alternative-spellings="KG Кыргызстан">Kyrgyzstan</option>
+                <option value="Lao People's Democratic Republic" data-alternative-spellings="LA">Lao People's Democratic Republic</option>
+                <option value="Latvia" data-alternative-spellings="LV Latvija">Latvia</option>
+                <option value="Lebanon" data-alternative-spellings="LB لبنان">Lebanon</option>
+                <option value="Lesotho" data-alternative-spellings="LS">Lesotho</option>
+                <option value="Liberia" data-alternative-spellings="LR">Liberia</option>
+                <option value="Libyan Arab Jamahiriya" data-alternative-spellings="LY ليبيا">Libyan Arab Jamahiriya</option>
+                <option value="Liechtenstein" data-alternative-spellings="LI">Liechtenstein</option>
+                <option value="Lithuania" data-alternative-spellings="LT Lietuva">Lithuania</option>
+                <option value="Luxembourg" data-alternative-spellings="LU">Luxembourg</option>
+                <option value="Macao" data-alternative-spellings="MO">Macao</option>
+                <option value="Macedonia, The Former Yugoslav Republic Of" data-alternative-spellings="MK Македонија">Macedonia, The Former Yugoslav Republic Of</option>
+                <option value="Madagascar" data-alternative-spellings="MG Madagasikara">Madagascar</option>
+                <option value="Malawi" data-alternative-spellings="MW">Malawi</option>
+                <option value="Malaysia" data-alternative-spellings="MY">Malaysia</option>
+                <option value="Maldives" data-alternative-spellings="MV">Maldives</option>
+                <option value="Mali" data-alternative-spellings="ML">Mali</option>
+                <option value="Malta" data-alternative-spellings="MT">Malta</option>
+                <option value="Marshall Islands" data-alternative-spellings="MH" data-relevancy-booster="0.5">Marshall Islands</option>
+                <option value="Martinique" data-alternative-spellings="MQ">Martinique</option>
+                <option value="Mauritania" data-alternative-spellings="MR الموريتانية">Mauritania</option>
+                <option value="Mauritius" data-alternative-spellings="MU">Mauritius</option>
+                <option value="Mayotte" data-alternative-spellings="YT">Mayotte</option>
+                <option value="Mexico" data-alternative-spellings="MX Mexicanos" data-relevancy-booster="1.5">Mexico</option>
+                <option value="Micronesia, Federated States of" data-alternative-spellings="FM">Micronesia, Federated States of</option>
+                <option value="Moldova, Republic of" data-alternative-spellings="MD">Moldova, Republic of</option>
+                <option value="Monaco" data-alternative-spellings="MC">Monaco</option>
+                <option value="Mongolia" data-alternative-spellings="MN Mongγol ulus Монгол улс">Mongolia</option>
+                <option value="Montenegro" data-alternative-spellings="ME">Montenegro</option>
+                <option value="Montserrat" data-alternative-spellings="MS" data-relevancy-booster="0.5">Montserrat</option>
+                <option value="Morocco" data-alternative-spellings="MA المغرب">Morocco</option>
+                <option value="Mozambique" data-alternative-spellings="MZ Moçambique">Mozambique</option>
+                <option value="Myanmar" data-alternative-spellings="MM">Myanmar</option>
+                <option value="Namibia" data-alternative-spellings="NA Namibië">Namibia</option>
+                <option value="Nauru" data-alternative-spellings="NR Naoero" data-relevancy-booster="0.5">Nauru</option>
+                <option value="Nepal" data-alternative-spellings="NP नेपाल">Nepal</option>
+                <option value="Netherlands" data-alternative-spellings="NL Holland Nederland" data-relevancy-booster="1.5">Netherlands</option>
+                <option value="New Caledonia" data-alternative-spellings="NC" data-relevancy-booster="0.5">New Caledonia</option>
+                <option value="New Zealand" data-alternative-spellings="NZ Aotearoa">New Zealand</option>
+                <option value="Nicaragua" data-alternative-spellings="NI">Nicaragua</option>
+                <option value="Niger" data-alternative-spellings="NE Nijar">Niger</option>
+                <option value="Nigeria" data-alternative-spellings="NG Nijeriya Naíjíríà" data-relevancy-booster="1.5">Nigeria</option>
+                <option value="Niue" data-alternative-spellings="NU" data-relevancy-booster="0.5">Niue</option>
+                <option value="Norfolk Island" data-alternative-spellings="NF" data-relevancy-booster="0.5">Norfolk Island</option>
+                <option value="Northern Mariana Islands" data-alternative-spellings="MP" data-relevancy-booster="0.5">Northern Mariana Islands</option>
+                <option value="Norway" data-alternative-spellings="NO Norge Noreg" data-relevancy-booster="1.5">Norway</option>
+                <option value="Oman" data-alternative-spellings="OM عمان">Oman</option>
+                <option value="Pakistan" data-alternative-spellings="PK پاکستان" data-relevancy-booster="2">Pakistan</option>
+                <option value="Palau" data-alternative-spellings="PW" data-relevancy-booster="0.5">Palau</option>
+                <option value="Palestinian Territory, Occupied" data-alternative-spellings="PS فلسطين">Palestinian Territory, Occupied</option>
+                <option value="Panama" data-alternative-spellings="PA">Panama</option>
+                <option value="Papua New Guinea" data-alternative-spellings="PG">Papua New Guinea</option>
+                <option value="Paraguay" data-alternative-spellings="PY">Paraguay</option>
+                <option value="Peru" data-alternative-spellings="PE">Peru</option>
+                <option value="Philippines" data-alternative-spellings="PH Pilipinas" data-relevancy-booster="1.5">Philippines</option>
+                <option value="Pitcairn" data-alternative-spellings="PN" data-relevancy-booster="0.5">Pitcairn</option>
+                <option value="Poland" data-alternative-spellings="PL Polska" data-relevancy-booster="1.25">Poland</option>
+                <option value="Portugal" data-alternative-spellings="PT Portuguesa" data-relevancy-booster="1.5">Portugal</option>
+                <option value="Puerto Rico" data-alternative-spellings="PR">Puerto Rico</option>
+                <option value="Qatar" data-alternative-spellings="QA قطر">Qatar</option>
+                <option value="Réunion" data-alternative-spellings="RE Reunion">Réunion</option>
+                <option value="Romania" data-alternative-spellings="RO Rumania Roumania România">Romania</option>
+                <option value="Russian Federation" data-alternative-spellings="RU Rossiya Российская Россия" data-relevancy-booster="2.5">Russian Federation</option>
+                <option value="Rwanda" data-alternative-spellings="RW">Rwanda</option>
+                <option value="Saint Barthélemy" data-alternative-spellings="BL St. Barthelemy">Saint Barthélemy</option>
+                <option value="Saint Helena" data-alternative-spellings="SH St.">Saint Helena</option>
+                <option value="Saint Kitts and Nevis" data-alternative-spellings="KN St.">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia" data-alternative-spellings="LC St.">Saint Lucia</option>
+                <option value="Saint Martin (French Part)" data-alternative-spellings="MF St.">Saint Martin (French Part)</option>
+                <option value="Saint Pierre and Miquelon" data-alternative-spellings="PM St.">Saint Pierre and Miquelon</option>
+                <option value="Saint Vincent and the Grenadines" data-alternative-spellings="VC St.">Saint Vincent and the Grenadines</option>
+                <option value="Samoa" data-alternative-spellings="WS">Samoa</option>
+                <option value="San Marino" data-alternative-spellings="SM RSM Repubblica">San Marino</option>
+                <option value="Sao Tome and Principe" data-alternative-spellings="ST">Sao Tome and Principe</option>
+                <option value="Saudi Arabia" data-alternative-spellings="SA السعودية">Saudi Arabia</option>
+                <option value="Senegal" data-alternative-spellings="SN Sénégal">Senegal</option>
+                <option value="Serbia" data-alternative-spellings="RS Србија Srbija">Serbia</option>
+                <option value="Seychelles" data-alternative-spellings="SC" data-relevancy-booster="0.5">Seychelles</option>
+                <option value="Sierra Leone" data-alternative-spellings="SL">Sierra Leone</option>
+                <option value="Singapore" data-alternative-spellings="SG Singapura  சிங்கப்பூர் குடியரசு 新加坡共和国">Singapore</option>
+                <option value="Sint Maarten (Dutch Part)" data-alternative-spellings="SX">Sint Maarten (Dutch Part)</option>
+                <option value="Slovakia" data-alternative-spellings="SK Slovenská Slovensko">Slovakia</option>
+                <option value="Slovenia" data-alternative-spellings="SI Slovenija">Slovenia</option>
+                <option value="Solomon Islands" data-alternative-spellings="SB">Solomon Islands</option>
+                <option value="Somalia" data-alternative-spellings="SO الصومال">Somalia</option>
+                <option value="South Africa" data-alternative-spellings="ZA RSA Suid-Afrika">South Africa</option>
+                <option value="South Georgia and the South Sandwich Islands" data-alternative-spellings="GS">South Georgia and the South Sandwich Islands</option>
+                <option value="South Sudan" data-alternative-spellings="SS">South Sudan</option>
+                <option value="Spain" data-alternative-spellings="ES España" data-relevancy-booster="2">Spain</option>
+                <option value="Sri Lanka" data-alternative-spellings="LK ශ්‍රී ලංකා இலங்கை Ceylon">Sri Lanka</option>
+                <option value="Sudan" data-alternative-spellings="SD السودان">Sudan</option>
+                <option value="Suriname" data-alternative-spellings="SR शर्नम् Sarnam Sranangron">Suriname</option>
+                <option value="Svalbard and Jan Mayen" data-alternative-spellings="SJ" data-relevancy-booster="0.5">Svalbard and Jan Mayen</option>
+                <option value="Swaziland" data-alternative-spellings="SZ weSwatini Swatini Ngwane">Swaziland</option>
+                <option value="Sweden" data-alternative-spellings="SE Sverige" data-relevancy-booster="1.5">Sweden</option>
+                <option value="Switzerland" data-alternative-spellings="CH Swiss Confederation Schweiz Suisse Svizzera Svizra" data-relevancy-booster="1.5">Switzerland</option>
+                <option value="Syrian Arab Republic" data-alternative-spellings="SY Syria سورية">Syrian Arab Republic</option>
+                <option value="Taiwan, Province of China" data-alternative-spellings="TW 台灣 臺灣">Taiwan, Province of China</option>
+                <option value="Tajikistan" data-alternative-spellings="TJ Тоҷикистон Toçikiston">Tajikistan</option>
+                <option value="Tanzania, United Republic of" data-alternative-spellings="TZ">Tanzania, United Republic of</option>
+                <option value="Thailand" data-alternative-spellings="TH ประเทศไทย Prathet Thai">Thailand</option>
+                <option value="Timor-Leste" data-alternative-spellings="TL">Timor-Leste</option>
+                <option value="Togo" data-alternative-spellings="TG Togolese">Togo</option>
+                <option value="Tokelau" data-alternative-spellings="TK" data-relevancy-booster="0.5">Tokelau</option>
+                <option value="Tonga" data-alternative-spellings="TO">Tonga</option>
+                <option value="Trinidad and Tobago" data-alternative-spellings="TT">Trinidad and Tobago</option>
+                <option value="Tunisia" data-alternative-spellings="TN تونس">Tunisia</option>
+                <option value="Turkey" data-alternative-spellings="TR Türkiye Turkiye">Turkey</option>
+                <option value="Turkmenistan" data-alternative-spellings="TM Türkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands" data-alternative-spellings="TC" data-relevancy-booster="0.5">Turks and Caicos Islands</option>
+                <option value="Tuvalu" data-alternative-spellings="TV" data-relevancy-booster="0.5">Tuvalu</option>
+                <option value="Uganda" data-alternative-spellings="UG">Uganda</option>
+                <option value="Ukraine" data-alternative-spellings="UA Ukrayina Україна">Ukraine</option>
+                <option value="United Arab Emirates" data-alternative-spellings="AE UAE الإمارات">United Arab Emirates</option>
+                <option value="United Kingdom" data-alternative-spellings="GB Great Britain England UK Wales Scotland Northern Ireland" data-relevancy-booster="2.5">United Kingdom</option>
+                <option value="United States" data-relevancy-booster="3.5" data-alternative-spellings="US USA United States of America">United States</option>
+                <option value="United States Minor Outlying Islands" data-alternative-spellings="UM">United States Minor Outlying Islands</option>
+                <option value="Uruguay" data-alternative-spellings="UY">Uruguay</option>
+                <option value="Uzbekistan" data-alternative-spellings="UZ Ўзбекистон O'zbekstan O‘zbekiston">Uzbekistan</option>
+                <option value="Vanuatu" data-alternative-spellings="VU">Vanuatu</option>
+                <option value="Venezuela" data-alternative-spellings="VE">Venezuela</option>
+                <option value="Vietnam" data-alternative-spellings="VN Việt Nam" data-relevancy-booster="1.5">Vietnam</option>
+                <option value="Virgin Islands, British" data-alternative-spellings="VG" data-relevancy-booster="0.5">Virgin Islands, British</option>
+                <option value="Virgin Islands, U.S." data-alternative-spellings="VI" data-relevancy-booster="0.5">Virgin Islands, U.S.</option>
+                <option value="Wallis and Futuna" data-alternative-spellings="WF" data-relevancy-booster="0.5">Wallis and Futuna</option>
+                <option value="Western Sahara" data-alternative-spellings="EH لصحراء الغربية">Western Sahara</option>
+                <option value="Yemen" data-alternative-spellings="YE اليمن">Yemen</option>
+                <option value="Zambia" data-alternative-spellings="ZM">Zambia</option>
+                <option value="Zimbabwe" data-alternative-spellings="ZW">Zimbabwe</option>
+              </select>
+            </div>
+            <div class="col-xs-12 col-lg-6 form-group card-number required">
+              <label class="control-label">Payment Type</label>
+              <div class="select-block">
+                <select name="payment-type" placeholder="Select">
+                  <option value="cc">Credit card (VISA or Master Card)</option>
+                  <option value="pp">PayPal</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row clearfix">
+            <div class="col-xs-12 col-lg-6 form-group required">
+              <label class="control-label">Cardholder Name</label>
+              <input class="form-control" size="4" type="text">
+            </div>
+            <div class="col-xs-12 col-lg-6 form-group card-number required">
+                <label class="control-label">Card Number <span class="cc-brand"></span></label>
+              <input id="cc-number" type="tel" class="input-lg form-control card-number" autocomplete="cc-number" placeholder="16 digits" required>
+            </div>
+          </div>
+
+             <!-- <div class="form-row">
+              <div class="col-xs-12 form-group billing-address required">
+                <label class="control-label">Billing Address</label>
+                <input autocomplete="off" class="form-control" size="20" type="text">
+              </div>
+            </div> -->
+            <div class="form-row clearfix">
+              
+              <div class="col-xs-4 col-lg-4 form-group expiration required">
+                <label class="control-label">Expiration</label>
+                <div class="select-block">
+                  <select name="cc-exp-month" placeholder="MM">
+                    <option selected disabled>MM</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="01">03</option>
+                    <option value="02">04</option>
+                    <option value="01">05</option>
+                    <option value="02">06</option>
+                    <option value="01">07</option>
+                    <option value="02">08</option>
+                    <option value="01">09</option>
+                    <option value="02">10</option>
+                    <option value="01">11</option>
+                    <option value="02">12</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-4 col-lg-4 form-group expiration required">
+                <label class="control-label">Year</label>
+                <div class="select-block">
+                  <select id="expYear" name="cc-exp-year" placeholder="YY">
+                    <option selected disabled>YYYY</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-4 col-lg-4 form-group cvc-number required">
+                <label class="control-label">CVC Code <i class="fa fa-question-circle" data-toggle="popover" data-content="Three digit code in the back of your card."></i></label>
+                <input autocomplete="off" class="form-control card-cvc" placeholder="" size="4" type="text" maxlength="4">
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-5" id="grizzly-bear">
+              <button class="btn btn-lg btn-primary btn-success btn-pay-now" style="border:none" href="#">Pay Now and Let's Travel!</button>
+            </div>
+            <div class="col-xs-12 col-lg-7 text-left padding-top-20" style="line-height:1.2;padding-top:30px!important;">
+              <p><small>By clicking the "Pay Now and Let's Travel" button above, you agree to pay the Grand Total shown in the Booking Summary. You also agree to our Terms and Conditions, you can read more about <a>our policies here.</a></small></p>
+            </div>
+
+                
+              
+            </div>
+            <div class="form-row clearfix">   
+              <div class="error form-group hide">
+                <div class="alert-danger alert">
+                  Please correct the errors and try again.
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- these are add-ons -->
+        <!-- <div class="card booking-add-ons add-ons">
+          <hr>
+          <h2>Special requirements</h2>
+          
+        </div> -->
+
+        <!-- tips and notes -->
+        <!-- <div class="col-xs-12 additional-list">
+          <h4>Tips and Notes</h4>
+          <ul>
+            <li>Community based tourism is highly flexible and these are merely suggested things to do. Talk to us and let us know how we can help you craft your once-in-a-lifetime experience at Mae Kampong.</li>
+            <li>Mae Kampong is open all year. Tea harvesting happens between May to November. This community gets very lively during Thai holidays like Songkran or New Year and may not be suitable for those seeking a quiet getaway.</li>
+            <li>These are suggested activities within the community. The guideline itinerary can be subject to change or switch due to weather, access, local events, guests' fitness and time management. Substitute indoor activities will be provided if the main outdoor activities cannot run properly</li>
+            <li>All additional activities are not included in the standard package price. Additional cost as listed below will be charged at location.</li>
+            <li>Travel insurance is compulsory in order to participate in a Local Alike trip, therefore we include it in our standard package.</li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid global-footer-wrap">
+    <div class="row global-footer center-block text-left">
+      <div class="col-xs-12 no-side-padding">
+        <ul class="list-inline text-left">
+          <li><img class="la-footer-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></li>
+          <li>About</li>
+          <li>How this works</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.select-to-autocomplete.js"></script>
+  <script src="js/jquery.payment.js"></script>
+  <script>
+    (function($){
+      $(function(){
+        $('#country-selector').selectToAutocomplete();
+        $('form').submit(function(){
+          alert( $(this).serialize() );
+          return false;
+        });
+      });
+    })(jQuery);
+
+    var yearsToShow = 20;
+    var thisYear = (new Date()).getFullYear();
+    for (var y = thisYear; y < thisYear + yearsToShow; y++) {
+      var yearOption = document.createElement("option");
+      yearOption.value = y;
+      yearOption.text = y;
+      document.getElementById("expYear").appendChild(yearOption);
+    }
+
+    // https://github.com/stripe/jquery.payment
+
+    jQuery(function($) {
+      $('[data-numeric]').payment('restrictNumeric');
+      $('.card-number').payment('formatCardNumber');
+      $('.cvc-number').payment('formatCardCVC');
+
+      $.fn.toggleInputError = function(erred) {
+        this.parent('.form-group').toggleClass('has-error', erred);
+        return this;
+      };
+
+      $('form').submit(function(e) {
+        e.preventDefault();
+
+        var cardType = $.payment.cardType($('.card-number').val());
+        $('.card-number').toggleInputError(!$.payment.validateCardNumber($('.card-number').val()));
+        $('.cvc-number').toggleInputError(!$.payment.validateCardCVC($('.cvc-number').val(), cardType));
+        $('.cc-brand').text(cardType);
+
+        $('.validation').removeClass('text-danger text-success');
+        $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
+      });
+
+
+      $('[data-toggle="popover"]').popover({
+          trigger: 'hover',
+              'placement': 'top'
+      });
+
+      /* activate sidebar */
+      $('#sidebar').affix({
+        
+      });
+
+      var previousScroll = 0,
+      headerOrgOffset = $('#global-header').height();
+
+      $('#global-header-wrap').height($('#global-header').height());
+
+      $(window).scroll(function () {
+          var currentScroll = $(this).scrollTop();
+          if (currentScroll > headerOrgOffset) {
+              if (currentScroll > previousScroll) {
+                  $('#global-header-wrap').css('top','-50px');
+              } else {
+                  $('#global-header-wrap').css('top','0px');
+              }
+          } 
+          previousScroll = currentScroll;
+      });
+
+      var top_lim = $("#sidebar").position().top;
+      var margin_left = (window.innerWidth - $(".container").width()) / 2;
+      var pos_x = margin_left + $("#la_payment-content").width();
+
+      $(document).scroll(function()
+      {
+        something();
+      });
+
+
+    });
+
+    // window.onresize = function()
+    // {
+    //   if( $("#sidebar").hasClass("affix-top") || $("#sidebar").hasClass("affix") )
+    //     rePositionSideBar();
+    //   else
+    //     $("#sidebar").attr("style", "");
+    // }
+
+    // function rePositionSideBar()
+    window.onresize = function()
+    {
+        something()
+    }
+
+    function something()
+    {
+      var windowWidth = $(window).width();
+      var margin_left = (window.innerWidth - $(".container").width()) / 2;
+      var pos_x = margin_left + $("#la_payment-content").width();
+
+      // $("#sidebar").css(
+      // {
+      //   "left" : pos_x+"px",
+      //   "right" : "initial"
+      // });
+
+      if(windowWidth > 1100){
+
+        if ( $(document).scrollTop() >= 150 )
+          {
+            $("#sidebar").css(
+            {
+              "position" : "fixed",
+              "top" : "60px",
+              "width" : "320px",
+              "left" : (12 + pos_x) + "px"
+
+            });
+          }
+          else
+          {
+            $("#sidebar").css(
+            {
+              "position" : "static",
+              "width" : "320px",
+              "left" : "auto"
+            });
+          }
+      }
+    }
+  </script>
+
+</body>
+</html>

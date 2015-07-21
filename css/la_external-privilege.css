@@ -1,0 +1,128 @@
+.external-asset
+{
+
+}
+
+.ext-ad-banner
+{
+	width: 100%;
+	background-color: #a1cc18; /*AIS Green*/
+	background-image: url('../img/la_ext_ais_banner_3.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: auto 100px;
+	height: 100px;
+	border: 1px solid #eee;
+	padding: 12px;
+}
+
+.ext-ad-banner h4
+{
+	color: #8b2199; /*AIS Purple*/
+	color: #333;
+	font-weight: bolder;
+	font-size: 1.75em;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.ext-ad-banner p
+{
+	color: #fff;
+	font-size: 1.25em;
+}
+
+.ext-ad-ais
+{
+	padding-top: 35px;
+}
+
+.ext-ad-ais input
+{
+	width: 180px;
+	display: inline-block;
+	box-shadow: none;
+	margin: 2px;
+}
+
+.btn-ext-ad-ais
+{
+	font-size: 14px;
+	font-weight: normal;
+	display: inline-block;
+	line-height: auto;
+	padding: 6px 10px;
+	vertical-align: top;
+	margin: 2px;
+}
+
+.booking-ad
+{
+	padding: 0px;
+}
+
+.booking-ad .ext-ad-banner
+{
+	background-image: url('../img/la_ext_ais_banner_4.png');
+	background-size: auto 60px;
+	height: auto;
+	border: none;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.booking-ad .ext-ad-banner .ext-ad-ais
+{
+	padding-top: 10px;
+}
+
+.booking-ad .ext-ad-banner p
+{
+	line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+	.ext-ad-banner
+	{
+		background-color: #a1cc18; /*AIS Green*/
+		background-image: url('../img/la_ext_ais_banner_4.png');
+		background-size: auto 75px;
+		height: auto;
+		padding: 50px 30px 10px;
+	}
+
+	.ext-ad-banner h4
+	{
+		font-size: 1.25em;
+	}
+
+	.ext-ad-banner p
+	{
+		font-size: 1em;
+		color: #333;
+	}
+
+	.ext-ad-ais
+	{
+		padding: 0;
+	}
+
+	.ext-ad-ais input
+	{
+		width: 100%;
+		display: block;
+	}
+
+	.btn-ext-ad-ais
+	{
+		width: 100%;
+		font-weight: normal;
+		display: block;
+		height: 34px;
+		line-height: 1;
+		padding: 0;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+}

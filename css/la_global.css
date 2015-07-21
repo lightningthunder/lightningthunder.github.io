@@ -1,0 +1,269 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+*/
+@import url(http://nicholastodor.com/sf/usesf.css);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/fontawesome-webfont?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+*
+{
+	font-family: 'San Francisco Display', sans-serif;
+}
+
+body
+{
+	font-size: 15px;
+}
+
+a
+{
+	color: salmon;
+	cursor: pointer;
+}
+
+a:hover
+{
+	color: #D95E39;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5
+{
+	font-family: 'San Francisco Display', sans-serif;
+}
+
+h5
+{
+	font-size: 15px;
+}
+
+.navbar-default .navbar-toggle
+{
+	border: none;
+}
+
+.navbar-default .navbar-collapse
+{
+	background: #fff;
+}
+
+#global-header
+{
+	width: 100%;
+	min-height: 0px;
+}
+
+#global-header-wrap
+{
+	width: 100%;
+	min-height: 0px;
+	background: #fff;
+	position: fixed;
+	border: none;
+	border-bottom: 1px solid #eee;
+	border-radius: 0px;
+	z-index: 999;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.la_global-header-logo
+{
+	width: 120px;
+	position: relative;
+	top: 5px;
+}
+
+.global-footer-wrap
+{
+	background: #333;
+	color: #fff;
+}
+
+.global-footer
+{
+	min-height: 40px;
+	/*max-width: 900px;*/
+	width: 100%;
+	padding: 10px 0;
+}
+
+.global-footer .list-inline
+{
+	width: 100%;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+
+.global-footer .list-inline > li
+{
+	padding-left: 0px;
+	padding-right: 10px;
+	font-weight: normal;
+	vertical-align: middle;
+	font-size: 0.85em;
+}
+
+.global-footer img.la-footer-logo
+{
+	width: 80px;
+	position: relative;
+	float: right;
+}
+
+.global-footer .copyright
+{
+	float: left;
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+
+/* letter signs */
+
+span.letter-signs
+{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bolder;
+	font-size: 1.1em;
+	border-radius: 50%;
+	background: salmon;
+	color: #fff;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+span.letter-signs.education
+{
+	background: lightgreen;
+	color: white;
+}
+
+span.letter-signs.education::before
+{
+	content: 'E';
+}
+
+span.letter-signs.culture
+{
+	background: yellow;
+	color: black;
+}
+
+span.letter-signs.culture::before
+{
+	content: 'C';
+}
+
+/* misc */
+
+.padding-top-20
+{
+	padding-top: 20px !important;
+}
+
+.padding-top-10
+{
+	padding-top: 10px !important;
+}
+
+.padding-top-5
+{
+	padding-top: 5px !important;
+}
+
+.padding-bottom-20
+{
+	padding-bottom: 20px !important;
+}
+
+.margin-bottom-5
+{
+	margin-bottom: 5px !important;
+}
+
+.padding-right-0
+{
+	padding-right: 0px !important;
+}
+
+.padding-left-0
+{
+	padding-left: 0px !important;
+}
+
+.side-padding-5
+{
+	padding: 0 2.5px !important;
+}
+
+.no-side-padding
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+@media (max-width: 991px) {
+
+
+	.global-header-wrap
+	{
+		height: 52px;
+	}
+
+	.la_global-header-logo
+	{
+		top: 10px;
+		left: 10px;
+		width: 100px;
+	}
+
+	.la_global-header-logo
+	{
+		top: 8px;
+	}
+
+	.global-footer-wrap ul.list-inline
+	{
+		text-align: center !important;
+	}
+
+	.la-footer-logo
+	{
+		width: 60px;
+		display: none;
+	}
+
+	.remove-on-mobile
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 992px) { 
+	.container
+	{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1170px) {
+	.container,
+	.package-details
+	{
+		width: 1170px;
+	}
+}

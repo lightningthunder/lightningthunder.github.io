@@ -1,0 +1,587 @@
+.card-basic
+{
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	width: 100%;
+	background: #eee;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card
+{
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	width: 100%;
+	height: 430px;
+	background: #eee;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+
+	-moz-transition: all .1s;
+	-webkit-transition: all .1s;
+	transition: all .1s;
+	-moz-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+
+}
+
+.card:hover
+{
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
+
+	/*-moz-transform: scale(1.02,1.02);
+	-webkit-transform: scale(1.02,1.02);
+	transform: scale(1.02,1.02);*/
+}
+
+.card.cause,
+.card.review,
+.card.book
+{
+	height: auto;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+}
+
+.card.review
+{
+	box-shadow: none;
+}
+
+.card.cause:hover,
+{
+	-moz-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
+
+}
+
+.card.cause h4
+{
+	font-size: 1.25em;
+	font-family: "sfns display", "avenir next", "avenir", helvetica, arial, sans-serif;
+	margin-top: 15px;
+	color: #555;
+}
+
+.card.cause p
+{
+	color: #888;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.card.cause .slideshow
+{
+	height: 140px;
+	position: relative;
+}
+
+.card.cause .content,
+.card.review .content,
+.card.book .content
+{
+	height: auto;
+	position: relative;
+}
+
+.card.review
+{
+	background: transparent;
+	padding: 0;
+	overflow: visible;
+}
+
+.card.review .content
+{
+	background: transparent;
+	padding: 0;
+	overflow: none;
+}
+
+.card.review .content:hover p
+{
+	color: #333;
+}
+
+.card.review p
+{
+	color: #666;
+	font-weight: 400;
+	text-indent: -9px;
+	margin-bottom: 0px;
+}
+
+.card.review p::before
+{
+	content: '\201C';
+	margin-right: 2px;
+	color: #999;
+}
+
+.card.review p::after
+{
+	content: '\201D';
+	margin-left: 2px;
+	color: #999;
+}
+
+.card.review span
+{
+	display: block;
+	text-align: right;
+	color: #888;
+}
+
+.card.review span.time
+{
+	font-size: 0.75em;
+}
+
+.card .header
+{
+	padding: 2px 50px 2px 15px;
+	position: relative;
+}
+
+.card .header h4
+{
+	font-size: 1.1em;
+}
+
+.card .slideshow
+{
+	height: 45%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.card .slideshow-overlay
+{
+	background: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.card .slideshow-bg
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-size: cover;
+	overflow: hidden;
+	z-index: 1;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	-moz-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+}
+
+.card:hover .slideshow-bg
+{
+	-moz-transform: scale(1.05,1.05);
+	-webkit-transform: scale(1.05,1.05);
+	transform: scale(1.05,1.05); 	
+}
+
+.card:hover .slideshow-overlay
+{
+	background: rgba(0, 0, 0, 0);
+}
+
+.card .slideshow span.price
+{
+	font-size: 1.45em;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	text-align: right;
+	z-index: 3;
+
+	-webkit-transform-style: preserve-3d;
+}
+
+/*.card:hover span.price
+{
+	-moz-transform: scale(0.8,0.8);
+	-webkit-transform: scale(0.8,0.8);
+	transform: scale(0.8,0.8); 	
+
+	bottom: 5px;
+	right: 0px;
+}*/
+
+.card .slideshow span.price::before
+{
+/*	content: '$';
+*/}
+
+.card .slideshow span.price::after
+{
+	content: 'per guest';
+	font-size: 0.7em;
+	display: block;
+	font-weight: normal;
+	color: #fff;
+}
+
+.card .content
+{
+	padding: 15px;
+	background: #fff;
+	height: 100%;
+	z-index: 2;
+}
+
+.card .content h2.item_name
+{
+	font-size: 1.25em;
+	padding: 0px 0 5px 0;
+	margin: 0px;
+}
+
+.card .content span.item_operator
+{
+	display: block;
+	font-size: 0.8em;
+	color: #555;
+}
+
+.card .content span.item_operator::before
+{
+	content: 'Operated by ';
+}
+
+.card .content span.item_ratings
+{
+
+}
+
+.card .content span.item_ratings.no_ratings
+{
+	color: #777;
+}
+
+.card .content p.item_desc
+{
+	font-size: 0.9em;
+	padding-top: 5px;
+	color: #888;
+}
+
+.card:hover p.item_desc
+{
+	color: #333;
+}
+
+.card .content i.fa-star,
+.card .content i.fa-star-half
+{
+	color: orange;
+
+	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition:         all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+	-moz-transform: scale(0.5,0.5);
+	-webkit-transform: scale(0.5,0.5);
+	transform: scale(0.5,0.5);
+}
+
+.card:hover i.fa-star,
+.card:hover i.fa-star-half
+{
+	-moz-transform: scale(1.02,1.02);
+	-webkit-transform: scale(1.02,1.02);
+	transform: scale(1.02,1.02);
+}
+
+.card .footer
+{
+	background: #eee;
+	color: #333;
+	position: absolute;
+	vertical-align: bottom;
+	display: block;
+	bottom: -18px;
+	width: 100%;
+	height: 21px;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 3px 15px 3px;
+
+	-webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition:         all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.card:hover .footer
+{
+	bottom: 0;
+}
+
+.card .footer#half-day-tour
+{
+	background: teal;
+	color: #fff;
+}
+
+.card .footer#one-day-tour
+{
+	background: lightgreen;
+	color: darkgreen;
+}
+
+.card .footer#overnight-tour
+{
+	background: orange;
+	color: #fff;
+}
+
+.card .footer span.item_duration-detail
+{
+	float: right;
+}
+
+/* booking summary card */
+
+.card.booking-summary
+{
+	height: auto;
+	background: #fff;
+	padding: 15px;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	transition: none;
+}
+
+.card .polar-bear
+{
+	background: #fafafa;
+	padding: 10px;
+	margin: 40px 0 20px;
+}
+
+.card.booking-add-ons,
+.card.booking-payment
+{
+	height: auto;
+	background: transparent;
+	padding: 15px 30px;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
+	box-shadow: none;
+}
+
+.card.booking-payment
+{
+	background: transparent;
+	box-shadow: none;
+}
+
+.card.booking-summary h2.item_name
+{
+	font-size: 1.5em;
+	padding: 30px 15px;
+	margin: 0;
+	background: transparent;
+	color: #333;
+	text-transform: capitalize;
+}
+
+.card.booking-summary p.item_geo::before,
+.card.booking-summary p.item_geo_2::before,
+.card.booking-summary p.item_duration::before,
+.card.booking-summary p.item_operator::before,
+.card.booking-summary p.item_fitness::before,
+.card.booking-summary p.item_climate::before,
+.card.booking-summary p.item_starts::before,
+.card.booking-summary p.item_ends::before
+{
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #999;
+	margin-top: 5px;
+}
+
+.card.booking-summary p.item_geo::before
+{
+	content: 'Destination';
+}
+
+.card.booking-summary p.item_geo::after
+{
+	content: ',';
+}
+
+.card.booking-summary p.item_duration::before
+{
+	content: 'Tour duration';
+}
+
+.card.booking-summary p.item_operator::before
+{
+	content: 'Tour operator';
+}
+
+.card.booking-summary p.item_fitness::before
+{
+	content: 'Physical demand';
+}
+
+.card.booking-summary p.item_climate::before
+{
+	content: 'Local climate';
+}
+
+.card.booking-summary p.item_starts::before
+{
+	content: 'Tour starts';
+}
+
+.card.booking-summary p.item_ends::before
+{
+	content: 'Ends';
+}
+
+.card.booking-summary p
+{
+	color: #555;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 5px 0;
+	font-size: 14px;
+}
+
+.card.booking-summary p.item_geo,
+.card.booking-summary p.item_geo_2
+{
+	display: inline;
+}
+
+.card.booking-summary h3
+{
+	font-size: 15px;
+	font-size: 1;
+	text-transform: uppercase;
+	color: #999;
+}
+
+.card.booking-summary span
+{
+	color: #555;
+	font-size: 14px;
+}
+
+.card.booking-summary ul.summary-list li span.item.additional::before
+{
+	content: '+ ';
+	color: salmon;
+}
+
+.card.booking-summary ul.summary-list li.subtotal,
+.card.booking-summary ul.summary-list li.grandtotal
+{
+	border-top: 1px solid #999;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+.card.booking-summary ul.summary-list li.grandtotal span
+{
+	font-size: 24px;
+	color: #333;
+}
+
+.card.booking-summary ul.summary-list li span.item.total::before
+{
+	content: 'Subtotal';
+}
+
+.card.booking-summary ul.summary-list li span.item.grandtotal
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #999;
+}
+
+.card.booking-summary ul.summary-list li span.item.grandtotal::before
+{
+	content: 'Total ';
+	font-size: 24px;
+	color: #333;
+	text-transform: capitalize;
+}
+
+.card.booking-summary ul.summary-list li span.value-price
+{
+	float: right;
+}
+
+.card.booking-summary ul.summary-list li span.value-price::after
+{
+	content: ' THB';
+	color: #999;
+}
+
+.card.booking-summary ul.summary-list li span.item.discount::before
+{
+	content: '- ';
+	color: salmon;
+}
+
+.card.booking-summary ul.summary-list li.discount span
+{
+	color: salmon;
+}
+
+.card.booking-summary ul.read-list
+{
+	font-size: 14px;
+	color: #555;
+}
+
+@media (max-width: 991px) {
+	.card.review .content
+	{
+		padding-left: 12px;
+	} 
+
+	.card.booking-summary,
+	.card.booking-payment,
+	.card.booking-add-ons
+	{
+		padding: 0;
+	}
+}

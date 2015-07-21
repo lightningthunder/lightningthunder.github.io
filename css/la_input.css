@@ -1,0 +1,153 @@
+.btn
+{
+	padding: 8px 20px;
+	font-weight: bold;
+}
+
+.la_home-hero-wrapper input,
+.payment input,
+.ext-ad-ais input,
+.add-ons input
+{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+	border-radius: 5px;
+	border: 0;
+	border: 1px solid #eee;
+	box-shadow: none;
+	display: block;
+	outline: none;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	transition: none;
+}
+
+.la_home-hero-wrapper input:focus,
+.payment input:focus,
+.ext-ad-ais input:focus,
+.add-ons input:focus
+{
+	border-color: #dadada;
+	box-shadow: none;
+}
+
+.la_home-hero-wrapper label,
+.payment label
+{
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+.la_home-hero-wrapper .select-block,
+.payment .select-block
+{
+	display: block;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+.la_home-hero-wrapper .select-block select,
+.payment .select-block select
+{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+	width: 100%;
+	height: 34px;
+	border: none;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	display: block;
+	margin: 0;
+	padding: 5px 20px 7px 10px;
+	line-height:normal;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	font-size: 14px;
+	color: #555;
+	background: #fff;
+}
+
+.la_home-hero-wrapper .select-block select
+{
+	font-size: 18px;
+}
+
+.la_home-hero-wrapper .select-block select
+{
+	height: 45px;
+}
+
+.la_home-hero-wrapper .select-block::after,
+.payment .select-block::after
+{
+	font-family: FontAwesome;
+	content: '\f0d7';
+	position: absolute;
+	top: 7px;
+	right: 12px;
+	color: #999;
+}
+
+.la_home-hero-wrapper .select-block::after
+{
+	top: 12px;
+	right: 18px;
+}
+
+.ui-autocomplete 
+{
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	width: 218px;
+	border: 1px solid #B0BECA;
+	max-height: 350px;
+	overflow-x: hidden;
+}
+
+
+li.ui-menu-item
+{
+	position: relative;
+	margin: 0;
+	cursor: pointer;
+	min-height: 0; /* support: IE7 */
+	/* support: IE10, see #8844 */
+	border-top: 1px solid #eee;
+	display: block;
+	padding: 4px 6px;
+	color: #666;
+	font-size: 14px;
+	background: #fff;
+	cursor: pointer;
+}
+
+li.ui-menu-item:first-of-type
+{
+	border-top: none;
+}
+
+.btn-pay-now
+{
+	padding: 15px 30px;
+	border-radius: 3px;
+	margin-top: 30px;
+	right: 0;
+}
+
+span.ui-helper-hidden-accessible
+{
+	display: none;
+}

@@ -1,0 +1,916 @@
+*
+{
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body
+{
+	background: #eee;
+}
+
+/*text styles for this specific page*/
+.h1
+{
+	padding-bottom: 30px;
+}
+
+.content
+{
+	position: relative;
+}
+
+.la_home-hero-wrapper .lead
+{
+	padding-top: 35px;
+}
+
+/* local alike hero*/
+
+.la_home-header-logo
+{
+	width: 140px;
+	position: absolute;
+	top: 20px; 
+	left: 20px;
+}
+
+.la_home-hero
+{
+	width: 100%;
+	height: 550px;
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../img/la_home-hero_bg-1.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	padding-top: 130px;
+}
+
+.la_home-hero .la_home-hero-wrapper
+{
+	width: 100%;
+	max-width: 700px;
+}
+
+/* hero dropdown items */
+
+.dropdown
+{
+	display: inline-block;
+}
+
+.btn-default,
+.btn-default.la_geo-dropdown
+{
+	padding: 6px 12px;
+	font-size: 1.25em;
+}
+
+.btn-default#menu1,
+.btn-default#menu2
+{
+	margin-right: 10px;
+}
+
+.la_geo-dropdown > span.caret
+{
+	margin-left: 30px;
+}
+
+.dropdown-menu.geo-country
+{
+	width: 186px;
+}
+
+.dropdown-menu.geo-town
+{
+	width: 203px;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+{
+	background-color: salmon;
+	color: #fff;
+}
+
+.dropdown-menu
+{
+	font-size: 1.25em;
+}
+
+/* carousel */
+
+.container.promo
+{
+}
+
+.container-fluid.promo
+{
+	padding: 20px 0 0;
+}
+
+.container.promo .content
+{
+	padding: 10px;
+	height: 420px;
+}
+
+.content p.lead
+{
+	padding: none;
+}
+
+.content h3
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.content.la_hot-deals
+{
+	/*padding: 20px;*/
+	padding: 20px 20px 20px 0;
+	color: #333;
+	height: 420px;
+}
+
+.content.la_hot-deals h2
+{
+	padding-top: 20px;
+}
+
+.la_popular-day > #promo-carousel,
+.la_popular-overnight > #promo-carousel-2,
+.la_hot-deals > #promo-carousel-3
+{
+	height: 420px;
+}
+
+.la_promo-carousel
+{
+	/*border: 1px solid #eee;*/
+}
+
+span.promo-type
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 2px 5px;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	background: salmon;
+	color: #fafafa;
+	display: inline-block;
+	z-index: 99;
+	font-family: "san francisco display";
+}
+
+/* day tours */
+
+.la_promo-carousel.la_popular-day
+{
+	background: transparent;
+}
+
+
+
+.la_promo-carousel.la_popular-day .item#day0001
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huatung/2.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-day .item#day0002
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huatung/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-day .item#day0003
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/5.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-day .item#day0004
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/4.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-day .item#day0005
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/3.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-day .item#day0006
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel .item
+{
+	background-size: cover !important;
+}
+
+/* overnight tours */
+
+.la_promo-carousel.la_popular-overnight
+{
+	background: transparent;
+}
+
+.la_promo-carousel.la_popular-overnight .item#ov0001
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/xmas/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-overnight .item#ov0002
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/xmas/2.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_popular-overnight .item#ov0003
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/xmas/3.jpg') no-repeat center;
+}
+
+.carousel-indicators
+{
+	bottom: 115px;
+}
+
+.carousel-control
+{
+	width: 10%;
+	z-index: 99;
+	text-shadow: none;
+}
+
+.carousel-control.left,
+.carousel-control.right
+{
+	background: transparent;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right
+{
+	top: 40%;
+	font-size: 20px;
+}
+
+.carousel-inner
+{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-inner .item
+{
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	background-position: center top;
+}
+
+.carousel-inner span.price
+{
+	font-size: 2.5em;
+	text-align: right;
+	font-weight: bolder;
+	color: #fff;
+	right: 20px;
+	top: 10px;
+	position: absolute;
+}
+
+.carousel-inner span.price:after
+{
+
+}
+
+.la_popular-day .carousel-inner span.price:after
+{
+	content: 'per traveler';
+	font-size: 15px;
+	display: block;
+	line-height: 1;	
+}
+
+.la_popular-overnight .carousel-inner span.price:after
+{
+	content: 'per traveler';
+	font-size: 15px;
+	display: block;
+	line-height: 1;
+}
+
+.carousel-caption
+{
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 99;
+	position: absolute;
+	text-shadow: none;
+	text-align: left;
+	font-size: 14px;
+	background: #fff;
+	padding: 15px;
+	height: 120px;
+	line-height: 1.2;
+	border: 1px solid #eee;
+}
+
+.carousel-caption h3
+{
+	font-size: 1.25em;
+	font-weight: bolder;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	color: #333;
+}
+
+.carousel-caption span
+{
+	color: #555;
+}
+
+.carousel-caption span.item_geo::after
+{
+	content: ',';
+}
+
+.carousel-caption span.item_duration
+{
+	background: #eee;
+	border-radius: 2px;
+	margin-right: 4px;
+	padding: 1px 6px;
+	font-size: 13px;
+}
+
+.carousel-caption p
+{
+	color: #555;
+	padding-top: 10px;
+}
+
+.carousel-indicators li
+{
+	width: 8px;
+	height: 8px;
+	opacity: 0.8;
+}
+
+.carousel-indicators .active
+{
+	width: 10px;
+	height: 10px;
+}
+
+/* hot deals */
+
+.hot-deals
+{
+	height: 420px;
+	background: #fff;
+	color: #333;
+	padding-top: 50px;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0001
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huatung/2.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0002
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huatung/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0003
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/5.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0004
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/4.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0005
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/3.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0006
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item#day0007
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/5.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item
+{
+	background-size: cover !important;
+	width: 100%;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-1,
+.la_promo-carousel.la_hot-deals .item .deal-2,
+.la_promo-carousel.la_hot-deals .item .deal-3
+{
+	width: 33.33%;
+	height: 420px;
+	display: block;
+	float: left;
+	background-size: cover !important;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-1#deal0001
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/xmas/5.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-2#deal0002
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/nye/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-3#deal0003
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/nye/5.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-1#deal0004
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/nye/6.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-2#deal0005
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/kiva/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-3#deal0006
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/kiva/2.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-1#deal0007
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/kiva/3.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-2#deal0008
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/kiva/5.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-3#deal0009
+{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('http://localalike.com/share/src/image/showcase/tat_la/kohyaonoi/1.jpg') no-repeat center;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-1 .carousel-caption
+{
+	width: 33.333%;
+	left: 0px;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-2 .carousel-caption
+{
+	width: 33.333%;
+	left: 33.333%;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-3 .carousel-caption
+{
+	width: 33.333%;
+	left: 66.666%;
+}
+
+.la_promo-carousel.la_hot-deals .item .price_before
+{
+	display: inline-block;
+	white-space: nowrap;
+	text-decoration: line-through;
+	color: #fff;
+	text-align: right;
+	position: absolute;
+	padding-right: 20px;
+	top: 10px;
+	font-size: 1.25em;
+}
+
+.la_promo-carousel.la_hot-deals .item .price
+{
+	top: 25px;
+	padding-right: 20px;
+}
+
+.la_promo-carousel.la_hot-deals .item .price_before::before
+{
+	/*content: '$ ';*/
+}
+
+.la_promo-carousel.la_hot-deals .item .price::after
+{
+	content: 'per traveler';
+	font-size: 15px;
+	display: block;
+	line-height: 1;	
+	text-decoration: none;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-1 .price,
+.la_promo-carousel.la_hot-deals .item .deal-1 .price_before
+{
+	width: 33.333%;
+	right: 0px;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-2 .price,
+.la_promo-carousel.la_hot-deals .item .deal-2 .price_before
+{
+	width: 33.333%;
+	right: 33.333%;
+}
+
+.la_promo-carousel.la_hot-deals .item .deal-3 .price,
+.la_promo-carousel.la_hot-deals .item .deal-3 .price_before
+{
+	width: 33.333%;
+	right: 66.666%;
+}
+
+/* cta boxes */
+
+.container.cta
+{
+}
+
+.container-fluid.cta
+{
+	padding: 0 0 0;
+}
+
+.la_cta-box
+{
+	/*border: 1px solid #eee;*/
+	height: 200px;
+	width: 100%;
+	display: table;
+	color: #fff;
+	padding: 20px;
+}
+
+.la_cta-box#blog
+{
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../img/la_blog-1.jpg');
+   	background-size: cover;
+   	height: 100%;
+}
+
+.la_cta-box#blog .content,
+.la_cta-box#impact .content
+{
+	vertical-align: bottom;
+}
+
+.la_cta-box#blog .content h3
+{
+	font-weight: 200;
+	font-size: 2.75em;
+}
+
+.la_cta-box#impact
+{
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../img/la_impact-1.jpg');
+   	background-size: cover;
+}
+
+.la_cta-box#mktg-1
+{
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../img/la_mktg-1.jpg');
+   	background-size: cover;
+}
+
+.la_cta-box#mktg-2
+{
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../img/la_mktg-2.jpg');
+   	background-size: cover;
+}
+
+.la_cta-box#mktg-3
+{
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../img/la_blog-1.jpg');
+   	background-size: cover;
+}
+
+.la_cta-box .content
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+
+	.h1
+	{
+		font-size: 24px;
+	}
+
+	.la_home-hero
+	{
+		height: auto;
+		padding: 100px 20px 40px;
+		text-align: left;
+	}
+
+	.la_home-hero .home_submit 
+	{
+		text-align: center;
+	}
+
+	.la_home-header img.la_home-header-logo
+	{
+		width: 100px;
+	}
+
+	.la_home-hero .what-is
+	{
+		text-align: center;
+	}
+
+	.la_home-hero .what-is::after
+	{
+		font-family: FontAwesome;
+		font-size: 14px;
+		content: 'Swipe up for more  \f139';
+		color: #999;
+	}
+
+	.la_home-hero .what-is p
+	{
+		display: none;
+	}
+
+	.dropdown
+	{
+		display: block;
+	}
+
+	.carousel-indicators
+	{
+		display: none;
+	}
+
+	.la_popular-day > #promo-carousel, 
+	.la_popular-overnight > #promo-carousel-2, 
+	.la_hot-deals > #promo-carousel-3
+	{
+		height: 300px;
+	}
+
+	.la_promo-carousel .item
+	{
+		background-size: cover !important;
+	}
+
+	.content.la_hot-deals
+	{
+		height: auto;
+		padding: 20px;
+		text-align: center;
+		border: 1px solid #eee;
+		background: salmon;
+		color: #fff;
+	}
+
+	.content.la_hot-deals span.promo-type
+	{
+		position: relative;
+		left: 0;
+		right: 0;
+		margin-bottom: 0.5em;
+		font-size: 1.25em;
+		font-weight: bolder;
+		background: #fff;
+		color: salmon;
+	}
+
+	.content.la_hot-deals a
+	{
+		background: #fff;
+		border: 0;
+		color: salmon;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-1,
+	.la_promo-carousel.la_hot-deals .item .deal-2,
+	.la_promo-carousel.la_hot-deals .item .deal-3
+	{
+		width: 100%;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-1 .carousel-caption
+	{
+		width: 100%;
+		left: initial;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-2 .carousel-caption
+	{
+		width: 100%;
+		left: initial;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-3 .carousel-caption
+	{
+		width: 100%;
+		left: initial;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-1 .price,
+	.la_promo-carousel.la_hot-deals .item .deal-1 .price_before
+	{
+		width: 100%;
+		right: initial;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-2 .price,
+	.la_promo-carousel.la_hot-deals .item .deal-2 .price_before
+	{
+		width: 100%;
+		right: initial;
+	}
+
+	.la_promo-carousel.la_hot-deals .item .deal-3 .price,
+	.la_promo-carousel.la_hot-deals .item .deal-3 .price_before
+	{
+		width: 100%;
+		right: initial;
+	}
+}
