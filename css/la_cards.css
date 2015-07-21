@@ -654,4 +654,9 @@
 	{
 		padding: 0;
 	}
+	.card.add-ons
+	{
+		height: auto;
+		padding-bottom: 40px;
+	}
 }
