@@ -383,33 +383,7 @@
 	content: '"';
 }
 
-.trip-content .add-ons ol
-{
-	margin-left: -15px;
-}
 
-.trip-content .add-ons ol .add-ons-cost
-{
-	display: inline-block;
-	font-size: 0.8em;
-}
-
-.trip-content .add-ons ol span.add-ons-cost-price::before
-{
-	content: '+ ';
-}
-
-.trip-content .add-ons ol span.add-ons-cost-price,
-.trip-content .add-ons ol span.add-ons-cost-unit
-{
-	color: #999;
-	font-weight: 600;
-}
-
-.trip-content .add-ons ol span.add-ons-cost-price
-{
-	color: #444;
-}
 
 .trip-content .additional-list ul li
 {

@@ -4,10 +4,11 @@
 	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
 	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.3);
 	width: 100%;
-	background: #eee;
+	height: auto;
 	margin-bottom: 30px;
 	position: relative;
 	overflow: hidden;
+	background: #fff;
 }
 
 .card
@@ -42,6 +43,7 @@
 	transform: scale(1.02,1.02);*/
 }
 
+.card-basic,
 .card.cause,
 .card.review,
 .card.book
@@ -253,6 +255,7 @@
 	color: #fff;
 }
 
+.card-basic .content,
 .card .content
 {
 	padding: 15px;
@@ -570,6 +573,73 @@
 {
 	font-size: 14px;
 	color: #555;
+}
+
+/* trip add-ons */
+.card.add-ons
+{
+	height: auto;
+	height: 180px;
+	text-align: center;
+	position: relative;
+	box-shadow: none;
+	border: 1px solid #eee;
+	background: #fafafa;
+}
+
+.card.add-ons:hover
+{
+	box-shadow: none;
+}
+
+.card.add-ons .content
+{
+	background: transparent;
+	padding: 20px;
+}
+
+.card.add-ons hr
+{
+	margin: 10px 0;
+}
+
+.card.add-ons .fa
+{
+	font-size: 1em;
+	color: black;
+}
+
+.card.add-ons h6
+{
+	font-size: 1em;
+}
+
+.card.add-ons .add-ons-cost
+{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+}
+
+.card.add-ons span.add-ons-cost-price::before
+{
+	content: '+ ';
+}
+
+.card.add-ons span.add-ons-cost-price,
+.card.add-ons span.add-ons-cost-unit
+{
+	color: #999;
+	font-weight: 600;
+}
+
+.card.add-ons span.add-ons-cost-price
+{
+	color: #444;
 }
 
 @media (max-width: 991px) {
