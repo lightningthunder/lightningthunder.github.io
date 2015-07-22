@@ -1,6 +1,6 @@
 /*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 */
-@import url(http://nicholastodor.com/sf/usesf.css);
+@import url('../font_sf/usesf.css');
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */

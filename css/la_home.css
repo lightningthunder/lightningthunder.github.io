@@ -115,7 +115,7 @@ body
 .container.promo .content
 {
 	padding: 10px;
-	height: 420px;
+	height: 400px;
 }
 
 .content p.lead
@@ -134,12 +134,17 @@ body
 	/*padding: 20px;*/
 	padding: 20px 20px 20px 0;
 	color: #333;
-	height: 420px;
+	height: 400px;
 }
 
 .content.la_hot-deals h2
 {
 	padding-top: 20px;
+}
+
+.content.la_hot-deals p
+{
+	line-height: 1.1;
 }
 
 .la_popular-day > #promo-carousel,
@@ -187,7 +192,7 @@ span.promo-type
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
     ),
-    url('http://localalike.com/share/src/image/showcase/tat_la/huatung/2.jpg') no-repeat center;
+    url('../img/adaf_people_5.jpg') no-repeat center;
 }
 
 .la_promo-carousel.la_popular-day .item#day0002
@@ -197,7 +202,7 @@ span.promo-type
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
     ),
-    url('http://localalike.com/share/src/image/showcase/tat_la/huatung/1.jpg') no-repeat center;
+    url('../img/kohyaonoi_people_4_credit-graff.jpg') no-repeat center;
 }
 
 .la_promo-carousel.la_popular-day .item#day0003
@@ -207,10 +212,10 @@ span.promo-type
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
     ),
-    url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/5.jpg') no-repeat center;
+    url('../img/ltbkk_people_2.jpg') no-repeat center;
 }
 
-.la_promo-carousel.la_popular-day .item#day0004
+/*.la_promo-carousel.la_popular-day .item#day0004
 {
 	background: 
     linear-gradient(
@@ -238,7 +243,7 @@ span.promo-type
       rgba(0, 0, 0, 0.25)
     ),
     url('http://localalike.com/share/src/image/showcase/tat_la/huairaeng/1.jpg') no-repeat center;
-}
+}*/
 
 .la_promo-carousel .item
 {
@@ -259,7 +264,7 @@ span.promo-type
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
     ),
-    url('http://localalike.com/share/src/image/showcase/xmas/1.jpg') no-repeat center;
+    url('../img/bangplub_food_7.jpg') no-repeat center;
 }
 
 .la_promo-carousel.la_popular-overnight .item#ov0002
@@ -269,7 +274,7 @@ span.promo-type
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
     ),
-    url('http://localalike.com/share/src/image/showcase/xmas/2.jpg') no-repeat center;
+    url('../img/maekampong_scenery_2.jpg') no-repeat center;
 }
 
 .la_promo-carousel.la_popular-overnight .item#ov0003
@@ -279,7 +284,7 @@ span.promo-type
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
     ),
-    url('http://localalike.com/share/src/image/showcase/xmas/3.jpg') no-repeat center;
+    url('../img/kohyaonoi_scenery_1_credit-graff.jpg') no-repeat center;
 }
 
 .carousel-indicators
@@ -315,25 +320,30 @@ span.promo-type
 
 .carousel-inner .item
 {
-	height: 100%;
+	height: calc(100% - 120px);
 	width: 100%;
-
 	position: absolute;
 	top: 0px;
 	left: 0px;
 
-	background-position: center top;
+	background-position: center center;
 }
 
 .carousel-inner span.price
 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: right;
-	font-weight: bolder;
+	font-weight: bold;
 	color: #fff;
 	right: 20px;
-	top: 10px;
+	top: 20px;
 	position: absolute;
+}
+
+.carousel-inner span.price:first-of-type:first-letter
+{
+	font-weight: normal;
+	font-size: 0.75em;
 }
 
 .carousel-inner span.price:after
@@ -347,6 +357,7 @@ span.promo-type
 	font-size: 15px;
 	display: block;
 	line-height: 1;	
+	font-weight: normal;
 }
 
 .la_popular-overnight .carousel-inner span.price:after
@@ -355,11 +366,12 @@ span.promo-type
 	font-size: 15px;
 	display: block;
 	line-height: 1;
+	font-weight: normal;
 }
 
 .carousel-caption
 {
-	bottom: 0px;
+	bottom: -120px;
 	left: 0px;
 	right: 0px;
 	z-index: 99;
@@ -425,13 +437,13 @@ span.promo-type
 
 .hot-deals
 {
-	height: 420px;
+	height: 400px;
 	background: #fff;
 	color: #333;
 	padding-top: 50px;
 }
 
-.la_promo-carousel.la_hot-deals .item#day0001
+.la_monkey_carousel_promonkey #promo01
 {
 	background: 
     linear-gradient(
@@ -626,23 +638,36 @@ span.promo-type
 	left: 66.666%;
 }
 
-.la_promo-carousel.la_hot-deals .item .price_before
+.la_monkey_carousel_promonkey .item .price_before
 {
 	display: inline-block;
 	white-space: nowrap;
 	text-decoration: line-through;
-	color: #fff;
+	color: #333;
 	text-align: right;
 	position: absolute;
-	padding-right: 20px;
+	right: 10px;
 	top: 10px;
 	font-size: 1.25em;
 }
 
-.la_promo-carousel.la_hot-deals .item .price
+.la_monkey_carousel_promonkey .item .price_before:first-of-type:first-letter
+{
+	font-weight: normal;
+	font-size: 0.5em;
+}
+
+.la_monkey_carousel_promonkey .item .price
 {
 	top: 25px;
-	padding-right: 20px;
+	right: 10px;
+	color: salmon;
+}
+
+.la_monkey_carousel_promonkey .item .price:first-of-type:first-letter
+{
+	font-weight: bold;
+	font-size: 0.75em;
 }
 
 .la_promo-carousel.la_hot-deals .item .price_before::before
@@ -650,13 +675,14 @@ span.promo-type
 	/*content: '$ ';*/
 }
 
-.la_promo-carousel.la_hot-deals .item .price::after
+.la_monkey_carousel_promonkey .item .price::after
 {
 	content: 'per traveler';
 	font-size: 15px;
 	display: block;
 	line-height: 1;	
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .la_promo-carousel.la_hot-deals .item .deal-1 .price,
@@ -843,8 +869,9 @@ span.promo-type
 	{
 		height: auto;
 		padding: 20px;
+		margin-bottom: 20px;
 		text-align: center;
-		border: 1px solid #eee;
+		border: none;
 		background: salmon;
 		color: #fff;
 	}
@@ -912,5 +939,9 @@ span.promo-type
 	{
 		width: 100%;
 		right: initial;
+	}
+	.la_cta-box
+	{
+		margin-bottom: 20px;
 	}
 }

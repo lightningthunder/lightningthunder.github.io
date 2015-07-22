@@ -1,0 +1,142 @@
+#monkey_baby
+{
+  height: 400px;
+}
+
+.monkey_bg
+{
+  height: 260px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center;
+  background: teal;
+}
+
+#monkey_baby .item
+{
+  height: auto;
+}
+
+#monkey_baby .carousel-caption
+{
+  position: relative;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  height: 140px;
+}
+
+.la_monkey_carousel_promonkey .carousel-control {
+  width: 4%;
+  background-image: none;
+}
+.la_monkey_carousel_promonkey .carousel-control.left {
+  margin-left: 15px;
+}
+.la_monkey_carousel_promonkey .carousel-control.right {
+  margin-right: 15px;
+}
+
+.la_monkey_carousel_promonkey .cloneditem-1,
+.la_monkey_carousel_promonkey .cloneditem-2,
+.la_monkey_carousel_promonkey .cloneditem-3 {
+  display: none;
+}
+@media (max-width: 768px) {
+    .la_monkey_carousel_promonkey .carousel-inner > .item > div
+  {
+  padding-right: 0px;
+  padding-left: 0px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .la_monkey_carousel_promonkey .carousel-inner > .item > div
+  {
+  padding-right: 0px;
+  padding-left: 0px;
+  }
+
+  .la_monkey_carousel_promonkey .carousel-inner > .active.left,
+  .la_monkey_carousel_promonkey .carousel-inner > .prev {
+    left: -50%;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .active.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .next {
+    left: 50%;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .left,
+  .la_monkey_carousel_promonkey .carousel-inner > .prev.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .active {
+    left: 0;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner .cloneditem-1 {
+    display: block;
+  }
+}
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+  .la_monkey_carousel_promonkey .carousel-inner > .item.active.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.next {
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0);
+    left: 0;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .item.active.left,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    left: 0;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .item.left,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.prev.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media all and (min-width: 992px) {
+  .la_monkey_carousel_promonkey .carousel-inner > .item > div
+  {
+  padding-right: 0px;
+  padding-left: 15px;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .active.left,
+  .la_monkey_carousel_promonkey .carousel-inner > .prev {
+    left: -33.33%;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .active.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .next {
+    left: 33.33%;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .left,
+  .la_monkey_carousel_promonkey .carousel-inner > .prev.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .active {
+    left: 0;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner .cloneditem-2,
+  .la_monkey_carousel_promonkey .carousel-inner .cloneditem-3 {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+  .la_monkey_carousel_promonkey .carousel-inner > .item.active.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.next {
+    -webkit-transform: translate3d(33.33%, 0, 0);
+            transform: translate3d(33.33%, 0, 0);
+    left: 0;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .item.active.left,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-33.33%, 0, 0);
+            transform: translate3d(-33.33%, 0, 0);
+    left: 0;
+  }
+  .la_monkey_carousel_promonkey .carousel-inner > .item.left,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.prev.right,
+  .la_monkey_carousel_promonkey .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
