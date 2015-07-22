@@ -735,7 +735,8 @@ span.promo-type
 	transform: scale(1,1);
 }
 
-.la_cta-box:active
+.la_cta-box:active,
+.la_cta-box:focus
 {
 	-moz-transform: scale(0.98,0.98);
 	-webkit-transform: scale(0.98,0.98);

@@ -11,7 +11,8 @@
 	transform: scale(1,1);
 }
 
-.btn:active
+.btn:active,
+.btn:focus
 {
 	-moz-transform: scale(0.98,0.98);
 	-webkit-transform: scale(0.98,0.98);
