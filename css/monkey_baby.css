@@ -25,6 +25,7 @@
   bottom: initial;
   height: 140px;
   background: #fff;
+  border: none;
 }
 
 .la_monkey_carousel_promonkey .carousel-control {
