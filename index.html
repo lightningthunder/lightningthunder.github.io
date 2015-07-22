@@ -563,6 +563,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.dotdotdot.min.js"></script>
+  <script src="js/query.bcSwipe.min.js"></script>
   <script>
     $(document).ready(ellipsizeText);        // Plugin must have been working flawles inhere as described in documentation.
     window.setTimeout(ellipsizeText, 400);   // Just for any case.
@@ -574,6 +575,8 @@
             watch: true
         });
     }
+
+    $('.carousel').bcSwipe({ threshold: 50 });
 </script>
 <script>
 
