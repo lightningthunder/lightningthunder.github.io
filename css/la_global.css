@@ -127,46 +127,7 @@ h5
 	top: 10px;
 }
 
-/* letter signs */
 
-span.letter-signs
-{
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	font-weight: bolder;
-	font-size: 1.1em;
-	border-radius: 50%;
-	background: salmon;
-	color: #fff;
-	text-align: center;
-	display: block;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-}
-
-span.letter-signs.education
-{
-	background: lightgreen;
-	color: white;
-}
-
-span.letter-signs.education::before
-{
-	content: 'E';
-}
-
-span.letter-signs.culture
-{
-	background: yellow;
-	color: black;
-}
-
-span.letter-signs.culture::before
-{
-	content: 'C';
-}
 
 /* misc */
 

@@ -46,7 +46,8 @@
 .card-basic,
 .card.cause,
 .card.review,
-.card.book
+.card.book,
+.card.add-ons
 {
 	height: auto;
 	background: #fff;
@@ -56,23 +57,37 @@
 	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
 }
 
+.card.add-ons
+{
+	max-height: 320px;
+}
+
+.card.add-ons hr
+{
+	margin: 10px 0  10px;
+}
+
 .card.review
 {
 	box-shadow: none;
+	background: transparent;
 }
 
 .card.cause:hover,
+.card.add-ons:hover,
+.card.cause:hover .slideshow-bg,
+.card.add-ons:hover .slideshow-bg
 {
 	-moz-transform: scale(1,1);
 	-webkit-transform: scale(1,1);
 	transform: scale(1,1);
-	-webkit-box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
-	-moz-box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
-	box-shadow: 0px 0px 10px 1px rgba(153,153,153,0.3);
-
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+	box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
 }
 
-.card.cause h4
+.card.cause h4,
+.card.add-ons h4
 {
 	font-size: 1.25em;
 	font-family: "sfns display", "avenir next", "avenir", helvetica, arial, sans-serif;
@@ -80,26 +95,44 @@
 	color: #555;
 }
 
-.card.cause p
+.card.cause p,
+.card.add-ons p
 {
+	font-size: 14px;
 	color: #888;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	line-height: 1.1;
 }
 
-.card.cause .slideshow
+.card.add-ons p
 {
-	height: 140px;
+	max-height: 45px;
+}
+
+.card.cause .slideshow,
+.card.add-ons .slideshow
+{
+	height: 180px;
 	position: relative;
 }
 
 .card.cause .content,
 .card.review .content,
-.card.book .content
+.card.book .content,
+.card.add-ons .content
 {
 	height: auto;
 	position: relative;
 }
+
+.card.cause .content,
+.card.add-ons .content
+{
+	padding: 2px 15px 15px;
+}
+
+.card.add-ons 
 
 .card.review
 {
@@ -156,13 +189,14 @@
 
 .card .header
 {
-	padding: 2px 50px 2px 15px;
+	padding: 2px 15px 2px 15px;
 	position: relative;
 }
 
 .card .header h4
 {
-	font-size: 1.1em;
+	font-size: 1em;
+	margin: 15px 0 2px;
 }
 
 .card .slideshow
@@ -175,7 +209,7 @@
 
 .card .slideshow-overlay
 {
-	background: rgba(0, 0, 0, 0.35);
+	background: rgba(0, 0, 0, 0);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -575,72 +609,53 @@
 	color: #555;
 }
 
-/* trip add-ons */
-.card.add-ons
-{
-	height: auto;
-	height: 180px;
-	text-align: center;
-	position: relative;
-	box-shadow: none;
-	border: 1px solid #eee;
-	background: #fafafa;
-}
+/* letter signs */
 
-.card.add-ons:hover
+span.letter-signs
 {
-	box-shadow: none;
-}
-
-.card.add-ons .content
-{
-	background: transparent;
-	padding: 20px;
-}
-
-.card.add-ons hr
-{
-	margin: 10px 0;
-}
-
-.card.add-ons .fa
-{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-weight: bolder;
 	font-size: 1em;
+	border-radius: 50%;
+	background: salmon;
+	color: #fff;
+	text-align: center;
+	display: block;
+	position: absolute;
+}
+
+span.letter-signs.education
+{
+	background: lightgreen;
+	color: white;
+}
+
+span.letter-signs.education::before
+{
+	content: 'E';
+}
+
+span.letter-signs.culture
+{
+	background: yellow;
 	color: black;
 }
 
-.card.add-ons h6
+span.letter-signs.culture::before
 {
-	font-size: 1em;
+	content: 'C';
 }
 
-.card.add-ons .add-ons-cost
+.card.cause span.letter-signs,
+.card.add-ons span.letter-signs
 {
-	display: block;
-	width: 100%;
-	font-size: 12px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 15px;
+	bottom: 5px;
+	right: 5px;
+	z-index: 99;
 }
 
-.card.add-ons span.add-ons-cost-price::before
-{
-	content: '+ ';
-}
-
-.card.add-ons span.add-ons-cost-price,
-.card.add-ons span.add-ons-cost-unit
-{
-	color: #999;
-	font-weight: 600;
-}
-
-.card.add-ons span.add-ons-cost-price
-{
-	color: #444;
-}
 
 @media (max-width: 991px) {
 	.card.review .content
@@ -653,10 +668,5 @@
 	.card.booking-add-ons
 	{
 		padding: 0;
-	}
-	.card.add-ons
-	{
-		height: auto;
-		padding-bottom: 40px;
 	}
 }

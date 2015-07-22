@@ -166,10 +166,6 @@
 	text-transform: uppercase;
 }
 
-.misc-bar h3
-{
-}
-
 .btn-read-more-reviews,
 .btn-itinerary-launcher
 {
@@ -243,24 +239,34 @@
 	top: -3px;
 }
 
-.trip-content #la_photo-gallery .fa
+.trip-content #la_photo-gallery h4 .fa
 {
-	background: orange;
+	background: salmon;
 }
 
-.trip-content #la_package-details .fa
+.trip-content #la_package-details h4 .fa
 {
-	background: #0066ff;
+	background: salmon;
 }
 
-.trip-content #la_itinerary .fa
+.trip-content #la_expectations h4 .fa
 {
-	background: red;
+	background: salmon;
 }
 
-.trip-content #la_tips-notes .fa
+.trip-content #la_itinerary h4 .fa
 {
-	background: lightgreen;
+	background: salmon;
+}
+
+.trip-content #la_add-ons h4 .fa
+{
+	background: salmon;
+}
+
+.trip-content #la_tips-notes h4 .fa
+{
+	background: salmon;
 }
 
 .trip-content ul li,
