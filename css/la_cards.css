@@ -59,13 +59,33 @@
 
 .card.add-ons
 {
-	max-height: 320px;
+	height: 320px;
+	margin-bottom: 10px;
 }
 
 .card.add-ons hr
 {
 	margin: 10px 0  10px;
 }
+
+.card.add-ons .footer
+{
+	background: #fff;
+	color: #333;
+	position: absolute;
+	vertical-align: bottom;
+	display: block;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: auto;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	border-top: 1px solid #eee;
+	padding: 10px;
+}
+
 
 .card.review
 {
@@ -132,7 +152,23 @@
 	padding: 2px 15px 15px;
 }
 
-.card.add-ons 
+.card.add-ons .content
+{
+	height: 105px;
+}
+
+.card.add-ons .add-ons-cap
+{
+	float: left;
+	font-size: 0.9em;
+	color: #999;
+	text-transform: uppercase;
+}
+
+.card.add-ons .add-ons-cost
+{
+	float: right;
+}
 
 .card.review
 {

@@ -147,6 +147,11 @@ li.ui-menu-item:first-of-type
 	right: 0;
 }
 
+.btn-add-to-trip
+{
+	margin-bottom: 30px;
+}
+
 span.ui-helper-hidden-accessible
 {
 	display: none;
