@@ -132,7 +132,7 @@ body
 .content.la_hot-deals
 {
 	/*padding: 20px;*/
-	padding: 20px 20px 20px 0;
+	padding: 20px;
 	color: #333;
 	height: 400px;
 }
@@ -162,8 +162,8 @@ body
 span.promo-type
 {
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 20px;
+	top: 20px;
 	font-size: 1em;
 	font-weight: normal;
 	padding: 2px 5px;
