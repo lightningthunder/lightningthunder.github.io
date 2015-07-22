@@ -2,8 +2,9 @@
 
 .book-now
 {
-	background: #222;
+	background: #fafafa;
 	padding: 0 30px;
+	border-right: 1px solid #eee;
 }
 
 .book-now h3
@@ -17,8 +18,13 @@
 {
 	font-size: 4em;
 	display: block;
-	color: #fff;
 	text-align: center;
+	color: #333;
+
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 2.25s;
+	-webkit-animation-delay: 6s;
+	-webkit-animation-iteration-count: infinite;
 }
 
 .book-now span.item_price::after
@@ -32,6 +38,11 @@
 }
 
 /* book now module */
+
+.form-control[readonly]
+{
+	background: #fff;
+}
 
 .book-box label
 {
