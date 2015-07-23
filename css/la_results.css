@@ -542,10 +542,10 @@ button.btn-default#reset-filters
     font-size: 14px;
   }
 
-  .collapse.in
+  /*.collapse.in
   {
     display: none;
-  }
+  }*/
 }
 
 
