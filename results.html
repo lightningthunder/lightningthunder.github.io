@@ -808,15 +808,8 @@
 
   <!-- script for notif hover -->
   <script>
-    $(document).ready(function(){
-        $('.narrow-results-notif-wrapper').hover(function(){
-            $(this).toggleClass("hover");
-            $('.notif_bg_overlay').toggleClass("show");
-            $('.notif_trigger').toggleClass("hover");
-        });
-    });
 
-    var previousScroll = 10,
+    var previousScroll = 0,
       headerOrgOffset = $('#global-header').height();
 
       $('#global-header-wrap').height($('#global-header').height());
@@ -825,7 +818,7 @@
           var currentScroll = $(this).scrollTop();
           if (currentScroll > headerOrgOffset) {
               if (currentScroll > previousScroll) {
-                  $('#global-header-wrap').css('top','-51px');
+                  $('#global-header-wrap').css('top','-50px');
               } else {
                   $('#global-header-wrap').css('top','0px');
               }
