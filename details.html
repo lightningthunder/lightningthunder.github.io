@@ -266,7 +266,7 @@
                 </div>
               </div>
               <div class="header">
-                <h4>Private Toyota van pick up and drop off</h4>
+                <h4 class="dotdotdotable">Private Toyota van pick up and drop off</h4>
               </div>
               <div class="content">
                 <p class="dotdotdotable">Chauffeured service to pick you up and drop you off at any major points of interest within Chiang Mai. Each van fits up to 9 travelers. </p>
@@ -755,6 +755,10 @@
     $(window).load(ellipsizeText);           // Oh hell! the images are loading so not all containers are yet on their places. We wait on them..
     function ellipsizeText()
     {
+        $(".dotdotdotable").dotdotdot({
+            watch: true
+        });
+
         $(".dotdotdotable").dotdotdot({
             watch: true
         });

@@ -120,6 +120,12 @@
 	color: #555;
 }
 
+.card.add-ons h4
+{
+	height: 16px;
+	width: 100%;
+}
+
 .card.cause p,
 .card.add-ons p
 {
