@@ -3,9 +3,9 @@
 	padding: 8px 20px;
 	font-weight: bold;
 
-	-moz-transition: all .1s;
-	-webkit-transition: all .1s;
-	transition: all .1s;
+	-moz-transition: all .05s;
+	-webkit-transition: all .05s;
+	transition: all .05s;
 	-moz-transform: scale(1,1);
 	-webkit-transform: scale(1,1);
 	transform: scale(1,1);
