@@ -521,6 +521,16 @@ button.btn-default#reset-filters
   text-decoration: none;
 }
 
+#accordion a
+{
+  display: block;
+}
+
+#accordion a:hover
+{
+  text-decoration: none;
+}
+
 .panel-group .panel
 {
   border-radius: 0px;
@@ -530,9 +540,24 @@ button.btn-default#reset-filters
   box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
 }
 
+.panel-group .panel .panel-heading
+{
+  padding: 15px;
+  border-radius: 0px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.panel-group .panel .panel-heading .panel-title
+{
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 @media (max-width: 991px) {
 
-  h1, h2
+  .la_results-hero h1,
+  h2
   {
     font-size: 24px;
   }
@@ -540,6 +565,13 @@ button.btn-default#reset-filters
   .la_breadcrumbs
   {
     font-size: 14px;
+  }
+
+  .results_header .geo-dropdown-group
+  {
+    top: initial;
+    margin-top: 20px;
+    display: block;
   }
 
   /*.collapse.in
