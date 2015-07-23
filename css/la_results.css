@@ -1,5 +1,6 @@
 body
 {
+  background: #eee;
 	/*background: url('../img/la_body_bg-1.jpg');
 	background-size: cover;
 	background-attachment: fixed;*/
@@ -53,16 +54,6 @@ body
 	content: ',';
 }
 
-
-
-
-/* filter: dropdown geo */
-
-.geo-dropdown-group
-{
-	width: 100%;
-}
-
 .geo-dropdown-group span
 {
 
@@ -92,11 +83,10 @@ body
 
 .results_header .geo-dropdown-group
 {
-	position: absolute;
-	bottom: 10px;
-	right: 20px;
+	position: relative;
 	display: inline-block;
 	width: auto;
+  top: 20px;
 }
 
 .results_header .dropdown
@@ -329,9 +319,10 @@ button.btn-default#reset-filters
 
 .filters-wrapper
 {
-	background: #eee;
+	background: #fafafa;
 	padding: 15px;
 	margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .filters-wrapper > .btn-default
@@ -500,6 +491,13 @@ button.btn-default#reset-filters
 	margin-bottom: 0px;
 }
 
+.crystal label
+{
+  font-weight: normal;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
 .crystal .crystal-duration .checkbox-item,
 .crystal .crystal-theme .checkbox-item
 {
@@ -522,6 +520,34 @@ button.btn-default#reset-filters
 {
   text-decoration: none;
 }
+
+.panel-group .panel
+{
+  border-radius: 0px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+  box-shadow: 0px 0px 1px 1px rgba(153,153,153,0.2);
+}
+
+@media (max-width: 991px) {
+
+  h1, h2
+  {
+    font-size: 24px;
+  }
+
+  .la_breadcrumbs
+  {
+    font-size: 14px;
+  }
+
+  .collapse.in
+  {
+    display: none;
+  }
+}
+
 
 
 /* Small devices (tablets, 768px and up) */

@@ -61,7 +61,9 @@
 	font-size: 0.85em;
 }
 
+.select-block,
 .la_home-hero-wrapper .select-block,
+.filters-wrapper .select-block,
 .payment .select-block
 {
 	display: block;
@@ -70,7 +72,9 @@
 	cursor: pointer;
 }
 
+.select-block select,
 .la_home-hero-wrapper .select-block select,
+.filters-wrapper .select-block select,
 .payment .select-block select
 {
 	-webkit-appearance:none;
@@ -104,7 +108,9 @@
 	height: 45px;
 }
 
+.select-block::after,
 .la_home-hero-wrapper .select-block::after,
+.filters-wrapper .select-block::after,
 .payment .select-block::after
 {
 	font-family: FontAwesome;
