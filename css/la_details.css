@@ -505,6 +505,15 @@ body
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 991px) { 
 
+	.container {
+		width: 100%;
+	}
+
+	body
+	{
+		background: #fff;
+	}
+
 	h1.h1
 	{
 		font-size: 1.5em;

@@ -549,7 +549,7 @@
             var currentScroll = $(this).scrollTop();
             if (currentScroll > headerOrgOffset) {
                 if (currentScroll > previousScroll) {
-                    $('#global-header-wrap').css('top','-50px');
+                    $('#global-header-wrap').css('top','-51px');
                 } else {
                     $('#global-header-wrap').css('top','0px');
                 }
@@ -560,14 +560,6 @@
         ellipsizeText();
 
         // $('#basicModal').modal();
-
-        $("#ex2").slider({});
-
-        $('.narrow-results-notif-wrapper').hover(function(){
-            $(this).toggleClass("hover");
-            $('.notif_bg_overlay').toggleClass("show");
-            $('.notif_trigger').toggleClass("hover");
-        });
 
         var activityIndicatorOn = function()
         {

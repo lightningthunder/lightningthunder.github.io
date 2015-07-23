@@ -56,13 +56,13 @@ h5
 #global-header
 {
 	width: 100%;
-	min-height: 50px;
+	height: 50px;
 }
 
 #global-header-wrap
 {
 	width: 100%;
-	min-height: 50px;
+	height: 50px;
 	background: #fff;
 	position: fixed;
 	border: none;
