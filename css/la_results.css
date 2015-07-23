@@ -574,6 +574,11 @@ button.btn-default#reset-filters
     display: block;
   }
 
+  .results_grid
+  {
+    padding: 0px;
+  }
+
   /*.collapse.in
   {
     display: none;
