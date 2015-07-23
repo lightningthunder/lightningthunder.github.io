@@ -729,6 +729,13 @@ span.letter-signs.culture::before
 }
 
 
+@media all and (max-width: 1024px) {
+ 	.card .footer
+ 	{
+ 		bottom: 0px;
+ 	} 
+}
+
 @media (max-width: 991px) {
 	.card.review .content
 	{
