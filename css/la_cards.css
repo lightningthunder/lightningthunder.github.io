@@ -22,14 +22,19 @@
 	margin-bottom: 30px;
 	position: relative;
 	overflow: hidden;
-
+	border-radius: 5px;
 	-moz-transition: all .1s;
 	-webkit-transition: all .1s;
 	transition: all .1s;
 	-moz-transform: scale(1,1);
 	-webkit-transform: scale(1,1);
 	transform: scale(1,1);
+	z-index: 60;
 
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
 
 .card:hover
@@ -241,11 +246,13 @@
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	z-index: 12;
+
 }
 
 .card .slideshow-overlay
 {
-	background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0.25);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -267,9 +274,9 @@
 	background-size: cover;
 	overflow: hidden;
 	z-index: 1;
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+	-moz-transition: all .25s;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 	-moz-transform: scale(1,1);
 	-webkit-transform: scale(1,1);
 	transform: scale(1,1);
@@ -411,9 +418,14 @@
 	font-weight: bold;
 	padding: 3px 15px 3px;
 
-	-webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	transition:         all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
 
+	-moz-transition: all .1s;
+	-webkit-transition: all .1s;
+	transition: all .1s;
 }
 
 .card:hover .footer

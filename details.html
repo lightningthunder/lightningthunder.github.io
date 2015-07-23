@@ -47,7 +47,22 @@
             <h1 class="h1">Immersive 3D2N Local Living in Hill Tribe Village Hidden in the Valley of Chiang Mai</h1> 
             <p class="item_geo">Mae Kampong Village</p>
             <p class="item_geo_2">Chiang Mai, Thailand</p>
-            <a class="btn btn-primary btn-xs item_geo_map">View Map <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <a class="btn btn-primary btn-xs item_geo_map" data-toggle="modal" data-target="#basicModal" href="#">View Map <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog la_fullscreen_modal">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="fullscreen-map">
+                      <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d483409.3730381975!2d98.88009259906401!3d18.814380525534226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x30da3088e698f189%3A0xa02474e3fd934597!2zQ2hpYW5nIE1haSBJbnRlcm5hdGlvbmFsIEFpcnBvcnQsIOC4oeC4q-C4tOC4lOC4pSBNdWVhbmcgQ2hpYW5nIE1haSBEaXN0cmljdCwgQ2hpYW5nIE1haSA1MDIwMA!3m2!1d18.767749!2d98.9640088!4m5!1s0x0%3A0x0!2s+18.881283%2C+99.345133!3m2!1d18.881283!2d99.34513299999999!5e0!3m2!1sen!2sth!4v1437638635649" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <!-- <div id="block-map"></div> -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-warning btn-sm" data-dismiss="modal">Close Maps</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
             <!-- <p class="item_themes">Hello</p> -->
           </div>
         </div>
@@ -525,6 +540,10 @@
   <script>
     $(document).ready(function(){
 
+        ellipsizeText();
+
+        // $('#basicModal').modal();
+
         $("#ex2").slider({});
 
         $('.narrow-results-notif-wrapper').hover(function(){
@@ -728,16 +747,18 @@
         }
     });
 
-    $(document).ready(ellipsizeText);        // Plugin must have been working flawles inhere as described in documentation.
-        window.setTimeout(ellipsizeText, 400);   // Just for any case.
-        window.setTimeout(ellipsizeText, 800);   // Maybe user didn't saw it flickering.
-        $(window).load(ellipsizeText);           // Oh hell! the images are loading so not all containers are yet on their places. We wait on them..
-        function ellipsizeText()
-        {
-            $(".dotdotdotable").dotdotdot({
-                watch: true
-            });
-        }
+    // $(document).ready(ellipsizeText);        // Plugin must have been working flawles inhere as described in documentation.
+    window.setTimeout(ellipsizeText, 400);   // Just for any case.
+    window.setTimeout(ellipsizeText, 800);   // Maybe user didn't saw it flickering.
+    $(window).load(ellipsizeText);           // Oh hell! the images are loading so not all containers are yet on their places. We wait on them..
+    function ellipsizeText()
+    {
+        $(".dotdotdotable").dotdotdot({
+            watch: true
+        });
+    }
+
+    
   </script>
   <!-- Please call pinit.js only once per page -->
   <script type="text/javascript" async defer  data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>

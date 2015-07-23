@@ -284,6 +284,19 @@
 	padding: 25px 15px 60px;
 	position: relative;
 	height: 150px;
+	-moz-transition: all .1s;
+	-webkit-transition: all .1s;
+	transition: all .1s;
+	-moz-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+}
+
+.trip-content .expectations .expectations-spider:hover
+{
+	-moz-transform: scale(1.25,1.25);
+	-webkit-transform: scale(1.25,1.25);
+	transform: scale(1.25,1.25);
 }
 
 .trip-content .expectations .expectations-spider.yes::after
