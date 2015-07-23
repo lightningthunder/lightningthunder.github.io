@@ -540,6 +540,23 @@
   <script>
     $(document).ready(function(){
 
+        var previousScroll = 0,
+        headerOrgOffset = $('#global-header').height();
+
+        $('#global-header-wrap').height($('#global-header').height());
+
+        $(window).scroll(function () {
+            var currentScroll = $(this).scrollTop();
+            if (currentScroll > headerOrgOffset) {
+                if (currentScroll > previousScroll) {
+                    $('#global-header-wrap').css('top','-50px');
+                } else {
+                    $('#global-header-wrap').css('top','0px');
+                }
+            } 
+            previousScroll = currentScroll;
+        });
+
         ellipsizeText();
 
         // $('#basicModal').modal();
@@ -707,22 +724,7 @@
 
     // header scroll
 
-    var previousScroll = 0,
-      headerOrgOffset = $('#global-header').height();
-
-      $('#global-header-wrap').height($('#global-header').height());
-
-      $(window).scroll(function () {
-          var currentScroll = $(this).scrollTop();
-          if (currentScroll > headerOrgOffset) {
-              if (currentScroll > previousScroll) {
-                  $('#global-header-wrap').css('top','-50px');
-              } else {
-                  $('#global-header-wrap').css('top','0px');
-              }
-          } 
-          previousScroll = currentScroll;
-      });
+    
 
     // scroll 
 
