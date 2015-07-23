@@ -109,6 +109,12 @@
 	background: transparent;
 }
 
+.card.cause .slideshow-overlay,
+.card.add-ons .slideshow-overlay
+{
+	background: transparent;
+}
+
 .card.cause:hover,
 .card.add-ons:hover,
 .card.cause:hover .slideshow-bg,
