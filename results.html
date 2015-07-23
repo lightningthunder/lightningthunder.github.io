@@ -792,9 +792,8 @@
     $(document).ready(function()
     {
       $("#ex2").slider({});
-    });
 
-    $(window).bind('load', function() {
+      $(window).bind('load', function() {
         if ($(this).width() < 767) {
             $('.collapse').removeClass('in');
             $('.collapse').addClass('out');
@@ -802,7 +801,19 @@
             $('.collapse').removeClass('out');
             $('.collapse').addClass('in');
         }
+    }
+    
     });
+
+    // $(window).bind('load', function() {
+    //     if ($(this).width() < 767) {
+    //         $('.collapse').removeClass('in');
+    //         $('.collapse').addClass('out');
+    //     } else {
+    //         $('.collapse').removeClass('out');
+    //         $('.collapse').addClass('in');
+    //     }
+    // });
   </script>
   <!-- end -->
 
