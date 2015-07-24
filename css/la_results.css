@@ -348,7 +348,7 @@ button.btn-default#reset-filters
 	padding: 5px 10px 10px;
 	background: #fff;
 	margin-bottom: 10px;
-	border-radius: 3px;
+  border: 1px solid #eee;
 }
 
 .crystal .crystal-price span
@@ -546,12 +546,58 @@ button.btn-default#reset-filters
   border-radius: 0px;
   border-bottom: 1px solid #eee;
   width: 100%;
+  position: relative;
 }
 
 .panel-group .panel .panel-heading .panel-title
 {
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.panel-group .panel .panel-heading span.glyphicon
+{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.search-panel,
+.filter-panel
+{
+  position: relative;
+}
+
+.filter-panel [data-toggle="collapse"]:after,
+.search-panel [data-toggle="collapse"]:after
+{
+  font-family: 'FontAwesome';
+  content: "Hide";
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 22px;
+  position: absolute;
+  z-index: 99;
+  top: 12px;
+  right: 15px;
+
+/*  -webkit-transform: rotate(-0deg);
+  -moz-transform:    rotate(-0deg);
+  -ms-transform:     rotate(-0deg);
+  -o-transform:      rotate(-0deg);
+  transform:         rotate(-0deg);*/
+}
+
+.filter-panel [data-toggle="collapse"].collapsed:after,
+.search-panel [data-toggle="collapse"].collapsed:after
+{
+ /* -webkit-transform: rotate(180deg);
+  -moz-transform:    rotate(180deg);
+  -ms-transform:     rotate(180deg);
+  -o-transform:      rotate(180deg);
+  transform:         rotate(180deg);*/
+  content: "Expand";
 }
 
 @media (max-width: 991px) {

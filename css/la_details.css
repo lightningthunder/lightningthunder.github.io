@@ -22,6 +22,7 @@ body
 
 .la_details-hero-wrapper h1
 {
+	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
 	width: 100%;
 	font-size: 2em;
 	padding-bottom: 0px;
