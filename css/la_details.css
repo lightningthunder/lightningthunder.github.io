@@ -533,7 +533,7 @@ body
 	color: #777;
 	border-top: 1px solid #eee;
 	display: none;
-	z-index: 99999;
+	z-index: 900;
 }
 
 .penguin-bottom-nav .col-xs-4
