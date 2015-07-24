@@ -316,13 +316,17 @@ body
 .trip-content .expectations ul
 {
 	margin-left: -10px;
+	color: #777;
 }
 
 .trip-content .expectations .expectations-spider
 {
 	padding: 25px 15px 60px;
+	padding: 10px;
 	position: relative;
 	height: 150px;
+	height: auto;
+	text-align: left !important;
 	-moz-transition: all .1s;
 	-webkit-transition: all .1s;
 	transition: all .1s;
@@ -331,14 +335,14 @@ body
 	transform: scale(1,1);
 }
 
-.trip-content .expectations .expectations-spider:hover
+/*.trip-content .expectations .expectations-spider:hover
 {
 	-moz-transform: scale(1.25,1.25);
 	-webkit-transform: scale(1.25,1.25);
 	transform: scale(1.25,1.25);
-}
+}*/
 
-.trip-content .expectations .expectations-spider.yes::after
+/*.trip-content .expectations .expectations-spider.yes::after
 {
 	font-family: FontAwesome;
 	content: '\f00c';
@@ -358,21 +362,23 @@ body
 	left: 0;
 	bottom: 35px;
 	color: #eee;
-}
+}*/
 
 .trip-content .expectations .expectations-spider .fa
 {
 	top: initial;
-	display: block;
+	display: inline-block;
 	font-size: 2em;
+	font-size: 1em;
 	margin: 0 auto 10px;
+	margin: 0px;
 	height: auto;
-	width: auto;
+	width: 24px;
 }
 
 .trip-content .expectations .expectations-spider.yes .fa
 {
-	color: #666;
+	color: #444;
 }
 
 .trip-content .expectations .expectations-spider.no .fa
@@ -383,16 +389,18 @@ body
 .trip-content .expectations .expectations-spider span
 {
 	font-size: 11px;
+	font-size: 14px;
 	letter-spacing: -0.25px;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 500;
 	line-height: 1.12;
 	display: inline-block;
+	font-family: "san francisco display";
 }
 
 .trip-content .expectations .expectations-spider.yes span
 {
-	color: #999;
+	color: #444;
 }
 
 .trip-content .expectations .expectations-spider.no span
@@ -502,17 +510,16 @@ body
 
 .btn-book-now-penguin
 {
-	
 	position: fixed;
-	width: 50px;
-	height: 50px;
-	bottom: 25px;
-	right: 25px;
+	width: 100%;
+	height: 60px;
+	bottom: 0px;
+	left: 0px;
+	border-radius: 0px;
 	font-size: 24px;
 	padding: 0px;
-	border-radius: 50%;
-	line-height: 50px;
 	font-weight: normal;
+	line-height: 60px;
 	color: #fff;
 	opacity: 0;
 }
@@ -641,6 +648,7 @@ body
 	.btn-book-now-penguin:focus
 	{
 		background: rgba(255, 160, 122, 0.75);
+		color: #fff;
 	}
 
 }

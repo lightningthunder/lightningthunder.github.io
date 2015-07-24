@@ -23,6 +23,15 @@ body
 	font-weight: 400;
 }
 
+/* for fixed header adjustment */
+
+body ~ .container 
+{
+	position: relative;
+	top: 50px;
+	padding-bottom: 50px;
+}
+
 a
 {
 	color: salmon;

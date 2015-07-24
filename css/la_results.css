@@ -23,10 +23,11 @@ body
 .la_results-hero
 {
 	width: 100%;
-	height: 350px;
-	background-size: cover;
+	height: 370px;
+	background: teal;
+  background-size: cover;
 	background-attachment: fixed;
-	color: #333;
+	color: #fff;
 	padding-top: 130px;
 }
 
