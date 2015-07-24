@@ -42,7 +42,7 @@
   <div class="container-fluid no-side-padding">
     <div class="row la_details-hero-wrapper center-block">
       <div class="package-details">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-side-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-side-padding">
           <div class="block-left">
             <h1 class="h1">Immersive 3D2N Local Living in Hill Tribe Village Hidden in the Valley of Chiang Mai</h1> 
             <p class="item_geo">Mae Kampong Village</p>
@@ -66,17 +66,29 @@
             <!-- <p class="item_themes">Hello</p> -->
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mini-details text-center">
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-6 no-side-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mini-details text-center">
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
               <p class="item_duration">3 Days 2 Nights</p>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-6 no-side-padding">
-              <p class="item_operator">Bangkok Vanguards</p>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
+              <p class="item_theme">Adventurous</p>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-6 no-side-padding">
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
+              <p class="item_language">English</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
+              <a href="profiles/operators/bangkok-vanguards.html" data-toggle="modal" data-target="#basicModal_profile" href="#"><p class="item_operator">Bangkok Vanguards</p> <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+              <div class="modal fade" id="basicModal_profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog la_fullscreen_modal no_max_height">
+                  <div class="modal-content">
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
               <p class="item_fitness">Light</p>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-6 no-side-padding">
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
               <p class="item_climate">Cool & dry</p>
             </div>
 
@@ -559,7 +571,13 @@
 
         ellipsizeText();
 
+        $('body').on('hidden.bs.modal', '.modal', function () {
+            $(this).removeData('bs.modal');
+            $('.modal-content', this).empty();
+        });
+
         // $('#basicModal').modal();
+        // $('#basicModal_weather').modal();
 
         var activityIndicatorOn = function()
         {

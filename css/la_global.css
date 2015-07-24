@@ -177,6 +177,12 @@ h5
 	padding-right: 0px;
 }
 
+.no_max_height
+{
+	height: auto !important;
+	max-height: auto !important;
+}
+
 div#basicModal.modal.fade.in
 {
 	padding: 0px;
@@ -191,6 +197,7 @@ div#basicModal.modal.fade.in
 	max-height: 600px;
 	margin: 0 auto;
 	border-radius: 0px
+	overflow-y: scroll;
 }
 
 .la_fullscreen_modal .modal-content

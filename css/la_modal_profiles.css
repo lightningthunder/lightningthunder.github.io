@@ -1,0 +1,55 @@
+.modal_profiles
+{
+	color: #333;
+	padding: 0px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.modal_profiles_bg
+{
+	height: 300px;
+	width: 100%;
+	background: teal;
+	margin: 0px;
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+.modal_profiles .modal_profiles_content
+{
+	text-align: left;
+	padding: 20px;
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+.modal_profiles .modal_profiles_content h1
+{
+	color: #333;
+}
+
+.modal_profiles .modal_profiles_content h2
+{
+	padding-top: 0px;
+}
+
+.modal_profiles .btn-close-modal
+{
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	display: block;
+	border-radius: 0px;
+}
+
+.btn:active,
+.btn:focus
+{
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+

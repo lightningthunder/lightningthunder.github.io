@@ -98,22 +98,35 @@ body
 	min-height: 115px;
 	height: 100%;
 	padding: 22px 15px 15px;
+
+	background: #eee;
+	padding: 15px 5px 15px;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	font-size: 0.9em;
+	min-height: 0;
+	padding: 8px 0;
 }
 
 .la_details-hero-wrapper .package-details p.item_duration,
 .la_details-hero-wrapper .package-details p.item_operator,
+.la_details-hero-wrapper .package-details p.item_theme,
+.la_details-hero-wrapper .package-details p.item_language,
 .la_details-hero-wrapper .package-details p.item_fitness,
 .la_details-hero-wrapper .package-details p.item_climate
 {
-	color: #fff;
+	color: #333;
 	line-height: 1;
 	margin-bottom: 0;
 	padding: 5px 0;
+	display: inline-block;
 }
 
 .la_details-hero-wrapper .package-details p.item_duration::before,
 .la_details-hero-wrapper .package-details p.item_operator::before,
 .la_details-hero-wrapper .package-details p.item_fitness::before,
+.la_details-hero-wrapper .package-details p.item_theme::before,
+.la_details-hero-wrapper .package-details p.item_language::before,
 .la_details-hero-wrapper .package-details p.item_climate::before
 {
 	display: block;
@@ -132,6 +145,16 @@ body
 .la_details-hero-wrapper .package-details p.item_operator::before
 {
 	content: 'Tour operator';
+}
+
+.la_details-hero-wrapper .package-details p.item_theme::before
+{
+	content: 'Theme';
+}
+
+.la_details-hero-wrapper .package-details p.item_language::before
+{
+	content: 'Language';
 }
 
 .la_details-hero-wrapper .package-details p.item_fitness::before
