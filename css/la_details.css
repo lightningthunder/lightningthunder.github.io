@@ -568,15 +568,15 @@ body
 
 .btn-book-now-penguin
 {
-	background-color: salmon;
-	color: #fff;
+	/*background-color: salmon;
+	color: #fff;*/
 }
 
 .btn-book-now-penguin:hover,
 .btn-book-now-penguin:focus
 {
-	background-color: lightsalmon;
-	color: #fff;
+	/*background-color: lightsalmon;
+	color: #fff;*/
 }
 
 @media (min-width: 1640px) {
