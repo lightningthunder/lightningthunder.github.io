@@ -582,7 +582,6 @@ button.btn-default#reset-filters
   .results_header
   {
     padding: 0px 0px 20px;
-    text-align: center;
   }
 
   /*.collapse.in
@@ -600,4 +599,12 @@ button.btn-default#reset-filters
 		font-size: 1.1em;
 		padding-top: 5px;
 	}
+}
+
+@media (max-width: 991px) {
+
+    .results_header
+    {
+      text-align: center;
+    }
 }
