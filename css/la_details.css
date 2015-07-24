@@ -711,6 +711,12 @@ body
 
 @media (max-width: 768px) { 
 
+	.misc-bar
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 	.penguin-bottom-nav
 	{
 		display: block;
