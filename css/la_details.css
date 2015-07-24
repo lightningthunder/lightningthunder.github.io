@@ -545,6 +545,14 @@ body
 		width: 100%;
 	}
 
+	hr
+	{
+		margin-left: -15px;
+		margin-right: -15px;
+		border-top: 5px solid #eee;
+		border-bottom: 5px solid #eee;
+	}
+
 	body
 	{
 		background: #fff;
