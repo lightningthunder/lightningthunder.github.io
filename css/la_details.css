@@ -49,6 +49,7 @@ body
 	padding: 0px;
 	height: auto;
 	background: rgba(0, 0, 0, 0.8);
+	text-align: center;
 }
 .la_details-hero-wrapper .package-details .block-left
 {
@@ -176,11 +177,6 @@ body
 	font-size: 8px;
 }
 
-a.gorilla-link:hover  .la_details-hero-wrapper .package-details p
-{
-	backgrond: #fff;
-}
-
 /* side bar */
 
 .misc-bar,
@@ -193,9 +189,6 @@ a.gorilla-link:hover  .la_details-hero-wrapper .package-details p
 {
 	padding: 0 20px;
 	background: #eee;
-	/*border-right: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	border-left: 1px solid #eee;*/
 }
 
 .misc-bar h3,
@@ -323,8 +316,6 @@ a.gorilla-link:hover  .la_details-hero-wrapper .package-details p
 {
 	margin-left: -10px;
 }
-
-
 
 .trip-content .expectations .expectations-spider
 {
@@ -576,7 +567,7 @@ a.gorilla-link:hover  .la_details-hero-wrapper .package-details p
 	.la_details-hero-wrapper .package-details p.item_geo,
 	.la_details-hero-wrapper .package-details p.item_geo_2
 	{
-		display: block;
+		/*display: block;*/
 		line-height: 1;
 		font-size: 1em;
 	}

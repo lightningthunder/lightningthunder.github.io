@@ -7,6 +7,29 @@
 	position: relative;
 }
 
+.modal_profiles span.chimpanzee-close
+{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	color: #999;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #fff;
+	padding: 0 5px;
+	border-radius: 3px;
+}
+
+.modal_profiles span.chimpanzee-glyph
+{
+	color: #999;
+	font-size: 1em;
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+}
+
 .modal_profiles_bg
 {
 	height: 300px;
@@ -15,12 +38,31 @@
 	margin: 0px;
 	background-size: cover !important;
 	background-position: center center !important;
+	position: relative;
+	text-align: center;
+}
+
+.modal_profiles_bg h1
+{
+	padding-top: 125px;
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.modal_profiles_bg span.glyphicon-menu-down
+{
+	position: relative;
+	color: #fff;
+	font-size: 1.5em;
+	top: 80px;
 }
 
 .modal_profiles .modal_profiles_content
 {
 	text-align: left;
-	padding: 20px 20px 60px;
+	padding: 20px 20px 40px;
 	margin: 0px;
 	overflow: hidden;
 	position: relative;
@@ -57,7 +99,7 @@
     -webkit-text-stroke-color: orange;
 }
 
-.modal_profiles .modal_profiles_content.physical-demand h1
+.modal_profiles .modal_profiles_content.physical-demand h2
 {
 	padding: 10px 0;
 	font-size: 1.5em;
