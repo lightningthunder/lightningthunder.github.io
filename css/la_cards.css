@@ -103,13 +103,6 @@
 	padding: 10px;
 }
 
-
-.card.review
-{
-	box-shadow: none;
-	background: transparent;
-}
-
 .card.cause .slideshow-overlay,
 .card.add-ons .slideshow-overlay
 {
@@ -167,6 +160,11 @@
 	position: relative;
 }
 
+.card.review
+{
+	margin-bottom: 1px;
+}
+
 .card.cause .content,
 .card.review .content,
 .card.book .content,
@@ -200,17 +198,9 @@
 	float: right;
 }
 
-.card.review
-{
-	background: transparent;
-	padding: 0;
-	overflow: visible;
-}
-
 .card.review .content
 {
-	background: transparent;
-	padding: 0;
+	padding: 15px 15px 15px 20px;
 	overflow: none;
 }
 
@@ -223,7 +213,7 @@
 {
 	color: #666;
 	text-indent: -9px;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 }
 
 .card.review p::before
@@ -795,7 +785,8 @@ span.letter-signs.culture::before
 @media (max-width: 991px) {
 	.card.review .content
 	{
-		padding-left: 12px;
+		padding: 15px 20px;
+		padding-left: 25px;
 	} 
 
 	.card.booking-summary,
@@ -803,5 +794,19 @@ span.letter-signs.culture::before
 	.card.booking-add-ons
 	{
 		padding: 0;
+	}
+
+	.card.review p
+	{
+		color: #666;
+		margin-bottom: 5px;
+		text-align: left;
+	}
+
+	.card.review span
+	{
+		display: block;
+		text-align: left;
+		color: #888;
 	}
 }

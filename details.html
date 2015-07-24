@@ -278,7 +278,7 @@
           <hr>
           <h4><i class="fa fa-cart-plus"></i> Upgrades <small>(Add at check out)</small></h4>
           <div class="col-xs-12 col-sm-6 col-lg-6 padding-top-20">
-            <div class="card add-ons text-center">
+            <div class="card add-ons">
               <div class="slideshow">
                 <div class="slideshow-bg" style="background-image:url('http://motoburg.com/images/toyota-hiace-slwb-commuter-bus-02.jpg');">
                 </div>
@@ -305,7 +305,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 padding-top-20">
-            <div class="card add-ons text-center">
+            <div class="card add-ons">
               <div class="slideshow">
                 <div class="slideshow-bg" style="background-image:url('http://www.asianplustravel.com/img//tour/cnx-khantoke2.jpg');">
                 </div>
@@ -332,7 +332,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 padding-top-20">
-            <div class="card add-ons text-center">
+            <div class="card add-ons">
               <div class="slideshow">
                 <div class="slideshow-bg" style="background-image:url('http://www.wanderintown.com/uploads/img/1430908305thai-cooking.jpg');">
                 </div>
@@ -372,7 +372,7 @@
         </div> -->
       </div>
       <!-- Book Column -->
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 book-now padding-top-20 padding-bottom-20" id="penguin-hook-jr">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 book-now padding-top-20 padding-bottom-20" id="penguin-hook-book">
         <!-- book now module -->
         <h3>Book Now & Let's Go</h3>
         <span class="item_price">
@@ -416,7 +416,6 @@
                     </div>
                     <div class="col-xs-12 no-side-padding text-center">
                       <a href="payment.html" class="btn btn-primary btn-success btn-book-now">Request to Book Now</a>
-                      <btn class="btn btn-book-now-penguin text-center" id="penguin-btn">Book Now <span class="glyphicon glyphicon-tree-conifer"></span></btn>
                     </div>
                 </fieldset>
               </form>
@@ -442,11 +441,11 @@
       </div>
 
       <!-- Impact, reviews, misc. Column -->
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 misc-bar padding-top-20 padding-bottom-20">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 misc-bar padding-top-20 padding-bottom-20" id="penguin-hook-impact">
         <!-- social impact -->
         <!-- stories cta -->
-        <div class="col-lg-9 col-md-9 col-xs-9">
-          <h3>Social causes this tour supports</h3>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <h3><i class="fa fa-heart"></i> Social causes we support</h3>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
           <div class="card cause">
@@ -482,8 +481,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-9 col-md-12 col-xs-9">
-          <h3>Latest reviews</h3>
+        <div class="col-lg-9 col-md-12 col-xs-9" id="penguin-hook-review">
+          <h3><i class="fa fa-comment"></i> Latest reviews</h3>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
           <div class="card review"> 
@@ -527,7 +526,17 @@
           </a>
         </div>
       </div>
-      
+      <div class="col-xs-12 penguin-bottom-nav">
+        <div class="col-xs-4">
+          <btn class="btn btn-impact-penguin text-center" id="penguin-impact">Social Impact</btn>
+        </div>
+        <div class="col-xs-4">
+          <btn class="btn btn-review-penguin text-center" id="penguin-review">Read Reviews</btn>
+        </div>
+        <div class="col-xs-4">
+          <btn class="btn btn-book-now-penguin text-center" id="penguin-book">Book Now</span></btn>
+        </div>
+      </div>
     </div>
   </div>
   <div class="container-fluid global-footer-wrap">
@@ -746,26 +755,38 @@
 
     // scroll 
 
-    $("#penguin-btn").click(function() {
+    $("#penguin-impact").click(function() {
         $('html, body').animate({
-            scrollTop: $("#penguin-hook-jr").offset().top
+            scrollTop: $("#penguin-hook-impact").offset().top
+        }, 1000);
+    });
+
+    $("#penguin-review").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#penguin-hook-review").offset().top
+        }, 1000);
+    });
+
+    $("#penguin-book").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#penguin-hook-book").offset().top
         }, 1000);
     });
 
     // book button hide
 
-    $(".btn-book-now-penguin").show(); //hide your div initially
-    var topOfOthDiv = $("#penguin-hook").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $(".btn-book-now-penguin").hide(); //reached the desired point -- show div
-        }
+    // $(".penguin-bottom-nav").show(); //hide your div initially
+    // var topOfOthDiv = $("#penguin-hook").offset().top;
+    // $(window).scroll(function() {
+    //     if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+    //         $(".penguin-bottom-nav").hide(); //reached the desired point -- show div
+    //     }
 
-        else
-        {
-            $(".btn-book-now-penguin").show(); 
-        }
-    });
+    //     else
+    //     {
+    //         $(".penguin-bottom-nav").show(); 
+    //     }
+    // });
 
     // $(document).ready(ellipsizeText);        // Plugin must have been working flawles inhere as described in documentation.
     window.setTimeout(ellipsizeText, 400);   // Just for any case.
