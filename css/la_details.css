@@ -108,6 +108,8 @@ body
 	padding: 8px 0;
 }
 
+
+
 .la_details-hero-wrapper .package-details p.item_duration,
 .la_details-hero-wrapper .package-details p.item_operator,
 .la_details-hero-wrapper .package-details p.item_theme,
@@ -133,7 +135,8 @@ body
 	text-transform: uppercase;
 	font-size: 0.8em;
 	color: #999;
-	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 0px;
 	line-height: 1;
 }
 
@@ -165,6 +168,17 @@ body
 .la_details-hero-wrapper .package-details p.item_climate::before
 {
 	content: 'Local climate';
+}
+
+.la_details-hero-wrapper .package-details p span.glyphicon
+{
+	margin-left: 5px;
+	font-size: 8px;
+}
+
+a.gorilla-link:hover  .la_details-hero-wrapper .package-details p
+{
+	backgrond: #fff;
 }
 
 /* side bar */
@@ -587,6 +601,16 @@ body
 	{
 		color: #333;
 		line-height: 1.2;
+	}
+
+	.la_details-hero-wrapper .package-details p.item_duration::before,
+	.la_details-hero-wrapper .package-details p.item_operator::before,
+	.la_details-hero-wrapper .package-details p.item_fitness::before,
+	.la_details-hero-wrapper .package-details p.item_theme::before,
+	.la_details-hero-wrapper .package-details p.item_language::before,
+	.la_details-hero-wrapper .package-details p.item_climate::before
+	{
+		margin-top: 10px;
 	}
 
 	.la_details-hero-wrapper h1

@@ -20,10 +20,49 @@
 .modal_profiles .modal_profiles_content
 {
 	text-align: left;
-	padding: 20px;
+	padding: 20px 20px 60px;
 	margin: 0px;
 	overflow: hidden;
 	position: relative;
+}
+
+.modal_profiles .modal_profiles_content.physical-demand
+{
+	text-align: center;
+}
+
+.modal_profiles .modal_profiles_content.physical-demand i
+{
+	font-size: 3em;
+}
+
+.modal_profiles .modal_profiles_content.physical-demand i.fa-birthday-cake
+{
+	color: pink;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightblue;
+}
+
+.modal_profiles .modal_profiles_content.physical-demand i.fa-heartbeat
+{
+	color: red;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: darkred;
+}
+
+.modal_profiles .modal_profiles_content.physical-demand i.fa-trophy
+{
+	color: yellow;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+}
+
+.modal_profiles .modal_profiles_content.physical-demand h1
+{
+	padding: 10px 0;
+	font-size: 1.5em;
+	text-transform: uppercase;
+
 }
 
 .modal_profiles .modal_profiles_content h1
@@ -44,6 +83,7 @@
 	width: 100%;
 	display: block;
 	border-radius: 0px;
+	margin-top: 50px;
 }
 
 .btn:active,
