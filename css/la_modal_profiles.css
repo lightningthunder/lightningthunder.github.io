@@ -135,3 +135,11 @@
 	transform: scale(1);
 }
 
+@media (max-width: 768px) {
+
+	.modal_profiles .modal_profiles_content.physical-demand i
+	{
+		margin-top: 30px;
+	}
+
+}
