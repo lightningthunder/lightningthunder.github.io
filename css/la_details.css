@@ -543,6 +543,7 @@ body
 
 	.container {
 		width: 100%;
+		overflow: hidden;
 	}
 
 	hr
@@ -637,6 +638,10 @@ body
 		text-decoration: line-through;
 	}
 
+	.trip-content .expectations .expectations-spider .fa
+	{
+		display: block;
+	}
 
 	.trip-content .expectations ul li span.local-says
 	{
