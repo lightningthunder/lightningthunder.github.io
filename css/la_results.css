@@ -601,7 +601,7 @@ button.btn-default#reset-filters
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 321px) {
 
     .results_header
     {
