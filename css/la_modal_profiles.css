@@ -13,9 +13,8 @@
 	top: 15px;
 	right: 15px;
 	cursor: pointer;
-	color: #999;
+	color: #666;
 	text-transform: uppercase;
-	font-weight: bold;
 	background: #fff;
 	padding: 0 5px;
 	border-radius: 3px;
@@ -23,7 +22,7 @@
 
 .modal_profiles span.chimpanzee-glyph
 {
-	color: #999;
+	color: #666;
 	font-size: 1em;
 	margin-left: 5px;
 	position: relative;

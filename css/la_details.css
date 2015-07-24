@@ -567,7 +567,7 @@ body
 	.la_details-hero-wrapper .package-details p.item_geo,
 	.la_details-hero-wrapper .package-details p.item_geo_2
 	{
-		/*display: block;*/
+		display: block;
 		line-height: 1;
 		font-size: 1em;
 	}
