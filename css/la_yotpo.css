@@ -76,6 +76,12 @@ span.yotpo-logo-title
 	font-size: 17.5px !important;
 }
 
+.yotpo .yotpo-review .yotpo-header .yotpo-icon-profile-social, .yotpo .yotpo-comment .yotpo-header .yotpo-icon-profile-social, .yotpo .yotpo-question .yotpo-header .yotpo-icon-profile-social
+{
+	border-radius: 50% !important;
+	overflow: hidden !important;
+}
+
 .yotpo .yotpo-review .yotpo-header .yotpo-icon-profile-social img, .yotpo .yotpo-comment .yotpo-header .yotpo-icon-profile-social img, .yotpo .yotpo-question .yotpo-header .yotpo-icon-profile-social img 
 {
     max-width: 100% !important;
