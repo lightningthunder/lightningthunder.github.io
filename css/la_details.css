@@ -9,7 +9,7 @@ body
 	height: 450px;
 	background: url('../img/la_blog-3.jpg') no-repeat center center;
 	background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
-    url('../img/la_blog-3.jpg') no-repeat center;
+    url('../img/la_blog-4.jpg') no-repeat center;
     background: -webkit-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
     url('../img/la_blog-3.jpg') no-repeat center;
     background: -moz-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
@@ -73,7 +73,7 @@ body
 
 .la_details-hero-wrapper .package-details .block-left
 {
-	padding: 10px 20px 60px;
+	padding: 10px 20px 40px;
 }
 
 .la_details-hero-wrapper .package-details p.item_geo,
@@ -96,7 +96,7 @@ body
 	content: ', ';
 }
 
-.la_details-hero-wrapper .package-details a.item_geo_map
+/*.la_details-hero-wrapper .package-details a.item_geo_map
 {
 	position: relative;
 	top: -2px;
@@ -104,9 +104,9 @@ body
 	border: 0;
 	line-height: 20px;
 	padding: 1px 8px;
-	text-transform: uppercase;
+	border-radius: 3px;
 	font-size: 0.7em;
-}
+}*/
 
 .la_details-hero-wrapper .package-details a.item_geo_map span
 {
@@ -143,13 +143,21 @@ body
 	display: inline-block;
 }
 
-.la_details-hero-wrapper .package-details a.gorilla-link
+.la_details-hero-wrapper .package-details a.gorilla-link,
+.la_details-hero-wrapper .package-details a.item_geo_map
 {
 	border: none;
-	border-radius: 3px;
+	border-radius: 2px;
 	padding: 1px 10px;
 	background: #555;
 	border: none;
+	font-size: 12px;
+}
+
+.la_details-hero-wrapper .package-details a.item_geo_map
+{
+	position: relative;
+	top: -4px;
 }
 
 /*.la_details-hero-wrapper .package-details a.gorilla-link p
@@ -204,7 +212,7 @@ body
 	content: 'Local climate';
 }*/
 
-.la_details-hero-wrapper .package-details p span.glyphicon
+.la_details-hero-wrapper .package-details span.glyphicon
 {
 	margin-left: 5px;
 	font-size: 8px;

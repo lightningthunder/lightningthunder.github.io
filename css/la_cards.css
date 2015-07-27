@@ -147,6 +147,7 @@
 	background: transparent;
 }
 
+.carousel-inner.card:hover .item,
 .card.cause:hover,
 .card.add-ons:hover,
 .card.cause:hover .slideshow-bg,
@@ -392,6 +393,7 @@
 	padding: 15px;
 	background: #fff;
 	height: 100%;
+	line-height: 1.2;
 	z-index: 2;
 }
 
@@ -469,6 +471,11 @@
 {
 	padding: 10px 10px 0px;
 	height: 90px;
+}
+
+.card.result span.item_geo::after
+{
+	content: ',';
 }
 
 .card.result:hover .slideshow span.price
