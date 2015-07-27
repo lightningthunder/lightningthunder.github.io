@@ -1,4 +1,4 @@
-.yotpo div
+.yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label
 {
 	font-family: avenir, 'avenir next', helvetica, arial, sans-serif !important; 
 	font-size: 14px !important;
@@ -9,6 +9,11 @@
 .yotpo-display-wrapper
 {
 	position: relative !important;
+}
+
+.yotpo-nav
+{
+	display: none;
 }
 
 .yotpo .yotpo-small-box
@@ -30,6 +35,12 @@
 span.yotpo-logo-title
 {
 	display: none !important;
+}
+
+.yotpo.yotpo-main-widget .yotpo-icon-btn
+{
+	border-radius: 3px;
+	background: salmon;
 }
 
 .yotpo .write-review .yotpo-header .yotpo-header-title
