@@ -891,9 +891,10 @@ span.promo-type
 
 	.la_home-hero .la_home-hero-wrapper h1
 	{
-		padding-bottom: 10px;
-		margin: 0px;
-		font-size: 2em;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
 	}
 
 	.la_home-hero .la_home-hero-wrapper h2
@@ -976,6 +977,13 @@ span.promo-type
 	.la_promo-carousel .item
 	{
 		background-size: cover !important;
+	}
+
+	.la_monkey_carousel_promonkey .item .carousel-caption .content h2.item_name, .card .item .carousel-caption .content h2.item_name
+	{
+		font-size: 1.25em;
+		font-weight: 600;
+		letter-spacing: -1.05px;
 	}
 
 	.content.la_hot-deals
