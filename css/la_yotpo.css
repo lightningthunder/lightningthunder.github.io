@@ -1,0 +1,59 @@
+.yotpo div
+{
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: normal;
+}
+
+.yotpo-display-wrapper
+{
+	position: relative;
+}
+
+.yotpo .yotpo-small-box
+{
+	border: none;
+	padding: 0px;
+	position: absolute;
+	right: 0px;
+	top: -60px;
+}
+
+.yotpo .yotpo-regular-box
+{
+	padding: 20px 0;
+	margin: 0 10px;
+	border-top: 1px solid #e3e3e3;
+}
+
+span.yotpo-logo-title
+{
+	display: none;
+}
+
+.yotpo .write-review .yotpo-header .yotpo-header-title
+{
+	color: #333;
+	font-weight: bold;
+	font-size:14px;
+	text-transform: capitalize;
+}
+
+.yotpo .y-label, .yotpo label.y-label
+{
+	padding: 10px 0 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.yotpo .text-box, .yotpo .yotpo-text-box,
+.yotpo input, .yotpo .y-input
+{
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0px 10px 20px 0;
+	color: #666;
+
+}
