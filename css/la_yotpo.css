@@ -3,7 +3,7 @@
 	font-family: avenir, 'avenir next', helvetica, arial, sans-serif !important; 
 	font-size: 14px !important;
 	line-height: 1.2 !important;
-	font-weight: normal !important;
+	font-weight: 500 !important;
 }
 
 .yotpo-display-wrapper
@@ -11,9 +11,9 @@
 	position: relative !important;
 }
 
-.yotpo-nav
+.youtpo .yotpo-nav
 {
-	display: none;
+	display: none !important;
 }
 
 .yotpo .yotpo-small-box
@@ -39,8 +39,8 @@ span.yotpo-logo-title
 
 .yotpo.yotpo-main-widget .yotpo-icon-btn
 {
-	border-radius: 3px;
-	background: salmon;
+	border-radius: 3px !important;
+	background: salmon !important;
 }
 
 .yotpo .write-review .yotpo-header .yotpo-header-title
@@ -61,7 +61,7 @@ span.yotpo-logo-title
 .yotpo .text-box, .yotpo .yotpo-text-box,
 .yotpo input, .yotpo .y-input
 {
-	font-family: avenir, 'avenir next', helvetica, arial, sans-serif !important 
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif !important;
 	font-size: 14px !important;
 	font-weight: normal !important;
 	margin: 0px 10px 20px 0 !important;
