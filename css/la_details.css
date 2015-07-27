@@ -8,18 +8,19 @@ body
 	width: 100%;
 	height: 450px;
 	background: url('../img/la_blog-3.jpg') no-repeat center center;
-	background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+	background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 80%),
     url('../img/la_blog-4.jpg') no-repeat center;
-    background: -webkit-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    background: -webkit-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 80%),
     url('../img/la_blog-3.jpg') no-repeat center;
-    background: -moz-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    background: -moz-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 80%),
     url('../img/la_blog-3.jpg') no-repeat center;
-    background: -o-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    background: -o-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 80%),
     url('../img/la_blog-3.jpg') no-repeat center;
 	background-size: cover;
 	color: #fff;
 	position: relative;
 	overflow: hidden;
+
 }
 
 .la_details-hero-wrapper h1,
