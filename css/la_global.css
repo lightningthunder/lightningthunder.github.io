@@ -217,6 +217,7 @@ div#basicModal.modal.fade.in
 	margin: 0 auto;
 	border-radius: 0px
 	overflow-y: scroll;
+	background: transparent;
 }
 
 .la_fullscreen_modal .modal-content,
@@ -225,6 +226,11 @@ div#basicModal.modal.fade.in
 	width: 100%;
 	height: 100%;
 	border-radius: 0px
+}
+
+.la_howitworks_modal .modal-content
+{
+	background: transparent;
 }
 
 .la_fullscreen_modal .modal-content .modal-body,
