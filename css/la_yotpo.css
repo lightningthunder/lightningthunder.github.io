@@ -1,59 +1,59 @@
 .yotpo div
 {
-	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
-	font-size: 14px;
-	line-height: 1.2;
-	font-weight: normal;
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif !important; 
+	font-size: 14px !important;
+	line-height: 1.2 !important;
+	font-weight: normal !important;
 }
 
 .yotpo-display-wrapper
 {
-	position: relative;
+	position: relative !important;
 }
 
 .yotpo .yotpo-small-box
 {
-	border: none;
-	padding: 0px;
-	position: absolute;
-	right: 0px;
-	top: -60px;
+	border: none !important;
+	padding: 0px !important;
+	position: absolute !important;
+	right: 0px !important;
+	top: -60px !important;
 }
 
 .yotpo .yotpo-regular-box
 {
-	padding: 20px 0;
-	margin: 0 10px;
-	border: none;
+	padding: 20px 0 !important;
+	margin: 0 10px !important;
+	border: none !important;
 }
 
 span.yotpo-logo-title
 {
-	display: none;
+	display: none !important;
 }
 
 .yotpo .write-review .yotpo-header .yotpo-header-title
 {
-	color: #333;
-	font-weight: bold;
-	font-size:14px;
-	text-transform: capitalize;
+	color: #333 !important;
+	font-weight: bold !important;
+	font-size:14px !important;
+	text-transform: capitalize !important;
 }
 
 .yotpo .y-label, .yotpo label.y-label
 {
-	padding: 10px 0 0;
-	font-size: 14px;
-	font-weight: normal;
+	padding: 10px 0 0 !important;
+	font-size: 14px !important;
+	font-weight: normal !important;
 }
 
 .yotpo .text-box, .yotpo .yotpo-text-box,
 .yotpo input, .yotpo .y-input
 {
-	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0px 10px 20px 0;
-	color: #666;
-	border: 1px solid #eee;
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif !important 
+	font-size: 14px !important;
+	font-weight: normal !important;
+	margin: 0px 10px 20px 0 !important;
+	color: #666 !important;
+	border: 1px solid #eee !important;
 }
