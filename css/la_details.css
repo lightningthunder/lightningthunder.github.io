@@ -8,6 +8,14 @@ body
 	width: 100%;
 	height: 450px;
 	background: url('../img/la_blog-3.jpg') no-repeat center center;
+	background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    url('../img/la_blog-3.jpg') no-repeat center;
+    background: -webkit-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    url('../img/la_blog-3.jpg') no-repeat center;
+    background: -moz-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    url('../img/la_blog-3.jpg') no-repeat center;
+    background: -o-linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 11%, rgba(0,0,0,0) 56%, rgba(0,0,0,0) 64%),
+    url('../img/la_blog-3.jpg') no-repeat center;
 	background-size: cover;
 	color: #fff;
 	position: relative;
@@ -22,12 +30,13 @@ body
 
 .la_details-hero-wrapper h1
 {
-	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
-	width: 100%;
+/*	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
+*/	width: 100%;
 	font-size: 2em;
 	padding-bottom: 0px;
 	padding-top: 15px;
 	margin-top: 0px;
+	font-weight: normal;
 }
 
 .la_details-hero-wrapper h2
@@ -49,7 +58,7 @@ body
 	/*max-width: 1140px;*/
 	padding: 0px;
 	height: auto;
-	background: rgba(0, 0, 0, 0.8);
+	/*background: rgba(0, 0, 0, 0.8);*/
 	text-align: center;
 }
 
@@ -62,17 +71,9 @@ body
 	font-weight: normal;
 }
 
-.la_details-hero-wrapper .package-details a.gorilla-link
-{
-	border: 1px solid #dadada;
-	border-radius: 3px;
-	padding: 1px 10px;
-	background: #fafafa;
-}
-
 .la_details-hero-wrapper .package-details .block-left
 {
-	padding: 10px 30px 20px;
+	padding: 10px 20px 60px;
 }
 
 .la_details-hero-wrapper .package-details p.item_geo,
@@ -119,16 +120,14 @@ body
 	height: 100%;
 	padding: 22px 15px 15px;
 
-	background: #eee;
+	/*background: #eee;*/
 	padding: 15px 5px 15px;
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 	text-align: center;
 	font-size: 0.9em;
 	min-height: 0;
 	padding: 8px 0;
 }
-
-
 
 .la_details-hero-wrapper .package-details p.item_duration,
 .la_details-hero-wrapper .package-details p.item_operator,
@@ -137,12 +136,27 @@ body
 .la_details-hero-wrapper .package-details p.item_fitness,
 .la_details-hero-wrapper .package-details p.item_climate
 {
-	color: #333;
+	color: #fff;
 	line-height: 1;
 	margin-bottom: 0;
 	padding: 5px 0;
 	display: inline-block;
 }
+
+.la_details-hero-wrapper .package-details a.gorilla-link
+{
+	border: none;
+	border-radius: 3px;
+	padding: 1px 10px;
+	background: #555;
+	border: none;
+}
+
+/*.la_details-hero-wrapper .package-details a.gorilla-link p
+{
+	border: none;
+	color: #777;
+}*/
 
 /*.la_details-hero-wrapper .package-details p.item_duration::before,
 .la_details-hero-wrapper .package-details p.item_operator::before,
