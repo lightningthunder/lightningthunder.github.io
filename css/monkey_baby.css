@@ -1,6 +1,13 @@
+/* some styles are contained in la_cards.css */
+
 #monkey_baby
 {
-  height: 400px;
+  height: 432px;
+}
+
+.monkey_container
+{
+  padding: 20px;
 }
 
 .monkey_bg
@@ -10,7 +17,26 @@
   background-size: cover !important;
   background-position: center;
   background: teal;
+  position: relative;
 }
+
+.monkey-card
+{
+  padding: 0px;
+  padding-left: 15px;
+  background: transparent;
+/*  -webkit-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
+  -moz-transition: all .1s;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  -moz-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);*/
+}
+
+
 
 #monkey_baby .item
 {
@@ -23,20 +49,22 @@
   left: initial;
   right: initial;
   bottom: initial;
-  height: 140px;
+  height: 170px;
   background: #fff;
   border: none;
+  
 }
 
 .la_monkey_carousel_promonkey .carousel-control {
   width: 4%;
   background-image: none;
+  top: 30%;
 }
 .la_monkey_carousel_promonkey .carousel-control.left {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .la_monkey_carousel_promonkey .carousel-control.right {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .la_monkey_carousel_promonkey .cloneditem-1,
@@ -44,20 +72,14 @@
 .la_monkey_carousel_promonkey .cloneditem-3 {
   display: none;
 }
-@media (max-width: 768px) {
-    .la_monkey_carousel_promonkey .carousel-inner > .item > div
+@media (max-width: 991px) {
+  .monkey_container
   {
-  padding-right: 0px;
-  padding-left: 0px;
+    padding: 20px 10px;
   }
 }
 
 @media all and (min-width: 768px) {
-  .la_monkey_carousel_promonkey .carousel-inner > .item > div
-  {
-  padding-right: 0px;
-  padding-left: 0px;
-  }
 
   .la_monkey_carousel_promonkey .carousel-inner > .active.left,
   .la_monkey_carousel_promonkey .carousel-inner > .prev {

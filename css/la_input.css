@@ -1,9 +1,11 @@
 .btn
 {
 	padding: 8px 20px;
-	font-weight: bold;
-	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
-
+	font-weight: 500;
+	letter-spacing: -0.25px;
+	border-radius: 3px;
+/*	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
+*/
 
 	-moz-transition: all .05s;
 	-webkit-transition: all .05s;
@@ -13,13 +15,39 @@
 	transform: scale(1,1);
 }
 
-.btn:active,
+.btn-ghost
+{
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	border: 1px solid #fff;
+	padding: 8px 20px;
+}
+
+.btn-ghost:hover
+{
+	border: 1px solid #fff;
+	box-shadow: none;
+	background: #fff;
+	color: #333;
+}
+
+.btn-ghost:focus,
+.btn-ghost:active
+{
+	border: 1px solid #fff;
+	box-shadow: none;
+	background: #fff;
+	color: #333;
+}
+
+/*.btn:active,
 .btn:focus
 {
 	-moz-transform: scale(0.98,0.98);
 	-webkit-transform: scale(0.98,0.98);
 	transform: scale(0.98,0.98);
-}
+}*/
 
 .la_home-hero-wrapper input,
 .payment input,
@@ -30,7 +58,7 @@
 	-moz-appearance:none;
 	-ms-appearance:none;
 	appearance:none;
-	border-radius: 5px;
+	border-radius: 3px;
 	border: 0;
 	border: 1px solid #eee;
 	box-shadow: none;
@@ -87,7 +115,7 @@
 	height: 34px;
 	border: none;
 	border: 1px solid #eee;
-	border-radius: 5px;
+	border-radius: 3px;
 	display: block;
 	margin: 0;
 	padding: 5px 20px 7px 10px;
@@ -100,13 +128,56 @@
 	background: #fff;
 }
 
-.la_home-hero-wrapper .select-block select
+.la_home-hero-wrapper .select-block
 {
-	font-size: 18px;
+	display: inline-block;
+	width: 40%;
+	float: left;
+	border-radius: 0px;
+	position: relative;
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+}
+
+.la_home-hero-wrapper .select-block select[name="Country"]
+{
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.la_home-hero-wrapper .btn-search-now
+{
+	width: 20%;
+	padding: auto 40px;
+	height: 45px;
+	float: left;
+	margin: 0px;
+	font-size: 1em;
+	border-radius: 0px;
+	text-align: center;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.la_home-hero-wrapper .btn-search-now i
+{
+	margin-left: 8px;
 }
 
 .la_home-hero-wrapper .select-block select
 {
+	font-size: 1em;
+	border-radius: 0px;
 	height: 45px;
 }
 

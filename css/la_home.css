@@ -5,23 +5,14 @@
 
 body
 {
-	background: #fafafa;
+	background: #eee;
 }
 
 /*text styles for this specific page*/
-.h1
-{
-	padding-bottom: 30px;
-}
 
 .content
 {
 	position: relative;
-}
-
-.la_home-hero-wrapper .lead
-{
-	padding-top: 35px;
 }
 
 /* local alike hero*/
@@ -39,11 +30,8 @@ body
 	width: 100%;
 	height: 550px;
 	background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.65), 
-      rgba(0, 0, 0, 0.65)
-    ),
-    url('../img/la_home-hero_bg-1.jpg') no-repeat center center;
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)
+    ),url('../img/la_home-hero_bg-1.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
 	padding-top: 130px;
@@ -53,6 +41,33 @@ body
 {
 	width: 100%;
 	max-width: 700px;
+}
+
+.la_home-hero .la_home-hero-wrapper h1
+{
+	padding-bottom: 10px;
+	margin: 0px;
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.la_home-hero .la_home-hero-wrapper h2
+{
+	padding: 0px 20px;
+	margin: 0px 0px 50px;
+	font-size: 1.75em;
+	color: #eee;
+}
+
+.la_home-hero-wrapper .lead
+{
+	margin-top: 40px;
+	font-size: 1.25em;
+}
+
+.la_home-hero-wrapper .what-is
+{
+	padding-top: 30px;
 }
 
 /* hero dropdown items */
@@ -114,7 +129,7 @@ body
 
 .container.promo .content
 {
-	padding: 10px;
+	padding: 15px;
 	height: 400px;
 }
 
@@ -131,10 +146,10 @@ body
 
 .content.la_hot-deals
 {
-	/*padding: 20px;*/
-	padding: 20px;
+	padding: 20px 5px;
 	color: #333;
-	height: 400px;
+	height: 430px;
+	position: relative;
 }
 
 .content.la_hot-deals h2
@@ -147,12 +162,17 @@ body
 	line-height: 1.1;
 }
 
+.content.la_hot-deals .btn
+{
+	margin-top: 10px;
+}
+
 .la_popular-day > #promo-carousel,
 .la_popular-overnight > #promo-carousel-2,
 .la_hot-deals > #promo-carousel-3
 {
-	height: 420px;
-	border: 1px solid #eee;
+	height: 430px;
+	/*border: 1px solid #eee;*/
 }
 
 .la_promo-carousel
@@ -291,6 +311,7 @@ span.promo-type
 .carousel-indicators
 {
 	bottom: 115px;
+	z-index: 900;
 }
 
 .carousel-control
@@ -298,16 +319,18 @@ span.promo-type
 	width: 10%;
 	z-index: 99;
 	text-shadow: none;
+	opacity: 1;
 }
 
 .carousel-control.left,
 .carousel-control.right
 {
 	background: transparent;
+	border: 0;
 }
 
-.carousel-control .glyphicon-chevron-left, 
-.carousel-control .glyphicon-chevron-right
+.carousel-control .fa,
+.carousel-control .glyphicon
 {
 	top: 40%;
 	font-size: 20px;
@@ -334,34 +357,30 @@ span.promo-type
 {
 	font-size: 2em;
 	text-align: right;
-	font-weight: bold;
+	font-weight: 500;
 	color: #fff;
 	right: 20px;
-	top: 20px;
+	bottom: 20px;
 	position: absolute;
 }
 
-.carousel-inner span.price:first-of-type:first-letter
+.carousel-inner span.price::before
+{
+	content: '\000E3F\00a0';
+}
+
+/*.carousel-inner span.price:first-of-type:first-letter
 {
 	font-weight: normal;
 	font-size: 0.75em;
-}
+}*/
 
 .carousel-inner span.price:after
 {
 
 }
 
-.la_popular-day .carousel-inner span.price:after
-{
-	content: 'per traveler';
-	font-size: 15px;
-	display: block;
-	line-height: 1;	
-	font-weight: normal;
-}
-
-.la_popular-overnight .carousel-inner span.price:after
+.carousel-inner span.price:after
 {
 	content: 'per traveler';
 	font-size: 15px;
@@ -389,7 +408,7 @@ span.promo-type
 .carousel-caption h3
 {
 	font-size: 1.25em;
-	font-weight: bolder;
+	font-weight: 500;
 	margin-bottom: 5px;
 	margin-top: 0px;
 	color: #333;
@@ -397,7 +416,7 @@ span.promo-type
 
 .carousel-caption span
 {
-	color: #555;
+	color: #777;
 }
 
 .carousel-caption span.item_geo::after
@@ -405,14 +424,14 @@ span.promo-type
 	content: ',';
 }
 
-.carousel-caption span.item_duration
+/*.carousel-caption span.item_duration
 {
 	background: #eee;
 	border-radius: 2px;
 	margin-right: 4px;
 	padding: 1px 6px;
 	font-size: 13px;
-}
+}*/
 
 .carousel-caption p
 {
@@ -524,7 +543,7 @@ span.promo-type
 .la_promo-carousel.la_hot-deals .item .deal-3
 {
 	width: 33.33%;
-	height: 420px;
+	height: 430px;
 	display: block;
 	float: left;
 	background-size: cover !important;
@@ -638,36 +657,89 @@ span.promo-type
 	left: 66.666%;
 }
 
+.la_monkey_carousel_promonkey .item .promo_price
+{
+/*	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+	position: absolute;*/
+
+	bottom: 0px;
+	right: 20px;
+	display: block;
+	position: absolute;
+
+	/*height: 100%;
+	width: calc(100% - 15px);*/
+
+	height: auto;
+	width: auto;
+
+	text-align: right;
+
+	/*background: #fff;*/
+	/*padding: 2px 10px;*/
+	/*border: 1px solid #eee;*/
+}
+
+.promo_price span.label
+{
+	display: block;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 7px 0px 0px;
+	color: #fff;
+	text-align: right;
+}
+
 .la_monkey_carousel_promonkey .item .price_before
 {
-	display: inline-block;
+	display: block;
+	padding: 0px;
+	margin: 0px;
 	white-space: nowrap;
 	text-decoration: line-through;
-	color: #333;
-	text-align: right;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	font-size: 1.25em;
+	position: relative;
+	font-size: 1em;
+	margin-bottom: 25px;
+	line-height: 1;
+	color: #fff;
+}
+
+.la_monkey_carousel_promonkey .item .price_before::before
+{
+	content: '\000E3F\00a0';
 }
 
 .la_monkey_carousel_promonkey .item .price_before:first-of-type:first-letter
 {
-	font-weight: normal;
-	font-size: 0.5em;
+/*	font-weight: normal;
+	font-size: 0.5em;*/
 }
 
 .la_monkey_carousel_promonkey .item .price
 {
-	top: 25px;
-	right: 10px;
-	color: salmon;
+	/* top: 30px; */
+	/* right: 10px; */
+	position: relative;
+	top: auto;
+	right: auto;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	color: #fff;
 }
 
 .la_monkey_carousel_promonkey .item .price:first-of-type:first-letter
 {
-	font-weight: bold;
-	font-size: 0.75em;
+/*	font-weight: 500;
+	font-size: 0.75em;*/
 }
 
 .la_promo-carousel.la_hot-deals .item .price_before::before
@@ -675,14 +747,12 @@ span.promo-type
 	/*content: '$ ';*/
 }
 
-.la_monkey_carousel_promonkey .item .price::after
+.la_monkey_carousel_promonkey .item .price::before
 {
-	content: 'per traveler';
-	font-size: 15px;
-	display: block;
+	content: '\000E3F\00a0';
+	display: inline-block;
 	line-height: 1;	
 	text-decoration: none;
-	font-weight: normal;
 }
 
 .la_promo-carousel.la_hot-deals .item .deal-1 .price,
@@ -819,9 +889,19 @@ span.promo-type
 
 @media (max-width: 991px) {
 
-	.h1
+	.la_home-hero .la_home-hero-wrapper h1
 	{
-		font-size: 24px;
+		padding-bottom: 10px;
+		margin: 0px;
+		font-size: 2em;
+	}
+
+	.la_home-hero .la_home-hero-wrapper h2
+	{
+		padding: 0px 20px;
+		margin: 0px 0px 50px;
+		font-size: 1.25em;
+		color: #eee;
 	}
 
 	.la_home-hero
@@ -852,9 +932,16 @@ span.promo-type
 		font-size: 14px;
 		content: 'Swipe up for more  \f139';
 		color: #999;
+		position: relative;
+		bottom: -20px;
 	}
 
 	.la_home-hero .what-is p
+	{
+		display: none;
+	}
+
+	.la_home-hero-wrapper .btn-search-now span
 	{
 		display: none;
 	}
@@ -873,7 +960,7 @@ span.promo-type
 	.la_popular-overnight > #promo-carousel-2, 
 	.la_hot-deals > #promo-carousel-3
 	{
-		height: 300px;
+		height: 430px;
 	}
 
 	.la_promo-carousel .item
@@ -899,7 +986,7 @@ span.promo-type
 		right: 0;
 		margin-bottom: 0.5em;
 		font-size: 1.25em;
-		font-weight: bolder;
+		font-weight: 500;
 		background: #fff;
 		color: salmon;
 	}
