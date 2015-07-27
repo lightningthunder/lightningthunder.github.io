@@ -41,7 +41,7 @@
 #monkey_baby .item
 {
   height: 430px;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 #monkey_baby .carousel-caption
