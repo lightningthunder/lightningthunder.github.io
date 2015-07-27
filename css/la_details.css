@@ -52,6 +52,24 @@ body
 	background: rgba(0, 0, 0, 0.8);
 	text-align: center;
 }
+
+.la_details-hero-wrapper .package-details span.label
+{
+	color: #999;
+	text-transform: uppercase;
+	font-size: 11px;
+	display: block;
+	font-weight: normal;
+}
+
+.la_details-hero-wrapper .package-details a.gorilla-link
+{
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	padding: 1px 10px;
+	background: #fafafa;
+}
+
 .la_details-hero-wrapper .package-details .block-left
 {
 	padding: 10px 30px 20px;
@@ -126,7 +144,7 @@ body
 	display: inline-block;
 }
 
-.la_details-hero-wrapper .package-details p.item_duration::before,
+/*.la_details-hero-wrapper .package-details p.item_duration::before,
 .la_details-hero-wrapper .package-details p.item_operator::before,
 .la_details-hero-wrapper .package-details p.item_fitness::before,
 .la_details-hero-wrapper .package-details p.item_theme::before,
@@ -140,9 +158,9 @@ body
 	margin-top: 5px;
 	margin-bottom: 0px;
 	line-height: 1;
-}
+}*/
 
-.la_details-hero-wrapper .package-details p.item_duration::before
+/*.la_details-hero-wrapper .package-details p.item_duration::before
 {
 	content: 'Tour duration';
 }
@@ -170,7 +188,7 @@ body
 .la_details-hero-wrapper .package-details p.item_climate::before
 {
 	content: 'Local climate';
-}
+}*/
 
 .la_details-hero-wrapper .package-details p span.glyphicon
 {

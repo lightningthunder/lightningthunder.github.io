@@ -9,12 +9,11 @@
 
 .book-now h3
 {
-	font-size: 1.15em;
-	padding: 3px 5px 3px;
-	text-transform: uppercase;
-	margin: 20px auto 10px;
-	background: salmon;
-	color: #fafafa;
+	font-size: 1.5em;
+	padding: 6px 0px 3px;
+	border-bottom: 5px solid salmon;
+	margin: 20px auto 15px;
+	color: #fff;
 	display: inline-block;
 }
 
