@@ -11,9 +11,10 @@
 	position: relative !important;
 }
 
-.youtpo .yotpo-nav
+.yotpo .yotpo-nav
 {
 	display: none !important;
+	visibility: hidden !important;
 }
 
 .yotpo .yotpo-small-box
@@ -68,4 +69,23 @@ span.yotpo-logo-title
 	margin: 0px 10px 20px 0 !important;
 	color: #666 !important;
 	border: 1px solid #eee !important;
+}
+
+.yotpo .yotpo-icon 
+{
+	font-size: 17.5px !important;
+}
+
+.yotpo .yotpo-review .yotpo-header .yotpo-icon-profile-social img, .yotpo .yotpo-comment .yotpo-header .yotpo-icon-profile-social img, .yotpo .yotpo-question .yotpo-header .yotpo-icon-profile-social img 
+{
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    top: -2px !important;
+}
+
+.yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-icon-star, .yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-icon-half-star, .yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-icon-empty-star, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-icon-empty-star
+{
+	font-size: 26px !important;
 }
