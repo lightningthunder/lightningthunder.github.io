@@ -907,13 +907,23 @@ span.promo-type
 	.la_home-hero
 	{
 		height: auto;
-		padding: 100px 20px 40px;
+		padding: 100px 10px 40px;
 		text-align: left;
 	}
 
 	.la_home-hero .home_submit 
 	{
 		text-align: center;
+	}
+
+	.la_home-hero-wrapper .select-block
+	{
+		width: 50%;
+	}
+
+	.la_home-hero-wrapper .btn-search-now
+	{
+		width: 100%;
 	}
 
 	.la_home-header img.la_home-header-logo
@@ -941,10 +951,10 @@ span.promo-type
 		display: none;
 	}
 
-	.la_home-hero-wrapper .btn-search-now span
+	/*.la_home-hero-wrapper .btn-search-now span
 	{
 		display: none;
-	}
+	}*/
 
 	.dropdown
 	{
