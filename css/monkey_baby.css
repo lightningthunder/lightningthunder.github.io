@@ -36,14 +36,6 @@
   transform: scale(1,1);*/
 }
 
-
-
-#monkey_baby .item
-{
-  height: 430px;
-  padding: 0 15px;
-}
-
 #monkey_baby .carousel-caption
 {
   position: relative;
@@ -84,6 +76,13 @@
   {
     padding: 0px;
   }
+
+  #monkey_baby .item
+  {
+    height: 430px;
+    padding: 0 0 0 15px;
+  }
+
   .la_monkey_carousel_promonkey .carousel-control.right {
     margin-right: 20px;
   }
