@@ -41,6 +41,7 @@
 #monkey_baby .item
 {
   height: auto;
+  width: 15px;
 }
 
 #monkey_baby .carousel-caption
@@ -72,10 +73,19 @@
 .la_monkey_carousel_promonkey .cloneditem-3 {
   display: none;
 }
+
 @media (max-width: 991px) {
   .monkey_container
   {
     padding: 20px 10px;
+  }
+
+  .monkey-card
+  {
+    padding: 0px;
+  }
+  .la_monkey_carousel_promonkey .carousel-control.right {
+    margin-right: 20px;
   }
 }
 
