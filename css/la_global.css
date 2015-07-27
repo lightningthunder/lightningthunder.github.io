@@ -88,6 +88,11 @@ h5
 	border: none;
 }
 
+.navbar-header a:hover
+{
+	border: none;
+}
+
 .la_global-header-logo
 {
 	width: 120px;
