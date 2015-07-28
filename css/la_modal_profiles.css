@@ -67,6 +67,7 @@
 	margin: 0px;
 	overflow: hidden;
 	position: relative;
+	background: #fff;
 }
 
 .modal_profiles .modal_profiles_content.physical-demand

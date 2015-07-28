@@ -31,13 +31,13 @@ body
 
 .la_details-hero-wrapper h1
 {
-/*	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
-*/	width: 100%;
+	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
+	width: 100%;
 	font-size: 2em;
 	padding-bottom: 0px;
 	padding-top: 15px;
 	margin-top: 0px;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .la_details-hero-wrapper h2
@@ -149,7 +149,7 @@ body
 {
 	background: transparent;
 	border-radius: 2px;
-	padding: 1px 10px;
+	padding: 1px 5px;
 	border: 1px solid #888;
 	font-size: 12px;
 }
@@ -212,7 +212,7 @@ body
 	content: 'Local climate';
 }*/
 
-.la_details-hero-wrapper .package-details span.glyphicon
+.la_details-hero-wrapper .package-details span.glyphicon.glyphicon-new-window
 {
 	margin-left: 5px;
 	font-size: 8px;
@@ -298,7 +298,6 @@ body
 .trip-content h4
 {
 	font-size: 18px;
-	color: salmon;
 	margin: 40px 0 25px;
 }
 
@@ -673,12 +672,13 @@ hr
 
 	h1.h1
 	{
-		font-size: 1.5em;
+		font-size: 1.25em;
+		font-weight: 600;
 	}
 
 	.la_details-hero-wrapper
 	{
-		height: calc(100vh + 115px);
+		height: calc(100vh + 65px);
 	}
 
 	.la_details-hero-wrapper .package-details
@@ -703,14 +703,16 @@ hr
 	.la_details-hero-wrapper .package-details p.item_geo,
 	.la_details-hero-wrapper .package-details p.item_geo_2
 	{
-		display: block;
+		display: inline-block;
 		line-height: 1;
 		font-size: 1em;
 	}
 
 	.la_details-hero-wrapper .package-details .item_geo_map
 	{
-		margin-top: 8px;
+		display: block;
+		margin: 18px auto 0;
+		width: 180px;
 	}
 
 	.la_details-hero-wrapper .package-details span.label
@@ -817,10 +819,10 @@ hr
 
 	.trip-content .expectations .expectations-spider .fa
 	{
-		display: inline-block;
+		display: block;
 		width: 30px;
 		font-size: 1.5em;
-		margin-right: 5px;
+		margin: 0 0 10px;
 	}
 
 	.trip-content .expectations .expectations-spider span
