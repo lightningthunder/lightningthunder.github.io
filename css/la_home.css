@@ -34,7 +34,7 @@ body
     ),url('../img/la_home-hero_bg-1.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
-	padding-top: 130px;
+	padding-top: 180px;
 }
 
 .la_home-hero .la_home-hero-wrapper
@@ -340,6 +340,7 @@ span.promo-type
 {
 	height: 100%;
 	width: 100%;
+	cursor: pointer;
 }
 
 .carousel-inner .item

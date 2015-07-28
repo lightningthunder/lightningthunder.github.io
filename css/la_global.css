@@ -16,6 +16,8 @@ body
 	font-size: 15px;
 	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
 	font-weight: 400;
+	position: relative;
+	top: 50px;
 }
 
 /* for fixed header adjustment */
@@ -74,7 +76,7 @@ h5
 	background: #fff;
 	position: fixed;
 	border: none;
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 	border-radius: 0px;
 	z-index: 999;
 	-moz-transition: all .3s;
