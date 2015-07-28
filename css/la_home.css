@@ -891,6 +891,11 @@ span.promo-type
 
 @media (max-width: 991px) {
 
+	.la_home-hero-wrapper
+	{
+		height: 200px;
+	}
+
 	.la_home-hero .la_home-hero-wrapper h1
 	{
 		letter-spacing: -0.5px;
