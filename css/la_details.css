@@ -292,7 +292,7 @@ body
 {
 	padding: 0px 15px 40px;
 	background: #fff;
-	box-shadow: 4px 0px 10px -10px rgba(0, 0, 0, 0.2);
+	/*box-shadow: 4px 0px 10px -10px rgba(0, 0, 0, 0.2);*/
 	z-index: 99;
 }
 
@@ -329,6 +329,16 @@ body
 	background: salmon;
 	top: -3px;
 	margin-right: 5px;
+}
+
+.trip-content #la_photo-gallery,
+.trip-content #la_package-details,
+.trip-content #la_expectations,
+.trip-content #la_itinerary,
+.trip-content #la_add-ons,
+.trip-content #la_tips-notes
+{
+	padding-bottom: 15px;
 }
 
 /*.trip-content #la_photo-gallery h4 .fa
@@ -398,18 +408,9 @@ body
 	transform: scale(1.25,1.25);
 }*/
 
-/*.trip-content .expectations .expectations-spider.yes::after
-{
-	font-family: FontAwesome;
-	content: '\f00c';
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 35px;
-	color: orange;
-}
 
-.trip-content .expectations .expectations-spider.no::after
+
+/*.trip-content .expectations .expectations-spider.no::after
 {
 	font-family: FontAwesome;
 	content: '\f00d';
@@ -423,18 +424,16 @@ body
 .trip-content .expectations .expectations-spider .fa
 {
 	top: initial;
-	display: inline-block;
+	display: block;
 	font-size: 2em;
-	font-size: 1em;
 	margin: 0 auto 10px;
-	margin: 0px;
 	height: auto;
-	width: 24px;
+	text-align: center;
 }
 
 .trip-content .expectations .expectations-spider.yes .fa
 {
-	color: #444;
+	color: #555;
 }
 
 .trip-content .expectations .expectations-spider.no .fa
@@ -444,19 +443,29 @@ body
 
 .trip-content .expectations .expectations-spider span
 {
-	font-size: 11px;
 	font-size: 15px;
-	letter-spacing: -0.25px;
-	font-weight: 500;
-	line-height: 1.12;
-	display: inline-block;
+	letter-spacing: -0.05px;
+	font-weight: 400;
+	line-height: 1.2;
+	display: block;
+	text-align: center;
 /*	font-family: "san francisco display";
 */}
 
 .trip-content .expectations .expectations-spider.yes span
 {
-	color: #444;
+	color: #777;
 }
+
+/*.trip-content .expectations .expectations-spider.yes .fa::after
+{
+	font-family: FontAwesome;
+	content: '\f00c';
+	position: absolute;
+	color: orange;
+	font-size: 10px;
+	bottom: 0px;
+}*/
 
 .trip-content .expectations .expectations-spider.no span
 {
@@ -621,6 +630,13 @@ body
 	color: #fff;*/
 }
 
+hr
+{
+	margin-left: -25px;
+	margin-right: -25px;
+	border-bottom: 14px solid #eee;
+}
+
 @media (min-width: 1640px) {
 	.la_details-hero-wrapper
 	{
@@ -754,7 +770,7 @@ body
 
 	.trip-content .itinerary .itin-details p
 	{
-		display: none;
+		/*display: none;*/
 	}
 }
 
@@ -772,15 +788,38 @@ body
 	}
 
 	.btn-book-now-penguin
+	{
 	
 		opacity: 1;
 	}
 
-	.btn-book-now-penguin:hover,
-	.btn-book-now-penguin:active,
-	.btn-book-now-penguin:focus
+	.trip-content .expectations .expectations-spider
 	{
-		
+		padding: 25px 15px 60px;
+		padding: 10px;
+		position: relative;
+		height: 150px;
+		height: auto;
+		text-align: left !important;
+		-moz-transition: all .1s;
+		-webkit-transition: all .1s;
+		transition: all .1s;
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+
+	.trip-content .expectations .expectations-spider .fa
+	{
+		display: inline-block;
+		width: 30px;
+		font-size: 1.5em;
+		margin-right: 5px;
+	}
+
+	.trip-content .expectations .expectations-spider span
+	{
+		display: inline-block;
 	}
 
 }

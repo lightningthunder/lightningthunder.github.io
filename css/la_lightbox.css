@@ -370,6 +370,7 @@
 			#gallery-container .featured-gallery-img
 			{
 				display: block;
+				padding: 2.5px 0px 0px !important;
 			}
 			#imagelightbox-close
 			{
