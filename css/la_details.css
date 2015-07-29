@@ -679,6 +679,11 @@ hr
 		font-weight: 600;
 	}
 
+	.trip-content h4
+	{
+		margin: 20px 0;
+	}
+
 	.la_details-hero-wrapper
 	{
 		height: calc(100vh + 65px);
