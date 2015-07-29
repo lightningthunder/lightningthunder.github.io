@@ -101,6 +101,29 @@ h5
 	top: 5px;
 }
 
+.promo-code-notify
+{
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	padding: 0 10px;
+	background: salmon;
+	color: #fff;
+	margin-right: -20px;
+	font-weight: 500;
+}
+
+.promo-code-notify code
+{
+	color: salmon;
+	background: #fff;
+	padding: 1px 6px 0;
+	border-radius: 3px;
+	font-size: 14px;
+	margin: 0 8px;
+	letter-spacing: 1px;
+}
+
 .global-footer-wrap
 {
 	background: #333;

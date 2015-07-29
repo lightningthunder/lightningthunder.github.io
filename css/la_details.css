@@ -228,7 +228,7 @@ body
 
 .misc-bar
 {
-	padding: 0 20px;
+	padding: 0px;
 	background: #eee;
 }
 
@@ -289,7 +289,8 @@ body
 
 .trip-content
 {
-	padding: 0px 15px 40px;
+	padding: 0px 15px 20px;
+	margin-top: 10px;
 	background: #fff;
 	/*box-shadow: 4px 0px 10px -10px rgba(0, 0, 0, 0.2);*/
 	z-index: 99;
@@ -633,6 +634,7 @@ hr
 	margin-left: -25px;
 	margin-right: -25px;
 	border-bottom: 14px solid #eee;
+	display: none;
 }
 
 @media (min-width: 1640px) {

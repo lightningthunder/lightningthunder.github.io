@@ -77,10 +77,31 @@
     padding: 0px;
   }
 
+  .monkey-card .slideshow
+  {
+    height: 210px;
+  }
+
+  #monkey_baby
+  {
+    height: 330px;
+  }
+
   #monkey_baby .item
   {
     height: 430px;
     padding: 0 10px;
+  }
+
+  #monkey_baby .carousel-caption
+  {
+    height: 120px;
+  }
+
+  .la_monkey_carousel_promonkey .item .carousel-caption .content
+  {
+    padding: 10px;
+    height: 120px;
   }
 
   .la_monkey_carousel_promonkey .carousel-control.right {

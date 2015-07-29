@@ -16,6 +16,17 @@ body
 	position: relative;
 }
 
+/*#global-header-wrap,
+#global-header
+{
+	background: transparent;
+}
+
+.navbar-default .navbar-collapse
+{
+	background: transparent;
+}*/
+
 /* local alike hero*/
 
 .la_home-header-logo
@@ -1007,9 +1018,13 @@ span.promo-type
 	.la_monkey_carousel_promonkey .item .carousel-caption .content h2.item_name, .card .item .carousel-caption .content h2.item_name
 	{
 		font-size: 1.25em;
-		font-weight: bold;
 		letter-spacing: -0.05px;
 		word-spacing: -0.5px;
+	}
+
+	.container.promo .content
+	{
+		padding: 10px;
 	}
 
 	.content.la_hot-deals

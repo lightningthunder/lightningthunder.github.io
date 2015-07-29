@@ -1,9 +1,12 @@
-
+.book-now-wrapper
+{
+	padding: 20px 40px;
+	background: salmon;
+}
 
 .book-now
 {
-	background: #222;
-	padding: 0 30px;
+	padding: 10px 0px;
 	text-align: center;
 }
 
@@ -11,7 +14,7 @@
 {
 	font-size: 1.5em;
 	padding: 6px 0px 3px;
-	border-bottom: 5px solid salmon;
+	border-bottom: 5px solid lightsalmon;
 	margin: 20px auto 15px;
 	color: #fff;
 	display: inline-block;
@@ -90,6 +93,7 @@
 	margin: 30px 0;
 	padding: 8px 20px;
 	width: 100%;
+	
 }
 
 /* Small devices (tablets, 768px and up) */
