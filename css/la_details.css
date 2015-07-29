@@ -657,6 +657,7 @@ hr
 	.container {
 		width: 100%;
 		overflow: hidden;
+		padding: 0px;
 	}
 
 	hr
@@ -669,7 +670,7 @@ hr
 
 	body
 	{
-		background: #fff;
+		background: #eee;
 	}
 
 	h1.h1
