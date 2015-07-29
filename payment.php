@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  
+  // $_SESSION["code"]
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,38 +16,18 @@
   <link rel="stylesheet" href="css/la_input.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/la_book-box.css">
-
+  <script src="js/jquery.min.js"></script>
 </head>
 <body>
   <!-- <div class="container-fluid global-header-wrap">
     <div class="row global-header">
-      <a href="index.html">
+      <a href="index.php">
         <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
       </a>
     </div>
   </div> -->
 
-  <nav class="navbar navbar-default" id="global-header-wrap">
-    <div class="container-fluid" id="global-header">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#about">About</a>
-          </li>
-        </ul>
-        <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+  <?php include("module/module_nav.php"); ?>
 
   <div class="container-fluid payment-top-hero">
     <div class="row padding-bottom-20">
@@ -616,7 +601,6 @@
     </div>
   </div>
 
-  <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.select-to-autocomplete.js"></script>

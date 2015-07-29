@@ -10,8 +10,8 @@
 	background-image: url('../img/la_ext_ais_banner_3.png');
 	background-repeat: no-repeat;
 	background-position: right top;
-	background-size: auto 100px;
-	height: 100px;
+	background-size: auto 100%;
+	/*height: 100px;*/
 	border: 1px solid #eee;
 	padding: 12px;
 }
@@ -53,6 +53,12 @@
 	padding: 6px 10px;
 	vertical-align: top;
 	margin: 2px;
+}
+
+.ext-ad-ais span
+{
+	color: #f00;
+	display: block;
 }
 
 .booking-ad

@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  
+  // $_SESSION["code"]
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +10,7 @@
   <title>Immersive Local Living in Hill Tribe Village of Chiang Mai</title>
   <meta property="og:title" content="Immersive Local Living in Hill Tribe Village of Chiang Mai" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://lightningthunder.github.io/details.html" />
+  <meta property="og:url" content="http://lightningthunder.github.io/details.php" />
   <meta property="og:image" content="http://lightningthunder.github.io/img/maekampong_people_1.jpg" />
   <meta property="og:image" content="http://lightningthunder.github.io/img/maekampong_scenery_2.jpg" />
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,29 +36,11 @@
           a.appendChild(r);
       })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-
+  <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-default" id="global-header-wrap">
-    <div class="container-fluid" id="global-header">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a href="#"><img alt="local alike logo" class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png"></a>
-      </div>
-
-
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#about">About</a>
-          </li>
-        </ul>
-        <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
-
+  <?php include("module/module_nav.php"); ?>
 
   <div class="container-fluid no-side-padding">
     <div class="row la_details-hero-wrapper center-block">
@@ -102,7 +89,7 @@
 
 
           <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
-            <span class="label">Tour Operator</span> <a class="gorilla-link" data-target="#basicModal_profile" data-toggle="modal" href="profiles/operators/bangkok-vanguards.html">
+            <span class="label">Tour Operator</span> <a class="gorilla-link" data-target="#basicModal_profile" data-toggle="modal" href="profiles/operators/bangkok-vanguards.php">
             <p class="item_operator">Bangkok Vanguards <span class="glyphicon glyphicon-new-window"></span></p></a>
 
             <div class="modal fade" id="basicModal_profile" tabindex="-1">
@@ -118,7 +105,7 @@
 
 
           <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 no-side-padding">
-            <span class="label">Physical Demand</span> <a class="gorilla-link" data-target="#basicModal_fitness" data-toggle="modal" href="pages/physical-demand.html">
+            <span class="label">Physical Demand</span> <a class="gorilla-link" data-target="#basicModal_fitness" data-toggle="modal" href="pages/physical-demand.php">
             <p class="item_fitness">Light <span class="glyphicon glyphicon-new-window"></span></p></a>
 
             <div class="modal fade" id="basicModal_fitness" tabindex="-1">
@@ -448,7 +435,7 @@
         <div class="trip-content clearfix" id="penguin-hook-review">
           <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
             <h4><i class="fa fa-comment"></i> Latest reviews</h4>
-            <div class="yotpo yotpo-main-widget" data-description="Overnight Tour at Mae Kampong Village, Chiang Mai, Thailand" data-image-url="http://lightningthunder.github.com/img/la_blog-4.jpg" data-name="Mae Kampong Overnight Tour" data-product-id="OV00001" data-url="http://lightningthunder.github.com/details.html">
+            <div class="yotpo yotpo-main-widget" data-description="Overnight Tour at Mae Kampong Village, Chiang Mai, Thailand" data-image-url="http://lightningthunder.github.com/img/la_blog-4.jpg" data-name="Mae Kampong Overnight Tour" data-product-id="OV00001" data-url="http://lightningthunder.github.com/details.php">
             </div>
           </div>
         </div>
@@ -505,7 +492,7 @@
 
 
                       <div class="col-xs-12 no-side-padding text-center">
-                        <a class="btn btn-primary btn-book-now" href="payment.html">Request to Book Now</a>
+                        <a class="btn btn-primary btn-book-now" href="payment.php">Request to Book Now</a>
                       </div>
                     </div>
                   </fieldset>
@@ -515,24 +502,11 @@
           </div>
         </div>
       </div>
+      
       <!-- test ais module -->
-
-
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-side-padding">
         <div class="booking-ad">
-          <div class="content ext-ad-banner clearfix">
-            <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-              <h4>AIS Traveller's SIM users enjoy 10% off</h4>
-
-
-              <p>Enjoy discounts on all tours when you verify your phone number.</p>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-4 col-md-12 clearfix form-group ext-ad-ais required">
-              <input class="form-control" placeholder="Enter your number here" size="4" type="tel"> <button class="btn btn-default btn-primary btn-ext-ad-ais">Generate Code</button>
-            </div>
-          </div>
+          <?php include("module/module_ais.php"); ?>
         </div>
       </div>
       <!-- Impact, reviews, misc. Column -->
@@ -734,7 +708,7 @@
       </div>
     </div>
   </div>
-  <script src="js/jquery.min.js"></script> <script src="js/moment.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/bootstrap-slider.js"></script> <script src="js/imagelightbox.js"></script> <script src="js/bootstrap-datetimepicker.min.js"></script> <script src="js/bootstrap-datetimepicker.js"></script> <script src="js/jquery.dotdotdot.min.js"></script> <!-- script for notif hover -->
+  <script src="js/moment.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/bootstrap-slider.js"></script> <script src="js/imagelightbox.js"></script> <script src="js/bootstrap-datetimepicker.min.js"></script> <script src="js/bootstrap-datetimepicker.js"></script> <script src="js/jquery.dotdotdot.min.js"></script> <!-- script for notif hover -->
    <script>
     $(document).ready(function(){
 
