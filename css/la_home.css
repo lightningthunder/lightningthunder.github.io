@@ -1023,6 +1023,12 @@ span.promo-type
 		color: #fff;
 	}
 
+	.content.la_hot-deals p
+	{
+		color: #fff;
+		font-weight: 500;
+	}
+
 	.content.la_hot-deals span.promo-type
 	{
 		position: relative;
