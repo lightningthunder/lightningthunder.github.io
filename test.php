@@ -7,6 +7,7 @@
 <!--   <link rel="stylesheet" href="css/la_home.css">
  -->  <link rel="stylesheet" href="css/la_input.css">
   <link rel="stylesheet" href="css/la_external-privilege.css">
+  <script src="js/jquery.min.js"></script>
   <style>
 .carousel-showmanymoveone .carousel-control {
   width: 4%;
@@ -165,7 +166,6 @@
     </div>
   </div>  
 </div>
-	<script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.dotdotdot.min.js"></script>

@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  
+  // $_SESSION["code"]
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +10,7 @@
   <title>Search Results for Chiang Mai</title>
   <meta property="og:title" content="Search Results for Chiang Mai" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://lightningthunder.github.io/results.html" />
+  <meta property="og:url" content="http://lightningthunder.github.io/results.php" />
   <meta property="og:image" content="http://lightningthunder.github.io/img/huatung_scenery_3.jpg" />
   <meta property="og:image" content="http://lightningthunder.github.io/img/huatung_people_host.jpg" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,6 +30,7 @@
           a.appendChild(r);
       })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
+  <script src="js/jquery.min.js"></script>
 
 </head>
 <body>
@@ -32,27 +38,7 @@
   <div class="notif_bg_overlay">
   </div>
 
-  <nav class="navbar navbar-default" id="global-header-wrap">
-    <div class="container-fluid" id="global-header">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#about">About</a>
-          </li>
-        </ul>
-        <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+  <?php include("module/module_nav.php"); ?>
    
   <div class="container-fluid la_results-hero">
     <div class="row la_home-hero-wrapper center-block">
@@ -485,7 +471,7 @@
 
         <div class="row results_grid">
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/huatung_scenery_3.jpg');">
@@ -513,7 +499,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/bangplub_food_5.jpg');">
@@ -541,7 +527,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/maekampong_scenery_4.jpg');">
@@ -568,7 +554,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/bangplub_food_7.jpg');">
@@ -595,7 +581,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/kohyaonoi_people_4_credit-graff.jpg');">
@@ -622,7 +608,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/ltbkk_people_2.jpg');">
@@ -677,7 +663,6 @@
     </div>
   </div>
 
-  <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-slider.js"></script>
   <script src="js/modernizr.custom.83128.js"></script>
