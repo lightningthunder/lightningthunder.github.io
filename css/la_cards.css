@@ -147,7 +147,6 @@
 	background: transparent;
 }
 
-.carousel-inner.card:hover .item,
 .card.cause:hover,
 .card.add-ons:hover,
 .card.cause:hover .slideshow-bg,
@@ -294,6 +293,7 @@
 	margin: 15px 0 2px;
 }
 
+.monkey-card .slideshow,
 .card .slideshow
 {
 	height: 45%;
@@ -301,9 +301,9 @@
 	position: relative;
 	overflow: hidden;
 	z-index: 12;
-
 }
 
+.monkey-card .slideshow-overlay,
 .card .slideshow-overlay
 {
 	background: rgba(0, 0, 0, 0.25);
@@ -319,6 +319,7 @@
 	transition: all .5s;
 }
 
+.monkey-card .slideshow-bg,
 .card .slideshow-bg
 {
 	height: 100%;
@@ -338,6 +339,8 @@
 	transform: scale(1,1);
 }
 
+.monkey-card:hover .slideshow-bg,
+.carousel-inner.card:hover .item .slideshow-bg,
 .card:hover .slideshow-bg
 {
 	-moz-transform: scale(1.05,1.05);
@@ -345,14 +348,16 @@
 	transform: scale(1.05,1.05); 	
 }
 
+.monkey-card:hover .slideshow-overlay,
 .card:hover .slideshow-overlay
 {
 	background: rgba(0, 0, 0, 0);
 }
 
+.monkey-card .slideshow .promo_price,
 .card .slideshow span.price
 {
-	font-size: 1.45em;
+	font-size: 26px;
 	font-weight: bold;
 	color: #fff;
 	position: absolute;
@@ -360,6 +365,9 @@
 	right: 15px;
 	text-align: right;
 	z-index: 3;
+	-moz-transition: all .25s;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 
 	-webkit-transform-style: preserve-3d;
 }
@@ -376,8 +384,8 @@
 
 .card .slideshow span.price::before
 {
-/*	content: '$';
-*/}
+
+}
 
 .card .slideshow span.price::after
 {
@@ -479,6 +487,8 @@
 	content: ',';
 }
 
+.monkey-card:hover .slideshow .promo_price,
+.carousel-inner.card:hover .item .slideshow span.price,
 .card.result:hover .slideshow span.price
 {
 	opacity: 0;
@@ -526,6 +536,17 @@
 	-webkit-transition: all .3s;
 	transition: all .3s;
 	color: #999;
+}
+
+.la_promo-carousel .carousel-inner.card .slideshow
+{
+	height: 310px;
+}
+
+.monkey-card .slideshow
+{
+	height: 260px;
+	overflow: hidden;
 }
 
 .la_monkey_carousel_promonkey.carousel-inner:hover h2.item_name::after,
@@ -886,6 +907,11 @@ span.letter-signs.culture::before
 		padding: 15px 20px;
 		padding-left: 25px;
 	} 
+
+	.la_promo-carousel .carousel-inner.card .slideshow
+	{
+		height: 210px;
+	}
 
 	.card.booking-summary,
 	.card.booking-payment,

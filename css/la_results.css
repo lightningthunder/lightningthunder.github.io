@@ -694,6 +694,11 @@ button.btn-default#reset-filters
     padding: 0 20px;
   }
 
+  .crystal label
+  {
+    margin-bottom: 10px;
+  }
+
   /*.collapse.in
   {
     display: none;
