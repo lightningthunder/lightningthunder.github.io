@@ -376,6 +376,11 @@ div#basicModal.modal.fade.in
 	text-align: center;
 }
 
+.g-recaptcha
+{
+	display: inline-block;
+}
+
 @media (max-width: 991px) {
 
 

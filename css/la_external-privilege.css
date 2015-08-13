@@ -21,7 +21,7 @@
 	color: #8b2199; /*AIS Purple*/
 	color: #333;
 	font-weight: bolder;
-	font-size: 1.35em;
+	font-size: 1.5em;
 	text-transform: uppercase;
 	margin-bottom: 5px;
 	margin-top: 15px;
@@ -29,7 +29,7 @@
 
 .ext-ad-banner p
 {
-	color: #fff;
+	color: #eee;
 	font-size: 1.05em;
 }
 
@@ -44,6 +44,7 @@
 	display: inline-block;
 	box-shadow: none;
 	margin: 2px;
+	float: left;
 }
 
 .btn-ext-ad-ais

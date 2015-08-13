@@ -5,6 +5,7 @@
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-4 clearfix form-group ext-ad-ais required" id="ais-gen-code">
 		<input class="form-control" size="4" type="tel" placeholder="Enter your 10 digit number">
+		<div class="g-recaptcha" data-sitekey="6LeMPwsTAAAAAPuggO2YzK_EkZDv0s24TQ7fJsV-"></div>
 		<button class="btn btn-default btn-primary btn-ext-ad-ais">Generate Code</button>
 	</div>
 	<div class="col-xs-12 col-lg-2">
