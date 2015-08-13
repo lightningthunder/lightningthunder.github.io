@@ -543,13 +543,13 @@
   </div>
 
   <!-- ais module -->
- 	<div class="container padding-top-20">
-		<div class="row promo external-asset">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<?php include("module/module_ais.php"); ?>
-			</div>
-		</div>
-	</div>
+  <div class="container padding-top-20">
+    <div class="row promo external-asset">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <img src="img/la_ext_ais_banner_home.png" width="1150" />
+      </div>
+    </div>
+  </div>
   <!-- end ais module -->
 
   <!-- monkey business -->
