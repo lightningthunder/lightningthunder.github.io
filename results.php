@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  
+  // $_SESSION["code"]
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +10,7 @@
   <title>Search Results for Chiang Mai</title>
   <meta property="og:title" content="Search Results for Chiang Mai" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://lightningthunder.github.io/results.html" />
+  <meta property="og:url" content="http://lightningthunder.github.io/results.php" />
   <meta property="og:image" content="http://lightningthunder.github.io/img/huatung_scenery_3.jpg" />
   <meta property="og:image" content="http://lightningthunder.github.io/img/huatung_people_host.jpg" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,6 +31,7 @@
           a.appendChild(r);
       })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
+  <script src="js/jquery.min.js"></script>
 
 </head>
 <body>
@@ -33,6 +39,7 @@
   <div class="notif_bg_overlay">
   </div>
 
+<<<<<<< HEAD:results.html
   <nav class="navbar navbar-default" id="global-header-wrap">
       <div class="container-fluid" id="global-header">
         <div class="navbar-header">
@@ -89,6 +96,9 @@
         </div><!--/.nav-collapse -->
       </div>
   </nav>
+=======
+  <?php include("module/module_nav.php"); ?>
+>>>>>>> origin/master:results.php
    
   <div class="container-fluid la_results-hero">
     <div class="row la_home-hero-wrapper center-block">
@@ -521,7 +531,7 @@
 
         <div class="row results_grid">
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/huatung_scenery_3.jpg');">
@@ -549,7 +559,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/bangplub_food_5.jpg');">
@@ -577,7 +587,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/maekampong_scenery_4.jpg');">
@@ -604,7 +614,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/bangplub_food_7.jpg');">
@@ -631,7 +641,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/kohyaonoi_people_4_credit-graff.jpg');">
@@ -658,7 +668,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="details.html">
+            <a href="details.php">
               <div class="card result">
                 <div class="slideshow">
                   <div class="slideshow-bg" style="background-image:url('img/ltbkk_people_2.jpg');">
@@ -713,6 +723,7 @@
     </div>
   </div>
 
+<<<<<<< HEAD:results.html
   <div class="modal fade" id="sign-in-modal" tabindex="-1">
       <div class="modal-dialog login-container">
         <div class="modal-content text-center">
@@ -745,6 +756,8 @@
   </div>
 
   <script src="js/jquery.min.js"></script>
+=======
+>>>>>>> origin/master:results.php
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-slider.js"></script>
   <script src="js/modernizr.custom.83128.js"></script>
