@@ -50,18 +50,18 @@
 	transform: scale(1.02,1.02);*/
 }
 
-.card:active,
+/*.card:active,
 .card:focus
 {	
-	/*-webkit-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
 	-moz-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
 	box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.3);
-	box-shadow: none;*/
+	box-shadow: none;
 	
 	-moz-transform: scale(0.99,0.99);
 	-webkit-transform: scale(0.99,0.99);
 	transform: scale(0.99,0.99);
-}
+}*/
 
 .card-basic,
 .card.result,

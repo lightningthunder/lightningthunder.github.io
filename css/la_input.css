@@ -1,9 +1,7 @@
 .btn
 {
-	padding: 8px 20px;
 	letter-spacing: -0.05px;
 	border-radius: 3px;
-	font-size: 13px;
 	font-weight: 500;
 /*	font-family: "san francisco display", "avenir next condensed", helvetica, sans-serif;
 */
@@ -49,10 +47,21 @@
 	transform: scale(0.98,0.98);
 }*/
 
+input[placeholder],
+[placeholder],
+*[placeholder]
+{
+	color: #333;
+	font-weight: 500;
+	font-size: 15px;
+}
+
 .la_home-hero-wrapper input,
 .payment input,
 .ext-ad-ais input,
-.add-ons input
+.add-ons input,
+.login-form input[type="text"],
+.login-form input[type="email"]
 {
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -69,26 +78,60 @@
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.42857143;
-	color: #555;
+	color: #444;
 	background-color: #fff;
 	background-image: none;
 	transition: none;
+	font-weight: 500;
+	position: relative;
+}
+
+.login-form input[type="email"],
+.login-form input[type="text"]
+{
+	text-align: center;
+	height: 40px;
+	padding: 6px 12px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.login-form input[type="checkbox"]
+{
+	margin-right: 5px;
+}
+
+.login-form .checkbox-item label
+{
+	cursor: pointer;
 }
 
 .la_home-hero-wrapper input:focus,
 .payment input:focus,
 .ext-ad-ais input:focus,
-.add-ons input:focus
+.add-ons input:focus,
+.login-form input:focus
 {
 	border-color: #dadada;
 	box-shadow: none;
 }
 
 .la_home-hero-wrapper label,
-.payment label
+.payment label,
+.login-form label
 {
 	font-weight: normal;
 	font-size: 0.85em;
+}
+
+.login-form label
+{
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	vertical-align: baseline;
+	color: #666;
 }
 
 .select-block,
@@ -141,6 +184,7 @@
 	border: 0;
 }
 
+.login-form select[name="country"],
 .la_home-hero-wrapper .select-block select[name="country"]
 {
 	-webkit-border-top-left-radius: 3px;
@@ -220,11 +264,11 @@
 	list-style: none;
 	background-color: #fff;
 	width: 218px;
-	border: 1px solid #B0BECA;
-	max-height: 350px;
+	border: 1px solid #eee;
+	max-height: 250px;
 	overflow-x: hidden;
+	z-index: 999;
 }
-
 
 li.ui-menu-item
 {
@@ -247,6 +291,19 @@ li.ui-menu-item:first-of-type
 	border-top: none;
 }
 
+.ui-menu-item:hover
+{
+	background: #eee;
+}
+
+.ui-state-focus,
+.ui-state-focus:hover,
+.ui-state-focus:focus,
+.ui-state-focus:active
+{
+	background: #eee;
+}
+
 .btn-pay-now
 {
 	padding: 15px 30px;
@@ -263,4 +320,39 @@ li.ui-menu-item:first-of-type
 span.ui-helper-hidden-accessible
 {
 	display: none;
+}
+
+.has-error .form-control:focus
+{
+	box-shadow: none;
+	border: 1px solid #dadada;
+	border-radius: 3px !important;
+}
+
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label
+{
+	color: orange;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child>.btn-group:not(:last-child)>.btn
+{
+	border-radius: 3px;
+}
+
+.has-success .form-control
+{
+	border-color: inherit;
+}
+
+.has-success .form-control:focus
+{
+	box-shadow: none;
+	border: 1px solid #dadada;
+	border-radius: 3px !important;	
+}
+
+.help-block.with-errors
+{
+	font-size: 12px;
+	font-weight: 500;
 }

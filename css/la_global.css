@@ -63,6 +63,69 @@ h5
 	background: #fff;
 }
 
+.navbar-right span.glyphicon
+{
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+.navbar-right .show
+{
+	display: block;
+}
+
+.navbar-right .hidden
+{
+	display: none;
+}
+
+.navbar .dropdown-menu
+{
+	border: 0;
+}
+
+.navbar .dropdown-menu>li>a,
+.navbar-default .navbar-nav>li>a
+{
+	font-size: 14px;
+}
+
+.user-avatar-container
+{
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: salmon;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.user-avatar-container img
+{
+	position: relative;
+	width: 250px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.navbar .navbar-user-avatar-container
+{
+	height: 32px;
+	width: 32px;
+	border-radius: 3px;
+	background-color: salmon;
+	margin: 9px 3px 0 8px;
+	overflow: hidden;
+}
+
+.navbar .navbar-user-avatar-container img
+{
+	position: relative;
+	width: 36px;
+	left: 50%;
+	margin-left: -18px;
+}
+
 #global-header
 {
 	width: 100%;
@@ -103,14 +166,18 @@ h5
 
 .promo-code-notify
 {
-	height: 50px;
-	line-height: 50px;
-	float: right;
-	padding: 0 10px;
-	background: salmon;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	background: lightsalmon;
 	color: #fff;
-	margin-right: -20px;
+	border-radius: 3px;
+	font-size: 13px;
 	font-weight: 500;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 1030;
 }
 
 .promo-code-notify code
@@ -119,7 +186,7 @@ h5
 	background: #fff;
 	padding: 1px 6px 0;
 	border-radius: 3px;
-	font-size: 14px;
+	font-size: 13px;
 	margin: 0 8px;
 	letter-spacing: 1px;
 }
@@ -218,6 +285,16 @@ h5
 {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+.no-bottom-margin
+{
+	margin-bottom: 0px !important;
+}
+
+.padding-top-30
+{
+	margin-top: 30px !important;
 }
 
 .no_max_height

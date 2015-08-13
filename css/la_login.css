@@ -1,0 +1,259 @@
+body.login-form-body
+{
+	background: #eee;
+		background-image:url('../img/pattern-book-box.png');
+}
+
+.modal-dialog.login-container
+{
+	width: 420px;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	margin-left: -210px;
+	margin-top: 180px;
+	position: relative;
+}
+
+.modal-dialog.login-container .modal-content
+{
+	background: transparent;
+}
+
+.modal-dialog.login-container .modal-content .modal-body
+{
+	padding: 0px;
+}
+
+.login-box
+{
+
+	height: calc(325px + 55px);
+	width: 100%;
+	padding: 0px;
+}
+
+.login-form
+{
+	padding-top: 50px;
+}
+
+.login-box .card
+{
+	height: 380px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+
+/*.login-box .card:hover .slideshow-bg
+{
+	-moz-transform: scale(1.5,1.5);
+	-webkit-transform: scale(1.5,1.5);
+	transform: scale(1.5,1.5); 
+}*/
+
+.login-box .card .slideshow-bg,
+.login-box .card .slideshow-overlay
+{
+}
+
+.login-box .card .slideshow
+{
+	height: 325px;
+	position: relative;
+}
+
+.login-box h1,
+.login-box h2
+{
+	z-index: 10;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+.modal-dialog.login-container .modal-content .modal-body .login-box h1,
+.login-form h1
+{
+	font-size: 2.45em;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+.modal-dialog.login-container .modal-content .modal-body .login-box h2,
+.login-form h2
+{
+	font-size: 1.45em;
+	margin-bottom: 25px;
+	color: #eee;
+}
+
+.modal-dialog.login-container .modal-content .modal-body .login-box p,
+{
+	font-size: 1em;
+	margin-bottom: 35px;
+	color: #fff;
+	display: block;
+}
+
+.login-form p
+{
+	font-size: 1.25em;
+	color: #666;
+}
+
+.login-box .card .content
+{
+	height: 325px;
+	background-image:url('../img/pattern-book-box.png');
+	padding: 40px;
+}
+
+.login-form .card
+{
+	height: auto;
+	width: 418px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .card .content
+{
+	padding: 40px;
+	height: auto;
+}
+
+.modal-dialog.login-container .modal-content .modal-body .login-box .card .footer
+{
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	font-size: 13px;
+	background: #fafafa;
+	border-top: 1px solid #eee;
+	line-height: 1.2;
+	height: 55px;
+	color: #555;
+	padding: 0 20px;
+
+}
+
+.login-form .card .btn,
+.login-box .card .btn-fb-login
+{
+	line-height: 56px;
+	padding: 0 20px;
+	vertical-align: middle;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.login-form .card .btn
+{
+	margin-top: 20px;
+}
+
+.login-box .card .btn-fb-login i.fa-facebook-official
+{
+	margin-right: 5px;
+	margin-bottom: 2px;
+	font-size: 1.75em;
+	vertical-align: middle;
+}
+
+.login-box .card .no-wall-post,
+.login-box .card .agreement
+{
+	padding: 10px;
+}
+
+.sign-up-questions
+{
+	padding-top: 30px;
+}
+
+header#myCarousel
+{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 50px;
+}
+
+.carousel-inner>.item
+{
+	height: 100vh;
+}
+
+.carousel-inner>.item>.fill
+{
+	height: 100%;
+	background-size: cover;
+}
+
+.carousel-fade .carousel-inner .item 
+{
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item .carousel-caption
+{
+	text-shadow: none;
+	display: block;
+	font-weight: 500;
+	bottom: 50px;
+	z-index: 100;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right 
+{
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right 
+{
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right 
+{
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control 
+{
+  display: none;
+}
+
+.has-success .form-control-feedback
+{
+	height: 40px;
+	line-height: 40px;
+	color: lightgreen;
+}
+
+.has-error .form-control-feedback
+{
+	height: 40px;
+	line-height: 40px;
+	color: orange;
+}

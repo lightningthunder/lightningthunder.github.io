@@ -1,0 +1,84 @@
+.la_center_modal
+{
+	position: fixed;
+	left: 50%;
+	margin-left: -300px;
+	top: 50%;
+	margin-top: -265px;
+}
+
+#modal_success .modal-content
+{
+	padding: 0px;
+	border: none;
+	border-radius: 0;
+	width: 600px;
+	height: 530px;
+}
+
+#modal_lang .modal-content
+{
+
+}
+
+#modal_success .modal-content span.chimpanzee-close,
+#modal_lang .modal-content span.chimpanzee-close
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #999;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#modal_success .modal-content span.chimpanzee-close span
+{
+	margin-left: 5px;
+	font-size: 13px;
+}
+
+#modal_success .modal-content .modal-body h4
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: salmon;
+	letter-spacing: 0.25px;
+	margin-bottom: 20px;
+}
+
+#modal_success .modal-content .modal-body p
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+	letter-spacing: 0.25px;
+}
+
+#modal_success .modal-content .modal-body p span
+{
+}
+
+#modal_success .modal-content .modal-body p a
+{
+	border-bottom: 2px solid lightsalmon;	
+}
+
+#modal_success .modal-footer
+{
+	background: salmon;
+	border: 0;
+	padding: 30px 10px;
+	text-align: center;
+}
+
+#modal_success .modal-footer .btn
+{
+	margin: 0;
+}
+
+#modal_success .modal-footer .btn:first-of-type
+{
+	margin-right: 20px;
+}

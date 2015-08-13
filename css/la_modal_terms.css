@@ -1,0 +1,42 @@
+.la_fullscreen_modal
+{
+	width: 100%;
+	max-width: 980px;
+	box-shadow: none;
+}
+
+.la_fullscreen_modal .modal-content
+{
+	height: auto;
+	margin: 0;
+	padding: 40px 80px;
+	font-weight: 500;
+	box-shadow: none;
+	border: none;
+}
+
+.la_fullscreen_modal .modal-content h2
+{
+	color: salmon;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+.la_fullscreen_modal .modal-content h3
+{
+	color: salmon;
+	font-weight: bolder;
+	font-size: 15px;
+	margin-top: 0px;
+}
+
+.la_fullscreen_modal .modal-content p
+{
+	color: #888;
+}
+
+.la_fullscreen_modal .modal-content p.lead
+{
+	color: #444;
+}
+

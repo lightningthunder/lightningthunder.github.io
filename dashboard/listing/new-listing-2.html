@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../../css/la_global.css">
+  <link rel="stylesheet" href="../../css/la_cards.css">
+  <link rel="stylesheet" href="../../css/la_input.css">
+  <link rel="stylesheet" href="../../css/la_dash.css">
+  <link rel="stylesheet" href="../../css/la_dash-listing.css">
+  <link rel="stylesheet" href="../../css/la_dash-input.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+
+  <title>Pricing | Step 2 of 8</title>
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+        <div class="container" id="global-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img class="la_global-header-logo" src="../../img/la_logo_script_white-on-transparent.png" alt="local alike logo" /></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right hidden">
+              <li>
+                <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+              </li>
+              <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right show">
+            <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Upcoming trips</a></li>
+                  <li><a href="#">Manage listings</a></li>
+                  <li><a href="#">Incoming bookings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">View dashboard</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Manage payment</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Help center</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="user-avatar">
+                <div class="navbar-user-avatar-container">
+                    <img src="../../img/user-avatar_noon.png" />
+                </div>
+              </li>
+
+            </ul>
+            
+            
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <nav class="navbar nav-dash">
+        <div class="container">
+          <div class="navbar-collapse collapse no-side-padding">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="../index.html">Dashboard Home</a>
+              </li>
+              <li>
+                <a href="../trips.httml">Your Trips</a>
+              </li>
+              <li>
+                <a href="../listing.html">Your Listings</a>
+              </li>
+              <li>
+                <a href="../settings.html">Settings</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+  <div class="container">
+
+    <div class="row padding-top-20 padding-bottom-20">
+      <div class="col-xs-3">
+        <ol class="listing-steps" data-spy="affix" data-offset-top="0" id="listing-steps-nav">
+          <li><a href="new-listing-1.html">Basic information</a></li>
+          <li class="active"><a href="new-listing-2.html">Pricing</a></li>
+          <li><a href="new-listing-3.html">Highlights</a></li>
+          <li><a href="new-listing-4.html">Photos</a></li>
+          <li><a href="new-listing-5.html">Amenities</a></li>
+          <li><a href="new-listing-6.html">Package Details</a></li>
+          <li><a href="new-listing-7.html">Upgrades</a></li>
+          <li><a href="new-listing-8.html">Social Impact</a></li>
+          <li><a href="new-listing-review.html">Review</a></li>
+        </ol>
+      </div>
+      <div class="col-xs-9">
+
+        <div class="dash-content">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12 col-md-6">
+              <h1>Price & Capacity</h1>
+            </div>
+            <div class="col-xs-12 col-md-6 text-right clearfix">
+              <p class="btn btn-create-new-listing">Step 2 of 8</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-7">
+
+            <form class="form-horizontal">
+              <fieldset>
+              <!-- Button Drop Down -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>You Deserve It!</h3><p>Enter a price you would like to earn from your tour package, Local Alike will take a small fee to support other social projects and contribute to our management fees.</p>">
+                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        THB
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu pull-right">
+                        <li><a href="#">THB</a></li>
+                        <li><a href="#">USD</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>100% Transparency</h3><p>This is the price of your tour as it will appear on the marketplace.</p>">
+                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
+                    <span class="input-group-addon">THB</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Take Total Control</h3><p>You can set minimum and maximum number of travelers you want to handle per booking.</p>">
+                <label class="col-xs-12 control-label" for="listing-min-travelers">Minimum travelers per booking</label>
+                <div class="col-xs-12">
+                  <select id="listing-min-travelers" name="listing-min-travelers" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Carrying Capacity is Key</h3><p>We believe in sustainable tourism and we are sure you do as well. Set a maximum number of travelers you are able to accept per booking so you don't get too overwhelmed by large crowds.</p>">
+                <label class="col-xs-12 control-label" for="listing-max-travelers">Maximum travelers per booking</label>
+                <div class="col-xs-12">
+                  <select id="listing-max-travelers" name="listing-max-travelers" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                  </select>
+                </div>
+              </div>
+              <div class="footer-btn-container">
+                <button id="save-next" name="save-next" class="btn btn-success">Save and Continue</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+              </form>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/jquery.select-to-autocomplete.js"></script>
+  <script src="../../js/validator.min.js"></script>
+  <script>
+    var originalLeave = $.fn.popover.Constructor.prototype.leave;
+    $.fn.popover.Constructor.prototype.leave = function(obj){
+      var self = obj instanceof this.constructor ?
+        obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+      var container, timeout;
+
+      originalLeave.call(this, obj);
+
+      if(obj.currentTarget) {
+        container = $(obj.currentTarget).siblings('.popover')
+        timeout = self.timeout;
+        container.one('mouseenter', function(){
+          //We entered the actual popover – call off the dogs
+          clearTimeout(timeout);
+          //Let's monitor popover content instead
+          container.one('mouseleave', function(){
+            $.fn.popover.Constructor.prototype.leave.call(self, self);
+          });
+        })
+      }
+    };
+
+
+    $('body').popover({ selector: '[data-popover]', trigger: 'hover', placement: 'right', delay: {show: 50, hide: 50}});
+
+    $('#listing-steps-nav').affix({
+    });
+
+
+  </script>
+
+</body>
+</html>

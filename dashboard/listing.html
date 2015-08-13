@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/la_global.css">
+  <link rel="stylesheet" href="../css/la_cards.css">
+  <link rel="stylesheet" href="../css/la_input.css">
+  <link rel="stylesheet" href="../css/la_dash.css">
+  <link rel="stylesheet" href="../css/la_dash-listing.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+        <div class="container" id="global-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img class="la_global-header-logo" src="../img/la_logo_script_white-on-transparent.png" alt="local alike logo" /></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right hidden">
+              <li>
+                <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+              </li>
+              <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right show">
+            <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Upcoming trips</a></li>
+                  <li><a href="#">Manage listings</a></li>
+                  <li><a href="#">Incoming bookings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">View dashboard</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Manage payment</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Help center</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="user-avatar">
+                <div class="navbar-user-avatar-container">
+                    <img src="../img/user-avatar_noon.png" />
+                </div>
+              </li>
+
+            </ul>
+            
+            
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <nav class="navbar nav-dash">
+        <div class="container">
+          <div class="navbar-collapse collapse no-side-padding">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="index.html">Dashboard Home</a>
+              </li>
+              <li>
+                <a href="trips.html">Your Trips</a>
+              </li>
+              <li>
+                <a class="nav-active" href="listing.html">Your Listings</a>
+              </li>
+              <li>
+                <a href="settings.html">Settings</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+  <div class="container">
+
+    <div class="row padding-top-20 padding-bottom-20 text-center">
+
+      <div class="col-xs-12">
+
+        <div class="dash-content">
+          <div class="col-xs-12 dashboard-hero" id="listings">
+            <div class="col-md-3 col-md-offset-1">
+              <img src="../img/graphic_compass.png" width="200">
+            </div>
+            <div class="col-md-6 col-md-offset">
+              <p class="lead">Start hosting travelers!</p> 
+              <p>Although you can easily create one of your own! If you know someone who should list their travel package here, invite them with this link.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <h1><i class="fa fa-trophy"></i> Your Current Listings</h1>
+          </div>
+          <div class="col-xs-12 col-md-6 text-right">
+            <a href="listing/new-listing-1.html" class="btn btn-create-new-listing">+ Create new listing</a>
+          </div>
+          <div class="col-xs-12">
+
+            <ul class="list-unstyled">
+              <li>
+                <div class="user-listing clearfix">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                      <div class="listing-img-container">  
+                        <img src="../img/maekampong_people_1.jpg" height="95" />
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                      <span class="listing-title">Listing name</span>
+                      <h2>Immersive Local Living in Hill Tribe Village of Chiang Mai</h2>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                      <span class="listing-title">List price</span>
+                      <span class="price">2000 THB</span>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                      <span class="listing-title">Status</span>
+                      <span class="status">Offline</span>
+                    </div>
+                  </div>
+                  <div class="row row-action">
+                    <div class="col-xs-12 text-right">
+                      <a class="btn btn-listing-action"><i class="fa fa-eye"></i> View</a>
+                      <a class="btn btn-listing-action"><i class="fa fa-pencil"></i> Edit</a>
+                      <a class="btn btn-listing-action"><i class="fa fa-trash-o"></i> Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="user-listing clearfix">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                      <div class="listing-img-container">  
+                        <img src="../img/ltbkk_people_2.jpg" height="95" />
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                      <span class="listing-title">Listing name</span>
+                      <h2>Lost Treasure in Bangkok</h2>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                      <span class="listing-title">List price</span>
+                      <span class="price">2000 THB</span>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                      <span class="listing-title">Status</span>
+                      <span class="status">Offline</span>
+                    </div>
+                  </div>
+                  <div class="row row-action">
+                    <div class="col-xs-12 text-right">
+                      <a class="btn btn-listing-action"><i class="fa fa-eye"></i> Preview on website</a>
+                      <a class="btn btn-listing-action"><i class="fa fa-pencil"></i> Modify details</a>
+                      <a class="btn btn-listing-action"><i class="fa fa-trash-o"></i> Delete</a>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/jquery.select-to-autocomplete.js"></script>
+  <script src="../js/validator.min.js"></script>
+
+
+</body>
+</html>

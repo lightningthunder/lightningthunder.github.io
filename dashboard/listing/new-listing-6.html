@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../../css/la_global.css">
+  <link rel="stylesheet" href="../../css/la_cards.css">
+  <link rel="stylesheet" href="../../css/la_input.css">
+  <link rel="stylesheet" href="../../css/la_dash.css">
+  <link rel="stylesheet" href="../../css/la_dash-listing.css">
+  <link rel="stylesheet" href="../../css/la_dash-input.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+
+  <title>Details | Step 6 of 8</title>
+
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+        <div class="container" id="global-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img class="la_global-header-logo" src="../../img/la_logo_script_white-on-transparent.png" alt="local alike logo" /></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right hidden">
+              <li>
+                <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+              </li>
+              <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right show">
+            <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Upcoming trips</a></li>
+                  <li><a href="#">Manage listings</a></li>
+                  <li><a href="#">Incoming bookings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">View dashboard</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Manage payment</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Help center</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="user-avatar">
+                <div class="navbar-user-avatar-container">
+                    <img src="../../img/user-avatar_noon.png" />
+                </div>
+              </li>
+
+            </ul>
+            
+            
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <nav class="navbar nav-dash">
+        <div class="container">
+          <div class="navbar-collapse collapse no-side-padding">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="../index.html">Dashboard Home</a>
+              </li>
+              <li>
+                <a href="../trips.httml">Your Trips</a>
+              </li>
+              <li>
+                <a href="../listing.html">Your Listings</a>
+              </li>
+              <li>
+                <a href="../settings.html">Settings</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+  <div class="container">
+
+    <div class="row padding-top-20 padding-bottom-20">
+      <div class="col-xs-3">
+        <ol class="listing-steps" data-spy="affix" data-offset-top="0" id="listing-steps-nav">
+          <li><a href="new-listing-1.html">Basic information</a></li>
+          <li><a href="new-listing-2.html">Pricing</a></li>
+          <li><a href="new-listing-3.html">Highlights</a></li>
+          <li><a href="new-listing-4.html">Photos</a></li>
+          <li><a href="new-listing-5.html">Amenities</a></li>
+          <li class="active"><a href="new-listing-6.html">Package Details</a></li>
+          <li><a href="new-listing-7.html">Upgrades</a></li>
+          <li><a href="new-listing-8.html">Social Impact</a></li>
+          <li><a href="new-listing-review.html">Review</a></li>
+        </ol>
+      </div>
+      <div class="col-xs-9">
+
+        <div class="dash-content">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12 col-md-6">
+              <h1>Itinerary</h1>
+            </div>
+            <div class="col-xs-12 col-md-6 text-right clearfix">
+              <p class="btn btn-create-new-listing">Step 6 of 8</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-7">
+            <form class="form-horizontal listing-itinerary">
+              <fieldset>
+                <h2>Itinerary for Day One</h2>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-01-morning">Morning</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-01-morning" name="listing-itinerary-01-morning"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-01-afternoon">Afternoon</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-01-afternoon" name="listing-itinerary-01-afternoon"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-01-evening">Evening</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-01-evening" name="listing-itinerary-01-evening"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <h2>Itinerary for Day Two</h2>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-02-morning">Morning</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-02-morning" name="listing-itinerary-02-morning"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-02-afternoon">Afternoon</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-02-afternoon" name="listing-itinerary-02-afternoon"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-02-evening">Evening</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-02-evening" name="listing-itinerary-02-evening"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <h2>Itinerary for Day Three</h2>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-03-morning">Morning</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-03-morning" name="listing-itinerary-03-morning"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-03-afternoon">Afternoon</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-03-afternoon" name="listing-itinerary-03-afternoon"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-03-evening">Evening</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-03-evening" name="listing-itinerary-03-evening"></textarea>
+                  </div>
+                </div>
+                <button id="listing-highlight-btn-add" name="listing-highlight-btn-add" class="btn btn-add-item pull-right">+ Add new highlight</button>
+                <div class="footer-btn-container">
+                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <!-- footer -->
+
+  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/jquery.select-to-autocomplete.js"></script>
+  <script src="../../js/validator.min.js"></script>
+  <script>
+    var originalLeave = $.fn.popover.Constructor.prototype.leave;
+    $.fn.popover.Constructor.prototype.leave = function(obj){
+      var self = obj instanceof this.constructor ?
+        obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+      var container, timeout;
+
+      originalLeave.call(this, obj);
+
+      if(obj.currentTarget) {
+        container = $(obj.currentTarget).siblings('.popover')
+        timeout = self.timeout;
+        container.one('mouseenter', function(){
+          //We entered the actual popover – call off the dogs
+          clearTimeout(timeout);
+          //Let's monitor popover content instead
+          container.one('mouseleave', function(){
+            $.fn.popover.Constructor.prototype.leave.call(self, self);
+          });
+        })
+      }
+    };
+
+
+    $('body').popover({ selector: '[data-popover]', trigger: 'click hover', placement: 'right', delay: {show: 50, hide: 50}});
+
+    $('#listing-steps-nav').affix({
+    });
+
+
+  </script>
+
+</body>
+</html>

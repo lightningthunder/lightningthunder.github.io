@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/la_external-privilege.css">
   <link rel="stylesheet" href="css/monkey_baby.css">
   <link rel="stylesheet" href="css/la_home.css">
+  <link rel="stylesheet" href="css/la_login.css">
   <!-- Hotjar Tracking Code for lightningthunder.github.io -->
 <script>
     (function(h,o,t,j,a,r){
@@ -30,27 +31,62 @@
 </head>
 <body>
    
-   <nav class="navbar navbar-default" id="global-header-wrap">
-    <div class="container-fluid" id="global-header">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar">
-        <!-- <ul class="nav navbar-nav">
-          <li>
-            <a href="#about">About</a>
-          </li>
-        </ul> -->
-        <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+    <nav class="navbar navbar-default" id="global-header-wrap">
+        <div class="container-fluid" id="global-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right hidden">
+              <li>
+                <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+              </li>
+              <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right show">
+            <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Upcoming trips</a></li>
+                  <li><a href="#">Manage listings</a></li>
+                  <li><a href="#">Incoming bookings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">View dashboard</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Manage payment</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Help center</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="user-avatar">
+                <div class="navbar-user-avatar-container">
+                    <img src="img/user-avatar_noon.png" />
+                </div>
+              </li>
+
+            </ul>
+            
+            
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
   <div class="container-fluid la_home-hero">
     <!-- <div class="row la_home-header">
       <img class="la_home-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
@@ -330,18 +366,11 @@
       </div>
 
       <div class="col-xs-12 col-lg-12 what-is">
-        <!-- <p class="lead text-center">Local Alike is a community based tourism marketplace. <br>All your spendings goes to support locals.</p> -->
         <button class="btn btn-ghost center-block" data-toggle="modal" data-target="#basicModal_howitworks" href="#">How does Local Alike work?</button> 
         <div class="modal fade" id="basicModal_howitworks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog la_howitworks_modal">
             <div class="modal-content">
               <div class="modal-body">
-                <div class="col-xs-12 col-md-4"></div>
-                <div class="col-xs-12 col-md-4">
-                    <iframe style="width: 100%" src="http://giphy.com/embed/rC5aQt1aiRNlK" width="480" height="366" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                    <p class="text-center" style="color:#fff">lol, get out of here</p>
-                </div>
-                <div class="col-xs-12 col-md-4"></div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-warning btn-sm" data-dismiss="modal">Close this cat gif <span class="glyphicon glyphicon-remove"</button>
@@ -561,7 +590,7 @@
     <div class="row promo external-asset">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="content ext-ad-banner clearfix">
-          <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-12">
             <h4>AIS Traveller's SIM users enjoy 10% off</h4>
             <p>Enjoy discounts on all tours when you verify your phone number.</p>
           </div>
@@ -761,6 +790,39 @@
       </div>
     </div>
   </div>
+
+  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
+  <div class="modal fade" id="sign-in-modal" tabindex="-1">
+      <div class="modal-dialog login-container">
+        <div class="modal-content text-center">
+          <div class="modal-body">
+              <div class="text-center login-box">
+                <div class="card"> 
+                  <div class="content">
+                    <h1 class="text-center">
+                      Your journey
+                    </h1>
+                    <h2 class="text-center">
+                      begins with Local Alike
+                    </h2>
+                    <p>
+                      Join us today for free travel credits. <br>Get more when you invite friends.
+                    </p>
+                    <button class="btn btn-primary btn-lg btn-fb-login"><i class="fa fa-facebook-official"></i> Login with Facebook</button>
+                    <!-- <div class="no-wall-post text-center"><span>We won't post anything to your wall.</span></div> -->
+                  </div>
+                  <div class="footer">
+                    <div class="agreement text-center"><span>By creating an account, you agree with Local Alike's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</span></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+  </div>
+
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>

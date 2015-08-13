@@ -292,8 +292,10 @@ body
 	padding: 0px 15px 20px;
 	margin-top: 10px;
 	background: #fff;
+	border-bottom: 1px solid #dadada;
 	/*box-shadow: 4px 0px 10px -10px rgba(0, 0, 0, 0.2);*/
 	z-index: 99;
+	border-radius: 3px;
 }
 
 .trip-content h4

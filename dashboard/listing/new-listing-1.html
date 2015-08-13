@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../../css/la_global.css">
+  <link rel="stylesheet" href="../../css/la_cards.css">
+  <link rel="stylesheet" href="../../css/la_input.css">
+  <link rel="stylesheet" href="../../css/la_dash.css">
+  <link rel="stylesheet" href="../../css/la_dash-listing.css">
+  <link rel="stylesheet" href="../../css/la_dash-input.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link href="../../css/la_modal_alerts.css" rel="stylesheet">
+
+  <title>Basic Info | Step 1 of 8</title>
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+        <div class="container" id="global-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img class="la_global-header-logo" src="../../img/la_logo_script_white-on-transparent.png" alt="local alike logo" /></a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right hidden">
+              <li>
+                <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+              </li>
+              <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right show">
+            <li>
+                <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Upcoming trips</a></li>
+                  <li><a href="../listing.html">Manage listings</a></li>
+                  <li><a href="#">Incoming bookings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">View dashboard</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Manage payment</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Help center</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="user-avatar">
+                <div class="navbar-user-avatar-container">
+                    <img src="../../img/user-avatar_noon.png" />
+                </div>
+              </li>
+
+            </ul>
+            
+            
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <nav class="navbar nav-dash">
+        <div class="container">
+          <div class="navbar-collapse collapse no-side-padding">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="../index.html">Dashboard Home</a>
+              </li>
+              <li>
+                <a href="../trips.httml">Your Trips</a>
+              </li>
+              <li>
+                <a href="../listing.html">Your Listings</a>
+              </li>
+              <li>
+                <a href="../settings.html">Settings</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+  <div class="container">
+
+    <div class="row padding-top-20 padding-bottom-20">
+      <div class="col-xs-3 clearfix">
+        <ol class="listing-steps" data-spy="affix" data-offset-top="0" id="listing-steps-nav">
+          <li class="active">Basic information</li>
+          <li><a href="new-listing-2.html">Pricing</a></li>
+          <li><a href="new-listing-3.html">Highlights</a></li>
+          <li><a href="new-listing-4.html">Photos</a></li>
+          <li><a href="new-listing-5.html">Amenities</a></li>
+          <li><a href="new-listing-6.html">Package Details</a></li>
+          <li><a href="new-listing-7.html">Upgrades</a></li>
+          <li><a href="new-listing-8.html">Social Impact</a></li>
+          <li><a href="new-listing-review.html">Review</a></li>
+        </ol>
+      </div>
+      <div class="col-xs-9">
+
+        <div class="dash-content">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12 col-md-6">
+              <h1>Basic Information</h1>
+            </div>
+            <div class="col-xs-12 col-md-6 text-right clearfix">
+              <p class="btn btn-create-new-listing">Step One: Where it all begins</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-7">
+            <form class="form-horizontal">
+              <fieldset>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Tell your story, your way.</h3><p>Pick the language you are good at and complete the form. We offer a free translation service for your first listing.</p>">
+                <label class="col-xs-12 control-label" for="listing-input-lang">What is your preferred language to use?</label>
+                <div class="col-xs-12">
+                  <select id="listing-input-lang" name="listing-input-lang" class="form-control">
+                    <option selected disabled="">Select a language</option>
+                    <option value="input-lang-en">English</option>
+                    <option value="input-lang-th">ภาษาไทย</option>
+                    <option value="input-lang-cn">中文</option>
+
+                  </select>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Categorizing our tours</h3><p>We organize and sort our tour listings based on these categories. It helps travelers find exactly what they're looking for. You can create multiple similar listings with different tour durations.</p>">
+                <label class="col-xs-12 control-label" for="listing-type">What type of listing is this? ประเภทของรายการนี้คืออะไร?</label>
+                <div class="col-xs-12">
+                  <select id="listing-type" name="listing-type" class="form-control">
+                    <option disabled selected>Select type</option>
+                    <option value="half">Half Day Tour</option>
+                    <option value="one">One Day Tour</option>
+                    <option value="overnight">Overnight Tour</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Appended Input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Help your travelers plan</h3><p>Be concise and realistic with your timing. Being accurate helps your travelers plan other parts of their day.</p>">
+                <label class="col-xs-12 control-label" for="listing-tour-hours">How long is this day tour? การเดินทางครั้งนี้นานแค่ไหน?</label>
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <input id="listing-tour-hours" name="listing-tour-hours" class="form-control" placeholder="6" maxlength="2" type="text" required="">
+                    <span class="input-group-addon">hours</span>
+                  </div>
+                  <p class="help-block">Half day tours are usually between 2 to 4 hours, while one day tours are between 5 to 8 hours</p>
+                </div>
+              </div>
+              <!-- Appended Input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Help your travelers plan</h3><p>Be concise and realistic with your timing. Being accurate helps your travelers plan other parts of their day.</p>">
+                <label class="col-xs-12 control-label" for="listing-tour-duration">How long is this overnight tour?</label>
+                <div class="col-xs-6">
+                  <div class="input-group">
+                    <input id="listing-tour-duration" name="listing-tour-days" class="form-control" placeholder="3" maxlength="2" type="text" required="">
+                    <span class="input-group-addon">days</span>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="input-group">
+                    <input id="listing-tour-duration" name="listing-tour-nights" class="form-control" placeholder="2" maxlength="2" type="text" required="">
+                    <span class="input-group-addon">nights</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Text input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Stand out from the crowd!</h3><p>Keep it short, descriptive, and don't be afraid to show your personality. Eye catching names encourage travelers to click and view your tour listing.</p><hr><p>Some examples:</p><ul><li>Adventurous 3D2N Hiking Tour in Chiang Mai</li><li>Most Immersive Hill Tribe Living Experience</li></ul>">
+                <label class="col-xs-12 control-label" for="listing-headline">Name your tour package</label>  
+                <div class="col-xs-12">
+                  <input id="listing-headline" name="listing-headline" type="text" placeholder="Immersive 3 Days 2 Night Tour with Hill Tribes" maxlength="60" class="form-control input-md" required="">
+                  <span class="help-block">Be descriptive and concise</span>  
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Help Us Know You</h3><p>Knowing this helps us provide you more relevant tips and insights on how to reach your target customers.</p>">
+                <label class="col-xs-12 control-label" for="listing-operator-type">Are you an individual or represent an organization?</label>
+                <div class="col-xs-12">
+                  <select id="listing-operator-type" name="listing-operator-type" class="form-control">
+                    <option selected disabled="">Select a category</option>
+                    <option value="individual">Individual</option>
+                    <option value="entity">Organization, community group, or company</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Become Recognized</h3><p>You can use a name that represents your group or you can also use your own name. Travelers love to know who their hosts are, a personal experience creates lasting memories!</p>">
+                <label class="col-xs-12 control-label" for="listing-operator-name">How would you like to appear on our website?</label>  
+                <div class="col-xs-12">
+                <input id="listing-operator-name" name="listing-operator-name" type="text" placeholder="Hill Tribe Tour Company" class="form-control input-md">
+                <span class="help-block">Entering a name here adds credibility!</span>  
+                </div>
+              </div>
+
+              <!-- Multiple Checkboxes (inline) -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Help Travelers Find You!</h3><p>Tell us what category your tour falls into, this helps travelers find what they are looking for based on their interests.</p><hr><p>Pick up to three.</p>">
+                <label class="col-xs-12 control-label" for="listing_theme_checkboxes">Check a theme that best describes your tour</label>
+                <div class="col-xs-12">
+                  <label class="checkbox" for="listing_theme_checkboxes-0">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-0" value="theme_1">
+                    Active and Fit
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-1">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-1" value="theme_2">
+                    Culture and Religion
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-2">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-2" value="theme_3">
+                    Epicurious Foodie
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-3">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-3" value="theme_4">
+                    Immersive Learning
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-4">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-4" value="theme_5">
+                    Hands-on Workshop
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-5">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-5" value="theme_6">
+                    Volunteer Work
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-6">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-6" value="theme_7">
+                    Arts and Craft
+                  </label>
+                  <label class="checkbox" for="listing_theme_checkboxes-7">
+                    <input type="checkbox" name="listing_theme_checkboxes" id="listing_theme_checkboxes-7" value="theme_8">
+                    Children Friendly
+                  </label>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Travelers Come First</h3><p>There are all type of travelers coming from across the world. Give them useful information so they can set expectations and prepare for their journey.</p><hr><p>Light - Just really relaxing strolls and some stairs to climb.</p><p>Sporty - Reasonably distanced walks, simple hikes. This is suitable for most fitness levels and ages.</p><p>Tough - For these tours, expect high altitude treks or long distance bicycling. </p>">
+                <label class="col-xs-12 control-label" for="listing-physical-demand">What is the physical fitness required?</label>
+                <div class="col-xs-12">
+                  <select id="listing-physical-demand" name="listing-physical-demand" class="form-control">
+                    <option selected disabled="">Select a fitness level</option>
+                    <option value="demand-light">Light</option>
+                    <option value="demand-sporty">Sporty</option>
+                    <option value="demand-tough">Tough</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Hola! Sawasdee!</h3><p>What language is this tour operated in? If you have a translator included in the tour, select the language he or she speaks.</p>">
+                <label class="col-xs-12 control-label" for="listing-lang-primary">What language this tour is operated in?</label>
+                <div class="col-xs-12">
+                  <select id="listing-lang-primary" name="listing-lang-primary" class="form-control">
+                    <option selected disabled="">Pick a primary languge</option>
+                    <option value="lang_en">English</option>
+                    <option value="lang_fr">French</option>
+                    <option value="lang_de">German</option>
+                    <option value="lang_it">Italian</option>
+                    <option value="lang_cn">Mandarin</option>
+                    <option value="lang_th">Thai</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group">
+                <label class="col-xs-12 control-label" for="listing-lang-secondary">If you are able to lead the tour in another language, select one from this list.</label>
+                <div class="col-xs-12">
+                  <select id="listing-lang-secondary" name="listing-lang-secondary" class="form-control">
+                    <option selected disabled="">Pick a secondary languge</option>
+                    <option value="lang_en">English</option>
+                    <option value="lang_fr">French</option>
+                    <option value="lang_de">German</option>
+                    <option value="lang_it">Italian</option>
+                    <option value="lang_cn">Mandarin</option>
+                    <option value="lang_th">Thai</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-xs-12 control-label" for="listing-address-name">Enter the address of where your tour begins or where most activities take place, you can drag the map marker below to fine tune the position</label>  
+                <div class="col-xs-9">
+
+                  <input id="address" type="text" value="Bangkok, Thailand" name="listing-map-address" type="text" placeholder="Enter the closest point of interest" class="form-control input-md" required="">
+                </div>
+                <div class="col-xs-3">
+                  <input type="button" value="Search" onclick="codeAddress()" class="btn btn-sm btn-primary btn-address-search">
+                </div>
+                <div class="col-xs-12">
+                  <div id="mapCanvas"></div>
+                </div>
+              </div>
+
+
+              <div class="footer-btn-container">
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+              </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/jquery.select-to-autocomplete.js"></script>
+  <script src="../../js/validator.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHZgRCNLJzsIx_2lId7KusNYNsPJV2-7U"></script>
+
+  <script>
+
+    // script for hover popover
+
+    var originalLeave = $.fn.popover.Constructor.prototype.leave;
+    $.fn.popover.Constructor.prototype.leave = function(obj){
+      var self = obj instanceof this.constructor ?
+        obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+      var container, timeout;
+
+      originalLeave.call(this, obj);
+
+      if(obj.currentTarget) {
+        container = $(obj.currentTarget).siblings('.popover')
+        timeout = self.timeout;
+        container.one('mouseenter', function(){
+          //We entered the actual popover – call off the dogs
+          clearTimeout(timeout);
+          //Let's monitor popover content instead
+          container.one('mouseleave', function(){
+            $.fn.popover.Constructor.prototype.leave.call(self, self);
+          });
+        })
+      }
+    };
+
+    //  script to trigger popover
+
+    $('body').popover({ selector: '[data-popover]', trigger: 'hover', placement: 'right', delay: {show: 50, hide: 50}});
+
+    // script to affix left bar to show progress or steps
+
+    $('#listing-steps-nav').affix({
+    });
+
+    //  script for limiting checkboxes
+
+    var max = 3;
+    var checkboxes = $('input[type="checkbox"]');
+
+    checkboxes.change(function(){
+        var current = checkboxes.filter(':checked').length;
+        checkboxes.filter(':not(:checked)').prop('disabled', current >= max);
+    });
+
+    //  script for google maps
+
+    var geocoder;
+    var map;
+    var marker;
+    var image = '../../img/map_marker_1_small.png';
+    function initialize() {
+      geocoder = new google.maps.Geocoder({});
+
+      var latlng = new google.maps.LatLng(13.7500, 100.4833);
+      var mapOptions = {
+        zoom: 4,
+        center: latlng
+      }
+      map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
+      marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        icon: image,
+        draggable: true
+      });
+    }
+
+    // script to allow searching for location on google maps
+
+    function codeAddress() {
+      var address = document.getElementById('address').value;
+      geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          map.setCenter(results[0].geometry.location);
+          // var marker = new google.maps.Marker({
+          //     map: map,
+          //     position: results[0].geometry.location,
+          //     draggable:false,
+          //     animation: google.maps.Animation.DROP,
+          //     icon: image
+          // });
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+
+
+</body>
+</html>
