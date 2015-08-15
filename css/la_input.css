@@ -39,6 +39,29 @@
 	background: rgba(255, 255, 255, 0.5);
 }
 
+.btn-ghost-lg
+{
+	border: 2px solid #fff;
+	background: transparent;
+	margin: 25px 0 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
+	padding: 6px 20px;
+	font-size: 15px;
+}
+
+.btn-ghost-lg:hover,
+.btn-ghost-lg:focus,
+.btn-ghost-lg:active
+{
+	border: 2px solid #fff;
+	background: #fff;
+	color: salmon;
+	box-shadow: none;	
+}
+
 /*.btn:active,
 .btn:focus
 {
@@ -46,6 +69,46 @@
 	-webkit-transform: scale(0.98,0.98);
 	transform: scale(0.98,0.98);
 }*/
+
+.footer-btn-container
+{
+	background: #fff;
+	padding: 0px 0px 20px;
+}
+
+.footer-btn-container .btn
+{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.btn-address-search
+{
+	height: 34px;
+	width: 100%;
+	font-weight: 500;
+}
+
+#go-live-container .btn
+{
+	font-size: 20px;
+	padding: 10px 20px;
+	background: transparent;
+}
+
+#go-live-container .btn:hover
+{
+	background: #fff;
+	color: rgb(0, 0, 97);
+}
+
+.file-footer-buttons .btn
+{	
+	border: none;
+	margin-top: 5px;
+}
 
 input[placeholder],
 [placeholder],
@@ -356,3 +419,29 @@ span.ui-helper-hidden-accessible
 	font-size: 12px;
 	font-weight: 500;
 }
+
+#referral-link
+{
+	border: 0;
+	outline: 0;
+	border-radius: 0px;
+	box-shadow: none;
+	font-size: 24px;
+	border: 2px solid #dadada;
+	width: 300px;
+	text-align: left;
+	height: 50px;
+	line-height: 50px;
+}
+
+
+input#referral-link
+{
+	text-align: center;
+}
+
+.tooltip-inner
+{
+	padding: 6px 10px;
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
+} 

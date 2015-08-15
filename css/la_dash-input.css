@@ -1,6 +1,13 @@
 .dash-content
 {
 	padding: 40px;
+	background: #fff;
+}
+
+.dash-content h2
+{
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .wizard-header
@@ -22,8 +29,7 @@
 	font-weight: 500;
 	padding: 5px 10px;
 	text-align: left;
-	color: #444;
-	font-weight: bold;
+	color: #666;
 }
 
 .form-horizontal .radio, .form-horizontal .checkbox
@@ -83,7 +89,7 @@ textarea.form-control
 	margin: 15px 0;
 }
 
-.btn-ghost-lg
+/*.btn-ghost-lg
 {
 	border: 2px solid #fff;
 	background: transparent;
@@ -94,7 +100,7 @@ textarea.form-control
 	letter-spacing: 0.5px;
 	padding: 6px 20px;
 	font-size: 15px;
-}
+}*/
 
 .btn-add-item:hover,
 .btn-add-item:focus,
@@ -107,7 +113,7 @@ textarea.form-control
 	box-shadow: none;
 }
 
-.btn-ghost-lg:hover,
+/*.btn-ghost-lg:hover,
 .btn-ghost-lg:focus,
 .btn-ghost-lg:active
 {
@@ -115,7 +121,7 @@ textarea.form-control
 	background: #fff;
 	color: salmon;
 	box-shadow: none;	
-}
+}*/
 
 .btn-ghost-lg input[type="checkbox"]
 {
@@ -138,4 +144,12 @@ select
 {
 	font-size: 12px;
 	text-align: right;
+}
+
+input[type="password"]
+{
+	letter-spacing: 5px;
+	padding-top: 10px;
+	line-height: 34px;
+	font-size: 20px;
 }

@@ -42,10 +42,22 @@ a:hover
 	text-decoration: none;
 }
 
+::selection 
+{
+  	background: salmon; /* WebKit/Blink Browsers */
+  	color: #fff;
+}
+
+::-moz-selection 
+{
+  	background: salmon; /* Gecko Browsers */
+  	color: #fff;
+}
+
 h1, h2, h3, h4, h5
 {
-	font-weight: 500;
-	font-family: 'San Francisco Display', sans-serif;
+	font-weight: 500;/*
+	font-family: 'San Francisco Display', sans-serif;*/
 }
 
 h5
@@ -380,6 +392,58 @@ div#basicModal.modal.fade.in
 {
 	display: inline-block;
 }
+
+/* popovers */
+.popover
+{
+	box-shadow: none;
+	margin-top: 15px;
+	border-radius: 0px;
+	width: 380px;
+	padding: 0px;
+	z-index: 900;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: avenir, 'avenir next', helvetica, arial, sans-serif; 
+
+}
+
+.popover h3
+{
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: 500;
+	color: salmon;
+}
+
+.popover h3::before
+{
+	font-family: "FontAwesome";
+	content: "\f0eb";
+	margin-right: 8px;
+	font-size: 16px;
+	color: orange;
+}
+
+.popover p
+{
+	color: #888 !important;
+}
+
+.popover ul
+{
+	margin-left: -20px;
+	padding-top: 0px;
+	color: #666;
+}
+
+.popover hr
+{
+	margin: 5px 0 10px;
+	border-color: #dadada;
+}
+
+
 
 @media (max-width: 991px) {
 
