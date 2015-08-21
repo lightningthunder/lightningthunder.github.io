@@ -1,0 +1,82 @@
+body
+{
+	background: #eee;
+}
+
+.form-horizontal .control-label
+{
+	text-align: left;
+	margin-top: 20px;
+}
+
+.form-horizontal .radio, .form-horizontal .checkbox
+{
+	margin-left: 30px;
+}
+
+h1
+{
+	margin: 20px 0 40px;
+	text-align: left;
+	font-weight: bolder;
+	padding: 20px 0;
+	border-top: 5px solid salmon;
+	border-bottom: 1px solid salmon;
+	color: salmon;
+}
+
+h2
+{
+	font-size: 20px;
+}
+
+.verify-content
+{
+	background: #fff;
+	border: 1px solid #dadada;
+	margin: 10px 2.5px 25px;
+	padding: 20px;
+}
+
+.verify-content:last-of-type
+{
+	background: #333;
+	color: #fff;
+}
+
+input
+{
+	margin-bottom: 5px;
+}
+
+.footer-btn-container
+{
+	padding: 20px;
+	background: #fafafa;
+	border: 1px solid #eee;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.footer-btn-container #save-next
+{
+	margin-bottom: 20px;
+}
+
+span.status_approved
+{
+	color: lightgreen;
+	font-weight: bolder;
+}
+
+span.status_rejected
+{
+	color: red;
+	font-weight: bolder;
+}
+
+#mapCanvas,
+#mapCanvas2
+{
+	height: 400px;
+}

@@ -1,40 +1,93 @@
-body
+::selection 
 {
-	background: #eee;
+  	background: yellow; /* WebKit/Blink Browsers */
+  	color: salmon;
 }
 
-.form-horizontal .control-label
+::-moz-selection 
 {
-	text-align: left;
-	margin-top: 40px;
+  	background: yellow; /* Gecko Browsers */
+  	color: salmon;
 }
 
-.form-horizontal .radio, .form-horizontal .checkbox
+.navbar
 {
-	margin-left: 30px;
+	background: salmon;
+	border: none;
+	border-radius: 0px;
 }
 
-h1
+a.navbar-brand
 {
-	margin-top: 40px;
-	text-align: left;
+	color: #fff !important;
 	font-weight: bolder;
 }
 
-.verify-content
+#side-nav
 {
+	border-right: 1px solid #eee;
+	height: 100vh;
+}
+
+.admin-card
+{
+	width: 300px;
+	height: 400px;
+	position: relative;
+	border: 2px solid #000;
+	padding: 0px;
+	border-radius: 10px;
 	background: #fff;
-	border: 1px solid #dadada;
-	margin: 50px 0;
-	padding: 20px 0px 40px 40px;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-.verify-content .col-md-6
+.admin-card .highlight
 {
-	padding-right: 40px;
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	top: 0px;
+	left: 0px;
 }
 
-input
+.admin-card .highlight h2
 {
-	margin-bottom: 5px;
+	line-height: 200px;
+	margin: 0px;
+	font-size: 100px;
+	color: #222;
+	text-align: center;
+}
+
+.admin-card .content
+{
+	width: 100%;
+	height: 200px;
+	color: #333;
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	text-align: center;
+	padding: 20px 40px;
+}
+
+.admin-card .content h3
+{
+	font-size: 20px;
+}
+
+.btn-ghost-admin
+{
+	background: transparent;
+	color: black;
+	border: 2px solid black;
+	margin-top: 20px;
+}
+
+.btn-ghost-admin:hover
+{
+	background: yellow !important;
 }
