@@ -10,6 +10,13 @@
   padding: 20px;
 }
 
+.promo.deals
+{
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
 .monkey_bg
 {
   height: 260px;
