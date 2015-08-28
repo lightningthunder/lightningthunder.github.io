@@ -47,7 +47,7 @@
             <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar">
-            <ul class="nav navbar-nav navbar-right hidden">
+            <ul class="nav navbar-nav navbar-right show">
               <li>
                 <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
               </li>
@@ -55,7 +55,7 @@
                 <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right show">
+            <ul class="nav navbar-nav navbar-right hidden">
             <li>
                 <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
               </li>
@@ -743,7 +743,7 @@
   </div>
 
   <!-- monkey business -->
-  <div class="container monkey_container padding-top-20">
+  <div class="container monkey_container">
     <div class="row promo deals" style="">
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div class="content la_hot-deals">
@@ -890,25 +890,31 @@
   <div class="container cta padding-bottom-20">
     <div class="row">
       <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="la_cta-box" id="mktg-1">
-          <div class="content text-center">
-            <h3>What is Community Based Tourism?</h3>
+        <a href="http://localalike.zendesk.com" target="_blank">
+          <div class="la_cta-box" id="mktg-1">
+            <div class="content text-center">
+              <h3>What is Community Based Tourism?</h3>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="la_cta-box" id="mktg-2">
-          <div class="content text-center">
-            <h3>Frequenty Asked Questions</h3>
+        <a href="http://localalike.zendesk.com" target="_blank">
+          <div class="la_cta-box" id="mktg-2">
+            <div class="content text-center">
+              <h3>Frequenty Asked Questions</h3>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="la_cta-box" id="mktg-3">
-          <div class="content text-center">
-            <h3>Our Sustainability Standards</h3>
+        <a href="http://www.localalike.com/en/impact" target="_blank">
+          <div class="la_cta-box" id="mktg-3">
+            <div class="content text-center">
+              <h3>Our Sustainability Standards</h3>
+            </div>
           </div>
-        </div>
+        </a>
       </div>  
     </div>
   </div>
@@ -1014,62 +1020,58 @@ $(document).ready(function() {
 <script>
 
   (function(){
-  // setup your carousels as you normally would using JS
-  // or via data attributes according to the documentation
-  // http://getbootstrap.com/javascript/#carousel
   $('#monkey_baby').carousel({ interval: 600000 });
     }());
 
-    (function(){
-      $('.la_monkey_carousel_promonkey .item').each(function(){
-        var itemToClone = $(this);
+  (function(){
+    $('.la_monkey_carousel_promonkey#monkey_baby .item').each(function(){
+      var itemToClone = $(this);
 
-        for (var i=1;i<3;i++) {
-          itemToClone = itemToClone.next();
+      for (var i=1;i<3;i++) {
+        itemToClone = itemToClone.next();
 
-          // wrap around if at end of item collection
-          if (!itemToClone.length) {
-            itemToClone = $(this).siblings(':first');
-          }
-
-          // grab item, clone, add marker class, add to collection
-          itemToClone.children(':first-child').clone()
-            .addClass("cloneditem-"+(i))
-            .appendTo($(this));
+        // wrap around if at end of item collection
+        if (!itemToClone.length) {
+          itemToClone = $(this).siblings(':first');
         }
-      });
-    }());
 
-  </script>
-  <script>
+        // grab item, clone, add marker class, add to collection
+        itemToClone.children(':first-child').clone()
+          .addClass("cloneditem-"+(i))
+          .appendTo($(this));
+      }
+    });
+
+  }());
+
+</script>
+<script>
 
   (function(){
-  // setup your carousels as you normally would using JS
-  // or via data attributes according to the documentation
-  // http://getbootstrap.com/javascript/#carousel
   $('#monkey_baby_2').carousel({ interval: 600000 });
     }());
 
-    (function(){
-      $('.la_monkey_carousel_promonkey .item').each(function(){
-        var itemToClone = $(this);
+  (function(){
+    $('.la_monkey_carousel_promonkey#monkey_baby_2 .item').each(function(){
+      var itemToClone = $(this);
 
-        for (var i=1;i<3;i++) {
-          itemToClone = itemToClone.next();
+      for (var i=1;i<3;i++) {
+        itemToClone = itemToClone.next();
 
-          // wrap around if at end of item collection
-          if (!itemToClone.length) {
-            itemToClone = $(this).siblings(':first');
-          }
-
-          // grab item, clone, add marker class, add to collection
-          itemToClone.children(':first-child').clone()
-            .addClass("cloneditem-"+(i))
-            .appendTo($(this));
+        // wrap around if at end of item collection
+        if (!itemToClone.length) {
+          itemToClone = $(this).siblings(':first');
         }
-      });
-    }());
 
-  </script>
+        // grab item, clone, add marker class, add to collection
+        itemToClone.children(':first-child').clone()
+          .addClass("cloneditem-"+(i))
+          .appendTo($(this));
+      }
+    });
+
+  }());
+
+</script>
 </body>
 </html>

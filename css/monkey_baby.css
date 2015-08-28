@@ -1,13 +1,14 @@
 /* some styles are contained in la_cards.css */
 
-#monkey_baby
+#monkey_baby,
+#monkey_baby_2
 {
   height: 432px;
 }
 
 .monkey_container
 {
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 .promo.deals
@@ -35,7 +36,8 @@
   border: none;
 }
 
-#monkey_baby .carousel-caption
+#monkey_baby .carousel-caption,
+#monkey_baby_2 .carousel-caption
 {
   position: relative;
   left: initial;
