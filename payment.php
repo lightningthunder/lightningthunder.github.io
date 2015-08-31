@@ -544,7 +544,7 @@
               </div>
               <div class="col-xs-12 form-group promo-code">
                 <label class="control-label">Enter promo code</label>
-                <input autocomplete="off" class="form-control" placeholder="Enter promo code" size="4" type="text" maxlength="4"><a class="btn btn-primary btn-sm btn-discount">APPLY PROMO CODE <span class="glyphicon glyphicon-chevron-right"></span>
+                <input autocomplete="off" class="form-control" placeholder="Enter promo code" size="4" type="text" maxlength="4"><a class="btn btn-primary btn-sm btn-discount">APPLY PROMO CODE <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
             <div class="col-xs-12 col-lg-5" id="grizzly-bear">
               <button type="submit" id="create_token" class="btn btn-lg btn-primary btn-success btn-pay-now" href="payment-success.html">Pay Now and Let's Travel</button>
