@@ -315,6 +315,11 @@ h5
 	max-height: auto !important;
 }
 
+.border-top-eee
+{
+	border-top: 2px solid #eee;
+}
+
 div#basicModal.modal.fade.in
 {
 	padding: 0px;

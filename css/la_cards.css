@@ -759,6 +759,7 @@
 	margin-bottom: 0;
 	padding: 5px 0;
 	font-size: 14px;
+	font-weight: 500;
 }
 
 .card.booking-summary p.item_geo,
@@ -769,16 +770,18 @@
 
 .card.booking-summary h3
 {
-	font-size: 15px;
-	font-size: 1;
+	font-size: 13px;
 	text-transform: uppercase;
 	color: #999;
+	font-weight: 700;
+	margin: 40px 0 0px;
 }
 
 .card.booking-summary span
 {
 	color: #555;
 	font-size: 14px;
+	font-weight: 500;
 }
 
 .card.booking-summary ul.summary-list li span.item.additional::before
@@ -790,9 +793,9 @@
 .card.booking-summary ul.summary-list li.subtotal,
 .card.booking-summary ul.summary-list li.grandtotal
 {
-	border-top: 1px solid #999;
-	margin-top: 5px;
-	padding-top: 5px;
+	border-top: 1px solid #dadada;
+	margin-top: 15px;
+	padding-top: 15px;
 }
 
 .card.booking-summary ul.summary-list li.grandtotal span
@@ -897,6 +900,12 @@ span.letter-signs.culture::before
 	z-index: 99;
 }
 
+.btn-discount
+{
+	position: absolute;
+	top: 27px;
+	right: 13px;
+}
 
 @media all and (max-width: 1024px) {
  	.card .footer

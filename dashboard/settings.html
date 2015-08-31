@@ -112,19 +112,39 @@
         </ul>
       </div>
       <div class="col-xs-9">
-
         <div class="dash-content">
-<!--           <div class="wizard-header clearfix">
-            <div class="col-xs-12">
-              <h1>General Settings</h1>
-            </div>
-          </div> -->
           <div class="col-xs-12 col-md-7">
             <form class="form-horizontal">
               <fieldset>
               <!-- Password input-->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Categorizing our tours</h3><p>We organize and sort our tour listings based on these categories. It helps travelers find exactly what they're looking for. You can create multiple similar listings with different tour durations.</p>">
-              <h1>Your Profile</h1>
+                <h1>Your Profile</h1>
+                <label class="col-xs-12 control-label" for="pwd-old">Enter your current password</label>
+                <div class="col-xs-12">
+                  <input id="pwd-old" name="pwd-old" type="password" placeholder="" class="form-control input-md" required="">
+                </div>
+                <label class="col-xs-12 control-label" for="pwd-new">Enter your new password</label>
+                <div class="col-xs-12">
+                  <input id="pwd-new" name="pwd-new" type="password" placeholder="" class="form-control input-md" required="">
+                </div>
+                <label class="col-xs-12 control-label" for="pwd-new-confirm">Enter your new password again</label>
+                <div class="col-xs-12">
+                  <input id="pwd-new-confirm" name="pwd-new-confirm" type="password" placeholder="" class="form-control input-md" required="">
+                </div>
+                <div class="col-xs-12 padding-top-20">
+                  <button id="password-submit" name="password-submit" class="btn btn-primary">Create new password</button>
+                </div>
+              </div>
+              </fieldset>
+              </form>
+          </div>
+
+          <div class="col-xs-12 col-md-7 border-top-eee">
+            <form class="form-horizontal">
+              <fieldset>
+              <!-- Password input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Categorizing our tours</h3><p>We organize and sort our tour listings based on these categories. It helps travelers find exactly what they're looking for. You can create multiple similar listings with different tour durations.</p>">
+                <h1>Your Profile</h1>
                 <label class="col-xs-12 control-label" for="pwd-old">Enter your current password</label>
                 <div class="col-xs-12">
                   <input id="pwd-old" name="pwd-old" type="password" placeholder="" class="form-control input-md" required="">
@@ -142,28 +162,14 @@
                 </div>
               </div>
 
-              <!-- Password input-->
-              <div class="form-group">
-              </div>
-
-              <!-- Password input-->
-              <div class="form-group">
-              </div>
-
               <!-- Button -->
               <div class="form-group">
                 <label class="col-md-4 control-label" for="password-submit"></label>
                 <div class="col-md-4">
                 </div>
               </div>
-
-              <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-              </div>
               </fieldset>
               </form>
-
           </div>
         </div>
 

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/admin_global.css">
+  <link rel="stylesheet" href="../css/la_input.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/fileinput.min.css">
+
+  <title>Content Verfication Machine</title>
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Local Alike Admin</a>
+          </div>
+        </div><!--/.container-fluid -->
+      </nav>
+  <div class="container-fluid no-side-padding">
+    <div class="col-sm-2">
+      <ul id="side-nav" class="nav nav-stacked affix">
+        <li><h2><small>Main Menu</small></h2></li>
+        <li><a href="listing-incoming.html">Incoming Tickets</a></li>
+        <li><a href="listing-view-all.html">User Listings</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="#">Website Content</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Sign out</a></li>
+      </ul>
+    </div>
+    <div class="col-md-10">
+      <h1>All Listings</h1>
+      <p>Toggle filters:</p>
+      <span class="btn btn-success btn-sm">All listings</span>
+      <span class="btn btn-success btn-sm filter-active">Online listings only</span>
+      <span class="btn btn-success btn-sm">Offline listings only</span>
+      <span class="btn btn-success btn-sm">Day Tours only</span>
+      <span class="btn btn-success btn-sm">Overnight Tours only</span>
+      
+      <div class="input-group filter-search clearfix">
+        <input id="filter" type="text" class="form-control" placeholder="Type here to filter table...">
+      </div>
+      <table class="table table-listing-view-all">
+         <thead>
+            <tr>
+               <th>ID</th>
+               <th>Status</th>
+               <th>Full Listing Name</th>
+               <th>Start Location</th>
+               <th>Type</th>
+               <th>Total Bookings</th>
+               <th>Bookings / Month</th>
+               <th>Age</th>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+
+
+            </tr>
+         </thead>
+         <tbody class="searchable">
+            <tr>
+               <td>LA1234</td>
+               <td>Online</td>
+               <td>Mae Kampong Village in the Valley</td>
+               <td>Chiang Mai, Thailand</td>
+               <td>3D2N</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1235</td>
+               <td>Online</td>
+               <td>Hill Tribes Alike by Local Alike</td>
+               <td>Chiang Mai, Thailand</td>
+               <td>3D2N</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1234</td>
+               <td>Online</td>
+               <td>Responsible Tours for Beginners</td>
+               <td>Chiang Rai, Thailand</td>
+               <td>2D1N</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1234</td>
+               <td>Offline</td>
+               <td>Coffee Making in the North</td>
+               <td>Ayudhaya, Thailand</td>
+               <td>One Day</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1234</td>
+               <td>Offline</td>
+               <td>When Chiang Mai Gives You Lemons</td>
+               <td>Chiang Mai, Thailand</td>
+               <td>One Day</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1234</td>
+               <td>Offline</td>
+               <td>Huai Raeng the Mother of All Canal Villages</td>
+               <td>Trat, Thailand</td>
+               <td>2D1N</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1234</td>
+               <td>Online</td>
+               <td>Jesus Bless Your Soul. Buddha Bless Your Pocket.</td>
+               <td>Bangkunthien, Thailand</td>
+               <td>3D2N</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+            <tr>
+               <td>LA1234</td>
+               <td>Offline</td>
+               <td>Pattaya Without Borders</td>
+               <td>Pattaya, Thailand</td>
+               <td>One Day</td>
+               <td>17</td>
+               <td>3.2</td>
+               <td>25 days</td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">View page</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Manage content</a></td>
+               <td><a class="btn btn-primary btn-sm" href="listing-verify-all.html">Social Media</a></td>
+               <td><a class="btn btn-primary btn-sm" href="">Copy link</td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagination pagination-centered">
+        <ul>
+          <li><a href="#">←</a></li>
+          <li class="active"><a href="#">10</a></li>
+          <li class="disabled"><a href="#">...</a></li>
+          <li><a href="#">20</a></li>
+          <li><a href="#">→</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+        (function ($) {
+            $('#filter').keyup(function () {
+                var rex = new RegExp($(this).val(), 'i');
+                $('.searchable tr').hide();
+                $('.searchable tr').filter(function () {
+                    return rex.test($(this).text());
+                }).show();
+            })
+        }(jQuery));
+    });
+  </script>
+
+</body>
+</html>

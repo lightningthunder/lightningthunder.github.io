@@ -5,18 +5,17 @@ body
 
 h2
 {
-	font-size: 1.15em;
-	padding: 2px 5px;
-	text-transform: uppercase;
-	margin-bottom: 2em;
-	background: salmon;
-	color: #fafafa;
+	font-size: 2em;
+	margin-bottom: 1em;
+	color: salmon;
 	display: inline-block;
+	border-radius: 3px;
+	font-weight: 700;
 }
 
 #la_add-ons h2
 {
-	margin: 2em auto;
+	margin: 100px auto 10px;
 }
 
 li
@@ -133,7 +132,18 @@ li
 	left: auto;
 }
 
+.omise-logo
+{
+	line-height: 34px;
+}
 
+.omise-logo span
+{
+	line-height: 34px;
+	font-size: 10px;
+	top: 2px;
+	position: relative;
+}
 
 @media (min-width: 992px) {
 	#sidebar.affix 

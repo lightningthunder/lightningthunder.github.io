@@ -10,6 +10,16 @@
   	color: salmon;
 }
 
+.no-side-padding
+{
+	padding: auto 0px auto 0px;
+}
+
+.pagination-centered 
+{
+	text-align: center;
+}
+
 .navbar
 {
 	background: salmon;
@@ -25,8 +35,7 @@ a.navbar-brand
 
 #side-nav
 {
-	border-right: 1px solid #eee;
-	height: 100vh;
+	width: 200px;
 }
 
 .admin-card
@@ -90,4 +99,80 @@ a.navbar-brand
 .btn-ghost-admin:hover
 {
 	background: yellow !important;
+}
+
+.table-listing-view-all
+{
+	margin-top: 50px;
+}
+
+.table-listing-view-all thead
+{
+	font-size: 12px;
+}
+
+.filter-search
+{
+	float: right;
+	width: 350px;
+}
+
+.pagination 
+{
+  height: 36px;
+  margin: 18px 0;
+  display: block;
+}
+
+.pagination ul 
+{
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.pagination li 
+{
+  display: inline;
+}
+
+.pagination a 
+{
+  float: left;
+  padding: 0 14px;
+  line-height: 34px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-left-width: 0;
+}
+
+.pagination li:first-child a 
+{
+  border-left-width: 1px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.pagination li:last-child a 
+{
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.pagination-centered 
+{
+  text-align: center;
 }

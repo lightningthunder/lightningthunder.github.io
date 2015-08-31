@@ -5,9 +5,9 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/admin_global.css">
-  <link rel="stylesheet" href="../css/admin_verify.css">
-  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/fileinput.min.css">
+
 
   <title>Content Verfication Machine</title>
 </head>
@@ -86,6 +86,8 @@
 
           </div>
         </div> 
+      </div>
+      <div class="col-xs-6">
         <!-- 1 -->
         <div class="verify-content clearfix">
           <div class="wizard-header clearfix">
@@ -94,13 +96,13 @@
             </div>
           </div>
           <!-- get from user -->
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12">
             <form class="form-horizontal">
               <fieldset>
 
               <!-- Select Basic -->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Tell your story, your way.</h3><p>Pick the language you are good at and complete the form. We offer a free translation service for your first listing.</p>">
-                <label class="col-xs-12 control-label" for="listing-input-lang">What language is this listing in?</label>
+                <label class="col-xs-12 control-label" for="listing-input-lang">What is your preferred language to use?</label>
                 <div class="col-xs-12">
                   <select id="listing-input-lang" name="listing-input-lang" class="form-control">
                     <option selected disabled="">Select a language</option>
@@ -139,13 +141,13 @@
               <!-- Appended Input-->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Help your travelers plan</h3><p>Be concise and realistic with your timing. Being accurate helps your travelers plan other parts of their day.</p>">
                 <label class="col-xs-12 control-label" for="listing-tour-duration">How long is this overnight tour?</label>
-                <div class="col-md-6">
+                <div class="col-xs-12">
                   <div class="input-group">
                     <input id="listing-tour-duration" name="listing-tour-days" class="form-control" placeholder="3" maxlength="2" type="text" required="">
                     <span class="input-group-addon">days</span>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-12">
                   <div class="input-group">
                     <input id="listing-tour-duration" name="listing-tour-nights" class="form-control" placeholder="2" maxlength="2" type="text" required="">
                     <span class="input-group-addon">nights</span>
@@ -236,7 +238,7 @@
 
               <!-- Select Basic -->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Hola! Sawasdee!</h3><p>What language is this tour operated in? If you have a translator included in the tour, select the language he or she speaks.</p>">
-                <label class="col-xs-12 control-label" for="listing-lang-primary">What language this tour operated in?</label>
+                <label class="col-xs-12 control-label" for="listing-lang-primary">What language this tour is operated in?</label>
                 <div class="col-xs-12">
                   <select id="listing-lang-primary" name="listing-lang-primary" class="form-control">
                     <option selected disabled="">Pick a primary languge</option>
@@ -288,14 +290,517 @@
               </fieldset>
               </form>
           </div>
-          <!-- admin input -->
-          <div class="col-xs-12 col-md-6">
+        </div>
+
+        <!-- 2 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Price & Capacity</h1>
+            </div>
+          </div>
+          <!-- get from user -->
+          <div class="col-xs-12 col-xs-12">
+
+            <form class="form-horizontal">
+              <fieldset>
+              <!-- Button Drop Down -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>You Deserve It!</h3><p>Enter a price you would like to earn from your tour package, Local Alike will take a small fee to support other social projects and contribute to our management fees.</p>">
+                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        THB
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu pull-right">
+                        <li><a href="#">THB</a></li>
+                        <li><a href="#">USD</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>100% Transparency</h3><p>This is the price of your tour as it will appear on the marketplace.</p>">
+                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
+                    <span class="input-group-addon">THB</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Take Total Control</h3><p>You can set minimum and maximum number of travelers you want to handle per booking.</p>">
+                <label class="col-xs-12 control-label" for="listing-min-travelers">Minimum travelers per booking</label>
+                <div class="col-xs-12">
+                  <select id="listing-min-travelers" name="listing-min-travelers" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Carrying Capacity is Key</h3><p>We believe in sustainable tourism and we are sure you do as well. Set a maximum number of travelers you are able to accept per booking so you don't get too overwhelmed by large crowds.</p>">
+                <label class="col-xs-12 control-label" for="listing-max-travelers">Maximum travelers per booking</label>
+                <div class="col-xs-12">
+                  <select id="listing-max-travelers" name="listing-max-travelers" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                  </select>
+                </div>
+              </div>
+              <div class="footer-btn-container">
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+              </form>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Tour Highlights</h1>
+            </div>
+          </div>
+          <div class="col-xs-12 col-xs-12">
+            <form class="form-horizontal">
+              <fieldset>
+              <!-- Textarea -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Content is King</h3><p>Your content should capture the attention of your audiences. Write sentences that make travelers want to read the next.</p><hr><p>Get creative under 800 characters!</p>">
+                <label class="col-xs-12 control-label" for="textarea">Describe your activity or tell a story</label>
+                <div class="col-xs-12">                     
+                  <textarea id="listing-story-maxlength" maxlength="800" class="form-control" id="listing-story" name="listing-story" placeholder="J.R.R. Tolkien once said..."></textarea>
+                  <div id="chars-counter"><span id="chars">800</span> characters remaining</div>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Make Trips Memorable</h3><p>Design trips that will give travelers a whole new perspective and experience. Tell them why they should pick your tour and what they can feel, eat, see, and do.</p>">
+
+                <label class="col-xs-12 control-label" for="listing-highlight-1">Insert highlights of your tour</label>  
+                <div class="col-xs-12 listing-highlights">
+                  <input id="listing-highlight-1" name="listing-highlight-1" type="text" placeholder="Not all those" class="form-control input-md" required="">
+                  <input id="listing-highlight-2" name="listing-highlight-2" type="text" placeholder="who wander" class="form-control input-md" required="">
+                  <input id="listing-highlight-3" name="listing-highlight-3" type="text" placeholder="are lost." class="form-control input-md" required="">
+                  <button id="listing-highlight-btn-add" name="listing-highlight-btn-add" class="btn btn-add-item pull-right">+ Add new highlight</button>
+                </div>
+              </div>
+              <div class="footer-btn-container">
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Upload Photos</h1>
+              <p>A picture is worth a thousand words. Five pictures are worth five thousand words. Ten pictures... You get the idea! ;-)</p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <form class="form-horizontal">
+              <fieldset>
+                <!-- ImageGallery -->
+                <div class="form-group">
+                  <input id="input-listing-gallery" type="file" class="file" data-preview-file-type="text" accept="image/*" >
+                </div>
+              <div class="footer-btn-container padding-top-30">
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Tour Amenities</h1>
+            </div>
+          </div>
+          <div class="col-xs-12 col-xs-12">
+            <form class="form-horizontal">
+              <fieldset>
+              <!-- Multiple Checkboxes (inline) -->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Honesty is the best policy</h3><p>Give travelers a clear idea of what they are facing so they can plan accordingly. Some prefer the conveniences of modern facilities while many travelers are seeking very raw experiences. They might want to be away from their phones or want to experience how locals really live.</p><hr><p>Be honest and be proud of your existing offerings.</p>">
+                <label class="col-xs-12 control-label" for="listing-overnight-amenities">Check the amenities that for your overnight tour is able to provide</label>
+                <div class="col-xs-12">
+                  <label class="checkbox" for="listing-overnight-amenities-0">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-0" value="overnight-amenities-1">
+                    Wi-Fi
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-1">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-1" value="overnight-amenities-2">
+                    Cell Service
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-2">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-2" value="overnight-amenities-3">
+                    Modern Flush Toilet
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-3">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-3" value="overnight-amenities-4">
+                    Air Condition
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-4">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-4" value="overnight-amenities-5">
+                    Wheelchair Accessibility
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-5">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-5" value="overnight-amenities-6">
+                    Padded Mattress
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-6">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-6" value="overnight-amenities-7">
+                    Local Television
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-7">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-7" value="overnight-amenities-8">
+                    Family Friendly
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-8">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-8" value="overnight-amenities-9">
+                    Private Bathroom
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-9">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-9" value="overnight-amenities-10">
+                    Hygiene Essentials
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-10">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-10" value="overnight-amenities-11">
+                    Light at Night
+                  </label>
+                  <label class="checkbox" for="listing-overnight-amenities-11">
+                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-11" value="overnight-amenities-12">
+                    Customizable Meals
+                  </label>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Tell us the good stuff!</h3><p>Let travelers know what are the included activities, fees, or meals in the tour package. Don't be afraid to get creative!</p><hr><p>To remove an item, simply leave it blank.</p>">
+
+                <label class="col-xs-12 control-label" for="listing-inclusions">Inclusions</label>  
+                <div class="col-xs-12 listing-inclusions">
+                  <input id="listing-inclusion-1" name="listing-inclusion-1" type="text" placeholder="A clear statement helps travelers understand what is awesome about your tour" class="form-control input-md" required="">
+                  <input id="listing-inclusion-2" name="listing-inclusion-2" type="text" placeholder="Write sentences that are easy to read and concise!" class="form-control input-md" required="">
+                  <input id="listing-inclusion-3" name="listing-inclusion-3" type="text" placeholder="Be funny and creative, it helps travelers to feel the fun!" class="form-control input-md" required="">
+                  <button id="listing-inclusion-btn-add" name="listing-inclusion-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new inclusion</button>
+                </div>
+              </div>
+
+               <!-- Text input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Keep a positive tone!</h3><p>Even though you are telling travelers what is not included in the package, try to use positive sentences. Avoid 'no' or 'unavailable.'</p><hr><p>To remove an item, simply leave it blank.</p>">
+
+                <label class="col-xs-12 control-label" for="listing-exclusions">Exclusions</label>  
+                <div class="col-xs-12 listing-exclusions">
+                  <input id="listing-exclusion-1" name="listing-exclusion-1" type="text" placeholder="A clear statement helps travelers understand what is awesome about your tour" class="form-control input-md" required="">
+                  <input id="listing-exclusion-2" name="listing-exclusion-2" type="text" placeholder="Write sentences that are easy to read and concise!" class="form-control input-md" required="">
+                  <input id="listing-exclusion-3" name="listing-exclusion-3" type="text" placeholder="Be funny and creative, it helps travelers to feel the fun!" class="form-control input-md" required="">
+                  <button id="listing-exclusion-btn-add" name="listing-exclusion-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new exclusion</button>
+                </div>
+              </div>
+
+              <div class="footer-btn-container">
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+
+              </fieldset>
+              </form>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Itinerary</h1>
+            </div>
+          </div>
+          <div class="col-xs-12 col-xs-12">
+            <form class="form-horizontal listing-itinerary">
+              <fieldset>
+                <h2>Itinerary for Day One</h2>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-01-morning">Morning</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-01-morning" name="listing-itinerary-01-morning"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-01-afternoon">Afternoon</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-01-afternoon" name="listing-itinerary-01-afternoon"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-01-evening">Evening</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-01-evening" name="listing-itinerary-01-evening"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <h2>Itinerary for Day Two</h2>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-02-morning">Morning</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-02-morning" name="listing-itinerary-02-morning"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-02-afternoon">Afternoon</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-02-afternoon" name="listing-itinerary-02-afternoon"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-02-evening">Evening</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-02-evening" name="listing-itinerary-02-evening"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <h2>Itinerary for Day Three</h2>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-03-morning">Morning</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-03-morning" name="listing-itinerary-03-morning"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-03-afternoon">Afternoon</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-03-afternoon" name="listing-itinerary-03-afternoon"></textarea>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-md-3 control-label" for="listing-itinerary-03-evening">Evening</label>
+                  <div class="col-md-9">                     
+                    <textarea class="form-control" id="listing-itinerary-03-evening" name="listing-itinerary-03-evening"></textarea>
+                  </div>
+                </div>
+                <button id="listing-highlight-btn-add" name="listing-highlight-btn-add" class="btn btn-add-item pull-right">+ Add new highlight</button>
+                <div class="footer-btn-container">
+                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Upgrades for Tour</h1>
+              <p>You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-12 control-label" for="listing-upgrade-1-title">Upgrade Header</label>  
+                  <div class="col-xs-12">
+                  <input id="listing-upgrade-1-title" name="listing-upgrade-1-title" type="text" placeholder="Enter name of this upgrade" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-12 control-label" for="listing-upgrade-1">Describe the conditions of this upgrade</label>
+                  <div class="col-xs-12">                     
+                    <textarea class="form-control" id="listing-upgrade-1" name="listing-upgrade-1"></textarea>
+                  </div>
+                </div>
+
+                <!-- Appended Input-->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-3 control-label" for="listing-upgrade-1-price">Price per unit</label>
+                  <div class="col-xs-9">
+                    <div class="input-group">
+                      <input id="listing-upgrade-1-price" name="listing-upgrade-1-price" class="form-control" placeholder="200" type="text" required="">
+                      <span class="input-group-addon">THB</span>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-3 control-label" for="listing-upgrade-1-unit-type">Unit name</label>  
+                  <div class="col-xs-9">
+                  <input id="listing-upgrade-1-unit-type" name="listing-upgrade-1-unit-type" type="text" placeholder="Person, group, or day" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+                <!-- ImageGallery -->
+                <div class="form-group no-bottom-margin" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="control-label">Select an image to with your package upgrade</label>
+                  <input id="input-1" type="file" class="file" data-show-caption="true">
+                </div>
+                <div class="clearfix">
+                  <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade</button>
+                  </div>
+
+                <div class="footer-btn-container padding-top-30">
+                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+                </div>
+
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Social Causes You Support</h1>
+              <p>You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                <label class="col-xs-12 control-label" for="listing-social-category">What is the type of social cause being supported?</label>
+                <div class="col-xs-12">
+                  <select id="listing-social-category" name="listing-social-category" class="form-control">
+                    <option value="1">Community Education</option>
+                    <option value="2">Economic Empowerment</option>
+                    <option value="3">Health &amp; Hygiene</option>
+                    <option value="4">Tourism Development</option>
+                    <option value="5">Infrastructure</option>
+                  </select>
+                </div>
+              </div>
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-12 control-label" for="listing-upgrade-1-title">Give this social cause a short title</label>  
+                  <div class="col-xs-12">
+                  <input id="listing-upgrade-1-title" name="listing-upgrade-1-title" type="text" placeholder="Use something short and descriptive" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-12 control-label" for="listing-upgrade-1">Tell travelers why you choose to support this cause and what you aim to accomplish with the income earned through offering this tour experience</label>
+                  <div class="col-xs-12">                     
+                    <textarea class="form-control" id="listing-upgrade-1" name="listing-upgrade-1"></textarea>
+                  </div>
+                </div>
+
+                <!-- Appended Input-->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-4 control-label" for="listing-upgrade-1-price">Price per unit</label>
+                  <div class="col-xs-8">
+                    <div class="input-group">
+                      <input id="listing-upgrade-1-price" name="listing-upgrade-1-price" class="form-control" placeholder="200" type="text" required="">
+                      <span class="input-group-addon">THB</span>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="col-xs-4 control-label" for="listing-upgrade-1-unit-type">Unit name</label>  
+                  <div class="col-xs-8">
+                  <input id="listing-upgrade-1-unit-type" name="listing-upgrade-1-unit-type" type="text" placeholder="Person, group, or day" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+                <!-- ImageGallery -->
+                <div class="form-group no-bottom-margin" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
+                  <label class="control-label">Select an image to with the social cause you support</label>
+                  <input id="input-1" type="file" class="file" data-show-caption="true">
+                </div>
+                <div class="clearfix">
+                  <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade</button>
+                  </div>
+
+                <div class="footer-btn-container padding-top-30">
+                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+                </div>
+
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+
+        <!-- 1 -->
+        <div class="verify-content clearfix">
+          <div class="wizard-header clearfix">
+            <div class="col-xs-12">
+              <h1>Basic Information</h1>
+            </div>
+          </div>
+          <!-- get from user -->
+          <div class="col-xs-12">
             <form class="form-horizontal">
               <fieldset>
 
               <!-- Select Basic -->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Tell your story, your way.</h3><p>Pick the language you are good at and complete the form. We offer a free translation service for your first listing.</p>">
-                <label class="col-xs-12 control-label" for="listing-input-lang">What language is this listing in?</label>
+                <label class="col-xs-12 control-label" for="listing-input-lang">What is your preferred language to use?</label>
                 <div class="col-xs-12">
                   <select id="listing-input-lang" name="listing-input-lang" class="form-control">
                     <option selected disabled="">Select a language</option>
@@ -334,13 +839,13 @@
               <!-- Appended Input-->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Help your travelers plan</h3><p>Be concise and realistic with your timing. Being accurate helps your travelers plan other parts of their day.</p>">
                 <label class="col-xs-12 control-label" for="listing-tour-duration">How long is this overnight tour?</label>
-                <div class="col-md-6">
+                <div class="col-xs-12">
                   <div class="input-group">
                     <input id="listing-tour-duration" name="listing-tour-days" class="form-control" placeholder="3" maxlength="2" type="text" required="">
                     <span class="input-group-addon">days</span>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-12">
                   <div class="input-group">
                     <input id="listing-tour-duration" name="listing-tour-nights" class="form-control" placeholder="2" maxlength="2" type="text" required="">
                     <span class="input-group-addon">nights</span>
@@ -493,7 +998,7 @@
             </div>
           </div>
           <!-- get from user -->
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-xs-12">
 
             <form class="form-horizontal">
               <fieldset>
@@ -572,93 +1077,7 @@
                 </div>
               </div>
               <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-success">Save and Continue</button>
-                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-              </div>
-              </fieldset>
-              </form>
-          </div>
-          <!-- get from user -->
-          <div class="col-xs-12 col-md-6">
-
-            <form class="form-horizontal">
-              <fieldset>
-              <!-- Button Drop Down -->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>You Deserve It!</h3><p>Enter a price you would like to earn from your tour package, Local Alike will take a small fee to support other social projects and contribute to our management fees.</p>">
-                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
-                <div class="col-xs-12">
-                  <div class="input-group">
-                    <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        THB
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu pull-right">
-                        <li><a href="#">THB</a></li>
-                        <li><a href="#">USD</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>100% Transparency</h3><p>This is the price of your tour as it will appear on the marketplace.</p>">
-                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
-                <div class="col-xs-12">
-                  <div class="input-group">
-                    <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
-                    <span class="input-group-addon">THB</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Select Basic -->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Take Total Control</h3><p>You can set minimum and maximum number of travelers you want to handle per booking.</p>">
-                <label class="col-xs-12 control-label" for="listing-min-travelers">Minimum travelers per booking</label>
-                <div class="col-xs-12">
-                  <select id="listing-min-travelers" name="listing-min-travelers" class="form-control">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- Select Basic -->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Carrying Capacity is Key</h3><p>We believe in sustainable tourism and we are sure you do as well. Set a maximum number of travelers you are able to accept per booking so you don't get too overwhelmed by large crowds.</p>">
-                <label class="col-xs-12 control-label" for="listing-max-travelers">Maximum travelers per booking</label>
-                <div class="col-xs-12">
-                  <select id="listing-max-travelers" name="listing-max-travelers" class="form-control">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                  </select>
-                </div>
-              </div>
-              <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-success">Save and Continue</button>
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
                 <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
               </div>
               </fieldset>
@@ -673,37 +1092,7 @@
               <h1>Tour Highlights</h1>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <form class="form-horizontal">
-              <fieldset>
-              <!-- Textarea -->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Content is King</h3><p>Your content should capture the attention of your audiences. Write sentences that make travelers want to read the next.</p><hr><p>Get creative under 800 characters!</p>">
-                <label class="col-xs-12 control-label" for="textarea">Describe your activity or tell a story</label>
-                <div class="col-xs-12">                     
-                  <textarea id="listing-story-maxlength" maxlength="800" class="form-control" id="listing-story" name="listing-story" placeholder="J.R.R. Tolkien once said..."></textarea>
-                  <div id="chars-counter"><span id="chars">800</span> characters remaining</div>
-                </div>
-              </div>
-
-              <!-- Text input-->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Make Trips Memorable</h3><p>Design trips that will give travelers a whole new perspective and experience. Tell them why they should pick your tour and what they can feel, eat, see, and do.</p>">
-
-                <label class="col-xs-12 control-label" for="listing-highlight-1">Insert highlights of your tour</label>  
-                <div class="col-xs-12 listing-highlights">
-                  <input id="listing-highlight-1" name="listing-highlight-1" type="text" placeholder="Not all those" class="form-control input-md" required="">
-                  <input id="listing-highlight-2" name="listing-highlight-2" type="text" placeholder="who wander" class="form-control input-md" required="">
-                  <input id="listing-highlight-3" name="listing-highlight-3" type="text" placeholder="are lost." class="form-control input-md" required="">
-                  <button id="listing-highlight-btn-add" name="listing-highlight-btn-add" class="btn btn-add-item pull-right">+ Add new highlight</button>
-                </div>
-              </div>
-              <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-              </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-xs-12">
             <form class="form-horizontal">
               <fieldset>
               <!-- Textarea -->
@@ -743,21 +1132,7 @@
               <p>A picture is worth a thousand words. Five pictures are worth five thousand words. Ten pictures... You get the idea! ;-)</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <form class="form-horizontal">
-              <fieldset>
-                <!-- ImageGallery -->
-                <div class="form-group">
-                  <input id="input-listing-gallery" type="file" class="file" data-preview-file-type="text" accept="image/*" >
-                </div>
-              <div class="footer-btn-container padding-top-30">
-                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-              </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="col-md-6">
+          <div class="col-xs-12">
             <form class="form-horizontal">
               <fieldset>
                 <!-- ImageGallery -->
@@ -780,7 +1155,7 @@
               <h1>Tour Amenities</h1>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-xs-12">
             <form class="form-horizontal">
               <fieldset>
               <!-- Multiple Checkboxes (inline) -->
@@ -870,96 +1245,6 @@
               </fieldset>
               </form>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <form class="form-horizontal">
-              <fieldset>
-              <!-- Multiple Checkboxes (inline) -->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Honesty is the best policy</h3><p>Give travelers a clear idea of what they are facing so they can plan accordingly. Some prefer the conveniences of modern facilities while many travelers are seeking very raw experiences. They might want to be away from their phones or want to experience how locals really live.</p><hr><p>Be honest and be proud of your existing offerings.</p>">
-                <label class="col-xs-12 control-label" for="listing-overnight-amenities">Check the amenities that for your overnight tour is able to provide</label>
-                <div class="col-xs-12">
-                  <label class="checkbox" for="listing-overnight-amenities-0-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-0-admin" value="overnight-amenities-1">
-                    Wi-Fi
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-1-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-1-admin" value="overnight-amenities-2">
-                    Cell Service
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-2-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-2-admin" value="overnight-amenities-3">
-                    Modern Flush Toilet
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-3-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-3-admin" value="overnight-amenities-4">
-                    Air Condition
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-4-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-4-admin" value="overnight-amenities-5">
-                    Wheelchair Accessibility
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-5-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-5-admin" value="overnight-amenities-6">
-                    Padded Mattress
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-6-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-6-admin" value="overnight-amenities-7">
-                    Local Television
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-7-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-7-admin" value="overnight-amenities-8">
-                    Family Friendly
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-8-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-8-admin" value="overnight-amenities-9">
-                    Private Bathroom
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-9-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-9-admin" value="overnight-amenities-10">
-                    Hygiene Essentials
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-10-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-10-admin" value="overnight-amenities-11">
-                    Light at Night
-                  </label>
-                  <label class="checkbox" for="listing-overnight-amenities-11-admin">
-                    <input type="checkbox" name="listing-overnight-amenities" id="listing-overnight-amenities-11-admin" value="overnight-amenities-12">
-                    Customizable Meals
-                  </label>
-                </div>
-              </div>
-
-              <!-- Text input-->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Tell us the good stuff!</h3><p>Let travelers know what are the included activities, fees, or meals in the tour package. Don't be afraid to get creative!</p><hr><p>To remove an item, simply leave it blank.</p>">
-
-                <label class="col-xs-12 control-label" for="listing-inclusions">Inclusions</label>  
-                <div class="col-xs-12 listing-inclusions">
-                  <input id="listing-inclusion-1" name="listing-inclusion-1" type="text" placeholder="A clear statement helps travelers understand what is awesome about your tour" class="form-control input-md" required="">
-                  <input id="listing-inclusion-2" name="listing-inclusion-2" type="text" placeholder="Write sentences that are easy to read and concise!" class="form-control input-md" required="">
-                  <input id="listing-inclusion-3" name="listing-inclusion-3" type="text" placeholder="Be funny and creative, it helps travelers to feel the fun!" class="form-control input-md" required="">
-                  <button id="listing-inclusion-btn-add" name="listing-inclusion-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new inclusion</button>
-                </div>
-              </div>
-
-               <!-- Text input-->
-              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Keep a positive tone!</h3><p>Even though you are telling travelers what is not included in the package, try to use positive sentences. Avoid 'no' or 'unavailable.'</p><hr><p>To remove an item, simply leave it blank.</p>">
-
-                <label class="col-xs-12 control-label" for="listing-exclusions">Exclusions</label>  
-                <div class="col-xs-12 listing-exclusions">
-                  <input id="listing-exclusion-1" name="listing-exclusion-1" type="text" placeholder="A clear statement helps travelers understand what is awesome about your tour" class="form-control input-md" required="">
-                  <input id="listing-exclusion-2" name="listing-exclusion-2" type="text" placeholder="Write sentences that are easy to read and concise!" class="form-control input-md" required="">
-                  <input id="listing-exclusion-3" name="listing-exclusion-3" type="text" placeholder="Be funny and creative, it helps travelers to feel the fun!" class="form-control input-md" required="">
-                  <button id="listing-exclusion-btn-add" name="listing-exclusion-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new exclusion</button>
-                </div>
-              </div>
-
-              <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-              </div>
-
-              </fieldset>
-              </form>
-          </div>
         </div>
 
         <!-- 6 -->
@@ -969,91 +1254,7 @@
               <h1>Itinerary</h1>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <form class="form-horizontal listing-itinerary">
-              <fieldset>
-                <h2>Itinerary for Day One</h2>
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-01-morning">Morning</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-01-morning" name="listing-itinerary-01-morning"></textarea>
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-01-afternoon">Afternoon</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-01-afternoon" name="listing-itinerary-01-afternoon"></textarea>
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-01-evening">Evening</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-01-evening" name="listing-itinerary-01-evening"></textarea>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <h2>Itinerary for Day Two</h2>
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-02-morning">Morning</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-02-morning" name="listing-itinerary-02-morning"></textarea>
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-02-afternoon">Afternoon</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-02-afternoon" name="listing-itinerary-02-afternoon"></textarea>
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-02-evening">Evening</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-02-evening" name="listing-itinerary-02-evening"></textarea>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <h2>Itinerary for Day Three</h2>
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-03-morning">Morning</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-03-morning" name="listing-itinerary-03-morning"></textarea>
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-03-afternoon">Afternoon</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-03-afternoon" name="listing-itinerary-03-afternoon"></textarea>
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-md-3 control-label" for="listing-itinerary-03-evening">Evening</label>
-                  <div class="col-md-9">                     
-                    <textarea class="form-control" id="listing-itinerary-03-evening" name="listing-itinerary-03-evening"></textarea>
-                  </div>
-                </div>
-                <button id="listing-highlight-btn-add" name="listing-highlight-btn-add" class="btn btn-add-item pull-right">+ Add new highlight</button>
-                <div class="footer-btn-container">
-                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-xs-12">
             <form class="form-horizontal listing-itinerary">
               <fieldset>
                 <h2>Itinerary for Day One</h2>
@@ -1147,62 +1348,7 @@
               <p>You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <form class="form-horizontal">
-              <fieldset>
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-12 control-label" for="listing-upgrade-1-title">Upgrade Header</label>  
-                  <div class="col-xs-12">
-                  <input id="listing-upgrade-1-title" name="listing-upgrade-1-title" type="text" placeholder="Enter name of this upgrade" class="form-control input-md" required="">
-                    
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-12 control-label" for="listing-upgrade-1">Describe the conditions of this upgrade</label>
-                  <div class="col-xs-12">                     
-                    <textarea class="form-control" id="listing-upgrade-1" name="listing-upgrade-1"></textarea>
-                  </div>
-                </div>
-
-                <!-- Appended Input-->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-3 control-label" for="listing-upgrade-1-price">Price per unit</label>
-                  <div class="col-xs-9">
-                    <div class="input-group">
-                      <input id="listing-upgrade-1-price" name="listing-upgrade-1-price" class="form-control" placeholder="200" type="text" required="">
-                      <span class="input-group-addon">THB</span>
-                    </div>
-                    
-                  </div>
-                </div>
-                <!-- Text input-->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-3 control-label" for="listing-upgrade-1-unit-type">Unit name</label>  
-                  <div class="col-xs-9">
-                  <input id="listing-upgrade-1-unit-type" name="listing-upgrade-1-unit-type" type="text" placeholder="Person, group, or day" class="form-control input-md" required="">
-                    
-                  </div>
-                </div>
-                <!-- ImageGallery -->
-                <div class="form-group no-bottom-margin" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="control-label">Select an image to with your package upgrade</label>
-                  <input id="input-1" type="file" class="file" data-show-caption="true">
-                </div>
-                <div class="clearfix">
-                  <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade</button>
-                  </div>
-
-                <div class="footer-btn-container padding-top-30">
-                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-                </div>
-
-              </fieldset>
-            </form>
-          </div>
-          <div class="col-md-6">
+          <div class="col-xs-12">
             <form class="form-horizontal">
               <fieldset>
                 <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
@@ -1267,7 +1413,7 @@
               <p>You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-xs-12">
             <form class="form-horizontal">
               <fieldset>
                 <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
@@ -1334,141 +1480,40 @@
               </fieldset>
             </form>
           </div>
-          <div class="col-md-6">
-            <form class="form-horizontal">
-              <fieldset>
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                <label class="col-xs-12 control-label" for="listing-social-category">What is the type of social cause being supported?</label>
-                <div class="col-xs-12">
-                  <select id="listing-social-category" name="listing-social-category" class="form-control">
-                    <option value="1">Community Education</option>
-                    <option value="2">Economic Empowerment</option>
-                    <option value="3">Health &amp; Hygiene</option>
-                    <option value="4">Tourism Development</option>
-                    <option value="5">Infrastructure</option>
-                  </select>
-                </div>
-              </div>
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-12 control-label" for="listing-upgrade-1-title">Give this social cause a short title</label>  
-                  <div class="col-xs-12">
-                  <input id="listing-upgrade-1-title" name="listing-upgrade-1-title" type="text" placeholder="Use something short and descriptive" class="form-control input-md" required="">
-                    
-                  </div>
-                </div>
-
-                <!-- Textarea -->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-12 control-label" for="listing-upgrade-1">Tell travelers why you choose to support this cause and what you aim to accomplish with the income earned through offering this tour experience</label>
-                  <div class="col-xs-12">                     
-                    <textarea class="form-control" id="listing-upgrade-1" name="listing-upgrade-1"></textarea>
-                  </div>
-                </div>
-
-                <!-- Appended Input-->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-4 control-label" for="listing-upgrade-1-price">Price per unit</label>
-                  <div class="col-xs-8">
-                    <div class="input-group">
-                      <input id="listing-upgrade-1-price" name="listing-upgrade-1-price" class="form-control" placeholder="200" type="text" required="">
-                      <span class="input-group-addon">THB</span>
-                    </div>
-                    
-                  </div>
-                </div>
-                <!-- Text input-->
-                <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="col-xs-4 control-label" for="listing-upgrade-1-unit-type">Unit name</label>  
-                  <div class="col-xs-8">
-                  <input id="listing-upgrade-1-unit-type" name="listing-upgrade-1-unit-type" type="text" placeholder="Person, group, or day" class="form-control input-md" required="">
-                    
-                  </div>
-                </div>
-                <!-- ImageGallery -->
-                <div class="form-group no-bottom-margin" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                  <label class="control-label">Select an image to with the social cause you support</label>
-                  <input id="input-1" type="file" class="file" data-show-caption="true">
-                </div>
-                <div class="clearfix">
-                  <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade</button>
-                  </div>
-
-                <div class="footer-btn-container padding-top-30">
-                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-                </div>
-
-              </fieldset>
-            </form>
-          </div>
-        </div>
-
-        <div class="verify-content clearfix">
-          <form class="form-horizontal">
-          <fieldset>
-          <!-- Multiple Radios -->
-          <div class="form-group">
-            <label class="col-xs-12 control-label" for="admin-listing-decision">And the final outcome of the match is...</label>
-            <div class="col-xs-12">
-            <div class="radio">
-              <label for="admin-listing-decision-0">
-                <input type="radio" name="admin-listing-decision" id="admin-listing-decision-0" value="1" checked="checked">
-                Approve
-              </label>
-            </div>
-            <div class="radio">
-              <label for="admin-listing-decision-1">
-                <input type="radio" name="admin-listing-decision" id="admin-listing-decision-1" value="2">
-                Reject
-              </label>
-            </div>
-            </div>
-          </div>
-
-          <!-- Textarea -->
-          <div class="form-group">
-            <label class="col-xs-12 control-label" for="admin-listing-decision-text">Tell them somethin' bro</label>
-            <div class="col-xs-12">                     
-              <textarea class="form-control" id="admin-listing-decision-text" name="admin-listing-decision-text"></textarea>
-            </div>
-          </div>
-
-          <!-- Button -->
-          <div class="form-group">
-            <label class="col-xs-12 control-label" for="admin-listing-decision-submit"></label>
-            <div class="col-xs-12">
-              <button id="admin-listing-decision-submit" name="admin-listing-decision-submit" class="btn btn-lg btn-primary">Approve Listing and Email User</button>
-            </div>
-          </div>
-
-
-          </fieldset>
-          </form>
-
         </div>
       </div>
     </div>
   </div>
 
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
-  <script src="../js/fileinput.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHZgRCNLJzsIx_2lId7KusNYNsPJV2-7U"></script>
+  <script src="../js/fileinput.min.js"></script>
 
   <script>
+
+    // //  script for limiting checkboxes
+
+    // var max = 3;
+    // var checkboxes = $('input[type="checkbox"]');
+
+    // checkboxes.change(function(){
+    //     var current = checkboxes.filter(':checked').length;
+    //     checkboxes.filter(':not(:checked)').prop('disabled', current >= max);
+    // });
 
     //  script for google maps
 
     var geocoder;
     var map;
     var marker;
-    var image = '../../img/map_marker_1_small.png';
+    var image = '../img/map_marker_1_small.png';
     function initialize() {
       geocoder = new google.maps.Geocoder({});
 
       var latlng = new google.maps.LatLng(13.7500, 100.4833);
       var mapOptions = {
-        zoom: 4,
+        zoom: 18,
         center: latlng
       }
       map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
@@ -1476,7 +1521,7 @@
         position: latlng,
         map: map,
         icon: image,
-        draggable: true
+        draggable: false
       });
       map = new google.maps.Map(document.getElementById('mapCanvas2'), mapOptions);
       marker = new google.maps.Marker({
@@ -1509,6 +1554,60 @@
 
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
+
+  <script>
+    // var $el2 = $("#input-listing-gallery");
+     
+    // // custom footer template for the scenario
+    // // the custom tags are in braces
+    // var footerTemplate = '<div class="file-thumbnail-footer">\n' +
+    // '   <div style="margin:5px 0">\n' +
+    // '       <input class="kv-input kv-new form-control input-sm {TAG_CSS_NEW}" placeholder="Enter a descriptive caption here">\n' +
+    // '       <input class="kv-input kv-init form-control input-sm {TAG_CSS_INIT}" placeholder="Enter a descriptive caption here">\n' +
+    // '   </div>\n' +
+    // '   {actions}\n' +
+    // '</div>';
+     
+    // $el2.fileinput({
+    //     // http://plugins.krajee.com/file-input-ajax-demo/7
+    //     uploadUrl: '/file-upload-batch/2',
+    //     uploadAsync: false,
+    //     overwriteInitial: false,
+    //     maxFileCount: 10,
+    //     layoutTemplates: {footer: footerTemplate},
+    //     previewThumbTags: {
+    //         '{TAG_VALUE}': '',        // no value
+    //         '{TAG_CSS_NEW}': '',      // new thumbnail input
+    //         '{TAG_CSS_INIT}': 'hide'  // hide the initial input
+    //     },
+    //     // initialPreview: [
+    //     //     "<img style='height:160px' src='http://placeimg.com/200/150/city/1'>",
+    //     // ],
+    //     // initialPreviewConfig: [
+    //     //     {caption: "City-1.jpg", width: "120px", url: "/site/file-delete", key: 1},
+    //     // ],
+    //     // initialPreviewThumbTags: [
+    //     //     {'{TAG_VALUE}': 'City-1.jpg', '{TAG_CSS_NEW}': 'hide', '{TAG_CSS_INIT}': ''},
+    //     //     {
+    //     //         '{TAG_VALUE}': function() { // callback example
+    //     //             return 'City-2.jpg';
+    //     //         },
+    //     //         '{TAG_CSS_NEW}': 'hide',
+    //     //         '{TAG_CSS_INIT}': ''
+    //     //     }
+    //     // ],
+    //     uploadExtraData: function() {  // callback example
+    //         var out = {}, key, i = 0;
+    //         $('.kv-input:visible').each(function() {
+    //             $el = $(this);
+    //             key = $el.hasClass('kv-new') ? 'new_' + i : 'init_' + i;
+    //             out[key] = $el.val();
+    //             i++;
+    //         });
+    //         return out;
+    //     }
+    // });
+</script>
 
 
 

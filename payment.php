@@ -220,9 +220,10 @@
       </div>
 
       <!-- payment content -->
-      <div class="col-xs-12 col-md-8 col-md-pull-4" id="la_payment-content">
+      <form action="/checkout" method="post" class="col-xs-12 col-md-8 col-md-pull-4" id="la_checkout">
         <div class="card booking-payment payment">
           <h2>Payment</h2>
+          <div class="omise-logo pull-right"><span>Powered by</span> <img alt="Omise payment gateway logo" src="img/graphic_omise.png" width="70" /></div>
           <div class="form-row clearfix">
             <div class="col-xs-12 col-lg-6 form-group required">
               <label class="control-label">Country</label>
@@ -493,11 +494,11 @@
           <div class="form-row clearfix">
             <div class="col-xs-12 col-lg-6 form-group required">
               <label class="control-label">Cardholder Name</label>
-              <input class="form-control" size="4" type="text">
+              <input class="form-control" size="4" type="text" required data-omise="holder_name">
             </div>
             <div class="col-xs-12 col-lg-6 form-group card-number required">
                 <label class="control-label">Card Number <span class="cc-brand"></span></label>
-              <input id="cc-number" type="tel" class="input-lg form-control card-number" autocomplete="cc-number" placeholder="16 digits" required>
+                <input id="cc-number" type="tel" class="input-lg form-control card-number" autocomplete="cc-number" placeholder="16 digits" required data-omise="number">
             </div>
           </div>
 
@@ -512,44 +513,43 @@
               <div class="col-xs-4 col-lg-4 form-group expiration required">
                 <label class="control-label">Expiration</label>
                 <div class="select-block">
-                  <select name="cc-exp-month" placeholder="MM">
+                  <select name="cc-exp-month" placeholder="MM" data-omise="expiration_month">
                     <option selected disabled>MM</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
-                    <option value="01">03</option>
-                    <option value="02">04</option>
-                    <option value="01">05</option>
-                    <option value="02">06</option>
-                    <option value="01">07</option>
-                    <option value="02">08</option>
-                    <option value="01">09</option>
-                    <option value="02">10</option>
-                    <option value="01">11</option>
-                    <option value="02">12</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                 </div>
               </div>
               <div class="col-xs-4 col-lg-4 form-group expiration required">
                 <label class="control-label">Year</label>
                 <div class="select-block">
-                  <select id="expYear" name="cc-exp-year" placeholder="YY">
+                  <select id="expYear" name="cc-exp-year" placeholder="YY" data-omise="expiration_year">
                     <option selected disabled>YYYY</option>
                   </select>
                 </div>
               </div>
               <div class="col-xs-4 col-lg-4 form-group cvc-number required">
                 <label class="control-label">CVC Code <i class="fa fa-question-circle" data-toggle="popover" data-content="Three digit code in the back of your card."></i></label>
-                <input autocomplete="off" class="form-control card-cvc" placeholder="" size="4" type="text" maxlength="4">
+                <input autocomplete="off" class="form-control card-cvc" placeholder="" size="4" type="text" maxlength="4" data-omise="security_code">
               </div>
-              <div class="col-xs-12 col-lg-12 form-group promo-code">
+              <div class="col-xs-12 form-group promo-code">
                 <label class="control-label">Enter promo code</label>
-                <input autocomplete="off" class="form-control card-cvc" placeholder="Enter promo code" size="4" type="text" maxlength="4">
-              </div>
+                <input autocomplete="off" class="form-control" placeholder="Enter promo code" size="4" type="text" maxlength="4"><a class="btn btn-primary btn-sm btn-discount">APPLY PROMO CODE <span class="glyphicon glyphicon-chevron-right"></span>
             </div>
             <div class="col-xs-12 col-lg-5" id="grizzly-bear">
-              <button class="btn btn-lg btn-primary btn-success btn-pay-now" style="border:none" href="#">Pay Now and Let's Travel!</button>
+              <button type="submit" id="create_token" class="btn btn-lg btn-primary btn-success btn-pay-now" href="payment-success.html">Pay Now and Let's Travel</button>
             </div>
-            <div class="col-xs-12 col-lg-7 text-left padding-top-20" style="line-height:1.2;padding-top:30px!important;">
+            <div class="col-xs-12 col-lg-7 text-left padding-top-20">
               <p><small>By clicking the "Pay Now and Let's Travel" button above, you agree to pay the Grand Total shown in the Booking Summary. You also agree to our Terms and Conditions, you can read more about <a>our policies here.</a></small></p>
             </div>
 
@@ -583,7 +583,7 @@
             <li>Travel insurance is compulsory in order to participate in a Local Alike trip, therefore we include it in our standard package.</li>
           </ul>
         </div> -->
-      </div>
+      </form>
     </div>
   </div>
 
