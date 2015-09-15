@@ -8,8 +8,7 @@
     <div class="container-fluid modal_profiles">
       
       <div class="row modal_profiles_bg" style="background-image:url('img/maekampong_scenery_4.jpg');">
-        <h1>Ready, set, go!</h1>
-        <span class="glyphicon glyphicon-menu-down" aria-label="swipe-down"></span>
+        <h1>Are you fit enough?</h1>
       </div>
       <div class="row modal_profiles_content physical-demand">
         <div class="col-xs-12 col-md-4">

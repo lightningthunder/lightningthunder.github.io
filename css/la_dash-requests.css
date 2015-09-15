@@ -1,0 +1,16 @@
+table.incoming-requests
+{
+	background: #fff;
+}
+
+table.incoming-requests thead
+{
+	background: #333;
+	color: #fff;
+	font-size: 12px;
+}
+
+table.incoming-requests tbody tr:hover
+{
+	background: #fafafa;
+}

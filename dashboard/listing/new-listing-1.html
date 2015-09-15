@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../../css/la_dash-listing.css">
   <link rel="stylesheet" href="../../css/la_dash-input.css">
   <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/ladda-themeless.min.css">
   <link href="../../css/la_modal_alerts.css" rel="stylesheet">
 
   <title>Basic Info | Step 1 of 8</title>
@@ -95,7 +96,7 @@
                 <a href="../listing.html">Your Listings</a>
               </li>
               <li>
-                <a href="../settings.html">Settings</a>
+                <a href="../settings/settings-profile.html">Settings</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -112,7 +113,7 @@
           <li><a href="new-listing-4.html">Photos</a></li>
           <li><a href="new-listing-5.html">Amenities</a></li>
           <li><a href="new-listing-6.html">Package Details</a></li>
-          <li><a href="new-listing-7.html">Upgrades</a></li>
+          <li><a href="new-listing-7.html">Add Ons</a></li>
           <li><a href="new-listing-8.html">Social Impact</a></li>
           <li><a href="new-listing-review.html">Review</a></li>
         </ol>
@@ -121,11 +122,9 @@
 
         <div class="dash-content">
           <div class="wizard-header clearfix">
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12">
               <h1>Basic Information</h1>
-            </div>
-            <div class="col-xs-12 col-md-6 text-right clearfix">
-              <p class="btn btn-create-new-listing">Step One: Where it all begins</p>
+              <p class="overview-text">Where it all begins. Let's get you started by entering all the most basic information we know about the tour.</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-7">
@@ -190,8 +189,9 @@
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Stand out from the crowd!</h3><p>Keep it short, descriptive, and don't be afraid to show your personality. Eye catching names encourage travelers to click and view your tour listing.</p><hr><p>Some examples:</p><ul><li>Adventurous 3D2N Hiking Tour in Chiang Mai</li><li>Most Immersive Hill Tribe Living Experience</li></ul>">
                 <label class="col-xs-12 control-label" for="listing-headline">Name your tour package</label>  
                 <div class="col-xs-12">
-                  <input id="listing-headline" name="listing-headline" type="text" placeholder="Immersive 3 Days 2 Night Tour with Hill Tribes" maxlength="60" class="form-control input-md" required="">
+                  <input id="listing-headline" name="listing-headline" type="text" placeholder="Immersive 3 Days 2 Night Tour with Hill Tribes" maxlength="120" class="form-control input-md" required="">
                   <span class="help-block">Be descriptive and concise</span>  
+                  <div id="chars-counter"><span id="listing-headline-chars">120</span> characters remaining</div>
                 </div>
               </div>
 
@@ -211,8 +211,9 @@
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Become Recognized</h3><p>You can use a name that represents your group or you can also use your own name. Travelers love to know who their hosts are, a personal experience creates lasting memories!</p>">
                 <label class="col-xs-12 control-label" for="listing-operator-name">How would you like to appear on our website?</label>  
                 <div class="col-xs-12">
-                <input id="listing-operator-name" name="listing-operator-name" type="text" placeholder="Hill Tribe Tour Company" class="form-control input-md">
+                <input id="listing-operator-name" name="listing-operator-name" type="text" placeholder="Hill Tribe Tour Company" class="form-control input-md" maxlength="50">
                 <span class="help-block">Entering a name here adds credibility!</span>  
+                <div id="chars-counter"><span id="listing-operator-name-chars">50</span> characters remaining</div>
                 </div>
               </div>
 
@@ -306,7 +307,7 @@
 
                   <input id="address" type="text" value="Bangkok, Thailand" name="listing-map-address" type="text" placeholder="Enter the closest point of interest" class="form-control input-md" required="">
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-3 no-side-padding">
                   <input type="button" value="Search" onclick="codeAddress()" class="btn btn-sm btn-primary btn-address-search">
                 </div>
                 <div class="col-xs-12">
@@ -314,9 +315,18 @@
                 </div>
               </div>
 
+              <!-- Text input-->
+              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Pick a landmark!</h3><p>Meet your travelers at popular destinations they can easily ask for directions and get to.</p>">
+                <label class="col-xs-12 control-label" for="listing-meeting-location">Where would you like to pick up your travelers?</label>  
+                <div class="col-xs-12">
+                <input id="listing-meeting-location" name="listing-meeting-location" type="text" placeholder="Chiang Mai Three Kings Monument" class="form-control input-md">
+                </div>
+              </div>
+
 
               <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success ladda-button" type="submit" data-style="expand-right">
+                  <span class="ladda-label">Save and Continue</span></button>
                 <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
               </div>
               </fieldset>
@@ -332,14 +342,14 @@
 
   <!-- footer -->
 
-  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-
   <script src="../../js/jquery.min.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
   <script src="../../js/jquery-ui.min.js"></script>
   <script src="../../js/jquery.select-to-autocomplete.js"></script>
   <script src="../../js/validator.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHZgRCNLJzsIx_2lId7KusNYNsPJV2-7U"></script>
+  <script src="../../js/ladda.min.js"></script>
+  <script src="../../js/spin.min.js"></script>
 
   <script>
 
@@ -430,6 +440,26 @@
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+
+    // http://msurguy.github.io/ladda-bootstrap/
+    // https://github.com/msurguy/Ladda-bootstrap
+
+    Ladda.bind( 'input[type=submit]', { timeout: 2000 } );
+
+    var maxLengthListingHeadline = 120;
+    $('#listing-headline').keyup(function() {
+      var length = $(this).val().length;
+      var length = maxLengthListingHeadline-length;
+      $('#listing-headline-chars').text(length);
+    });
+
+    var maxLengthOperatorName = 50;
+    $('#listing-operator-name').keyup(function() {
+      var length = $(this).val().length;
+      var length = maxLengthOperatorName-length;
+      $('#listing-operator-name-chars').text(length);
+    });
+
   </script>
 
 

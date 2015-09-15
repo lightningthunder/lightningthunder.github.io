@@ -34,15 +34,17 @@
 	background-position: center center !important;
 	position: relative;
 	text-align: center;
+	display: table;
 }
 
 .modal_profiles_bg h1
 {
-	padding-top: 125px;
 	text-align: center;
 	color: #fff;
 	font-size: 3em;
 	font-weight: 300;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .modal_profiles_bg span.glyphicon-menu-down
@@ -61,6 +63,13 @@
 	overflow: hidden;
 	position: relative;
 	background: #fff;
+	color: #666;
+	font-weight: 500;
+}
+
+.modal_profiles .modal_profiles_content a
+{
+	font-weight: 700;
 }
 
 .modal_profiles .modal_profiles_content.physical-demand
@@ -96,20 +105,24 @@
 
 .modal_profiles .modal_profiles_content.physical-demand h2
 {
-	padding: 10px 0;
-	font-size: 1.5em;
-	text-transform: uppercase;
-
+	margin-top: 20px;
+	font-size: 1.25em;
+	font-weight: 700;
 }
 
 .modal_profiles .modal_profiles_content h1
 {
-	color: #333;
+	color: salmon;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 10px 0 5px 0;
 }
 
 .modal_profiles .modal_profiles_content h2
 {
-	padding-top: 0px;
+	margin: 0px 0px 30px;
+	font-size: 20px;
+	color: #444;
 }
 
 .modal_profiles .btn-close-modal

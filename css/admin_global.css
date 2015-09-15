@@ -38,15 +38,43 @@ a.navbar-brand
 	width: 200px;
 }
 
+#side-nav h2 small
+{
+	color: #333;
+	font-weight: bolder;
+}
+
+.nav > li > a
+{
+	padding: 15px 0 2px;
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+	font-weight: bold;
+	color: #999;
+}
+
+.nav > li > a:hover
+{
+	background: transparent;
+	border-bottom: 2px solid transparent;
+	color: #666;
+}
+
+.nav > li > a.active
+{
+	border-bottom: 2px solid salmon;
+	color: #333;
+}
+
 .admin-card
 {
-	width: 300px;
-	height: 400px;
+	width: 100%;
+	height: 360PX;
 	position: relative;
-	border: 2px solid #000;
+	border: 1px solid #eee;
 	padding: 0px;
 	border-radius: 10px;
-	background: #fff;
+	background: #fafafa;
 	overflow: hidden;
 	float: left;
 	margin-right: 20px;
@@ -57,7 +85,8 @@ a.navbar-brand
 {
 	width: 100%;
 	height: 200px;
-	background: #fff;
+	background: #222;
+	color: #fff;
 	top: 0px;
 	left: 0px;
 }
@@ -67,7 +96,6 @@ a.navbar-brand
 	line-height: 200px;
 	margin: 0px;
 	font-size: 100px;
-	color: #222;
 	text-align: center;
 }
 
@@ -92,13 +120,14 @@ a.navbar-brand
 {
 	background: transparent;
 	color: black;
-	border: 2px solid black;
-	margin-top: 20px;
+	border: 1px solid #dadada;
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 500;
 }
 
 .btn-ghost-admin:hover
 {
-	background: yellow !important;
 }
 
 .table-listing-view-all
@@ -114,7 +143,7 @@ a.navbar-brand
 .filter-search
 {
 	float: right;
-	width: 350px;
+	width: 250px;
 }
 
 .pagination 
@@ -175,4 +204,9 @@ a.navbar-brand
 .pagination-centered 
 {
   text-align: center;
+}
+
+.control-label
+{
+	text-align: left !important;
 }

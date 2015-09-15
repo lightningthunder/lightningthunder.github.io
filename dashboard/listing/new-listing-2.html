@@ -94,7 +94,7 @@
                 <a href="../listing.html">Your Listings</a>
               </li>
               <li>
-                <a href="../settings.html">Settings</a>
+                <a href="../settings/settings-profile.html">Settings</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -111,7 +111,7 @@
           <li><a href="new-listing-4.html">Photos</a></li>
           <li><a href="new-listing-5.html">Amenities</a></li>
           <li><a href="new-listing-6.html">Package Details</a></li>
-          <li><a href="new-listing-7.html">Upgrades</a></li>
+          <li><a href="new-listing-7.html">Add Ons</a></li>
           <li><a href="new-listing-8.html">Social Impact</a></li>
           <li><a href="new-listing-review.html">Review</a></li>
         </ol>
@@ -120,11 +120,9 @@
 
         <div class="dash-content">
           <div class="wizard-header clearfix">
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12">
               <h1>Price & Capacity</h1>
-            </div>
-            <div class="col-xs-12 col-md-6 text-right clearfix">
-              <p class="btn btn-create-new-listing">Step 2 of 8</p>
+              <p class="overview-text">better.travel takes a 15% of the total amount paid by travelers to process payments, to maintain the website and also to contribute towards a development fund.</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-7">
@@ -139,30 +137,30 @@
                     <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
                     <div class="input-group-btn">
                       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        THB
+                        Thai Baht
                         <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu pull-right">
-                        <li><a href="#">THB</a></li>
-                        <li><a href="#">USD</a></li>
+                        <li><a href="#">Thai Baht</a></li>
+                        <li><a href="#">United States Dollar</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
              <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>100% Transparency</h3><p>This is the price of your tour as it will appear on the marketplace.</p>">
-                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest</label>
+                <label class="col-xs-12 control-label" for="listing-price-per-guest">Price per guest that will appear on our website</label>
                 <div class="col-xs-12">
                   <div class="input-group">
                     <input id="listing-price-per-guest" name="listing-price-per-guest" class="form-control" placeholder="550" type="text" required="">
-                    <span class="input-group-addon">THB</span>
+                    <span class="input-group-addon">Thai Baht</span>
                   </div>
                 </div>
               </div>
 
               <!-- Select Basic -->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Take Total Control</h3><p>You can set minimum and maximum number of travelers you want to handle per booking.</p>">
-                <label class="col-xs-12 control-label" for="listing-min-travelers">Minimum travelers per booking</label>
+                <label class="col-xs-12 control-label" for="listing-min-travelers">Minimum travelers required per booking</label>
                 <div class="col-xs-12">
                   <select id="listing-min-travelers" name="listing-min-travelers" class="form-control">
                     <option value="1">1</option>
@@ -179,7 +177,7 @@
 
               <!-- Select Basic -->
               <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Carrying Capacity is Key</h3><p>We believe in sustainable tourism and we are sure you do as well. Set a maximum number of travelers you are able to accept per booking so you don't get too overwhelmed by large crowds.</p>">
-                <label class="col-xs-12 control-label" for="listing-max-travelers">Maximum travelers per booking</label>
+                <label class="col-xs-12 control-label" for="listing-max-travelers">Maximum travelers allowed per booking</label>
                 <div class="col-xs-12">
                   <select id="listing-max-travelers" name="listing-max-travelers" class="form-control">
                     <option value="1">1</option>
@@ -206,7 +204,8 @@
                 </div>
               </div>
               <div class="footer-btn-container">
-                <button id="save-next" name="save-next" class="btn btn-success">Save and Continue</button>
+                <button id="save-next" name="save-next" class="btn btn-lg btn-success ladda-button" type="submit" data-style="expand-right">
+                  <span class="ladda-label">Save and Continue</span></button>
                 <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
               </div>
               </fieldset>
@@ -221,8 +220,6 @@
   </div>
 
   <!-- footer -->
-
-  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
 
   <script src="../../js/jquery.min.js"></script>
   <script src="../../js/bootstrap.min.js"></script>

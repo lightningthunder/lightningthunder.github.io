@@ -1,3 +1,40 @@
+<?php
+  session_start();
+
+  $user = "root";
+  $pass = "l;ylfu=k;F]d";
+  $host = "127.0.0.1";
+  $db = "cdb_113808cafa";
+
+  if(!$connect = mysql_connect($host,$user,$pass))
+  {
+    echo "no connect server";
+    exit;
+  }
+  mysql_query("SET character_set_results='utf8'");
+  mysql_query("SET character_set_client='utf8'");
+  mysql_query("SET character_set_connection='utf8'");
+  mysql_query("SET collation_connection=utf8_general_ci");
+  mysql_query("collation_connection = utf8_general_ci");
+  mysql_query("collation_database = utf8_general_ci");
+  mysql_query("collation_server = utf8_general_ci");
+  mysql_query("SET NAMES 'utf8'");
+
+  var_dump( $_COOKIE );
+  var_dump( $_SESSION );
+
+  if ( $_SESSION["phone"] && $_COOKIE["referral_code"] )
+  {
+    $sql = "insert into referral_code set r_code='".$_COOKIE["referral_code"]."', r_tel='".$_SESSION["phone"]."', r_date=now()";
+    $resultDB = mysql_db_query($db, $sql);
+    if ( $resultDB )
+    {
+      setcookie("referral_code", "", time()-3600);
+      $_SESSION["phone"] = 0;
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,27 +56,7 @@
     </div>
   </div> -->
 
-  <nav class="navbar navbar-default" id="global-header-wrap">
-    <div class="container-fluid" id="global-header">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="to navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#"><img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#about">About</a>
-          </li>
-        </ul>
-        <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+  <?php include("module/module_nav.php"); ?>
 
   <div class="container">
     <div class="row padding-top-30 padding-bottom-20">
@@ -49,7 +66,7 @@
           <img src="img/graphic_luggage.png" class="luggage" width="210" />
           <div class="content">
             <h2>
-                Booking confirmed!
+                Booking Confirmed
             </h2>
             <p>Your payment card will be charged when the booking request is confirmed by your local guide within 24 hours.</p>
             <p>3D2N Immersive Hill Tribe Experience</p>

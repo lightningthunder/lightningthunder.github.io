@@ -19,12 +19,10 @@
 .ext-ad-banner h4
 {
 	color: #8b2199; /*AIS Purple*/
-	color: #333;
-	font-weight: bolder;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	margin-bottom: 5px;
-	margin-top: 15px;
+	color: #222;
+	font-weight: 700;
+	font-size: 20px;
+	margin: 5px 0 15px;
 }
 
 .ext-ad-banner p
@@ -40,20 +38,24 @@
 
 .ext-ad-ais input
 {
-	width: 180px;
+	width: 100%;
+	font-size: 18px;
+	height: 58px;
 	display: inline-block;
 	box-shadow: none;
-	margin: 2px;
+	margin: 0 10px 10px 0;
 	float: left;
+	text-align: center;
 }
 
 .btn-ext-ad-ais
 {
 	display: inline-block;
 	line-height: auto;
-	padding: 6px 10px;
+	padding: 6px 5px;
 	vertical-align: top;
-	margin: 2px;
+	float: right;
+	height: 58px;
 }
 
 .ext-ad-ais span
@@ -65,21 +67,26 @@
 .booking-ad
 {
 	padding: 0px;
+	border-radius: 3px;
+	overflow: hidden;
 }
 
 .booking-ad .ext-ad-banner
 {
 	background-image: url('../img/la_ext_ais_banner_4.png');
-	background-size: 85%;
+	background-size: 300px;
+	border-radius: 3px;
 	height: auto;
 	border: none;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding: 50px 10px 20px;
+	margin-top: 10px;
 }
 
 .booking-ad .ext-ad-banner .ext-ad-ais
 {
-	padding-top: 10px;
+	padding: 0px 10px;
+	margin: 0px;
+	height: auto;
 }
 
 .booking-ad .ext-ad-banner p
@@ -96,6 +103,7 @@
 		height: auto;
 		padding: 50px 30px 10px;
 	}
+
 
 	.ext-ad-banner h4
 	{

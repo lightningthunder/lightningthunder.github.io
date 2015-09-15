@@ -85,9 +85,15 @@
 .footer-btn-container .btn
 {
 	display: block;
-	width: 100%;
-	font-weight: bold;
-	font-size: 15px;
+	font-weight: 700;
+}
+
+.dash-content .footer-btn-container p
+{
+	color: #999;
+	font-size: 0.85em;
+	font-weight: 500;
+	margin-top: 10px;
 }
 
 .btn-address-search
@@ -95,6 +101,11 @@
 	height: 34px;
 	width: 100%;
 	font-weight: 500;
+	background: transparent;
+	color: #204d74;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 0.25px;
 }
 
 #go-live-container .btn
@@ -118,11 +129,38 @@
 
 input[placeholder],
 [placeholder],
-*[placeholder]
+*[placeholder],
+.form-control
 {
 	color: #333;
 	font-weight: 500;
 	font-size: 15px;
+
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #dadada;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.form-control:focus
+{
+	border-color: salmon;
+	outline: 0;
+	-webkit-box-shadow: inset 0px 0px 1px salmon, 0 0 5px salmon;
+	box-shadow: inset 0px 0px 1px salmon, 0 0 5px salmon;
+	box-shadow: none;
+	border-width: 2px;
 }
 
 .la_home-hero-wrapper input,
@@ -226,7 +264,7 @@ input[placeholder],
 	width: 100%;
 	height: 34px;
 	border: none;
-	border: 1px solid #eee;
+	border: 1px solid #dadada;
 	border-radius: 3px;
 	display: block;
 	margin: 0;
@@ -406,6 +444,11 @@ span.ui-helper-hidden-accessible
 .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child>.btn-group:not(:last-child)>.btn
 {
 	border-radius: 3px;
+}
+
+.input-group-addon
+{
+	font-weight: 500;
 }
 
 .has-success .form-control

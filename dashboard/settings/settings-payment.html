@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../../css/la_global.css">
+  <link rel="stylesheet" href="../../css/la_input.css">
+  <link rel="stylesheet" href="../../css/la_dash.css">
+  <link rel="stylesheet" href="../../css/la_dash-input.css">
+  <link rel="stylesheet" href="../../css/la_dash-settings.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link href="../../css/la_modal_alerts.css" rel="stylesheet">
+
+  <title>Settings | Payment Method</title>
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+    <div class="container" id="global-header">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#"><img class="la_global-header-logo" src="../../img/la_logo_script_white-on-transparent.png" alt="local alike logo" /></a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right hidden">
+          <li>
+            <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+          </li>
+          <li>
+            <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right show">
+        <li>
+            <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="trips.html">Upcoming trips</a></li>
+              <li><a href="listings.html">Manage listings</a></li>
+              <li><a href="requests.html">Incoming bookings</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="index.html">View dashboard</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Edit profile</a></li>
+              <li><a href="#">Manage payment</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </li>
+          <li class="user-avatar">
+            <div class="navbar-user-avatar-container">
+                <img src="../../img/user-avatar_noon.png" />
+            </div>
+          </li>
+
+        </ul>
+        
+        
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <nav class="navbar nav-dash">
+      <div class="container">
+        <div class="navbar-collapse collapse no-side-padding">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../index.html">Dashboard Home</a>
+            </li>
+            <li>
+              <a href="../trips.html">Your Trips</a>
+            </li>
+            <li>
+              <a href="../listing.html">Your Listings</a>
+            </li>
+            <li>
+              <a href="../requests.html">Booking Requests</a>
+            </li>
+            <li>
+              <a class="nav-active" href="settings-profile.html">Settings</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+  </nav>
+  <div class="container">
+
+    <div class="row padding-top-20 padding-bottom-20">
+      <div class="col-xs-3 clearfix">
+        <ul class="list-unstyled listing-steps" data-spy="affix" data-offset-top="0" id="listing-steps-nav">
+          <li><a href="settings-profile.html">Your Profile</a></li>
+          <li><a href="settings-password.html">Password</a></li>
+          <li class="active"><a href="settings-payment.html">Payment Method</a></li>
+          <li><a href="settings-payout.html">Payout for Hosts</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-9">
+        <div class="dash-content">
+          <div class="col-xs-12">
+            <h1>Add a primary payment method</h1>
+            <p class="overview-text">Entering your payment method now eases your future transactions and allows us to easily refund or provide you charge backs. All your sensitive data are stored in encrypted form and our payments are handled by Omise.co under compliance of PCI-DSS V3.0.</p>
+          </div>
+          <div class="col-xs-12 col-md-7">
+            <form class="form-horizontal" method="post" id="paymentForm">
+              <fieldset>
+              
+                <div class="form-group required">
+                  <label class="col-xs-12 control-label">Cardholder Name</label>
+                  <div class="col-xs-12">
+                    <input class="form-control" size="4" type="text" placeholder="Jane Doe" required data-omise="holder_name">
+                  </div>
+
+                  <label class="col-xs-12 control-label padding-top-20">Card Number <span class="cc-brand"></span></label>
+                  <div class="col-xs-12">
+                    <input id="cc-number" type="tel" class="form-control card-number" autocomplete="cc-number" placeholder="XXXX XXXX XXXX XXXX" required data-omise="number">
+                  </div>
+
+                  <div class="col-xs-6 no-side-padding">
+                    <label class="col-xs-12 control-label padding-top-20">Expiration month</label>
+                    <div class="col-xs-12">
+                      <div class="select-block">
+                        <select name="cc-exp-month" placeholder="MM" data-omise="expiration_month">
+                          <option selected disabled>MM</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                          <option value="04">04</option>
+                          <option value="05">05</option>
+                          <option value="06">06</option>
+                          <option value="07">07</option>
+                          <option value="08">08</option>
+                          <option value="09">09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6 no-side-padding">
+                    <label class="col-xs-12 control-label padding-top-20">Expiration year</label>
+                    <div class="col-xs-12">
+                      <div class="select-block">
+                        <select id="expYear" name="cc-exp-year" placeholder="YY" data-omise="expiration_year">
+                          <option selected disabled>YYYY</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 no-side-padding" data-popover="true" data-placement="right" data-html=true data-content="<h3>Look behind!</h3><p class='col-xs-9 no-side-padding'>The CVC number is a 3 or 4 digit security code located at the back of your card. Sometimes it's on the front. If you don't find one, try entering 000.</p><img class='col-xs-3' src='../../img/graphic_cvc.png' />">
+                    <label class="col-xs-12 control-label padding-top-20">CVC Code</label>
+                    <div class="col-xs-12">
+                      <input autocomplete="off" class="form-control card-cvc" placeholder="XXX" size="4" type="text" maxlength="4" data-omise="security_code">
+                    </div>
+                  </div>
+                </div>
+
+              <!-- Button -->
+              <div class="footer-btn-container">
+                <button id="payout-submit" name="payout-submit" class="btn btn-lg btn-success">Save settings</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/jquery.select-to-autocomplete.js"></script>
+
+  <script>
+    (function($){
+      $(function(){
+        $('#country-selector').selectToAutocomplete();
+        $('form').submit(function(){
+          alert( $(this).serialize() );
+          return false;
+        });
+      });
+    })(jQuery);
+
+    var yearsToShow = 20;
+    var thisYear = (new Date()).getFullYear();
+    for (var y = thisYear; y < thisYear + yearsToShow; y++) {
+      var yearOption = document.createElement("option");
+      yearOption.value = y;
+      yearOption.text = y;
+      document.getElementById("expYear").appendChild(yearOption);
+    }
+
+    // https://github.com/stripe/jquery.payment
+
+    jQuery(function($) {
+      $('[data-numeric]').payment('restrictNumeric');
+      $('.card-number').payment('formatCardNumber');
+      $('.cvc-number').payment('formatCardCVC');
+
+      $.fn.toggleInputError = function(erred) {
+        this.parent('.form-group').toggleClass('has-error', erred);
+        return this;
+      };
+
+      $('form').submit(function(e) {
+        e.preventDefault();
+
+        var cardType = $.payment.cardType($('.card-number').val());
+        $('.card-number').toggleInputError(!$.payment.validateCardNumber($('.card-number').val()));
+        $('.cvc-number').toggleInputError(!$.payment.validateCardCVC($('.cvc-number').val(), cardType));
+        $('.cc-brand').text(cardType);
+
+        $('.validation').removeClass('text-danger text-success');
+        $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
+      });
+    });
+  </script>
+  <script>
+
+    // script for hover popover
+
+    var originalLeave = $.fn.popover.Constructor.prototype.leave;
+    $.fn.popover.Constructor.prototype.leave = function(obj){
+      var self = obj instanceof this.constructor ?
+        obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+      var container, timeout;
+
+      originalLeave.call(this, obj);
+
+      if(obj.currentTarget) {
+        container = $(obj.currentTarget).siblings('.popover')
+        timeout = self.timeout;
+        container.one('mouseenter', function(){
+          //We entered the actual popover – call off the dogs
+          clearTimeout(timeout);
+          //Let's monitor popover content instead
+          container.one('mouseleave', function(){
+            $.fn.popover.Constructor.prototype.leave.call(self, self);
+          });
+        })
+      }
+    };
+
+    //  script to trigger popover
+
+    $('body').popover({ selector: '[data-popover]', trigger: 'hover', placement: 'right', delay: {show: 50, hide: 50}});
+
+    // script to affix left bar to show progress or steps
+
+    $('#listing-steps-nav').affix({
+    });
+
+
+  </script>
+
+
+
+</body>
+</html>

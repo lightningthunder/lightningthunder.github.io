@@ -118,7 +118,7 @@
                 <a href="../listing.html">Your Listings</a>
               </li>
               <li>
-                <a href="../settings.html">Settings</a>
+                <a href="../settings/settings-profile.html">Settings</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -167,12 +167,9 @@
 			<div class="col-xs-9">
 				<div class="dash-content">
 		          <div class="wizard-header clearfix">
-		            <div class="col-xs-12 col-md-8">
+		            <div class="col-xs-12">
 		              <h1>Social Causes You Support</h1>
-		              <p>You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
-		            </div>
-		            <div class="col-xs-12 col-md-4 text-right clearfix">
-		              <p class="btn btn-create-new-listing">Final step! You're almost there.</p>
+		              <p class="overview-text">You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
 		            </div>
 		          </div>
 		          <div class="col-xs-7">
@@ -234,10 +231,11 @@
 		              	  <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade</button>
 	              	  	</div>
 
-		                <div class="footer-btn-container padding-top-30">
-		                  <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
-		                  <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
-		                </div>
+		                <div class="footer-btn-container">
+			                <button id="save-next" name="save-next" class="btn btn-lg btn-success ladda-button" type="submit" data-style="expand-right">
+			                  <span class="ladda-label">Save and Continue</span></button>
+			                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+			              </div>
 
 		              </fieldset>
 		            </form>
@@ -245,11 +243,8 @@
 		        </div>
 			</div>
 		</div>
-	</div><!-- footer -->
-
-	<div class="promo-code-notify" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction." data-toggle="popover">
-		You have unlocked<code>LOVEAIS</code>discount code!
-	</div><script src="../../js/jquery.min.js"></script> <script src="../../js/bootstrap.min.js"></script> <script src="../../js/fileinput.min.js"></script> <script>
+	</div>
+	<script src="../../js/jquery.min.js"></script> <script src="../../js/bootstrap.min.js"></script> <script src="../../js/fileinput.min.js"></script> <script>
 var originalLeave = $.fn.popover.Constructor.prototype.leave;
 	$.fn.popover.Constructor.prototype.leave = function(obj){
 	  var self = obj instanceof this.constructor ?

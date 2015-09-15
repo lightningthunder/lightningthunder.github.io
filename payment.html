@@ -44,13 +44,13 @@
     </div>
   </nav>
 
-  <div class="container-fluid payment-top-hero">
+  <div class="container">
     <div class="row padding-bottom-20">
       
       <!-- This is teddy bear header -->
       <div class="text-center booking-teddy-bear">
         <h1 class="text-center">
-          Congrats! Your booking request is available.
+          Yeah! Your booking request is available.
         </h1>
         <ul>
           <li><span class="glyphicon glyphicon-flash"></span>
@@ -62,9 +62,6 @@
         </ul>
       </div>
     </div>
-  </div>
-
-  <div class="container">
     <div class="row">
       <div class="col-xs-12 add-ons" id="la_add-ons">
         <div class="col-xs-12 text-center">
@@ -158,8 +155,6 @@
         <hr>
       </div>
     </div>
-  </div>
-  <div class="container">
     <div class="row" style="margin-top: 100px;">
 
       <!-- booking summary -->
@@ -243,7 +238,7 @@
             <div class="col-xs-12 col-lg-6 form-group required">
               <label class="control-label">Country</label>
               <!-- country list (iso) -->
-              <select name="Country" id="country-selector" autofocus="autofocus" autocorrect="off" autocomplete="off">
+              <select name="Country" id="country-selector" autocorrect="off" autocomplete="off">
                 <option value="" selected="selected">Select Country</option>
                 <option value="Afghanistan" data-alternative-spellings="AF افغانستان">Afghanistan</option>
                 <option value="Åland Islands" data-alternative-spellings="AX Aaland Aland" data-relevancy-booster="0.5">Åland Islands</option>
@@ -516,14 +511,7 @@
                 <input id="cc-number" type="tel" class="input-lg form-control card-number" autocomplete="cc-number" placeholder="16 digits" required data-omise="number">
             </div>
           </div>
-
-             <!-- <div class="form-row">
-              <div class="col-xs-12 form-group billing-address required">
-                <label class="control-label">Billing Address</label>
-                <input autocomplete="off" class="form-control" size="20" type="text">
-              </div>
-            </div> -->
-            <div class="form-row clearfix">
+          <div class="form-row clearfix">
               
               <div class="col-xs-4 col-lg-4 form-group expiration required">
                 <label class="control-label">Expiration</label>
@@ -561,25 +549,21 @@
                 <label class="control-label">Enter promo code</label>
                 <input autocomplete="off" class="form-control" placeholder="Enter promo code" size="4" type="text" maxlength="4">
                 <a class="btn btn-primary btn-sm btn-discount">APPLY PROMO CODE <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-            </div>
-            <div class="col-xs-12 col-lg-5" id="grizzly-bear">
-              <button type="submit" id="create_token" class="btn btn-lg btn-primary btn-success btn-pay-now" href="payment-success.html">Pay Now and Let's Travel</button>
-            </div>
-            <div class="col-xs-12 col-lg-7 text-left padding-top-20">
-              <p><small>By clicking the "Pay Now and Let's Travel" button above, you agree to pay the Grand Total shown in the Booking Summary. You also agree to our Terms and Conditions, you can read more about <a>our policies here.</a></small></p>
-            </div>
-
-                
-              
-            </div>
-            <div class="form-row clearfix">   
-              <div class="error form-group hide">
-                <div class="alert-danger alert">
-                  Please correct the errors and try again.
-                </div>
+              </div>
+              <div class="col-xs-12 col-lg-5" id="grizzly-bear">
+                  <button type="submit" id="create_token" class="btn btn-lg btn-primary btn-success btn-pay-now" href="payment-success.html">Pay Now and Let's Travel</button>
+              </div>
+              <div class="col-xs-12 col-lg-7 text-left padding-top-20">
+                  <p><small>By clicking the "Pay Now and Let's Travel" button above, you agree to pay the Grand Total shown in the Booking Summary. You also agree to our Terms and Conditions, you can read more about <a>our policies here.</a></small></p>
+              </div>
+          </div>
+          <div class="form-row clearfix">   
+            <div class="error form-group hide">
+              <div class="alert-danger alert">
+                Please correct the errors and try again.
               </div>
             </div>
+          </div>
         </div>
 
         <!-- these are add-ons -->
@@ -603,6 +587,11 @@
       </form>
     </div>
   </div>
+<!-- 
+  <div class="container">
+  </div>
+  <div class="container">
+  </div> -->
 
   <!-- footer -->
   <div class="container-fluid global-footer-wrap">
@@ -688,7 +677,7 @@
           var currentScroll = $(this).scrollTop();
           if (currentScroll > headerOrgOffset) {
               if (currentScroll > previousScroll) {
-                  $('#global-header-wrap').css('top','-51px');
+                  $('#global-header-wrap').css('top','-50px');
               } else {
                   $('#global-header-wrap').css('top','0px');
               }

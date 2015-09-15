@@ -2,3 +2,66 @@
 {
 	list-style: none;
 }
+
+.dash-content h1
+{
+	margin-bottom: 10px;
+}
+
+/*.dash-content h1::before
+{
+	position: relative;
+	display: block;
+	content: '';
+	height: 5px;
+	width: 40px;
+	margin-bottom: 30px;
+	background: salmon;
+	border-radius: 3px;
+}*/
+
+.checkbox label
+{
+	font-weight: 500;
+}
+
+#passwordForm .validate-pwd
+{
+	background: yellow;
+	color: #333;
+	padding: 12px;
+	font-size: 13px;
+	font-weight: 700;
+	width: 98%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	top: 0px;
+	box-shadow: inset 0px 2px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+#passwordForm p > span.glyphicon
+{
+	margin: 0 10px 0 15px;
+	font-size: 10px;
+}
+
+#pwd-new-wrapper
+{
+	position: relative;
+}
+
+#pwd-new-wrapper .glyphicon
+{
+	position: absolute;
+	right: 14px;
+	top: 8px;
+	font-size: 18px;
+	color: #dadada;
+	cursor: pointer;
+}
+
+#pwd-new-wrapper .glyphicon:hover
+{
+	color: #333;
+}

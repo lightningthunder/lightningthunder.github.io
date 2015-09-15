@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/admin_global.css">
+  <link rel="stylesheet" href="../css/la_input.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/fileinput.min.css">
+
+  <title>Manage Web Content</title>
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Local Alike Admin</a>
+      </div>
+    </div><!--/.container-fluid -->
+  </nav>
+  <div class="container no-side-padding">
+    <div class="col-sm-2">
+      <ul id="side-nav" class="nav nav-stacked">
+        <li><h2><small>Menu</small></h2></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listing-incoming.html">Incoming Tickets</a></li>
+        <li><a href="listing-view-all.html">User Listings</a></li>
+        <li><a href="impact-hub.html">Impact Hub</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="web-content.html" class="active">Website Content</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Sign out</a></li>
+      </ul>
+    </div>
+    <div class="col-md-10">
+      <h1>Content Editor</h1>
+      <hr>
+      <form class="form-horizontal">
+      <fieldset>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-12 control-label" for="homepage-hero">homepage-hero</label>
+        <div class="col-md-12">                     
+          <textarea class="form-control" id="homepage-hero" name="homepage-hero"></textarea>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-12">
+          <button id="btn-save" name="btn-save" class="btn btn-success">Save</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-12 control-label" for="homepage-subhero">homepage-subhero</label>
+        <div class="col-md-12">                     
+          <textarea class="form-control" id="homepage-subhero" name="homepage-subhero"></textarea>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-12">
+          <button id="btn-save" name="btn-save" class="btn btn-success">Save</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-12 control-label" for="how-it-works-1">how it works step 1</label>
+        <div class="col-md-12">                     
+          <textarea class="form-control" id="how-it-works-1" name="how-it-works-1"></textarea>
+        </div>
+      </div>
+
+      <!-- File Button --> 
+      <div class="form-group">
+        <div class="col-md-12">
+          <input id="how-it-works-1-img" name="how-it-works-1-img" class="input-file" type="file">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-12">
+          <button id="btn-save" name="btn-save" class="btn btn-success">Save</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-12 control-label" for="how-it-works-2">how it works step 2</label>
+        <div class="col-md-12">                     
+          <textarea class="form-control" id="how-it-works-2" name="how-it-works-2"></textarea>
+        </div>
+      </div>
+
+      <!-- File Button --> 
+      <div class="form-group">
+        <div class="col-md-12">
+          <input id="how-it-works-2-img" name="how-it-works-2-img" class="input-file" type="file">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-12">
+          <button id="btn-save" name="btn-save" class="btn btn-success">Save</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-12 control-label" for="how-it-works-3">how it works step 3</label>
+        <div class="col-md-12">                     
+          <textarea class="form-control" id="how-it-works-3" name="how-it-works-3"></textarea>
+        </div>
+      </div>
+
+      <!-- File Button --> 
+      <div class="form-group">
+        <div class="col-md-12">
+          <input id="how-it-works-3-img" name="how-it-works-3-img" class="input-file" type="file">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-12">
+          <button id="btn-save" name="btn-save" class="btn btn-success">Save</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <h1>Submit request</h1>
+      <hr>
+    </div>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+        (function ($) {
+            $('#filter').keyup(function () {
+                var rex = new RegExp($(this).val(), 'i');
+                $('.searchable tr').hide();
+                $('.searchable tr').filter(function () {
+                    return rex.test($(this).text());
+                }).show();
+            })
+        }(jQuery));
+    });
+  </script>
+
+</body>
+</html>

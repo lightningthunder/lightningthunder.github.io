@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../../css/la_global.css">
+  <link rel="stylesheet" href="../../css/la_input.css">
+  <link rel="stylesheet" href="../../css/la_dash.css">
+  <link rel="stylesheet" href="../../css/la_dash-input.css">
+  <link rel="stylesheet" href="../../css/la_dash-settings.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link href="../../css/la_modal_alerts.css" rel="stylesheet">
+
+  <title>Settings | Payout to Hosts</title>
+</head>
+<body class="login-form-body">
+  <!-- <div class="container-fluid global-header-wrap">
+    <div class="row global-header">
+      <a href="index.html">
+        <img class="la_global-header-logo" src="img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" />
+      </a>
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-default" id="global-header-wrap">
+    <div class="container" id="global-header">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#"><img class="la_global-header-logo" src="../../img/la_logo_script_white-on-transparent.png" alt="local alike logo" /></a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right hidden">
+          <li>
+            <a class="" data-target="#sign-in-modal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+          </li>
+          <li>
+            <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Free travel credits</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right show">
+        <li>
+            <a href="#about"><span class="glyphicon glyphicon-heart-empty"></span>Earn travel credits</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="trips.html">Upcoming trips</a></li>
+              <li><a href="listings.html">Manage listings</a></li>
+              <li><a href="requests.html">Incoming bookings</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="index.html">View dashboard</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span><!--  <span class="caret"></span> --></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Edit profile</a></li>
+              <li><a href="#">Manage payment</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </li>
+          <li class="user-avatar">
+            <div class="navbar-user-avatar-container">
+                <img src="../../img/user-avatar_noon.png" />
+            </div>
+          </li>
+
+        </ul>
+        
+        
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <nav class="navbar nav-dash">
+      <div class="container">
+        <div class="navbar-collapse collapse no-side-padding">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../index.html">Dashboard Home</a>
+            </li>
+            <li>
+              <a href="../trips.html">Your Trips</a>
+            </li>
+            <li>
+              <a href="../listing.html">Your Listings</a>
+            </li>
+            <li>
+              <a href="../requests.html">Booking Requests</a>
+            </li>
+            <li>
+              <a class="nav-active" href="settings-profile.html">Settings</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+  </nav>
+  <div class="container">
+
+    <div class="row padding-top-20 padding-bottom-20">
+      <div class="col-xs-3 clearfix">
+        <ul class="list-unstyled listing-steps" data-spy="affix" data-offset-top="0" id="listing-steps-nav">
+          <li><a href="settings-profile.html">Your Profile</a></li>
+          <li><a href="settings-password.html">Password</a></li>
+          <li><a href="settings-payment.html">Payment Method</a></li>
+          <li class="active"><a href="settings-payout.html">Payout for Hosts</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-9">
+        <div class="dash-content">
+          <div class="col-xs-12">
+            <h1>How We Pay You</h1>
+            <p class="overview-text">Select how you would like us to pay you. All payout will be processed after the end of your tour. Generally, PayPal payments are processed in hours while bank transfers may take up to 5 business days. Local Alike takes a 15% community fee.</p>
+          </div>
+
+          <div class="col-xs-12 col-md-7">
+            <form class="form-horizontal" method="post" id="payoutForm">
+              <fieldset>
+              <!-- Password input-->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="settings-payout-bank-th">How would you like to be paid?</label>
+                <div class="col-md-12">
+                  <select id="settings-payout-bank-th" name="settings-payout-bank-th" class="form-control">
+                    <option selected disabled>Select your preferred method</option>
+                    <option value="method-paypal">PayPal</option>
+                    <option value="method-bank-transfer">Bank Transfer</option>
+                  </select>
+                </div>
+
+                  
+                <div id="paypal" class="col-xs-12 no-side-padding" data-popover="true" data-placement="right" data-html=true data-content="<h3>Make sure it's right!</h3><p>Good choice! PayPal transactions are fast and secure. Make sure your email address is correctly entered.</p> <hr><p>If you don't have an account yet, you can sign up for one easily at <a href='https://www.paypal.com/cy/signup/account' target='_blank'>PayPal.com</a>.</p>">
+                  <label class="col-md-12 padding-top-20 control-label" for="settings-payout-paypal-email">Enter your PayPal account email</label>
+                  <div class="col-md-12">
+                    <input id="settings-payout-paypal-email" name="settings-payout-paypal-email" type="text" placeholder="jane.doe@gmail.com" class="form-control input-md" required="">
+                  </div>
+                </div>
+
+                <div id="bank-transfer" class="col-xs-12 no-side-padding" data-popover="true" data-placement="right" data-html=true data-content="<h3>Straight to Bank!</h3><p>You can generally expect your money within five business days upon the end of your tour. Please refer to your bank book for the information below.</p> <hr><p>We currently only support banks in Thailand. If you need any assistance, chat with us at <a href='mailto:support@better.travel?subject=[Dash]%20Bank%20Transfer%20Help'>our support email</a>.</p>">
+                  <label class="col-md-12 padding-top-20 control-label" for="settings-payout-bank-th">Bank to receive payments</label>
+                  <div class="col-md-12">
+                    <select id="settings-payout-bank-th" name="settings-payout-bank-th" class="form-control">
+                      <option selected disabled>Select your bank</option>
+                      <option value="th-bbl">Bangkok Bank</option>
+                      <option value="th-kbank">Kasikornbank</option>
+                      <option value="th-ktb">Krungthai Bank</option>
+                      <option value="th-tmb">TMB Bank</option>
+                      <option value="th-scb">Siam Commercial Bank</option>
+                      <option value="th-citi">Citibank</option>
+                      <option value="th-cimb">CIMB Thai Bank</option>
+                      <option value="th-uob">United Overseas Bank (Thai)</option>
+                      <option value="th-bay">Bank of Ayudhya (Krungsri)</option>
+                      <option value="th-tbank">Thanachart Bank</option>
+                      <option value="th-ibank">Islamic Bank of Thailand</option>
+                      <option value="th-lhb">Land and Houses Bank</option>
+                    </select>
+                  </div>
+
+                  <label class="col-md-12 padding-top-20 control-label" for="settings-payout-account-name">Enter account name</label>  
+                  <div class="col-md-12">
+                  <input id="settings-payout-account-name" name="settings-payout-account-name" type="text" placeholder="John Doe Enterprises" class="form-control input-md" required="">
+                  </div>
+
+                  <label class="col-md-12 padding-top-20 control-label" for="settings-payout-account-number">Enter account number</label>  
+                  <div class="col-md-12">
+                  <input id="settings-payout-account-number" name="settings-payout-account-number" type="text" placeholder="XXX-XXXX-XXX" class="form-control input-md" required="">
+                  </div>
+
+                  <label class="col-md-12 padding-top-20 control-label" for="settings-payout-account-branch">Enter account branch name</label>  
+                  <div class="col-md-12">
+                  <input id="settings-payout-account-branch" name="settings-payout-account-branch" type="text" placeholder="Gotham City Branch" class="form-control input-md" required="">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="footer-btn-container">
+                <button id="payout-submit" name="payout-submit" class="btn btn-lg btn-success">Save settings</button>
+                <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
+              </div>
+              </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+
+  <script>
+
+    // script for hover popover
+
+    var originalLeave = $.fn.popover.Constructor.prototype.leave;
+    $.fn.popover.Constructor.prototype.leave = function(obj){
+      var self = obj instanceof this.constructor ?
+        obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+      var container, timeout;
+
+      originalLeave.call(this, obj);
+
+      if(obj.currentTarget) {
+        container = $(obj.currentTarget).siblings('.popover')
+        timeout = self.timeout;
+        container.one('mouseenter', function(){
+          //We entered the actual popover – call off the dogs
+          clearTimeout(timeout);
+          //Let's monitor popover content instead
+          container.one('mouseleave', function(){
+            $.fn.popover.Constructor.prototype.leave.call(self, self);
+          });
+        })
+      }
+    };
+
+    //  script to trigger popover
+
+    $('body').popover({ selector: '[data-popover]', trigger: 'hover', placement: 'right', delay: {show: 50, hide: 50}});
+
+    // script to affix left bar to show progress or steps
+
+    $('#listing-steps-nav').affix({
+    });
+
+
+  </script>
+
+
+
+</body>
+</html>

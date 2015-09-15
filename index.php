@@ -43,7 +43,7 @@
 	</div> -->
 	<div class="row la_home-hero-wrapper center-block vertical-center">
 	  <h1 class="text-center h1">Let&#39;s Travel with Purpose</h1>
-	  <h2 class="text-center">Book Unique Once-in-a-Lifetime Experiences Today</h2>
+	  <h2 class="text-center">Curated experiences. Better for everyone.</h2>
 	  <div class="col-xs-12 col-lg-12 form-group home_country required">
 		<div class="select-block clearfix">
 			<select name="country" id="country-selector" autofocus="autofocus" autocorrect="off" autocomplete="off">

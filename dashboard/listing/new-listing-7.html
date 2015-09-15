@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../../css/la_dash-input.css">
   <link rel="stylesheet" href="../../css/font-awesome.min.css">
 
-  <title>Package Upgrades | Step 7 of 8</title>
+  <title>Package Add Ons | Step 7 of 8</title>
 
 </head>
 <body class="login-form-body">
@@ -96,7 +96,7 @@
                 <a href="../listing.html">Your Listings</a>
               </li>
               <li>
-                <a href="../settings.html">Settings</a>
+                <a href="../settings/settings-profile.html">Settings</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -113,29 +113,24 @@
           <li><a href="new-listing-4.html">Photos</a></li>
           <li><a href="new-listing-5.html">Amenities</a></li>
           <li><a href="new-listing-6.html">Package Details</a></li>
-          <li class="active"><a href="new-listing-7.html">Upgrades</a></li>
+          <li class="active"><a href="new-listing-7.html">Add Ons</a></li>
           <li><a href="new-listing-8.html">Social Impact</a></li>
           <li><a href="new-listing-review.html">Review</a></li>
         </ol>
       </div>
       <div class="col-xs-9">
-
-        
         <div class="dash-content">
               <div class="wizard-header clearfix">
-                <div class="col-xs-12 col-md-8">
-                  <h1>Upgrades for Tour</h1>
-                  <p>You can offer your travelers chances to enhance their experience by adding premium upgrades they can buy during checkout</p>
-                </div>
-                <div class="col-xs-12 col-md-4 text-right clearfix">
-                  <p class="btn btn-create-new-listing">Step 7 of 8! You're almost there.</p>
+                <div class="col-xs-12">
+                  <h1>Add Ons</h1>
+                  <p class="overview-text">You can offer your travelers chances to enhance their experience by purchasing additional activities or services offered by you. We can arrange the payment on the website, or you can they can purchase during checkout.</p>
                 </div>
               </div>
               <div class="col-xs-7">
                 <form class="form-horizontal">
                   <fieldset>
                     <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                      <label class="col-xs-12 control-label" for="listing-upgrade-1-title">Upgrade Header</label>  
+                      <label class="col-xs-12 control-label" for="listing-upgrade-1-title">Name of tour upgrade or add on</label>  
                       <div class="col-xs-12">
                       <input id="listing-upgrade-1-title" name="listing-upgrade-1-title" type="text" placeholder="Enter name of this upgrade" class="form-control input-md" required="">
                         
@@ -144,7 +139,7 @@
 
                     <!-- Textarea -->
                     <div class="form-group" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                      <label class="col-xs-12 control-label" for="listing-upgrade-1">Describe the conditions of this upgrade</label>
+                      <label class="col-xs-12 control-label" for="listing-upgrade-1">Describe the conditions of this upgrade or add on</label>
                       <div class="col-xs-12">                     
                         <textarea class="form-control" id="listing-upgrade-1" name="listing-upgrade-1"></textarea>
                       </div>
@@ -169,17 +164,19 @@
                         
                       </div>
                     </div>
+                    
                     <!-- ImageGallery -->
                     <div class="form-group no-bottom-margin" data-popover="true" data-placement="right" data-html=true data-content="<h3>Bacon ipsum dolor amet</h3><p>Pancetta short ribs ham hock hamburger pork chop chicken t-bone brisket. Corned beef ball tip turkey sausage, cupim kielbasa tongue beef brisket pork loin t-bone short loin rump doner jowl.</p>">
-                      <label class="control-label">Select an image to with your package upgrade</label>
+                      <label class="control-label">Select an image to go with your tour's upgrade or add on</label>
                       <input id="input-1" type="file" class="file" data-show-caption="true">
                     </div>
                     <div class="clearfix">
-                      <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade</button>
+                      <button id="listing-upgrade-btn-add" name="listing-upgrade-btn-add" class="btn btn-info btn-add-item pull-right">+ Add new upgrade or add on</button>
                       </div>
 
-                    <div class="footer-btn-container padding-top-30">
-                      <button id="save-next" name="save-next" class="btn btn-lg btn-success">Save and Continue</button>
+                    <div class="footer-btn-container">
+                        <button id="save-next" name="save-next" class="btn btn-lg btn-success ladda-button" type="submit" data-style="expand-right">
+                        <span class="ladda-label">Save and Continue</span></button>
                       <p>Your progress is saved every time you hit this button. You can come back at another time to complete the listing too!</p>
                     </div>
 
@@ -192,10 +189,7 @@
     </div>
   </div>
 
-  <!-- footer -->
-
-  <div class="promo-code-notify" data-toggle="popover" data-content="Yay! Deals! You can use this discount code at checkout to apply 10% off your entire transaction.">You have unlocked<code>LOVEAIS</code>discount code!</div>
-
+  
   <script src="../../js/jquery.min.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
   <script src="../../js/fileinput.min.js"></script>

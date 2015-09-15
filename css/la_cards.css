@@ -73,11 +73,11 @@
 {
 	height: auto;
 	background: #fff;
-	border-radius: 0;
+	border-radius: 3px;
 	/*-webkit-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.2);
 	-moz-box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.2);
 	box-shadow: 0px 1px 4px 0px rgba(153,153,153,0.2);*/
-	border: 1px solid #eee;
+	border-bottom: 1px solid #dadada;
 }
 
 .card .item .carousel-caption
@@ -88,10 +88,12 @@
 .card span.item_geo,
 .card span.item_geo_2
 {
-	font-size: 14px;
+	font-size: 12px;
 	color: #777;
-	line-height: 1.2;
-	font-weight: normal;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.4;
+	display: block;
 }
 
 .la_monkey_carousel_promonkey .item .carousel-caption .content,
@@ -104,18 +106,21 @@
 .la_monkey_carousel_promonkey .item .carousel-caption .content h2.item_name,
 .card .item .carousel-caption .content h2.item_name
 {
-	margin: 0px;
-	padding: 0px 0px 5px;
+	margin: 0px 0px 6px 0px;
+	padding: 0px;
 	color: salmon;
-	font-size: 1.25em;
-	letter-spacing: -0.25px;
+	font-size: 1.15em;
+	font-weight: 700;
+	letter-spacing: -0.05px;
 	line-height: 1.15;
-	font-weight: 500;
 }
 
 .card.add-ons
 {
-	height: 320px;
+	height: 350px;
+	border-radius: 3px;
+	overflow: hidden;
+	border: 1px solid #eee;
 	margin-bottom: 10px;
 }
 
@@ -148,9 +153,7 @@
 	background: transparent;
 }
 
-.card.cause:hover,
 .card.add-ons:hover,
-.card.cause:hover .slideshow-bg,
 .card.add-ons:hover .slideshow-bg
 {
 	-moz-transform: scale(1,1);
@@ -165,14 +168,15 @@
 .card.add-ons h4
 {
 	font-size: 1.25em;
-	font-family: "sfns display", "avenir next", "avenir", helvetica, arial, sans-serif;
+	font-family:  "avenir next", "avenir", helvetica, arial, sans-serif;
 	margin-top: 15px;
-	color: #555;
+	font-weight: 700;
+	color: #444;
 }
 
 .card.add-ons h4
 {
-	height: 16px;
+	height: 32px;
 	width: 100%;
 }
 
@@ -221,7 +225,9 @@
 
 .card.add-ons .content
 {
-	height: 105px;
+	height: 115px;
+	padding: 0px 10px;
+	font-weight: 500;
 }
 
 .card.add-ons .add-ons-cap
@@ -235,7 +241,7 @@
 
 .card.add-ons .add-ons-cost
 {
-	float: right;
+	float: left;
 }
 
 .card.review .content
@@ -284,7 +290,7 @@
 
 .card .header
 {
-	padding: 2px 15px 2px 15px;
+	padding: 2px 10px 2px 10px;
 	position: relative;
 }
 
@@ -358,10 +364,13 @@
 .monkey-card .slideshow .promo_price,
 .card .slideshow span.price
 {
-	font-size: 26px;
-	font-weight: bold;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 700;
 	color: #fff;
 	position: absolute;
+	letter-spacing: -1px;
 	bottom: 15px;
 	right: 15px;
 	text-align: right;
@@ -393,8 +402,12 @@
 	content: 'per guest';
 	font-size: 0.7em;
 	display: block;
-	font-weight: normal;
+	font-weight: 500;
 	color: #fff;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	top: -5px;
 }
 
 .card-basic .content,
@@ -503,11 +516,12 @@
 
 .card.result h2.item_name
 {
-	margin: 0px;
+	margin: 0px 0px 6px 0px;
 	padding: 0px;
 	color: salmon;
-	font-size: 1.25em;
-	letter-spacing: -0.25px;
+	font-size: 1.05em;
+	font-weight: 700;
+	letter-spacing: -0.05px;
 	line-height: 1.15;
 }
 

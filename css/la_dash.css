@@ -1,6 +1,6 @@
 body
 {
-	background-color: #eee;
+	background-color: #37bc9b;
 }
 
 .container
@@ -10,13 +10,15 @@ body
 
 #global-header-wrap
 {
-	background: salmon;
+	/*background: salmon;*/
+	background: #fabe4a;
 	z-index: 1000;
 }
 
 .navbar-default .navbar-collapse
 {
-	background: salmon;
+	/*background: salmon;*/
+	background: #fabe4a;
 }
 
 .navbar-default .navbar-nav>li>a
@@ -69,7 +71,8 @@ h6
 .dash-content
 {
 	background-color: #fff;
-	border-bottom: 1px solid #dadada;
+	/*border-bottom: 1px solid #dadada; */
+	border-bottom: 1px solid #999;
 	margin-bottom: 15px;
 	position: relative;
 	overflow: hidden;
@@ -212,7 +215,7 @@ h6
 	padding: 40px 20px;
 	border-radius: 3px;
 	min-height: 300px;
-	color: #fff;
+	/*color: #fff;*/
 	background: transparent;
 }
 
@@ -243,6 +246,7 @@ h6
 	font-size: 30px;
 	font-weight: bold;
 	margin-top: 10px;
+	color: #fff;
 }
 
 .dash-content h1 .fa,
@@ -313,17 +317,24 @@ h6
 
 .dash-content h1
 {
-	font-size: 1.25em;
+	font-size: 1.5em;
+	text-transform: capitalize;
 	letter-spacing: 0.25px;
-	text-transform: uppercase;
 	font-weight: bold;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	color: #333;
 }
 
 .dash-content p
 {
 	color: #fff;
+}
+
+.dash-content p.overview-text
+{
+	color: #999;
+	font-weight: 700;
+	margin-bottom: 30px;
 }
 
 .dash-content ul
@@ -529,20 +540,25 @@ h6
 {
 	list-style: decimal inside;
 	padding: 0px 0px 0px 10px;
-	background: #eee;
+	background: transparent;
 }
 
 .listing-steps > li
 {
-	background: #eee;
-	color: #999;
-	border-bottom: 3px solid #eee;
+	background: transparent;
+	color: #fff;
+	/*border-bottom: 3px solid transparent;*/
 	padding: 10px;
 	cursor: pointer;
 	width: 100%;
 	font-weight: 500;
 	position: relative;
 	z-index: 60000;
+}
+
+.listing-steps > li:hover
+{
+	background: #555;
 }
 
 .listing-steps > li > a,
@@ -557,11 +573,12 @@ h6
 .listing-steps > li > a
 {
 	color: #999;
+	color: #fff;
 }
 
 .listing-steps > li > a:hover
 {
-	color: #444;
+	color: #fff;
 }
 
 .listing-steps > li.active > a:hover

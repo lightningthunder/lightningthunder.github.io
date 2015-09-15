@@ -797,7 +797,7 @@ span.promo-type
 	display: table;
 	color: #fff;
 	padding: 20px;
-	border: 1px solid #eee;
+	border: 1px solid #999;
 
 	-moz-transition: all .1s;
 	-webkit-transition: all .1s;
@@ -887,6 +887,25 @@ span.promo-type
 {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.container-fluid.collections
+{
+	background: #eee;
+}
+
+.container-fluid.stories
+{
+	background: #fff;
+}
+
+.container-fluid.collections > .row,
+.container-fluid.stories > .row
+{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 0;
 }
 
 @media (max-width: 991px) {

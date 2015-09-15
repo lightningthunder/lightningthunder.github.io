@@ -5,10 +5,10 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/admin_global.css">
-  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/fileinput.min.css">
 
-  <title>Content Verfication Machine</title>
+  <title>Incoming Verification Requests</title>
 </head>
 <body class="login-form-body">
   <!-- <div class="container-fluid global-header-wrap">
@@ -33,20 +33,23 @@
           </div>
         </div><!--/.container-fluid -->
       </nav>
-  <div class="container-fluid">
+  <div class="container">
     <div class="col-sm-2">
         <ul id="side-nav" class="nav nav-stacked affix">
-          <li><a href="listing-incoming.html">Incoming Listings</a></li>
-          <li><a href="listing-view-all.html">All Listings</a></li>
-          <li><a href="#">Manage Promos</a></li>
-          <li><a href="#">Manage Content</a></li>
+          <li><h2><small>Menu</small></h2></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listing-incoming.html" class="active">Incoming Tickets</a></li>
+          <li><a href="listing-view-all.html">User Listings</a></li>
+          <li><a href="impact-hub.html">Impact Hub</a></li>
+          <li><a href="#">Promotions</a></li>
+          <li><a href="web-content.html">Website Content</a></li>
           <li><a href="#">Accounts</a></li>
           <li><a href="#">Sign out</a></li>
-      </ul>
+        </ul>
     </div>
     <div class="col-md-10">
       <h1>Incoming Listings</h1>
-      <table class="table packages">
+      <table class="table packages sortable-bootstrap">
          <thead>
             <tr>
                <th>Listing ID</th>
@@ -59,7 +62,7 @@
 
             </tr>
          </thead>
-         <tbody class="table-hover">
+         <tbody class="table-hover" data-sortable data-sortable-initialized="true">
             <tr>
                <td>LA1234</td>
                <td>28/7/2015</td>
@@ -130,8 +133,9 @@
     </div>
   </div>
 
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/sortable.min.js"></script>
 
 
 
