@@ -558,7 +558,7 @@ body
 
 .trip-content
 {
-	padding: 0px 15px 20px;
+	padding: 30px 30px 30px;
 	margin-top: 10px;
 	background: #fff;
 	border-bottom: 1px solid #dadada;
@@ -567,12 +567,22 @@ body
 	border-radius: 3px;
 }
 
+.trip-content#tour-highlights
+{
+	border: 0;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
 .trip-content h4
 {
-	font-size: 18px;
+	font-size: 17px;
+	color: #444;
 	margin: 40px 0 25px;
 	font-weight: 700;
-	letter-spacing: 0.25px;
+	padding: 0px;
+	margin: 30px 0 20px;
 }
 
 .trip-content p
@@ -611,6 +621,18 @@ body
 .trip-content #la_tips-notes
 {
 	padding-bottom: 15px;
+}
+
+.trip-content#la_photo-gallery
+{
+	padding: 0px;
+}
+
+.trip-content#la_photo-gallery h4
+{
+	padding: 0px;
+	padding-left: 30px;
+	margin: 40px 0 25px;
 }
 
 /*.trip-content #la_photo-gallery h4 .fa
@@ -659,12 +681,10 @@ body
 
 .trip-content .expectations .expectations-spider
 {
-	padding: 25px 15px 60px;
-	padding: 10px;
+	padding: 0;
 	position: relative;
-	height: 150px;
 	height: auto;
-	text-align: left !important;
+	text-align: left;
 	-moz-transition: all .1s;
 	-webkit-transition: all .1s;
 	transition: all .1s;
@@ -673,75 +693,42 @@ body
 	transform: scale(1,1);
 }
 
-/*.trip-content .expectations .expectations-spider:hover
-{
-	-moz-transform: scale(1.25,1.25);
-	-webkit-transform: scale(1.25,1.25);
-	transform: scale(1.25,1.25);
-}*/
-
-
-
-/*.trip-content .expectations .expectations-spider.no::after
-{
-	font-family: FontAwesome;
-	content: '\f00d';
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 35px;
-	color: #eee;
-}*/
-
-.trip-content .expectations .expectations-spider .fa
-{
-	top: initial;
-	display: block;
-	font-size: 2em;
-	margin: 0 auto 10px;
-	height: auto;
-	text-align: center;
-}
-
-.trip-content .expectations .expectations-spider.yes .fa
-{
-	color: #555;
-}
-
-.trip-content .expectations .expectations-spider.no .fa
-{
-	color: #eee;
-}
-
 .trip-content .expectations .expectations-spider span
 {
-	font-size: 15px;
-	letter-spacing: -0.05px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 500;
 	line-height: 1.2;
-	display: block;
-	text-align: center;
-/*	font-family: "san francisco display";
-*/}
-
-.trip-content .expectations .expectations-spider.yes span
-{
-	color: #777;
+	text-align: left;
 }
-
-/*.trip-content .expectations .expectations-spider.yes .fa::after
-{
-	font-family: FontAwesome;
-	content: '\f00c';
-	position: absolute;
-	color: orange;
-	font-size: 10px;
-	bottom: 0px;
-}*/
 
 .trip-content .expectations .expectations-spider.no span
 {
-	color: #eee;
+	color: #dadada;
+}
+
+.trip-content .expectations .expectations-spider.no img
+{
+	opacity: 0.2;
+}
+
+.trip-content .expectations .expectations-spider.no::before
+{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    height: 2px;
+    width: 40px;
+    border-radius: 6px;
+    background-color: orange;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.trip-content .expectations .expectations-spider img
+{
+	position: relative;
 }
 
 .trip-content .expectations ul
@@ -912,30 +899,40 @@ hr
 
 .readmore-link
 {
-	bottom: 30px;
-	right: 0px;
-	display: inline-block;
-	position: relative;
-	z-index: 999;
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	background: salmon;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+60&amp;0+0,1+60 */
+	background: #fff;
+	width: 100%;
+	height: 40px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom: 1px solid #dadada;
+	line-height: 40px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #37bc9b;
 	text-align: center;
-	color: #fff;
-	font-weight: 700;
-	line-height: 1;
-	font-size: 12px;
-	padding-top: 16px;
-	margin: 0 auto;
+	position: relative;
+	left: 0px;
+	z-index: 99;
 	cursor: pointer;
 }
 
-@media (min-width: 1640px) {
-	.la_details-hero-wrapper
-	{
-		height: 650px;
-	}
+.readmore-link::before
+{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	border-bottom: 1px solid #eee;
+	top: -39px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+60&amp;0+0,1+60 */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 @media (max-width: 1169px) { 

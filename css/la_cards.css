@@ -576,18 +576,17 @@
 .card .item .carousel-caption .footer,
 .card.result .footer
 {
-	background: #fafafa;
+	background: #fff;
 	color: #333;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	display: block;
 	width: 100%;
-	font-size: 12px;
-	font-weight: normal;
-	border: none;
+	font-size: 10px;
+	font-weight: 500;
+	border-top: 1px solid #eee;
 	padding: 5px 10px;
-	font-family: 'san francisco display';
 	text-transform: uppercase;
 	z-index: 900;
 	/*border-bottom-left-radius: 5px;

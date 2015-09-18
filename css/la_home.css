@@ -46,7 +46,7 @@ body
     ),url('../img/la_home-bg-5.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
-	padding-top: 180px;
+	padding-top: 150px;
 }
 
 .la_home-hero .la_home-hero-wrapper
@@ -80,6 +80,46 @@ body
 .la_home-hero-wrapper .what-is
 {
 	padding-top: 30px;
+}
+
+.section-icon
+{
+	margin-top: 18px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	overflow: hidden;
+	float: left;
+}
+
+.section-icon > img
+{
+	height: 60px;
+	width: 60px;
+	position: relative;
+	top: 12px;
+	left: 11px;
+}
+
+h2.section-header
+{
+	font-weight: 700;
+	font-size: 1.8em;
+	letter-spacing: 0.5px;
+	color: #333;
+	margin: 0 0 10px;
+	padding: 0 10px;
+}
+
+h3.section-description
+{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #888;
+	padding: 0 10px;
+	margin: 0 0 10px;
 }
 
 /* hero dropdown items */
@@ -792,12 +832,12 @@ span.promo-type
 .la_cta-box
 {
 	/*border: 1px solid #eee;*/
-	height: 200px;
+	height: 240px;
 	width: 100%;
 	display: table;
 	color: #fff;
 	padding: 20px;
-	border: 1px solid #999;
+	border-radius: 3px;
 
 	-moz-transition: all .1s;
 	-webkit-transition: all .1s;
@@ -819,10 +859,10 @@ span.promo-type
 {
 	background: 
 	linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
+      rgba(255, 240, 10, 0.25), 
+      rgba(255, 240, 10, 0.25)
     ),
-    url('../img/la_blog-1.jpg');
+    url('../img/la_blog-2.jpg');
    	background-size: cover;
    	height: 100%;
 }
@@ -843,10 +883,10 @@ span.promo-type
 {
 	background: 
 	linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
+      rgba(255, 240, 10, 0.25), 
+      rgba(255, 240, 10, 0.25)
     ),
-    url('../img/la_impact-1.jpg');
+    url('../img/la_blog-2.jpg');
    	background-size: cover;
 }
 
@@ -891,6 +931,11 @@ span.promo-type
 
 .container-fluid.collections
 {
+	background: #fff;
+}
+
+.container-fluid.featured-tours
+{
 	background: #eee;
 }
 
@@ -900,12 +945,25 @@ span.promo-type
 }
 
 .container-fluid.collections > .row,
+.container-fluid.featured-tours > .row,
 .container-fluid.stories > .row
 {
 	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 40px 0 60px;
+}
+
+.container-fluid.featured-tours .row:first-of-type
+{
+	border-bottom: 1px solid #dadada;
+}
+
+.container-fluid.collections img.smcollection,
+.container-fluid.collections img.lgcollection,
+.container-fluid.collections img.ais-banner
+{
+	width: 100%;
 }
 
 @media (max-width: 991px) {

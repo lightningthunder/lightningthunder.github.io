@@ -49,6 +49,7 @@ body
 .nav-dash .navbar-nav>li>a
 {
 	color: #666;
+	font-size: 14px;
 }
 
 .nav-active
