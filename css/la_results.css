@@ -375,7 +375,12 @@ button.btn-default#reset-filters
 
 .crystal h5
 {
-	font-weight: bold;
+  font-weight: bold;
+  color: #555;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 5px;
+  text-align: left;
 }
 
 .crystal .crystal-price,
@@ -383,9 +388,8 @@ button.btn-default#reset-filters
 .crystal .crystal-theme
 {
 	padding: 5px 10px 10px;
-	background: #fff;
+	background: transparent;
 	margin-bottom: 10px;
-  border: 1px solid #eee;
 }
 
 .crystal .crystal-price span
@@ -530,8 +534,10 @@ button.btn-default#reset-filters
 
 .crystal label
 {
-  font-weight: normal;
-  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
