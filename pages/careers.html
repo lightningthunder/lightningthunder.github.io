@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Team</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/la_global.css">
+<link rel="stylesheet" href="../css/la_pages.css">
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/readmore.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#careers-scrollspy">
+<nav class="navbar navbar-default" id="global-header-wrap">
+  <div class="container-fluid" id="global-header">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="to navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img class="la_global-header-logo" src="../img/la_logo_script_salmon-on-transparent.png" alt="local alike logo" /></a>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row" id="hero">
+      <div class="col-xs-12 no-side-padding clearfix">
+          <ul class="nav nav-tabs">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="how.html">How it works</a></li>
+              <li><a href="impact.html">Social impact</a></li>
+              <li><a href="team.html">Our team</a></li>
+              <li><a href="careers.html">Careers</a></li>
+          </ul>
+      </div>
+      <div class="col-xs-12 col-md-6 col-md-offset-3 padding-bottom-20">
+        <h1 class="col-xs-12 padding-top-20">Careers</h1>
+        <p class="col-md-12 lead">Interested in building a suite of technology solutions to help make tourism better? Why not join us on the journey!</p>
+        <!-- <p class="col-xs-12">Local Alike technology aims to empower local communities through innovations that help sustain local development and self-reliance through tourism. We started from as a responsible tour operator and we are now venturing into technology.</p> -->
+        <p class="col-xs-12">We built this marketplace to connect people around the world to meaningful local experiences. Our mission is to provide the best experiences for each traveler and local “alike” while preserving local cultures and generating income distribution to support local economy.</p>
+        <p class="col-xs-12">We view tourism as a form of development tool that will lead to the more sustainable and inclusive society.</p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 clearfix" id="careers-scrollspy">
+          <ul class="nav nav-tabs text-center" data-offset-top="500" data-spy="affix">
+            <li><a href="#permanent">Full time positions</a></li>
+            <li><a href="#internship">Internships</a></li>
+            <li><a href="#diy">Create your own</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <div class="page-box" id="permanent">
+            <div class="page-image">
+              <img src="../img/pages_intern.jpg" />
+            </div>
+            <div class="page-content clearfix">
+              <h2>Full-time positions</h2>
+              <div class="page-team-profile open-position clearfix">
+                <div class="col-xs-12  no-side-padding">
+                  <h4>Technical Lead</h4>
+                  <p>We are seeking a technical lead to oversee our entire development project. Ideally, you would have at least 3 years experience building websites at scale while having experience managing cross-functional projects from ideation through to deployment. Clear communication and ability to describe tech to non-tech is highly desired.</p>
+                  <a class="btn btn-sm btn-primary" href="careers/tech-lead.html">Learn more</a>
+                </div>
+              </div>
+              <div class="page-team-profile open-position clearfix">
+                <div class="col-xs-12 no-side-padding">
+                  <h4>Junior PHP Developer</h4>
+                  <p>We are seeking for a junior developer who has a strong background in developing PHP websites, ideally within the Laravel framework. The potential candidate will have experience working in a cross-functional team setting and has capability of completing deliverables on-time and within scope.</p>
+                  <a class="btn btn-sm btn-primary" href="careers/junior-php-developer.html">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-box" id="internship">
+            <div class="page-image">
+              <img src="../img/pages_trio.jpg" />
+            </div>
+            <div class="page-content clearfix">
+              <h2>Internship</h2>
+              <div class="page-team-profile open-position clearfix">
+                <div class="col-xs-12 no-side-padding">
+                  <h4>Community Product Associate (Internship)</h4>
+                  <p>We are looking for a candidate with a passion for community development. You'll have strong business fundamentals to understand how a social business with a big social vision can utilize tourism as a form of development tool. Your role consists of scouting new travel destinations in the country and liaising with local leaders in developing their community for sustainable tourism.</p>
+                  <a class="btn btn-sm btn-primary" href="mailto:noon@localalike.com?cc=info@localalike.com&subject=Internship%20Application%20via%20Careers%20Page">Email us now if you're interested</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-box" id="diy">
+            <div class="page-content clearfix">
+              <div class="col-xs-12 padding-bottom-20">
+                <h2 class="col-xs-12 col-sm-10 col-sm-offset-1 text-center clearfix">Don't find what you're looking for?</h2>
+                <p class="col-xs-12 col-sm-8 col-sm-offset-2 text-center padding-bottom-20 clearfix">Tell us how your skills and experience will help us build a better online experience for travelers and local communities around the world.</p>
+                <a class="btn btn-lg btn-primary col-xs-12 col-md-6 col-md-offset-3" href="mailto:noon@localalike.com?cc=info@localalike.com&subject=Design%20My%20Own%20Job%20via%20Careers%20Page">Tell us about yourself</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<script>
+  $('#careers-scrollspy .nav-tabs').affix({
+      offset: {
+        top: $('#global-header-wrap').height() + $('#hero').height()
+      }
+  }); 
+</script>
+</body>
+</html>                                   

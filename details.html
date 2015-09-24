@@ -14,11 +14,15 @@
   <link href="css/la_cards.css" rel="stylesheet">
   <link href="css/la_input.css" rel="stylesheet">
   <link href="css/la_details.css" rel="stylesheet">
+  <link href="css/la_modal_alerts.css" rel="stylesheet">
+  <link href="css/la_modal_itinerary.css" rel="stylesheet">
+  <link href="css/la_modal_profiles.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/la_lightbox.css" rel="stylesheet">
   <link href="css/la_book-box.css" rel="stylesheet">
   <link href="css/la_external-privilege.css" rel="stylesheet">
   <link href="css/la_yotpo.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script> 
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <!-- Hotjar Tracking Code for lightningthunder.github.io -->
@@ -93,11 +97,10 @@
                     </div>
                     <!-- <div id="block-map"></div> -->
                   </div>
-
-
-                  <div class="modal-footer">
+                  <span class="chimpanzee-close" data-dismiss="modal">Close<span class="glyphicon glyphicon-remove chimpanzee-glyph"></span></span>
+                  <!-- <div class="modal-footer">
                     <button class="btn btn-default btn-warning btn-sm" data-dismiss="modal" type="button">Close Google Maps <span class="glyphicon glyphicon-remove"></span></button>
-                  </div>
+                  </div> -->
                 </div>
                 <!-- /.modal-content -->
               </div>
@@ -176,15 +179,15 @@
               <p class="chiclet-label">Physical Demand</p>
               <p class="item_fitness">Light<span class="glyphicon glyphicon-new-window"></span></p></a>
 
-                <div class="modal fade" id="basicModal_fitness" tabindex="-1">
-                  <div class="modal-dialog la_fullscreen_modal">
-                    <div class="modal-content">
-                    </div>
-                    <!-- /.modal-content -->
+              <div class="modal fade" id="basicModal_fitness" tabindex="-1">
+                <div class="modal-dialog la_fullscreen_modal">
+                  <div class="modal-content">
                   </div>
-                  <!-- /.modal-dialog -->
+                  <!-- /.modal-content -->
                 </div>
-                <!-- /.modal -->
+                <!-- /.modal-dialog -->
+              </div>
+              <!-- /.modal -->
             </div>
             <div class="col-xs-12 col-sm-4 chiclet-right">
 
@@ -275,7 +278,17 @@
           </div>
 
           <div class="col-xs-12">
-            <a class="btn pull-right clearfix">View the full itinerary</a>
+            <a class="btn pull-right clearfix" data-target="#basicModal_itinerary" data-toggle="modal" href="itinerary/ov00001.html">View the full itinerary</a>
+            <div class="modal fade" id="basicModal_itinerary" tabindex="-1">
+              <div class="modal-dialog la_fullscreen_modal">
+                <div class="modal-content">
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
           </div>
 
           <div class="col-xs-12 expectations" id="la_expectations">
@@ -294,7 +307,7 @@
 
             <div class="col-xs-6 col-sm-4 col-md-4 col-lg-6 text-center expectations-spider yes">
               <img src="img/nounproject/noun_107698_cc_lock_e.png" width="50" />
-              <span data-popover="true" data-placement="top" data-html=true data-content="<span>Private bathroom within your own room and will not be shared with others throughout your stay.</span>">Private Bathroom</span>
+              <span data-popover="true" data-placement="top" data-html=true data-content="<span>Private bathroom inside or close to your room that will not be shared with others throughout your stay.</span>">Private Bathroom</span>
             </div>
 
             <div class="col-xs-6 col-sm-4 col-md-4 col-lg-6 text-center expectations-spider yes">
@@ -720,22 +733,9 @@
           </div>
 
           <div class="booking-ad clearfix">
-            <div class="content ext-ad-banner clearfix">
-              <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12">
-                <h4 class="text-left">AIS Traveler's SIM users can earn 10% off by entering number below</h4>
-              </div>
-
-
-              <div class="col-xs-12 col-sm-4 col-md-12 clearfix form-group ext-ad-ais required">
-                <input class="form-control" placeholder="Enter your number here" size="4" type="tel">
-                <div class="g-recaptcha" data-sitekey="6LeMPwsTAAAAAPuggO2YzK_EkZDv0s24TQ7fJsV-" style="transform:scale(0.77);transform-origin:0;-webkit-transform:scale(0.77);transform:scale(0.77);-webkit-transform-origin:0 0;transform-origin:0 0;float:left;width:200px;height:60px;"></div>
-                <button class="btn btn-default btn-primary btn-ext-ad-ais">Generate Code</button>
-              </div>
-            </div>
+            <?php include("module/module_ais.php"); ?>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12">
       </div>
       <!-- Impact, reviews, misc. Column -->
 
@@ -770,7 +770,6 @@
       </div>
     </div>
   </div>
-  <script src="js/jquery.min.js"></script> 
   <script src="js/moment.js"></script> 
   <script src="js/bootstrap.min.js"></script> 
   <script src="js/bootstrap-slider.js"></script> 
@@ -813,7 +812,7 @@
 
     ellipsizeText();
 
-        // script for hover popover
+    // script for hover popover
 
     var originalLeave = $.fn.popover.Constructor.prototype.leave;
     $.fn.popover.Constructor.prototype.leave = function(obj){
@@ -840,14 +839,6 @@
     //  script to trigger popover
 
     $('body').popover({ selector: '[data-popover]', trigger: 'hover', placement: 'right', delay: {show: 0, hide: 0}});
-
-    // $('body').on('hidden.bs.modal', '.modal', function () {
-    //     $(this).removeData('bs.modal');
-    //     $('.modal-content', this).empty();
-    // });
-
-    // $('#basicModal').modal();
-    // $('#basicModal_weather').modal();
 
     var activityIndicatorOn = function()
     {

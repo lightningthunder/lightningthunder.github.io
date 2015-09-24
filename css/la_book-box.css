@@ -111,21 +111,6 @@
 	padding-bottom: 10px;
 }
 
-.affix 
-{
-	top: 10px;
-	width: 380px;
-	/*right: calc(50vh-585px);*/
-}
-
-/* min-height fo affix */
-@media (max-height: 800px) { 
-	.affix
-	{
-/*		position: relative;
-*/	}
-}
-
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 991px) { 
 	.book-box .input-group

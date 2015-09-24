@@ -1,0 +1,641 @@
+body
+{
+	position: relative; /* required */
+	background: #eee;
+}
+
+h1
+{
+	font-weight: 700;
+}
+
+h4
+{
+	color: salmon;
+	font-size: 20px;
+}
+
+h5
+{
+	color: #444;
+}
+
+p
+{
+	color: #666;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+p.lead
+{
+	font-weight: 400;
+	color: #333;
+	font-size: 18px;
+}
+
+#hero .nav
+{
+	background: #37bc9b;
+}
+
+#about-scrollspy > ul.nav-tabs,
+#how-scrollspy > ul.nav-tabs,
+#impact-scrollspy > ul.nav-tabs,
+#team-scrollspy > ul.nav-tabs,
+#careers-scrollspy > ul.nav-tabs
+{
+	left: 0;
+	right: 0;
+	position: relative;
+	background: #fff;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	margin: 0 auto;
+	border: none;
+	opacity: 1;
+}
+
+#about-scrollspy > ul.nav-tabs li a,
+#how-scrollspy > ul.nav-tabs li a,
+#impact-scrollspy > ul.nav-tabs li a,
+#team-scrollspy > ul.nav-tabs li a,
+#careers-scrollspy > ul.nav-tabs li a
+{
+	color: #999;
+}
+
+#about-scrollspy ul.nav-tabs.affix,
+#how-scrollspy ul.nav-tabs.affix,
+#impact-scrollspy ul.nav-tabs.affix,
+#team-scrollspy ul.nav-tabs.affix,
+#careers-scrollspy ul.nav-tabs.affix
+{
+	opacity: 1;
+	top: 0px;
+	text-align: center;
+	position: fixed;
+	background: #333;
+	border: none;
+	z-index: 999;
+	border-radius: 0px;
+}
+
+#about-scrollspy ul.nav-tabs.affix li a,
+#how-scrollspy ul.nav-tabs.affix li a,
+#impact-scrollspy ul.nav-tabs.affix li a,
+#team-scrollspy ul.nav-tabs.affix li a,
+#careers-scrollspy ul.nav-tabs.affix li a
+{
+	color: #fff;
+}
+
+#about-scrollspy ul.nav-tabs li a:hover,
+#how-scrollspy ul.nav-tabs li a:hover,
+#impact-scrollspy ul.nav-tabs li a:hover,
+#team-scrollspy ul.nav-tabs li a:hover,
+#careers-scrollspy ul.nav-tabs li a:hover
+{
+	color: #666;
+}
+
+#about-scrollspy ul.nav-tabs.affix li.active::after,
+#how-scrollspy ul.nav-tabs.affix li.active::after,
+#impact-scrollspy ul.nav-tabs.affix li.active::after,
+#team-scrollspy ul.nav-tabs.affix li.active::after,
+#careers-scrollspy ul.nav-tabs.affix li.active::after
+{
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 5px;
+	margin-left: -5px;
+}
+
+#about-scrollspy ul.nav-tabs.affix li.active a,
+#how-scrollspy ul.nav-tabs.affix li.active a,
+#impact-scrollspy ul.nav-tabs.affix li.active a,
+#team-scrollspy ul.nav-tabs.affix li.active a,
+#careers-scrollspy ul.nav-tabs.affix li.active a
+{
+	color: #666;
+}
+
+ul.nav-tabs.affix
+{
+	top: 0px;
+	opacity: 1;
+}
+
+ul.nav-tabs li 
+{
+	margin: 0;
+	border-radius: 0;
+	display: inline-block;
+	float: initial;
+}
+
+ul.nav-tabs li:first-child 
+{
+	border-top: none;
+}
+
+ul.nav-tabs li a 
+{
+	margin: 0;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 0;
+	border: none;
+}
+
+ul.nav-tabs li.active a, 
+ul.nav-tabs li.active a:hover,
+ul.nav-tabs li a:hover
+{
+	background: #fff;
+	color: #37bc9b;
+	border: none;
+	position: relative;
+}
+
+ul.nav-tabs li.active a::before
+{
+	border-color: salmon;
+}
+
+
+ul.nav-tabs li:first-child a 
+{
+}
+
+ul.nav-tabs li:last-child a 
+{
+}
+
+ul.nav-tabs.affix 
+{
+	top: 0px; /* set the top position of pinned element */
+}
+
+.page-box
+{
+	border-radius: 3px;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.page-box:first-child
+{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.page-box .page-image
+{
+	max-height: 400px;
+	background-color: lightblue;
+	overflow: hidden;
+}
+
+.page-box .page-image img
+{
+	width: 100%;
+	border: 0;
+}
+
+.page-box#jd .page-content
+{
+	padding: 40px;
+}
+
+.page-box#jd span
+{
+	font-size: 12px;
+	padding-top: 10px;
+	color: #777;
+	display: block;
+}
+
+.page-box#jd p
+{
+	font-weight: 500;
+	color: #222;
+}
+
+.page-content
+{
+	background: #fff;
+	padding: 20px 40px;
+}
+
+.page-content h2
+{
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #37bc9b;
+	font-weight: 700;
+}
+
+.page-content h3
+{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.page-content ul
+{
+	color: #777;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.page-content ol
+{
+	font-size: 18px;
+	color: #444;
+	position: relative;
+	list-style-position: inside;
+	list-style-type: none;
+    counter-reset: item;
+}
+
+.page-content ol > li
+{
+	margin-bottom: 20px;
+	padding: 30px 20px 10px 40px;
+	border: 2px solid #eee;
+	border-radius: 3px;
+	counter-increment: step-counter;
+	-moz-transition: all 0.05s;
+	-webkit-transition: all 0.05s;
+	transition: all 0.05s; 
+}
+
+.page-content ol > li:hover
+{
+	border-color: #37bc9b;
+	background: #37bc9b;
+	color: #fff;
+}
+
+.page-content ol > li:hover > ul
+{
+	color: #fff;
+}
+
+.page-content ol > li::before
+{
+	content: counter(step-counter);
+	margin-right: 5px;
+	font-size: 80%;
+	background-color: #37bc9b;
+	color: white;
+	font-weight: bold;
+	padding: 3px 8px;
+	border-radius: 3px;
+	position: relative;
+	left: -20px;
+}
+
+.page-content ol > li:hover::before
+{
+	background: #fff;
+	color: #37bc9b;
+}
+
+.page-content ol > li > ul
+{
+	list-style-type: none;
+	padding: 10px 10px 10px 30px;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+.marvel-device.iphone6
+{
+	margin: 0 auto;
+	box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(.75, .75);
+}
+
+.marvel-device .screen
+{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 90;
+}
+
+.marvel-device .top-title-bar
+{
+	height: 80px;
+	width: 100%;
+	background: #eee;
+	border-bottom: 1px solid #dadada;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.marvel-device .top-title-bar h3
+{
+	line-height: 80px;
+	padding: 0px;
+	margin: 0px;
+	color: #333;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.marvel-device .footer-bar
+{
+	height: 200px;
+	width: 100%;
+	background: salmon;
+	background: url('../img/pattern-book-box.png');
+	color: #fff;
+	display: table;
+	position: relative;
+}
+
+.marvel-device .footer-bar > div
+{
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+}
+
+.marvel-device .footer-bar > div > h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.marvel-device .footer-bar > div > .btn
+{
+	background: #fff;
+	font-weight: 700;
+	color: salmon;
+	margin: 10px auto;
+}
+
+.marvel-device .footer-bar > div > #footer-avatar
+{
+	position: absolute;
+	height: 150px;
+	width: auto;
+	bottom: 20px;
+	right: -70px;
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+    -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
+    transform-origin: center bottom;
+}
+
+.marvel-device .footer-bar:hover div > #footer-avatar
+{
+	-webkit-transform: rotate(-35deg);
+	transform: rotate(-35deg);
+}
+
+.chat-bubbles
+{
+	max-width: 450px;
+	padding: 20px 15px;
+	margin: 80px auto 0;
+	background-color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	z-index: 120;
+	position: relative;
+}
+
+.from-me,
+.from-them
+{
+	max-width: 245px;
+	word-wrap: break-word;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 1.25;
+}
+
+.from-me 
+{
+	position: relative;
+	padding: 10px 20px 10px 15px;
+	text-align: right;
+	color: #fff;
+	background: #0B93F6;
+	border-radius: 25px;
+	float: right;
+}
+
+.from-me:before 
+{
+	content: "";
+	position: absolute;
+	z-index: 20;
+	bottom: -2px;
+	right: -7px;
+	height: 20px;
+	border-right: 20px solid #0B93F6;
+	border-bottom-left-radius: 16px 14px;
+	-webkit-transform: translate(0, -2px);
+}
+
+.from-me:after 
+{
+	content: "";
+	position: absolute;
+	z-index: 21;
+	bottom: -2px;
+	right: -56px;
+	width: 26px;
+	height: 20px;
+	background: white;
+	border-bottom-left-radius: 10px;
+	-webkit-transform: translate(-30px, -2px);
+}
+
+.from-them 
+{
+	position: relative;
+	padding: 10px 15px 10px 20px;
+	text-align: left;
+	background: #E5E5EA;
+	border-radius: 25px;
+	color: black;
+	float: left;
+}
+
+.from-them:before 
+{
+	content: "";
+	position: absolute;
+	z-index: 2;
+	bottom: -2px;
+	left: -7px;
+	height: 20px;
+	border-left: 20px solid #E5E5EA;
+	border-bottom-right-radius: 16px 14px;
+	-webkit-transform: translate(0, -2px);
+}
+
+.from-them:after 
+{
+	content: "";
+	position: absolute;
+	z-index: 3;
+	bottom: -2px;
+	left: 4px;
+	width: 26px;
+	height: 20px;
+	background: white;
+	border-bottom-right-radius: 10px;
+	-webkit-transform: translate(-30px, -2px);
+}
+
+.from-me#image,
+.from-them#image
+{
+	padding: 0px;
+	overflow: hidden;
+}
+
+.from-me#image::after,
+.from-me#image::before,
+.from-them#image::after,
+.from-them#image::before
+{
+	display: none;
+}
+
+.from-me#image img,
+.from-them#image img
+{
+	width: 100%;
+}
+
+.page-content#emoji
+{
+	background: url('../img/la_home-bg-5.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.page-content#emoji > h2
+{
+	position: relative;
+	top: 55px;
+	color: #fff;
+}
+
+.page-content#emoji > h2 small
+{
+	color: #fff;
+}
+
+/*.page-content#emoji ul > li
+{
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.page-content#emoji ul > li > img.emoji
+{
+	width: 20px;
+	height: 20px;
+	margin: 0 3px;
+}
+
+.page-content#emoji ul > li:hover > img.emoji
+{
+	opacity: 1;
+}*/
+
+.page-content .page-team-profile
+{
+	border-bottom: 1px solid #eee;
+	padding: 8px 0 10px;
+	margin-bottom: 10px;
+}
+
+.page-content .page-team-profile:last-of-type
+{
+	border: none;
+}
+
+.page-content .page-team-profile.open-position
+{
+	background: ;
+}
+
+.page-content .page-team-profile.open-position .btn
+{
+	margin: 10px 0 20px;
+}
+
+.readmore-ify
+{
+	color: #fabe4a;
+	font-size: 12px;
+	cursor: pointer;
+	text-align: left;
+}
+
+.page-box .page-browser
+{
+	padding: 60px;
+	background: teal;
+}
+
+.browser-mockup 
+{
+	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+	border-top: 30px solid rgba(230, 230, 230, 0.7);
+	border-bottom: 1px solid #eee;
+	position: relative;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.browser-mockup img
+{
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+}
+
+.browser-mockup:before 
+{
+	display: block;
+	position: absolute;
+	content: '';
+	top: -18px;
+	left: 15px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #f44;
+	box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+@media print{
+	.nav,
+	.nav-tabs
+	{
+		display: none;
+		opacity: 0;
+	}
+}

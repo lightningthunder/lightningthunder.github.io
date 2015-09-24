@@ -635,36 +635,6 @@ body
 	margin: 40px 0 25px;
 }
 
-/*.trip-content #la_photo-gallery h4 .fa
-{
-	background: salmon;
-}
-
-.trip-content #la_package-details h4 .fa
-{
-	background: salmon;
-}
-
-.trip-content #la_expectations h4 .fa
-{
-	background: salmon;
-}
-
-.trip-content #la_itinerary h4 .fa
-{
-	background: salmon;
-}
-
-.trip-content #la_add-ons h4 .fa
-{
-	background: salmon;
-}
-
-.trip-content #la_tips-notes h4 .fa
-{
-	background: salmon;
-}*/
-
 .misc-bar h4 .fa
 {
 	background: salmon;
@@ -892,14 +862,6 @@ body
 	color: #fff;*/
 }
 
-hr
-{
-/*	margin-left: -25px;
-	margin-right: -25px;
-	border-bottom: 14px solid #eee;
-	display: none;*/
-}
-
 .readmore-link
 {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+60&amp;0+0,1+60 */
@@ -950,6 +912,82 @@ hr
 	color: #777 !important;
 }
 
+.la_fullscreen_modal span.chimpanzee-close
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 3px;
+    padding: 2px 6px 0px 7px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.la_fullscreen_modal span.chimpanzee-glyph
+{
+	margin-left: 5px;
+	font-size: 13px;
+}
+
+#overlay-panel
+{
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.95);
+	position: fixed;
+	opacity: 1;
+}
+
+#overlay-panel #ais-inform-wrapper
+{
+
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	position: relative;
+	z-index: 1200;
+	top: 40%;
+	left: 0px;
+}
+
+#overlay-panel #ais-inform-wrapper .heartbeat-loader
+{
+	text-align: center;
+}
+
+#overlay-panel #ais-inform-wrapper
+{
+	color: #fff;
+	font-weight: 500;
+}
+
+#overlay-panel #ais-inform-wrapper h3
+{
+	font-weight: 700;
+}
+
+.affix 
+{
+	top: 10px;
+	width: 380px;
+	/*right: calc(50vh-585px);*/
+}
+
+/* min-height for affix */
+@media (max-height: 800px) { 
+	.affix
+	{
+/*		position: relative;
+*/	}
+}
+
 @media (max-width: 1169px) { 
 	h1.h1
 	{
@@ -964,14 +1002,6 @@ hr
 		width: 100%;
 		overflow: hidden;
 		padding: 0px;
-	}
-
-	hr
-	{
-		margin-left: -15px;
-		margin-right: -15px;
-		border-top: 1px solid #dadada;
-		border-bottom: 14px solid #eee;
 	}
 
 	body
