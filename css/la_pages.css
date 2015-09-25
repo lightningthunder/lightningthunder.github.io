@@ -53,6 +53,7 @@ p.lead
 	border-top-left-radius: 3px;
 	margin: 0 auto;
 	border: none;
+	border-bottom: 1px solid #eee;
 	opacity: 1;
 }
 
@@ -200,11 +201,74 @@ ul.nav-tabs.affix
 	border-top-right-radius: 0px;
 }
 
+.page-box .page-video
+{
+	background: #fff;
+	position: relative;
+	padding-bottom: 52.5%; /* 16:9 */
+	padding-top: 25px;
+	border-radius: 3px;
+	overflow: hidden;
+	height: 0;
+}
+
+.page-box .page-video > iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
 .page-box .page-image
 {
 	max-height: 400px;
 	background-color: lightblue;
 	overflow: hidden;
+	position: relative;
+}
+
+.page-box .page-image #web-url
+{
+	display: block;
+	color: #333;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	left: 50%;
+	margin-left: -220px;
+	line-height: 52px;
+	height: 50px;
+	width: 440px;
+	text-align: center;
+	font-size: 24px;
+	padding-left: 10px;
+	padding-right: 50px;
+	font-weight: 500;
+	z-index: 101;
+	box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-box .page-image #web-url::after
+{
+	content: 'Go!';
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 60px;
+	height: 50px;
+	line-height: 52px;
+	text-align: center;
+	background: salmon;
+	color: #fff;
+	letter-spacing: 0px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .page-box .page-image img
@@ -241,15 +305,102 @@ ul.nav-tabs.affix
 .page-content h2
 {
 	font-size: 24px;
-	margin-bottom: 20px;
+	line-height: 1.4;
+	margin-bottom: 10px;
 	color: #37bc9b;
 	font-weight: 700;
 }
 
-.page-content h3
+.page-box#vision > .page-content
 {
-	font-size: 16px;
+	padding: 0px;
+}
+
+#vision-statement
+{
+	background: #fabe4a;
+	background: url('../img/pattern-vision-statement.png');
 	font-weight: 700;
+	display: block;
+	padding: 60px 120px;
+}
+
+#vision-statement > span
+{
+	margin-bottom: 25px;
+	padding: 2px 8px;
+	border: 3px solid #fff;
+	color: #fff;
+	display: inline-block;
+}
+
+#vision-statement > h3
+{
+	font-weight: 700;
+	line-height: 1.5;
+	font-size: 28px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+#values .fact-box-wrapper
+{
+	margin: 50px auto;
+	position: relative;
+}
+
+#values .fact-box
+{
+	border-radius: 10px;
+	padding: 20px;
+	height: 200px;
+	width: 100%;
+	position: relative;
+	text-align: left;
+	margin-bottom: 20px;
+	background: #fff;
+	border: 4px solid #eee;
+	background-size: cover !important;
+	display: table;
+}
+
+#values .fact-box-order
+{
+	counter-increment: step-counter;
+	z-index: 99;
+}
+
+#values .fact-box-order::before
+{
+	content: counter(step-counter);
+	background-color: salmon;
+	color: white;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 100;
+	bottom: 40px;
+	right: 30px;
+}
+
+#values .fact-box > p
+{
+	font-size: 20px;
+	font-weight: 500;
+	display: table-cell;
+	vertical-align: top;
+	color: #333;
+}
+
+#values .fact-box > img
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 .page-content ul
