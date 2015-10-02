@@ -245,6 +245,7 @@ ul.nav-tabs.affix
 	height: 50px;
 	width: 440px;
 	text-align: center;
+	letter-spacing: 1px;
 	font-size: 24px;
 	padding-left: 10px;
 	padding-right: 50px;
